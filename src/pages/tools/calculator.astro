@@ -1,0 +1,19 @@
+﻿---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import CalculatorIsland from '../../islands/CalculatorIsland';
+---
+<BaseLayout title="Fertilizer Calculator | Mahesh Agro Tools" description="Calculate the right fertilizer quantity for your crop and field area.">
+  <main class="min-h-screen bg-gray-50">
+    <section class="pt-32 pb-16 bg-primary text-white">
+      <div class="container mx-auto px-6 text-center">
+        <h1 class="text-4xl md:text-5xl font-black mb-4">Fertilizer Calculator</h1>
+        <p class="text-xl text-white/80 max-w-2xl mx-auto">Calculate the ideal fertilizer quantities for your crop and field size.</p>
+      </div>
+    </section>
+    <section class="py-16">
+      <div class="container mx-auto px-6">
+        <CalculatorIsland client:load />
+      </div>
+    </section>
+  </main>
+</BaseLayout>

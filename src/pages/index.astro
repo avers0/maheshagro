@@ -1,0 +1,388 @@
+﻿---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { brandPartners } from '../data/brandPartners';
+import { testimonials } from '../data/testimonials';
+import { branches } from '../data/branches';
+---
+<BaseLayout
+  title="Mahesh Agro | Trusted Agriculture Retail Partner"
+  description="Mahesh Agro provides quality seeds, fertilizers, and pesticides to farmers with expert guidance and trust. Serving farmers with authentic products since 1973."
+>
+  <main class="min-h-screen">
+
+    <!-- ═══ HERO ═══ -->
+    <section id="home" class="relative min-h-screen flex items-end overflow-hidden pb-16 md:pb-24">
+      <div class="absolute inset-0 z-0">
+        <picture>
+          <source media="(max-width: 768px)" srcset="/Images/Mobile-Background.png" />
+          <img src="/Images/Background.png" alt="Lush green agricultural field" class="w-full h-full object-cover" loading="eager" />
+        </picture>
+        <div class="absolute inset-0 bg-gradient-to-t from-primary/95 via-primary/20 to-transparent"></div>
+      </div>
+      <div class="container-custom relative z-10 w-full">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end">
+          <div class="lg:col-span-7 xl:col-span-8 reveal">
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 border border-white/20 mb-6 backdrop-blur-sm">
+              <span class="text-white/90 text-[10px] md:text-xs font-bold uppercase tracking-[0.2em]">Growing Together, Harvesting Success.</span>
+            </div>
+            <h1 class="text-white text-[44px] md:text-[64px] lg:text-[84px] font-semibold leading-[1.05] mb-6 tracking-tighter max-w-4xl">
+              Empowering Farmers for a Prosperous Harvest
+            </h1>
+            <p class="text-white/70 text-base md:text-lg mb-10 max-w-2xl leading-relaxed font-normal">
+              Leading agriculture retail partner providing 100% genuine seeds, fertilizers, and expert guidance to maximize your yield since 1973.
+            </p>
+            <div class="flex flex-wrap gap-4 items-center">
+              <a href="https://wa.me/919166029301" target="_blank" rel="noopener noreferrer"
+                class="group flex items-center gap-3 bg-accent text-primary px-8 py-4 rounded-full font-bold text-sm transition-all hover:scale-105 shadow-lg shadow-accent/20">
+                <span>WhatsApp Chat</span>
+                <div class="w-6 h-6 bg-primary/10 rounded-full flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </div>
+              </a>
+              <a href="/products" class="flex items-center gap-2 px-8 py-4 rounded-full border border-white/20 text-white font-semibold text-sm hover:border-white transition-all">
+                View Products
+              </a>
+            </div>
+          </div>
+          <div class="lg:col-span-5 xl:col-span-4 reveal">
+            <div class="bg-white/5 backdrop-blur-xl p-8 md:p-10 rounded-[2.5rem] border border-white/10 shadow-2xl relative overflow-hidden group">
+              <div class="flex items-center gap-2 mb-6">
+                <div class="w-1.5 h-1.5 bg-accent rounded-full animate-pulse"></div>
+                <h4 class="text-white/90 font-bold uppercase tracking-widest text-[10px] md:text-xs">Innovation First</h4>
+              </div>
+              <p class="text-white/80 text-sm md:text-base mb-8 leading-relaxed font-medium">
+                To empower farmers with innovative tools and technology that enhance productivity, sustainability, and efficiency.
+              </p>
+              <a href="https://wa.me/919166029301" target="_blank" rel="noopener noreferrer"
+                class="flex items-center gap-2 text-white font-bold tracking-widest uppercase text-[10px] md:text-xs group/link">
+                <span>Learn More</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="group-hover/link:translate-x-1 transition-transform text-accent" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ BRAND PARTNERS MARQUEE ═══ -->
+    <section id="brand-partners" class="py-4 bg-white overflow-hidden relative border-y border-[#e2e8e0]/50">
+      <div class="container-custom relative z-10">
+        <div class="flex items-center gap-4 mb-8">
+          <div class="h-[2px] bg-primary/60 w-12"></div>
+          <h2 class="text-[14px] md:text-[16px] font-bold text-primary tracking-[0.5em] uppercase">Trusted Brand Partners</h2>
+        </div>
+      </div>
+      <div class="relative flex overflow-x-hidden">
+        <!-- Double the list for seamless loop -->
+        <div class="animate-marquee flex items-center gap-10 md:gap-16 whitespace-nowrap">
+          {[...brandPartners, ...brandPartners].map((p, i) => (
+            <div class="flex flex-col items-center gap-4 group" key={i}>
+              <div class="h-28 w-56 bg-white rounded-2xl border border-primary/10 flex items-center justify-center p-6 shadow-md group-hover:scale-105 group-hover:shadow-xl transition-all duration-500">
+                <img src={p.image} alt={p.alt} class="max-h-full max-w-full object-contain mix-blend-multiply" loading="lazy" />
+              </div>
+              <span class="text-[12px] md:text-[14px] font-bold text-primary/80 tracking-widest uppercase group-hover:text-primary transition-all duration-500">{p.name}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ ABOUT ═══ -->
+    <section id="about" class="section-padding bg-[#f8f5ef] relative overflow-hidden">
+      <div class="container-custom relative z-10">
+        <div class="flex flex-wrap gap-2 mb-6">
+          <button class="px-6 py-1.5 rounded-full text-[13px] font-medium transition-all border bg-accent border-accent text-primary shadow-glow">About Us</button>
+          <button class="px-6 py-1.5 rounded-full text-[13px] font-medium transition-all border bg-white border-[#e2e8e0] text-primary/60 hover:border-accent hover:text-primary">Journey</button>
+          <button class="px-6 py-1.5 rounded-full text-[13px] font-medium transition-all border bg-white border-[#e2e8e0] text-primary/60 hover:border-accent hover:text-primary">Vision</button>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-start mb-10 lg:mb-14 reveal">
+          <div class="lg:col-span-4">
+            <div class="flex items-center gap-2">
+              <div class="w-1 h-1 bg-primary rounded-full"></div>
+              <span class="text-primary font-medium tracking-tight text-xs uppercase">Who We Are at Mahesh Agro</span>
+            </div>
+          </div>
+          <div class="lg:col-span-8">
+            <h2 class="text-primary text-[28px] md:text-[36px] lg:text-[44px] font-semibold leading-[1.1] mb-4 tracking-tighter">Harvesting Success Together</h2>
+            <p class="text-[#6b7a6e] text-base md:text-lg mb-6 max-w-2xl leading-relaxed font-normal">
+              Mahesh Agro Service Centre (MASC) is a premier agricultural retail and consultancy firm dedicated to empowering farmers with high-quality inputs and scientific expertise. Founded in 1973, we provide genuine seeds, fertilizers, and pesticides from top global brands, ensuring maximum productivity and sustainability for every farm.
+            </p>
+            <div class="flex flex-wrap gap-4 items-center">
+              <a href="/about" class="inline-flex items-center gap-2 px-8 py-3 rounded-full bg-primary text-white text-xs font-medium hover:bg-primary/90 transition-all shadow-md">
+                Learn More
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+              </a>
+              <a href="https://wa.me/919166029301" target="_blank" rel="noopener noreferrer"
+                class="inline-block px-8 py-3 rounded-full border border-[#e2e8e0] text-xs font-medium text-primary hover:bg-primary hover:text-white transition-all shadow-sm">
+                Contact Experts
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div class="aspect-square rounded-2xl overflow-hidden shadow-card group reveal-scale">
+            <img src="/Images/Farmer.png" alt="Professional Indian farmer" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" loading="lazy" />
+          </div>
+          <div class="bg-white p-6 rounded-2xl border border-[#e2e8e0] flex flex-col justify-between group hover:shadow-premium transition-all aspect-square reveal-scale">
+            <div class="flex justify-between items-start">
+              <span class="text-4xl font-semibold text-primary">50+</span>
+            </div>
+            <div>
+              <h3 class="text-lg font-medium text-primary mb-2">Years of Trust</h3>
+              <p class="text-[#6b7a6e] text-[13px] leading-relaxed font-normal">Leading precision agriculture, helping farmers increase yields and reduce resources.</p>
+            </div>
+          </div>
+          <div class="aspect-square rounded-2xl overflow-hidden shadow-card group reveal-scale">
+            <img src="/Images/Wheat.png" alt="Golden wheat field harvest" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" loading="lazy" />
+          </div>
+          <div class="bg-accent p-6 rounded-2xl border border-accent flex flex-col justify-between group hover:shadow-glow transition-all aspect-square reveal-scale">
+            <div class="flex justify-between items-start">
+              <span class="text-4xl font-semibold text-primary">1 Lakh+</span>
+            </div>
+            <div>
+              <h3 class="text-lg font-medium text-primary mb-2">Customers Served</h3>
+              <p class="text-primary/70 text-[13px] leading-relaxed font-medium">Trusted by a growing community of farmers for high-quality inputs and expert advice.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ WHY CHOOSE US ═══ -->
+    <section id="why-choose-us" class="section-padding bg-[#f8f5ef] relative overflow-hidden">
+      <div class="container-custom relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+          <div class="order-2 lg:order-1">
+            <div class="mb-8 reveal">
+              <div class="sub-heading mb-4">
+                <div class="w-1.5 h-1.5 bg-primary rounded-full"></div>
+                <span>Why Choose Us</span>
+              </div>
+              <h2 class="text-primary mb-4 leading-[1.1] font-semibold tracking-tighter text-[28px] md:text-[36px] lg:text-[44px]">Legacy of Excellence</h2>
+              <p class="text-[#6b7a6e] text-base leading-relaxed font-normal">Empowering farmers across the region since 1973 with dedicated service.</p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              {[
+                { icon: "shield-check", title: "Genuine Products", desc: "100% authentic seeds and chemicals directly from trusted manufacturers." },
+                { icon: "lightbulb", title: "Expert Guidance", desc: "Personalized advice from experienced consultants to maximize your yield." },
+                { icon: "users", title: "Community Trust", desc: "Serving 1 Lakh+ farmers across the region with dedication and care." },
+                { icon: "award", title: "Award Winning", desc: "Recognized by leading brands like Chambal, Corteva, and Bayer for excellence." },
+              ].map(item => (
+                <div class="group reveal">
+                  <div class="w-12 h-12 bg-white rounded-xl flex items-center justify-center text-primary mb-4 shadow-sm group-hover:bg-accent transition-all duration-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      {item.icon === "shield-check" && <><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></>}
+                      {item.icon === "lightbulb" && <><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></>}
+                      {item.icon === "users" && <><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><path d="M16 3.128a4 4 0 0 1 0 7.744"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><circle cx="9" cy="7" r="4"/></>}
+                      {item.icon === "award" && <><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"/><circle cx="12" cy="8" r="6"/></>}
+                    </svg>
+                  </div>
+                  <h3 class="text-lg font-semibold text-primary mb-2">{item.title}</h3>
+                  <p class="text-[#6b7a6e] text-[13px] leading-relaxed font-normal">{item.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div class="order-1 lg:order-2 reveal-scale">
+            <div class="relative">
+              <img src="/Images/Cards.png" alt="Agricultural expertise" class="w-full rounded-[2.5rem] shadow-premium" loading="lazy" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ PRODUCTS PREVIEW ═══ -->
+    <section id="products" class="section-padding bg-white">
+      <div class="container-custom">
+        <div class="text-center mb-14 reveal">
+          <div class="sub-heading justify-center mb-4">
+            <div class="w-1.5 h-1.5 bg-primary rounded-full"></div>
+            <span>Our Products</span>
+          </div>
+          <h2 class="text-primary text-[28px] md:text-[40px] font-semibold leading-[1.1] tracking-tighter mb-4">Quality Agricultural Inputs</h2>
+          <p class="text-[#6b7a6e] text-base max-w-2xl mx-auto leading-relaxed">From seeds to fertilizers and pesticides — everything your farm needs, sourced from trusted global brands.</p>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-10">
+          {[
+            { label: "Seeds", img: "/Images/Rice.png", desc: "Hybrid & open-pollinated varieties" },
+            { label: "Fertilizers", img: "/Images/Soyabean.png", desc: "Macro & micronutrient solutions" },
+            { label: "Pesticides", img: "/Images/Cotton.png", desc: "Insecticides, fungicides & herbicides" },
+            { label: "Tools", img: "/Images/Wheat.png", desc: "Sprayers, irrigation & more" },
+          ].map(cat => (
+            <div class="group reveal-scale">
+              <div class="aspect-square rounded-2xl overflow-hidden bg-[#f4f1eb] shadow-card group-hover:shadow-premium transition-all mb-3">
+                <img src={cat.img} alt={cat.label} class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" loading="lazy" />
+              </div>
+              <h3 class="font-bold text-primary text-sm">{cat.label}</h3>
+              <p class="text-[#6b7a6e] text-xs">{cat.desc}</p>
+            </div>
+          ))}
+        </div>
+        <div class="text-center reveal">
+          <a href="/products" class="btn-accent !text-sm !px-10 !py-4">Browse All Products</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ TESTIMONIALS ═══ -->
+    <section id="testimonials" class="section-padding bg-[#f8f5ef] relative overflow-hidden">
+      <div class="container-custom relative z-10">
+        <div class="text-center mb-14 reveal">
+          <div class="sub-heading justify-center mb-4">
+            <div class="w-1.5 h-1.5 bg-primary rounded-full"></div>
+            <span>Testimonials</span>
+          </div>
+          <h2 class="text-primary text-[28px] md:text-[40px] font-semibold leading-[1.1] tracking-tighter">What Farmers Say</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {testimonials.map(t => (
+            <div class="bg-white p-8 rounded-[2rem] border border-[#e2e8e0] hover:shadow-premium transition-all reveal">
+              <div class="flex gap-1 mb-4">
+                {Array(t.rating).fill(0).map((_, i) => (
+                  <svg key={i} xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="text-accent" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                ))}
+              </div>
+              <p class="text-[#6b7a6e] text-base leading-relaxed mb-6 italic">"{t.quote}"</p>
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary font-bold text-sm">{t.name[0]}</div>
+                <div>
+                  <p class="font-bold text-primary text-sm">{t.name}</p>
+                  <p class="text-[#6b7a6e] text-xs">{t.location}{t.crop ? ` · ${t.crop}` : ""}</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ LICENSES ═══ -->
+    <section id="licenses" class="section-padding bg-white">
+      <div class="container-custom">
+        <div class="text-center mb-14 reveal">
+          <div class="sub-heading justify-center mb-4">
+            <div class="w-1.5 h-1.5 bg-primary rounded-full"></div>
+            <span>Licenses & Certifications</span>
+          </div>
+          <h2 class="text-primary text-[28px] md:text-[40px] font-semibold leading-[1.1] tracking-tighter mb-4">Licensed & Certified</h2>
+          <p class="text-[#6b7a6e] text-base max-w-xl mx-auto">Fully licensed agriculture retail partner operating under all regulatory guidelines.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {[
+            { title: "Pesticide License", no: "RJ-JP-0XXX", issuer: "Dept. of Agriculture, Rajasthan", icon: "shield" },
+            { title: "Fertilizer License", no: "FAI/RAJ/0XXX", issuer: "Fertilizer Association of India", icon: "award" },
+            { title: "Seeds License", no: "SL/RJ/0XXX", issuer: "State Seeds Corporation, Rajasthan", icon: "leaf" },
+          ].map(lic => (
+            <div class="bg-[#f8f5ef] p-8 rounded-[2rem] border border-[#e2e8e0] hover:shadow-premium transition-all text-center reveal-scale">
+              <div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-6 text-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  {lic.icon === "shield" && <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/>}
+                  {lic.icon === "award" && <><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"/><circle cx="12" cy="8" r="6"/></>}
+                  {lic.icon === "leaf" && <><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></>}
+                </svg>
+              </div>
+              <h3 class="font-bold text-primary text-lg mb-2">{lic.title}</h3>
+              <p class="text-xs font-mono text-[#6b7a6e] mb-1">License No: {lic.no}</p>
+              <p class="text-xs text-[#6b7a6e]">{lic.issuer}</p>
+            </div>
+          ))}
+        </div>
+        <div class="text-center mt-10 reveal">
+          <a href="/licenses" class="btn-outline">View All Licenses</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ BRANCHES ═══ -->
+    <section id="branches" class="section-padding bg-[#f8f5ef]">
+      <div class="container-custom">
+        <div class="text-center mb-14 reveal">
+          <div class="sub-heading justify-center mb-4">
+            <div class="w-1.5 h-1.5 bg-primary rounded-full"></div>
+            <span>Our Locations</span>
+          </div>
+          <h2 class="text-primary text-[28px] md:text-[40px] font-semibold leading-[1.1] tracking-tighter">Visit Our Branches</h2>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          {branches.map(b => (
+            <div class="bg-white rounded-[2rem] border border-[#e2e8e0] p-8 hover:shadow-premium transition-all reveal-scale">
+              <div class="flex items-center gap-3 mb-4">
+                <div class="p-3 bg-primary/10 text-primary rounded-xl">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <h3 class="font-bold text-primary text-lg">{b.name}</h3>
+              </div>
+              <p class="text-[#6b7a6e] text-sm mb-2">{b.address}</p>
+              <p class="text-[#6b7a6e] text-sm mb-4">{b.hours}</p>
+              <div class="flex gap-3">
+                <a href={"https://wa.me/919166029301"} target="_blank" rel="noopener noreferrer"
+                  class="flex-1 flex items-center justify-center gap-2 bg-[#25D366] text-white py-3 rounded-xl font-bold text-sm hover:shadow-lg transition-all">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719"/></svg>
+                  WhatsApp
+                </a>
+                <a href={"tel:+919166029301"}
+                  class="flex-1 flex items-center justify-center gap-2 bg-primary text-white py-3 rounded-xl font-bold text-sm hover:shadow-lg transition-all">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg>
+                  Call Now
+                </a>
+              </div>
+            </div>
+          ))}
+        </div>
+        <div class="text-center mt-10 reveal">
+          <a href="/branches" class="btn-outline">View All Branch Details</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ AWARDS ═══ -->
+    <section id="awards" class="section-padding bg-white">
+      <div class="container-custom">
+        <div class="text-center mb-14 reveal">
+          <div class="sub-heading justify-center mb-4">
+            <div class="w-1.5 h-1.5 bg-primary rounded-full"></div>
+            <span>Recognition</span>
+          </div>
+          <h2 class="text-primary text-[28px] md:text-[40px] font-semibold leading-[1.1] tracking-tighter mb-4">Awards & Achievements</h2>
+          <p class="text-[#6b7a6e] text-base max-w-xl mx-auto">Recognized by industry leaders for excellence in agriculture retail and service.</p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {[
+            { img: "/Images/MA/CHAMBAL FERTILIZERS BEST PERFORMANCE AWARD- 2011-12.jpg", title: "Chambal Fertilizers Best Performance Award 2011-12" },
+            { img: "/Images/MA/CORTEVA AGRISCIENCE MARK OF EXCELLENCE AWARD- 2023.jpg", title: "Corteva Agriscience Mark of Excellence Award 2023" },
+            { img: "/Images/MA/Highest PHN Business Award- 2022.jpg", title: "Highest PHN Business Award 2022" },
+            { img: "/Images/MA/IPL Award Ceremony_.jpg", title: "IPL Award Ceremony" },
+            { img: "/Images/MA/PLATINUM AWARD FOR HIGHEST SALES OF WCW IN 2024-25.jpg", title: "Platinum Award for Highest Sales of WCW 2024-25" },
+            { img: "/Images/MA/BAYER CERTIFICATION OF APPRECIATION FOR TRUST- 2024.jpg", title: "Bayer Certification of Appreciation for Trust 2024" },
+            { img: "/Images/MA/BAYER State Level Awards- 2025.jpg", title: "Bayer State Level Awards 2025" },
+          ].map(award => (
+            <div class="group aspect-[4/3] rounded-[2rem] overflow-hidden shadow-card hover:shadow-premium transition-all reveal-scale">
+              <img src={award.img} alt={award.title}
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                loading="lazy" />
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ CTA ═══ -->
+    <section class="py-20 bg-primary relative overflow-hidden">
+      <div class="absolute inset-0 opacity-5" style="background-image:url('https://www.transparenttextures.com/patterns/natural-paper.png')"></div>
+      <div class="container-custom relative z-10 text-center">
+        <h2 class="text-white text-[28px] md:text-[40px] font-semibold tracking-tighter mb-4 reveal">Ready to Grow with Us?</h2>
+        <p class="text-white/70 text-base md:text-lg mb-10 max-w-xl mx-auto reveal">Contact our experts today for personalized crop recommendations and genuine product guidance.</p>
+        <div class="flex flex-wrap justify-center gap-4 reveal">
+          <a href="https://wa.me/919166029301" target="_blank" rel="noopener noreferrer" class="btn-accent !text-sm !px-8 !py-4">
+            WhatsApp Chat
+          </a>
+          <a href="/contact" class="inline-flex items-center gap-2 px-8 py-4 rounded-full border border-white/20 text-white font-bold text-sm hover:border-white transition-all">
+            Contact Us
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</BaseLayout>

@@ -1,0 +1,40 @@
+﻿---
+// Navbar.astro - Static shell, NavbarIsland handles interactivity
+import NavbarIsland from '../islands/NavbarIsland';
+---
+<nav id="main-nav" class="fixed w-full z-50 transition-all duration-500 py-4">
+  <div class="container-custom flex items-center justify-between w-full">
+    <!-- Logo -->
+    <a href="/" class="flex items-center group">
+      <div class="w-28 h-16 flex items-center justify-center relative group-hover:scale-110 transition-all duration-500">
+        <img src="/Images/logo.png" alt="Mahesh Agro Logo" class="w-full h-full object-contain" loading="eager" />
+      </div>
+    </a>
+
+    <!-- Desktop nav links -->
+    <div class="hidden lg:flex items-center gap-8">
+      <a href="/#about" class="text-sm font-medium transition-all hover:text-accent tracking-wide uppercase text-white/90">About Us</a>
+      <a href="/#why-choose-us" class="text-sm font-medium transition-all hover:text-accent tracking-wide uppercase text-white/90">Why Us</a>
+      <a href="/#testimonials" class="text-sm font-medium transition-all hover:text-accent tracking-wide uppercase text-white/90">Testimonials</a>
+      <a href="/#licenses" class="text-sm font-medium transition-all hover:text-accent tracking-wide uppercase text-white/90">Licenses</a>
+      <a href="/#branches" class="text-sm font-medium transition-all hover:text-accent tracking-wide uppercase text-white/90">Branches</a>
+      <a href="/#awards" class="text-sm font-medium transition-all hover:text-accent tracking-wide uppercase text-white/90">Awards</a>
+    </div>
+
+    <!-- Desktop CTAs -->
+    <div class="hidden lg:flex items-center gap-4">
+      <!-- Hindi stub -->
+      <button class="flex items-center gap-2 px-4 py-2 rounded-full border transition-all border-white/20 text-white hover:border-white">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+        <span class="text-xs font-bold uppercase tracking-widest">हिन्दी</span>
+      </button>
+      <a href="https://wa.me/919166029301" target="_blank" rel="noopener noreferrer" class="btn-accent !py-2.5 !px-6 shadow-glow">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"/></svg>
+        <span>WhatsApp Chat</span>
+      </a>
+    </div>
+
+    <!-- Mobile hamburger (handled by NavbarIsland) -->
+    <NavbarIsland client:load />
+  </div>
+</nav>

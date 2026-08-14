@@ -1,0 +1,177 @@
+﻿@import "tailwindcss";
+
+@theme {
+  /* ── Brand Colors ── */
+  --color-primary: #1c3a27;
+  --color-primary-light: #2a5038;
+  --color-accent: #9fc131;
+  --color-accent-dark: #7da020;
+  --color-footer: #0f1f15;
+  --color-background-cream: #f8f5ef;
+  --color-background-soft: #f4f1eb;
+  --color-text-muted: #6b7a6e;
+  --color-border: #e2e8e0;
+
+  /* ── Fonts ── */
+  --font-montserrat: "Montserrat", sans-serif;
+  --font-inter: "Inter", sans-serif;
+
+  /* ── Shadows ── */
+  --shadow-premium: 0 20px 60px -15px rgba(28, 58, 39, 0.15);
+  --shadow-card: 0 4px 24px -4px rgba(28, 58, 39, 0.10);
+  --shadow-glow: 0 0 25px rgba(159, 193, 49, 0.35);
+  --shadow-glow-sm: 0 0 12px rgba(159, 193, 49, 0.25);
+}
+
+/* ── Global resets / base ── */
+*, *::before, *::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-inter);
+  background-color: #ffffff;
+  color: #1c1c1c;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ── Layout helpers ── */
+.container-custom {
+  width: 100%;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .container-custom { padding-left: 2rem; padding-right: 2rem; }
+}
+@media (min-width: 1024px) {
+  .container-custom { padding-left: 3rem; padding-right: 3rem; }
+}
+
+.section-padding {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+@media (min-width: 768px) {
+  .section-padding { padding-top: 8rem; padding-bottom: 8rem; }
+}
+
+/* ── Typography ── */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-montserrat);
+}
+
+.sub-heading {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-primary);
+}
+
+/* ── Buttons ── */
+.btn-accent {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--color-accent);
+  color: var(--color-primary);
+  font-weight: 700;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border-radius: 9999px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.btn-accent:hover {
+  background-color: var(--color-accent-dark);
+  box-shadow: var(--shadow-glow);
+  transform: translateY(-1px);
+}
+
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 2rem;
+  background-color: transparent;
+  color: var(--color-primary);
+  font-weight: 600;
+  font-size: 0.875rem;
+  border-radius: 9999px;
+  border: 1.5px solid var(--color-border);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+.btn-outline:hover {
+  background-color: var(--color-primary);
+  color: white;
+  border-color: var(--color-primary);
+}
+
+/* ── Shadow utilities ── */
+.shadow-premium { box-shadow: var(--shadow-premium); }
+.shadow-card    { box-shadow: var(--shadow-card); }
+.shadow-glow    { box-shadow: var(--shadow-glow); }
+.shadow-glow-sm { box-shadow: var(--shadow-glow-sm); }
+
+/* ── Marquee animation ── */
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: flex;
+  animation: marquee 40s linear infinite;
+}
+
+.animate-marquee:hover { animation-play-state: paused; }
+
+/* ── Scroll-reveal base ── */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-scale {
+  opacity: 0;
+  transform: scale(0.92);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.reveal-scale.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* ── Scrollbar hide ── */
+.scrollbar-hide::-webkit-scrollbar { display: none; }
+.scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* ── Nav transparent → solid ── */
+.nav-scrolled {
+  background-color: white !important;
+  box-shadow: 0 1px 20px rgba(0,0,0,0.08);
+  padding-top: 0.75rem !important;
+  padding-bottom: 0.75rem !important;
+}
+.nav-scrolled a, .nav-scrolled button { color: var(--color-primary) !important; }

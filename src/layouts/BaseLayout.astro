@@ -1,0 +1,98 @@
+﻿---
+import '../styles/global.css';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+
+interface Props {
+  title?: string;
+  description?: string;
+  ogTitle?: string;
+  ogDescription?: string;
+}
+
+const {
+  title = 'Mahesh Agro | Trusted Agriculture Retail Partner',
+  description = 'Mahesh Agro provides quality seeds, fertilizers, and pesticides to farmers with expert guidance and trust. Serving farmers with authentic products since 1973.',
+  ogTitle = 'Mahesh Agro | Trusted Agriculture Retail Partner',
+  ogDescription = 'Quality seeds, fertilizers, and pesticides with expert guidance.',
+} = Astro.props;
+
+const schemaOrg = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Mahesh Agro",
+  "image": "https://maheshagro.com/Images/logo.png",
+  "@id": "https://maheshagro.com",
+  "url": "https://maheshagro.com",
+  "telephone": "+919166029301",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "RTO Office, Jaipur-Kota Road, Madhosinghpura (Daulta)",
+    "addressLocality": "Dolta",
+    "addressRegion": "RJ",
+    "addressCountry": "IN"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 26, "longitude": 75.8 },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+    "opens": "09:00",
+    "closes": "19:00"
+  },
+  "sameAs": ["https://www.facebook.com/maheshagro","https://www.instagram.com/maheshagro"]
+};
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <title>{title}</title>
+  <meta name="description" content={description} />
+  <meta name="author" content="Mahesh Agro" />
+  <meta name="keywords" content="Mahesh Agro, Agriculture Retail, Seeds, Fertilizers, Pesticides, Farm Tools, Mandi Prices, Weather Forecast, Farmer Tools" />
+  <meta property="og:title" content={ogTitle} />
+  <meta property="og:description" content={ogDescription} />
+  <meta property="og:locale" content="en_IN" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content={ogTitle} />
+  <meta name="twitter:description" content={ogDescription} />
+  <link rel="icon" href="/favicon.ico" sizes="256x256" type="image/x-icon" />
+  <link rel="preload" as="image" href="/Images/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <script type="application/ld+json" set:html={JSON.stringify(schemaOrg)} />
+</head>
+<body>
+  <Navbar />
+  <slot />
+  <Footer />
+  <!-- Scroll reveal + nav scroll script -->
+  <script>
+    // Nav scroll behavior
+    const nav = document.getElementById('main-nav');
+    if (nav) {
+      const onScroll = () => {
+        if (window.scrollY > 50) nav.classList.add('nav-scrolled');
+        else nav.classList.remove('nav-scrolled');
+      };
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+    }
+
+    // IntersectionObserver reveal
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          observer.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.reveal, .reveal-scale').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>

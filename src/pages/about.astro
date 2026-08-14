@@ -1,0 +1,161 @@
+﻿---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout
+  title="About | Mahesh Agro"
+  description="Learn about Mahesh Agro Service Centre - over 50 years of trusted agriculture retail partnership since 1973."
+>
+  <main class="min-h-screen bg-white">
+    <!-- Hero -->
+    <section class="relative pt-48 pb-32 overflow-hidden bg-[#f4f1eb]">
+      <div class="container-custom relative z-10">
+        <div class="flex flex-wrap gap-4 mb-8">
+          {["About Us","Journey","Vision","Mission"].map(tab => (
+            <button class="px-6 py-2 rounded-full border border-[#e2e8e0] text-sm font-semibold text-primary hover:bg-accent hover:border-accent transition-all first:bg-accent first:border-accent">
+              {tab}
+            </button>
+          ))}
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+          <div>
+            <div class="sub-heading mb-6">
+              <div class="w-2 h-2 bg-primary rounded-full"></div>
+              <span>Who We Are at Mahesh Agro</span>
+            </div>
+            <h1 class="text-primary text-5xl md:text-6xl mb-8 leading-[1.1] font-semibold tracking-tighter">
+              With years of expertise in both farming and expertise, we're committed to helping farmers grow smarter and achieve better yields.
+            </h1>
+            <p class="text-[#6b7a6e] text-lg mb-10 max-w-2xl leading-relaxed font-normal">
+              By combining innovation with sustainability, we empower farmers to increase productivity, reduce waste, and contribute to a healthier planet. Together, we are shaping the future of farming, ensuring it thrives for generations to come.
+            </p>
+            <a href="/contact" class="btn-outline">Learn More</a>
+          </div>
+          <div class="grid grid-cols-2 gap-6">
+            <div class="aspect-square rounded-[2rem] overflow-hidden shadow-premium group">
+              <img src="/Images/MA/Photo from Mudit Jindal(1).jpg" alt="Farmer field" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" loading="lazy"
+                onerror="this.src='/Images/Farmer.png'" />
+            </div>
+            <div class="bg-[#f4f1eb] p-10 rounded-[2rem] border border-[#e2e8e0] flex flex-col justify-between group hover:shadow-premium transition-all">
+              <h2 class="text-6xl font-bold text-primary">50+</h2>
+              <div>
+                <h3 class="text-lg font-semibold mb-2">Years of Agricultural Trust</h3>
+                <p class="text-[#6b7a6e] text-sm">With over five decades of experience, we've pioneered advancements in agriculture, helping farmers increase yields and achieve prosperity.</p>
+              </div>
+            </div>
+            <div class="aspect-square rounded-[2rem] overflow-hidden shadow-premium group">
+              <img src="/Images/MA/Photo from Mudit Jindal(2).jpg" alt="Agricultural products" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" loading="lazy"
+                onerror="this.src='/Images/Wheat.png'" />
+            </div>
+            <div class="bg-accent p-10 rounded-[2rem] border border-accent flex flex-col justify-between group hover:shadow-glow transition-all">
+              <h2 class="text-6xl font-bold text-primary">1 Lakh+</h2>
+              <div>
+                <h3 class="text-lg font-semibold mb-2">Customers Served</h3>
+                <p class="text-primary/70 text-sm font-medium">With over 1 Lakh+ customers served, we have built a legacy of trust and quality in the agricultural community since 1973.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mission & Values -->
+    <section class="py-24">
+      <div class="container mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div class="bg-white p-12 rounded-[3rem] shadow-xl border border-[#e2e8e0]">
+            <div class="w-16 h-16 bg-green-100 text-green-700 rounded-2xl flex items-center justify-center mb-8">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+            </div>
+            <h2 class="text-3xl font-bold mb-6">Our Mission</h2>
+            <p class="text-gray-500 text-lg leading-relaxed">To be the Trusted Agriculture Retail Partner for Farmers — empowering every farmer with 100% genuine agricultural inputs, optimal recommendations, and expert guidance for sustainable growth and prosperity.</p>
+          </div>
+          <div class="bg-white p-12 rounded-[3rem] shadow-xl border border-[#e2e8e0]">
+            <div class="w-16 h-16 bg-blue-100 text-blue-700 rounded-2xl flex items-center justify-center mb-8">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"/></svg>
+            </div>
+            <h2 class="text-3xl font-bold mb-6">Our Values</h2>
+            <p class="text-gray-500 text-lg leading-relaxed">Trust, Quality, and Service. We believe in building long-term relationships with our farmers by always delivering genuine products from trusted brand partners and honest, science-backed advice.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Legacy of Growth -->
+    <section class="py-24 bg-white">
+      <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-black text-center mb-6">A Legacy of Growth</h2>
+        <p class="text-center text-gray-500 text-lg mb-16 max-w-3xl mx-auto">Message from Our Leadership</p>
+        <div class="max-w-4xl mx-auto space-y-12">
+          <div class="bg-gray-50 p-10 rounded-[2.5rem] border border-[#e2e8e0]">
+            <h3 class="text-2xl font-bold mb-4 text-primary">Roots in Expertise (Est. 1973)</h3>
+            <p class="text-gray-500 text-lg leading-relaxed">Our story started in 1973, founded by our Chairman, <strong>Mr. Ramesh Chandra Jindal</strong>. Having completed his M.Sc. in Agriculture from Pantnagar in 1971, he combined his deep scientific knowledge with a passion for helping the local farming community. He didn't just want to sell products — he wanted to provide the expert guidance that farmers needed to thrive.</p>
+          </div>
+          <div class="bg-gray-50 p-10 rounded-[2.5rem] border border-[#e2e8e0]">
+            <h3 class="text-2xl font-bold mb-4 text-primary">A New Generation of Innovation</h3>
+            <p class="text-gray-500 text-lg leading-relaxed">In 2000, the second generation joined the mission. <strong>Mr. Rohit Jindal</strong>, our current Director, brought a fresh perspective to the business. With a background in B.Com and a specialized Diploma in Agriculture, he bridged the gap between modern business practices and traditional farming needs. Under his leadership, Mahesh Agro has evolved into a Trusted Agriculture Retail Partner for Farmers, serving over <strong>1 Lakh+ farmers</strong> through our dedicated branches.</p>
+          </div>
+          <div class="bg-primary/5 p-10 rounded-[2.5rem] border border-primary/20">
+            <h3 class="text-2xl font-bold mb-4 text-primary">Our Commitment to You</h3>
+            <p class="text-gray-500 text-lg leading-relaxed mb-6">Today, we carry forward a legacy of over five decades. While the tools of farming have changed, our promise remains the same:</p>
+            <ul class="space-y-3 text-gray-500 text-lg">
+              <li class="flex items-start gap-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary mt-1 shrink-0" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg>
+                Providing only <strong>100% Genuine Products</strong> from Trusted Brand Partners.
+              </li>
+              <li class="flex items-start gap-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary mt-1 shrink-0" aria-hidden="true"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg>
+                Offering Optimal Input Recommendations to ensure your soil stays healthy and your yields stay high.
+              </li>
+              <li class="flex items-start gap-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary mt-1 shrink-0" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><path d="M16 3.128a4 4 0 0 1 0 7.744"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><circle cx="9" cy="7" r="4"/></svg>
+                Standing by you as a Community Trusted partner through every season.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Timeline -->
+    <section class="py-24 bg-white">
+      <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-black text-center mb-20">A Legacy of Trust</h2>
+        <div class="relative max-w-4xl mx-auto">
+          <div class="absolute left-1/2 top-0 bottom-0 w-1 bg-gray-100 -translate-x-1/2 hidden md:block"></div>
+          <div class="space-y-16">
+            {[
+              { year: "1973", title: "The Beginning", text: "Founded by Mr. Ramesh Chandra Jindal (M.Sc. Agriculture, Pantnagar) with a vision to bring scientific expertise to retail.", left: true },
+              { year: "1995", title: "Expansion", text: "Established a strong presence across the region, becoming the top dealer for leading brands like Chambal and Bayer.", left: false },
+              { year: "2000", title: "New Leadership", text: "Mr. Rohit Jindal joined the mission, bringing modern innovation and digital practices to the business.", left: true },
+              { year: "2023", title: "Golden Jubilee", text: "Celebrating 50 years of trust, serving over 1 Lakh+ farmers with genuine products and expert guidance.", left: false },
+            ].map(item => (
+              <div class={`flex flex-col md:flex-row items-center gap-8 ${!item.left ? "md:flex-row-reverse" : ""}`}>
+                <div class="flex-1 text-center md:text-right">
+                  {item.left && (
+                    <div>
+                      <span class="text-primary font-black text-5xl mb-2 block">{item.year}</span>
+                      <h3 class="text-2xl font-bold mb-4">{item.title}</h3>
+                      <p class="text-gray-500">{item.text}</p>
+                    </div>
+                  )}
+                </div>
+                <div class="relative z-10 w-12 h-12 bg-primary rounded-full border-4 border-white shadow-lg flex items-center justify-center shrink-0">
+                  <div class="w-2 h-2 bg-white rounded-full"></div>
+                </div>
+                <div class="flex-1 text-center md:text-left">
+                  {!item.left && (
+                    <div>
+                      <span class="text-primary font-black text-5xl mb-2 block">{item.year}</span>
+                      <h3 class="text-2xl font-bold mb-4">{item.title}</h3>
+                      <p class="text-gray-500">{item.text}</p>
+                    </div>
+                  )}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</BaseLayout>

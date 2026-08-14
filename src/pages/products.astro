@@ -1,0 +1,21 @@
+﻿---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ProductsIsland from '../islands/ProductsIsland';
+---
+<BaseLayout
+  title="Products | Mahesh Agro"
+  description="Browse our curated selection of high-quality agricultural inputs — seeds, fertilizers, pesticides, and tools."
+>
+  <main class="min-h-screen bg-gray-50">
+    <!-- Hero header -->
+    <section class="pt-32 pb-16 bg-primary text-white">
+      <div class="container mx-auto px-6 text-center">
+        <h1 class="text-4xl md:text-6xl font-black mb-6">Products</h1>
+        <p class="text-xl text-white/80 max-w-2xl mx-auto">Browse our curated selection of high-quality agricultural inputs for your farm.</p>
+      </div>
+    </section>
+
+    <!-- Interactive products catalog (Preact island with PapaParse) -->
+    <ProductsIsland client:load />
+  </main>
+</BaseLayout>

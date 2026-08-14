@@ -1,0 +1,38 @@
+﻿---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout title="Licenses | Mahesh Agro" description="View all licenses and certifications held by Mahesh Agro Service Centre.">
+  <main class="min-h-screen bg-gray-50">
+    <section class="pt-32 pb-16 bg-primary text-white">
+      <div class="container mx-auto px-6 text-center">
+        <h1 class="text-4xl md:text-6xl font-black mb-6">Licenses & Certifications</h1>
+        <p class="text-xl text-white/80 max-w-2xl mx-auto">Fully licensed and certified agriculture retail partner operating under all regulatory guidelines.</p>
+      </div>
+    </section>
+    <section class="py-16">
+      <div class="container mx-auto px-6 max-w-5xl">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {[
+            { title: "Pesticide License", no: "RJ-JP-0XXX", issuer: "Dept. of Agriculture, Rajasthan", validity: "Valid through 2026", icon: "shield" },
+            { title: "Fertilizer License", no: "FAI/RAJ/0XXX", issuer: "Fertilizer Association of India", validity: "Valid through 2026", icon: "award" },
+            { title: "Seeds License", no: "SL/RJ/0XXX", issuer: "State Seeds Corporation, Rajasthan", validity: "Valid through 2026", icon: "leaf" },
+          ].map(lic => (
+            <div class="bg-white p-10 rounded-[2.5rem] border border-gray-100 shadow-xl text-center hover:shadow-premium transition-all">
+              <div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-6 text-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  {lic.icon === "shield" && <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/>}
+                  {lic.icon === "award" && <><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"/><circle cx="12" cy="8" r="6"/></>}
+                  {lic.icon === "leaf" && <><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></>}
+                </svg>
+              </div>
+              <h3 class="font-bold text-primary text-xl mb-3">{lic.title}</h3>
+              <p class="text-xs font-mono text-gray-400 mb-1">License No: {lic.no}</p>
+              <p class="text-sm text-gray-500 mb-2">{lic.issuer}</p>
+              <span class="inline-block px-3 py-1 bg-green-100 text-green-700 text-xs font-bold rounded-full">{lic.validity}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  </main>
+</BaseLayout>
