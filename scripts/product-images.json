@@ -1,0 +1,3572 @@
+[
+  {
+    "name": "CELPHOS 60 GR",
+    "category": "Pesticide",
+    "brand": "SUMITOMO",
+    "image": "/product-images/sumitomo-celphos-official-unverified.jpg",
+    "source": "https://sumichem.co.in/celphos.php",
+    "verification": "Official Sumitomo Chemical image confirms Celphos aluminium phosphide 56% powder. It shows 10 g and 204 g packs, not the catalogue's 60 g pack, so size is unverified.",
+    "status": "unverified"
+  },
+  {
+    "name": "SHRI RAM BOSS (500GR)",
+    "category": "FERTILIZERS",
+    "brand": "SHRI RAM",
+    "image": "/product-images/shriram-boss-boron-1kg-unverified.webp",
+    "source": "https://agribegri.com/brands/shriram_farm_solutions.php",
+    "verification": "Official Shriram Boss Boron 20% package; catalogue says Shriram Boss fertilizer, but its entry does not specify formulation and image is 1 kg vs listed 500 g. Product/formulation/size need confirmation.",
+    "status": "unverified"
+  },
+  {
+    "name": "BORONPRO-20-(500GR)",
+    "category": "FERTILIZERS",
+    "brand": "SHIVALIK",
+    "image": "/product-images/shivalik-boronpro-20-250g-unverified.jpg",
+    "source": "https://www.resetagri.in/products/boron-20-chileted-boro-pro-fo-all-crop-and-flowers-plants-use250gm",
+    "verification": "The image visibly identifies Boronpro, Boron 20%, and Shivalik. Pack shown is 250 g, while catalogue lists 500 g, so size is unverified.",
+    "status": "unverified"
+  },
+  {
+    "name": "ZIVA BALTI (8KG)",
+    "category": "FERTILIZERS",
+    "brand": "SHRI RAM",
+    "image": "/product-images/shriram-ziva-2-5kg-unverified.png",
+    "source": "https://shriramfarmsolutions.com/product/shriram-ziva-soil/",
+    "verification": "Official Shriram Farm Solutions product photo clearly identifies Ziva Mycorrhizal Bio-fertiliser. The image is a 2.5 kg tub; catalogue lists an 8 kg balti, so exact pack size is unverified.",
+    "status": "unverified"
+  },
+  {
+    "name": "SHIVA GOLD XTRA ( BALTI 10KG)",
+    "category": "FERTILIZERS",
+    "brand": "SHIVALIK",
+    "image": "/product-images/shivalik-shiva-gold-xtra-1l.webp",
+    "source": "https://agribegri.com/products/shivalik-shiva-gold-xtra-tricontanol-01-ew-plant-growth-regulator.php",
+    "verification": "Exact Shivalik Shiva Gold Xtra pack; photo is a 1 L bottle of Tricontanol 0.1% EW, while catalogue says 10 kg balti. Shipment records indicate bucket variants exist, but this exact size/package is unverified.",
+    "status": "unverified"
+  },
+  {
+    "name": "SALTONE (25KG) CHAMBAL",
+    "category": "FERTILIZERS",
+    "brand": "CHAMBAL",
+    "image": "/product-images/chambal-uttam-sultone-10kg.webp",
+    "source": "https://agribegri.com/products/uttam-sultone-sulphur-90-fertilizer.php",
+    "verification": "Exact Chambal Uttam Sultone/Saltone sulphur fertilizer; image shows a 10 kg bag while catalogue lists 25 kg.",
+    "status": "unverified"
+  },
+  {
+    "name": "SALTONE(50 KG ) CHAMBAL",
+    "category": "FERTILIZERS",
+    "brand": "CHAMBAL",
+    "image": "/product-images/chambal-uttam-sultone-10kg.webp",
+    "source": "https://agribegri.com/products/uttam-sultone-sulphur-90-fertilizer.php",
+    "verification": "Exact Chambal Uttam Sultone/Saltone sulphur fertilizer; image shows a 10 kg bag while catalogue lists 50 kg.",
+    "status": "unverified"
+  },
+  {
+    "name": "(45S35) MUSTARD SEEDS HYBRID",
+    "category": "SEEDS",
+    "brand": "PIONEER",
+    "image": "/product-images/pioneer-45s35.jpg",
+    "source": "https://dehaat.in/product/MUSTARD-PIONEER-45S35-1533",
+    "verification": "The Pioneer seed packet visibly identifies variety 45S35 and says Hybrid Mustard Seed, matching the catalogue."
+  },
+  {
+    "name": "OSWAL 4037 (CHOTA LOKVAN) KG",
+    "category": "SEEDS",
+    "brand": "OSWAL",
+    "image": "/product-images/oswal-raj-4037.jpg",
+    "source": "https://www.oswalseeds.com/raj.html",
+    "verification": "The official Oswal Seeds wheat page identifies the product as RAJ-4037 and supplies this Oswal bag image. The pack image does not visibly show the variety code; catalogue calls it Chota Lokvan, so verify the local pack naming.",
+    "status": "unverified"
+  },
+  {
+    "name": "IKU (10KG BALTI )",
+    "category": "FERTILIZERS",
+    "brand": "SUMITOMO",
+    "image": "/product-images/sumitomo-iku-4kg-unverified.jpg",
+    "source": "https://sumichem.co.in/landing-pages/iku/kannada/",
+    "verification": "Official Sumitomo IKU pack image confirms product and manufacturer, but shows a 4 kg bag versus the catalogue's 10 kg balti.",
+    "status": "unverified"
+  },
+  {
+    "name": "RECHARGE 12:61:0 (1KG)",
+    "category": "FERTILIZERS",
+    "brand": "CHAMBAL",
+    "image": "/product-images/chambal-uttam-recharge-unverified.png",
+    "source": "https://dehaat.in/product/UTTAM-RECHARGE-11775",
+    "verification": "Chambal Uttam Recharge pack is exact by product line and manufacturer; the package photo does not confirm the 12:61:0 formulation or 1 kg size.",
+    "status": "unverified"
+  },
+  {
+    "name": "13.0.45 (1kg) RECHARGE",
+    "category": "FERTILIZERS",
+    "brand": "CHAMBAL",
+    "image": "/product-images/chambal-uttam-recharge-unverified.png",
+    "source": "https://dehaat.in/product/UTTAM-RECHARGE-11775",
+    "verification": "Chambal Uttam Recharge pack is exact by product line and manufacturer; the package photo does not confirm the 13:0:45 formulation or 1 kg size.",
+    "status": "unverified"
+  },
+  {
+    "name": "DHANUVIT (250GR)",
+    "category": "Pesticide",
+    "brand": "DHANUKA",
+    "image": "/product-images/dhanuka-dhanuvit-100g.webp",
+    "source": "https://www.indiamart.com/proddetail/dhanuvit-adjuvant-100-g-enhancing-spray-efficiency-2856383528048.html",
+    "verification": "Exact Dhanuka Dhanuvit wetting-agent pack; source identifies 100 g while the catalogue says 250 GR, so the size and unit need verification.",
+    "status": "unverified"
+  },
+  {
+    "name": "DHOOMKETU 250 ML",
+    "category": "Pesticide",
+    "brand": "CHAMBAL",
+    "image": "/product-images/chambal-dhoomketu-unverified.jpg",
+    "source": "https://dehaat.in/product/CHAMBAL-FERTILIZER-DHOOMKETHU-7667",
+    "verification": "The Chambal Dhoomkethu pack identity matches, but the net quantity is not legible. Used for the catalogue's 250 ml entry; pack size remains unverified.",
+    "status": "unverified"
+  },
+  {
+    "name": "TIL PARAS DINKAR",
+    "category": "SEEDS",
+    "brand": "DINKAR SEEDS",
+    "image": "/product-images/dinkar-til-paras-2.png",
+    "source": "https://www.indiamart.com/proddetail/sesame-paras-2-16378867448.html",
+    "verification": "Dinkar Seeds sesame packet visibly identifies variety Paras-2, matching the catalogue's Til Paras Dinkar listing."
+  },
+  {
+    "name": "KISAN NPK 19:19:19 (1kg)",
+    "category": "FERTILIZERS",
+    "brand": "NFL",
+    "image": "/product-images/nfl-kisan-npk-191919-1kg.jpg",
+    "source": "https://www.kisanshop.in/product/nfl-kisan-triple-effect-npk-191919-water-soluble-fertilizer",
+    "verification": "Pack visibly identifies NFL Kisan Triple Effect NPK 19:19:19 and net weight 1 kg."
+  },
+  {
+    "name": "Shivaji Jowar (3kg)",
+    "category": "SEEDS",
+    "brand": "nu-genes",
+    "image": "/product-images/nugenes-nitya-shivaji-jowar.jpg",
+    "source": "https://www.indiamart.com/proddetail/shivaji-hy-jower-seed-2851534411691.html",
+    "verification": "Packet explicitly names Nu Genes Nitya Shivaji hybrid jowar; the manufacturer's listing confirms a 3 kg seed rate for Nitya Shivaji."
+  },
+  {
+    "name": "SANJIVANI BORON (500GR)",
+    "category": "FERTILIZERS",
+    "brand": "ANNADATA",
+    "image": "/product-images/annadata-sanjivani-boron-500g.jpg",
+    "source": "https://www.amazon.in/Annadata-Sanjivani-Boron-20-Outdoor-Indoor/dp/B0DKC14VZY",
+    "verification": "Pack visibly identifies Annadata Sanjivani Boron 20% and 500 gm."
+  },
+  {
+    "name": "Dayal Urad PU-31",
+    "category": "SEEDS",
+    "brand": "dayal",
+    "image": "/product-images/dayal-pu31-urad.jpg",
+    "source": "https://www.indiamart.com/proddetail/dayal-pu-31-urad-seeds-2859286690973.html",
+    "verification": "Seed sack visibly carries the Dayal name and PU-31 urad variety; seller listing identifies it as Dayal PU 31 urad seed."
+  },
+  {
+    "name": "CRYSTAL BAJRA 9001 (1.5KG)",
+    "category": "SEEDS",
+    "brand": "PRO-AGRO",
+    "image": "/product-images/crystal-proagro-bajra-9001-15kg.png",
+    "source": "https://www.crystalcropprotection.com/Pearl_millet/PROAGRO_9001",
+    "verification": "Official Crystal ProAgro packet visibly identifies hybrid bajra 9001 and 1.5 kg."
+  },
+  {
+    "name": "MUSTARD SEEDS HYBRID (1666)",
+    "category": "SEEDS",
+    "brand": "SHRI RAM",
+    "image": "/product-images/shriram-mustard-1666.jpg",
+    "source": "https://www.amazon.in/Shriram-hybrid-1666-mustard-seeds/dp/B0DJHBG7NZ",
+    "verification": "Seed sack visibly identifies Shriram 1666 Hybrid Mustard Seeds, matching the listed variety."
+  },
+  {
+    "name": "MOONG SHARIF (2KG)",
+    "category": "SEEDS",
+    "brand": "DINKAR SEEDS",
+    "image": "/product-images/dinkar-moong-sharif-2kg.jpg",
+    "source": "https://indian-agriculture.com/moong-sharif-1-2-kg-dinkar/",
+    "verification": "Pack visibly identifies Dinkar Research Moong Sharif-1; seller listing identifies the matching 2 kg Dinkar pack."
+  },
+  {
+    "name": "MOONG SAHRIF GOLD (2KG)",
+    "category": "SEEDS",
+    "brand": "DINKAR SEEDS",
+    "image": "/product-images/dinkar-moong-sharif-gold-2kg.png",
+    "source": "https://indian-agriculture.com/moong-sharif-gold-2-kg-dinkar/",
+    "verification": "Pack visibly identifies Dinkar Sharif Gold; seller listing identifies the matching 2 kg Dinkar pack."
+  },
+  {
+    "name": "DAPP",
+    "category": "FERTILIZERS",
+    "brand": "NFL",
+    "image": "/product-images/nfl-navratna-dap.jpg",
+    "source": "https://www.justdial.com/jdmart/Ludhiana/NFL-Kisan-DAP-Di-Ammonium-Phosphate/pid-239758438/0161PX161-X161-210505125721-Y1W3",
+    "verification": "NFL-branded Navratna DAP sack; catalogue lists NFL DAPP without a pack size."
+  },
+  {
+    "name": "MOONG DEEPAK 8888(2KG)",
+    "category": "SEEDS",
+    "brand": "DEEPAK SEEDS",
+    "image": "/product-images/deepak-moong-8888.jpg",
+    "source": "https://www.indiamart.com/deepak-bio-seeds-private-limited/photos.html",
+    "verification": "Sack visibly identifies Deepak-8888 Research Moong Seeds. The 2 kg pack size is not visible in the photo.",
+    "status": "unverified"
+  },
+  {
+    "name": "Amarnath Jowar (3kg)",
+    "category": "SEEDS",
+    "brand": "NATH SEEDS",
+    "image": "/product-images/nath-amarnath-2000-jowar.png",
+    "source": "https://www.nathbiogenes.com/product/field-crop-jowar-amarnath-2000/",
+    "verification": "Official Nath Seeds pack identifies Amarnath 2000 hybrid jowar. Catalogue omits the cultivar number and the 3 kg size is not visible in the photo.",
+    "status": "unverified"
+  },
+  {
+    "name": "SACKWEED 38 (500ML)",
+    "category": "Pesticide",
+    "brand": "SHIVALIK",
+    "image": "/product-images/shivalik-sackweed-38-500ml.png",
+    "source": "https://www.mystore.in/en/product/sackweed38",
+    "verification": "Bottle visibly identifies Shivalik Sackweed 38, 2,4-D Ethyl Ester and 500 ml, matching the catalogue."
+  },
+  {
+    "name": "DOUBLE (250ML)",
+    "category": "Pesticide",
+    "brand": "GODREJ",
+    "image": "/product-images/godrej-double-250ml.jpg",
+    "source": "https://www.indiamart.com/proddetail/godrej-double-crop-yield-enhancer-2852574261773.html",
+    "verification": "Bottle visibly identifies Godrej Double crop yield enhancer and 250 ml; seller listing specifies the 250 ml pack."
+  },
+  {
+    "name": "BORON PRO-20 (250GR)",
+    "category": "FERTILIZERS",
+    "brand": "SHIVALIK",
+    "image": "/product-images/shivalik-boropro-250g.jpg",
+    "source": "https://www.amazon.in/%E2%80%8EShivalik-Crop-Sciences-Boropro-250gm/dp/B0BRVDXMC8",
+    "verification": "Pack visibly identifies Shivalik Boropro, Boron 20% minimum, and 250 g; this matches the catalogue product despite its spelling variation."
+  },
+  {
+    "name": "IZAVIA (250ML)",
+    "category": "INSECTICIDE",
+    "brand": "ADAMA",
+    "image": "/product-images/adama-izavia.webp",
+    "source": "https://www.agrosamrat.com/product/adama-izavia/",
+    "verification": "Bottle visibly identifies ADAMA Izavia and the matching active ingredients; listing offers a 250 ml size, but the photo itself does not show bottle capacity.",
+    "status": "unverified"
+  },
+  {
+    "name": "SACKWEED 38(250ML)",
+    "category": "Pesticide",
+    "brand": "SHIVALIK",
+    "image": "/product-images/shivalik-sackweed-38-250ml.jpg",
+    "source": "https://www.indiamart.com/proddetail/sackweed-38-agricultural-herbicide-2853052172555.html",
+    "verification": "Bottle visibly identifies Shivalik Sackweed 38; the seller lists this exact image with 250 ml packaging, but the capacity is not legible on the bottle.",
+    "status": "unverified"
+  },
+  {
+    "name": "(MERA) EXCHL MARG-71",
+    "category": "Pesticide",
+    "brand": "SUMITOMO",
+    "image": "/product-images/sumitomo-excel-mera-71-100g.jpg",
+    "source": "https://www.indiamart.com/proddetail/excel-mera-71-herbicide-2853926888197.html",
+    "verification": "Pack identifies Excel Mera 71 systemic herbicide and Sumitomo Chemical India Ltd.; 100 g pack matches the listed product name and brand."
+  },
+  {
+    "name": "SUPERRHIZA (BALTI) 10KG",
+    "category": "FERTILIZERS",
+    "brand": "CHAMBAL",
+    "image": "/product-images/chambal-uttam-superrhiza-10kg.jpg",
+    "source": "https://www.indiamart.com/proddetail/uttam-superrhiza-mycorrhiza-bio-fertilizer-2856592969630.html",
+    "verification": "Bucket label identifies Chambal Fertilisers' Uttam Superrhiza advanced mycorrhiza biofertiliser; listing specifies the 10 kg pack."
+  },
+  {
+    "name": "13-00-45",
+    "category": "FERTILIZERS",
+    "brand": "SHRI RAM",
+    "image": "/product-images/shriram-npk-130045.jpg",
+    "source": "https://www.indiamart.com/proddetail/shriram-npk-13-00-45-fertilizer-25551888688.html",
+    "verification": "Packet visibly identifies Shriram NPK 13:00:45 water-soluble fertilizer."
+  },
+  {
+    "name": "NPK 00-00-50",
+    "category": "FERTILIZERS",
+    "brand": "SHRI RAM",
+    "image": "/product-images/shriram-sop-000050.webp",
+    "source": "https://agribegri.com/products/buy-shriram-water-soluble-sop-000050-potassium-sulphate-fertilizer-online.php",
+    "verification": "Shri Ram pouch visibly identifies potassium sulphate/SOP fertilizer with NPK 0:0:50."
+  },
+  {
+    "name": "SHRIRAM MAXO (10KG BALTI)",
+    "category": "FERTILIZERS",
+    "brand": "SHRI RAM",
+    "image": "/product-images/shriram-maxo-10kg-bucket.jpg",
+    "source": "https://www.indiamart.com/proddetail/shriram-maxo-fertilizer-23000323488.html",
+    "verification": "Image shows the Shriram Maxo granules bucket; the seller's product listing specifies the 10 kg pack."
+  },
+  {
+    "name": "SALTONE (10 KG) CHAMBAL",
+    "category": "FERTILIZERS",
+    "brand": "CHAMBAL",
+    "image": "/product-images/chambal-uttam-sultone-10kg.webp",
+    "source": "https://market.plantix.net/en/products/fertilizers/2be73e2f-d600-475f-b157-9ff57f8241b9/uttam-sultone-fertilizer/",
+    "verification": "Uttam Sultone bag is branded Uttam and labelled 10 kg; the page identifies it as Chambal Fertilisers' Sultone product."
+  },
+  {
+    "name": "SALTONE (5KG) CHAMBAL",
+    "category": "FERTILIZERS",
+    "brand": "CHAMBAL",
+    "image": "/product-images/chambal-uttam-sultone-5kg.jpg",
+    "source": "https://www.indiamart.com/proddetail/5kg-uttam-sulton-fertilizer-27571508473.html",
+    "verification": "Uttam Sultone bag is visibly labelled 5 kg; listing identifies it as the Chambal product."
+  },
+  {
+    "name": "KISAN BENTONITE SULPHUR (5KG)",
+    "category": "FERTILIZERS",
+    "brand": "NFL",
+    "image": "/product-images/nfl-kisan-bentonite-sulphur.jpg",
+    "source": "https://www.indiamart.com/proddetail/5kg-kisan-bentonite-sulphur-2852710717488.html",
+    "verification": "Bag visibly identifies NFL Kisan Bentonite Sulphur 90%; source listing identifies the 5 kg product, but pack weight is not legible in the image.",
+    "status": "unverified"
+  },
+  {
+    "name": "KISAN MAT (8GR+200ML)",
+    "category": "Pesticide",
+    "brand": "NFL",
+    "image": "/product-images/nfl-kisan-met-8g-200ml.jpeg",
+    "source": "https://www.indiamart.com/proddetail/kisan-met-metsulfuron-methyl-2853930892888.html",
+    "verification": "Pack explicitly shows NFL Kisan Met, 8 g + 200 ml, matching the catalogue quantity; spelling is Met (not Mat) and the pack calls it a herbicide rather than pesticide.",
+    "status": "unverified"
+  },
+  {
+    "name": "WATER SPRAY MACHINE (20LITER)",
+    "category": "SPRAYMACHINE",
+    "brand": "BALWAN SPRAY MACHINE",
+    "image": "/product-images/balwaan-20l-sprayer.jpg",
+    "source": "https://www.moglix.com/balwaan-gold-20-litre-12v-double-motor-battery-sprayer-with-led-bulb-with-15-ft-extension-cable-bs-30g/mp/msn19z2emy4353",
+    "verification": "Balwaan sprayer image visibly shows a 20 L capacity; product listing identifies the model and tank size."
+  },
+  {
+    "name": "WATER SPRAY MACHIN E (18LITER)",
+    "category": "SPRAYMACHINE",
+    "brand": "BALWAN SPRAY MACHINE",
+    "image": "/product-images/balwaan-18l-bs21-sprayer.jpg",
+    "source": "https://dynafarm.in/product/balwaan-bs-21-2in1-single-motor-battery-sprayer-18-litre-knapsack-spray-pump/",
+    "verification": "Image shows a Balwaan Krishi BS-21 sprayer; seller listing identifies it as an 18-litre tank model."
+  },
+  {
+    "name": "WATER SPRAY MACHINE (18LITER)",
+    "category": "SPRAYMACHINE",
+    "brand": "BALWAN SPRAY MACHINE",
+    "image": "/product-images/balwaan-18l-bs21-sprayer.jpg",
+    "source": "https://dynafarm.in/product/balwaan-bs-21-2in1-single-motor-battery-sprayer-18-litre-knapsack-spray-pump/",
+    "verification": "Image shows a Balwaan Krishi BS-21 sprayer; seller listing identifies it as an 18-litre tank model."
+  },
+  {
+    "name": "MOP 50KG",
+    "category": "FERTILIZERS",
+    "brand": "IPL",
+    "image": "/product-images/ipl-mop-50kg.webp",
+    "source": "https://www.indiamart.com/proddetail/ipl-muriate-of-potash-20946372191.html",
+    "verification": "IPL Muriate of Potash bag visibly identifies IPL MOP and the 50 kg net pack."
+  },
+  {
+    "name": "SSP(GROPLUS) 50KG",
+    "category": "FERTILIZERS",
+    "brand": "COROMANDEL",
+    "image": "/product-images/coromandel-groplus-50kg.webp",
+    "source": "https://www.coromandel.biz/groplus/",
+    "verification": "Official Coromandel GroPlus bag shows SSP fortified with zinc and boron and 50 kg net weight."
+  },
+  {
+    "name": "NFL POTAS (50KG)",
+    "category": "FERTILIZERS",
+    "brand": "NFL",
+    "image": "/product-images/nfl-bharat-mop-50kg.webp",
+    "source": "https://www.justdial.com/jdmart/Patna/NFL-Potash-Fertilizer/pid-2226253000/0612PX612-X612-240502181943-X7W8",
+    "verification": "NFL Bharat MOP bag matches the potash fertilizer; the listing identifies NFL potash in the 50 kg bag size.",
+    "status": "unverified"
+  },
+  {
+    "name": "DAP IPL",
+    "category": "FERTILIZERS",
+    "brand": "DAP",
+    "image": "/product-images/ipl-dap-50kg.webp",
+    "source": "https://www.indiamart.com/proddetail/ipl-dap-fertilizer-2858934898197.html",
+    "verification": "IPL Bharat DAP bag visibly states DAP 18-46-0 and Net Weight 50 kg, matching the IPL DAP catalogue item."
+  },
+  {
+    "name": "TOPAZ ( 160GR)",
+    "category": "HERBICIDE",
+    "brand": "SHIVALIK",
+    "image": "/product-images/shivalik-topaz-160g.webp",
+    "source": "https://cultree.in/products/shivalik-topaz-piroxofop-propinyl-15-wp-herbicide",
+    "verification": "Shivalik Topaz packet shows the herbicide and net contents of two 80 g sachets (160 g total)."
+  },
+  {
+    "name": "VEERKILL (250ML)",
+    "category": "Pesticide",
+    "brand": "CHAMBAL",
+    "image": "/product-images/chambal-veer-kill-250ml.webp",
+    "source": "https://www.indiamart.com/proddetail/uttam-veerkill-weedicide-2-4-d-ethyl-ester-38-ec-herbicides-2855518749648.html",
+    "verification": "Chambal Uttam Veerkill bottle and 2,4-D Ethyl Ester formulation match; retailer listing specifies 250 ml, not legible on the photo.",
+    "status": "unverified"
+  },
+  {
+    "name": "VEERKILL (1LITER)",
+    "category": "Pesticide",
+    "brand": "CHAMBAL",
+    "image": "/product-images/chambal-veer-kill-1l.webp",
+    "source": "https://www.mystore.in/en/product/veer-kill-herbicide-1000-ml",
+    "verification": "Chambal Uttam Veerkill bottle matches; retailer listing identifies the 1000 ml pack, but size is not printed on this photo.",
+    "status": "unverified"
+  },
+  {
+    "name": "SAILER 32 (1LITER)",
+    "category": "Pesticide",
+    "brand": "SHIVALIK",
+    "image": "/product-images/shivalik-sailer-32-1l.webp",
+    "source": "https://www.kisanshop.in/product/shivalik-sailer-32-herbicide-pendimethalin-30percent-imazethapyr-2percent-ec",
+    "verification": "Shivalik Sailer 32 bottle and formulation match; listing offers the 1 L pack, but size is not legible on the product photo.",
+    "status": "unverified"
+  },
+  {
+    "name": "MELODYDUO (400GR)",
+    "category": "Pesticide",
+    "brand": "Bayer",
+    "image": "/product-images/bayer-melody-duo-400g.webp",
+    "source": "https://www.indiamart.com/proddetail/bayer-melody-duo-400-g-fungicide-23082219255.html",
+    "verification": "Bayer Melody Duo packet matches the product; the retailer listing specifies 400 g, which is not visible on the photo.",
+    "status": "unverified"
+  },
+  {
+    "name": "WEEDMAR802(4D) 500GR",
+    "category": "Pesticide",
+    "brand": "DHANUKA",
+    "image": "/product-images/dhanuka-weedmar-80-500g.webp",
+    "source": "https://www.bighaat.com/products/weedmar-80-herbicide",
+    "verification": "Dhanuka Weedmar 80 packet matches the 2,4-D sodium salt 80% WP product; the retailer lists 500 g, but the quantity is not legible on the photo.",
+    "status": "unverified"
+  },
+  {
+    "name": "24D (250ML) NFL",
+    "category": "Pesticide",
+    "brand": "NFL",
+    "image": "/product-images/nfl-kisan-d-250ml.webp",
+    "source": "https://www.indiamart.com/proddetail/nfl-kisan-d-amine-salt-selective-herbicide-2853705230062.html",
+    "verification": "NFL Kisan-D bottle visibly states 2,4-D Amine Salt 58% SL and Net Content 250 ml; catalogue entry uses the generic 24D name.",
+    "status": "unverified"
+  },
+  {
+    "name": "2,4-D SODIUM SALT (500GR)",
+    "category": "Pesticide",
+    "brand": "ADAMA",
+    "image": "/product-images/adama-24d-agan-500g.webp",
+    "source": "https://www.adama.com/india/en/crop-protection/herbicides/24dagan",
+    "verification": "ADAMA 2,4-D Agan packet visibly shows Net Quantity 500 g and matches the sodium-salt herbicide entry."
+  },
+  {
+    "name": "CELPHOS 10GR",
+    "category": "Pesticide",
+    "brand": "SUMITOMO",
+    "image": "/product-images/sumitomo-celphos-10g.webp",
+    "source": "https://www.indiamart.com/proddetail/sumitomo-celphos-10gm-25318069212.html",
+    "verification": "Sumitomo Celphos fumigant pouch visibly states Net Content 10 g; the manufacturer lists a 10 g pouch size."
+  },
+  {
+    "name": "EMA (100GR)",
+    "category": "Pesticide",
+    "brand": "CHAMBAL",
+    "image": "/product-images/chambal-uttam-ema-100g.webp",
+    "source": "https://agribegri.com/products/uttam-ema-insecticide.php",
+    "verification": "Uttam EMA label and Chambal branding match; the 100 g quantity is supported by the listing but is not legible on the photo.",
+    "status": "unverified"
+  },
+  {
+    "name": "EMA 250 GR",
+    "category": "Pesticide",
+    "brand": "CHAMBAL",
+    "image": "/product-images/chambal-uttam-ema-250g.webp",
+    "source": "https://www.indiamart.com/proddetail/uttam-ema-emamectin-benzoate-5-sg-2853175285312.html",
+    "verification": "Uttam EMA label and Chambal branding match; the 250 g quantity is supported by the listing but is not legible on the photo.",
+    "status": "unverified"
+  },
+  {
+    "name": "EMA 500GR",
+    "category": "Pesticide",
+    "brand": "CHAMBAL",
+    "image": "/product-images/chambal-uttam-ema-500g.webp",
+    "source": "https://www.indiamart.com/proddetail/500gm-uttam-ema-insecticide-2859216398397.html",
+    "verification": "Uttam EMA label and Chambal branding match; the 500 g quantity is supported by the listing but is not legible on the photo.",
+    "status": "unverified"
+  },
+  {
+    "name": "VESTA",
+    "category": "Pesticide",
+    "brand": "UPL",
+    "image": "/product-images/upl-vesta.webp",
+    "source": "https://www.upl-ltd.com/in/crop-protection/herbicide/vesta",
+    "verification": "Official UPL Vesta carton shows the product and herbicide formulation; UPL lists the 160 g pack."
+  },
+  {
+    "name": "WIN CHI WIN (100ML)",
+    "category": "INSECTICIDE",
+    "brand": "NATH BIO GENES",
+    "image": "/product-images/nath-win-chi-win-100ml.webp",
+    "source": "https://www.nathbiogenes.com/product/plant-nutritional-supplement-win-chi-win/",
+    "verification": "Nath Bio-Genes Win-Chi-Win package is labelled 100 ml and shows the crop balancer product."
+  },
+  {
+    "name": "RIDOMIL GOLD",
+    "category": "Pesticide",
+    "brand": "SYNGENTA",
+    "image": "/product-images/syngenta-ridomil-gold-100g.webp",
+    "source": "https://www.kisanshop.in/product/syngenta-ridomil-gold-fungicide",
+    "verification": "Syngenta Ridomil Gold sachet is clearly labelled with the product and 100 g pack size."
+  },
+  {
+    "name": "JOWAR DINKAR (5KG) SSG-999",
+    "category": "SEEDS",
+    "brand": "DINKAR SEEDS",
+    "image": "/product-images/dinkar-jowar-ssg-999.webp",
+    "source": "https://www.youtube.com/shorts/EkYAMYqdAK4",
+    "verification": "The Dinkar SSG-999 variety is clearly visible on the bag; the 5 kg quantity is not legible in this frame.",
+    "status": "unverified"
+  },
+  {
+    "name": "KISAN 24D",
+    "category": "HERBICIDE",
+    "brand": "NFL",
+    "image": "/product-images/nfl-kisan-d-24d.webp",
+    "source": "https://agribegri.com/products/buy-nfl-kisan-d-24-d-amine-salt-58-sl-herbicide-online.php",
+    "verification": "NFL Kisan-D bottle is a 2,4-D Amine Salt 58% SL selective herbicide, matching the catalogue's NFL Kisan 24D item."
+  },
+  {
+    "name": "NSC JOWAR CSV-15",
+    "category": "SEEDS",
+    "brand": "NSC",
+    "image": "/product-images/nsc-jowar-csv-15-5kg.webp",
+    "source": "https://www.mystore.in/en/product/sorgum-csv-15-certified-seeds-5kg-packet",
+    "verification": "NSC-certified Jowar/Sorghum CSV-15 bag shows the variety and net weight 5 kg."
+  },
+  {
+    "name": "CLODUX (500GR)",
+    "category": "INSECTICIDE",
+    "brand": "SHIVALIK",
+    "image": "/product-images/shivalik-clodux-500g.webp",
+    "source": "https://byebyemrp.com/sale-detail/clodux-insecticide-500-gm-shivalik-crop-sciences-p-ltd/sale1760765025",
+    "verification": "Shivalik Clodux packet visibly identifies the insecticide and states 500 g."
+  },
+  {
+    "name": "NIMITZ 5(KG)",
+    "category": "Pesticide",
+    "brand": "ADAMA",
+    "image": "/product-images/adama-nimitz-5kg.webp",
+    "source": "https://www.indiamart.com/proddetail/adama-nimitz-2852037417912.html",
+    "verification": "ADAMA Nimitz nematicide package visibly identifies the product and states 5 kg."
+  },
+  {
+    "name": "KISAN CHLORI SUPER (1LT)",
+    "category": "Pesticide",
+    "brand": "NFL",
+    "image": "/product-images/nfl-kisan-chlori-super-1l.webp",
+    "source": "https://agribegri.com/products/nfl-kisan-chlori-super-chlorpyriphos-20-ec-insecticide.php",
+    "verification": "NFL Kisan Chlori Super bottle matches the product and visibly states Net Content 1 Litre."
+  },
+  {
+    "name": "DELEGATE (20ML)",
+    "category": "Pesticide",
+    "brand": "CORTEVA",
+    "image": "/product-images/corteva-delegate-20ml.webp",
+    "source": "https://www.indiamart.com/proddetail/20-ml-corteva-delegate-insecticide-2859170331691.html",
+    "verification": "Corteva Delegate bottle matches the product; the retailer listing identifies this exact pack as 20 ml."
+  },
+  {
+    "name": "DELEGATE (100ML)",
+    "category": "Pesticide",
+    "brand": "CORTEVA",
+    "image": "/product-images/corteva-delegate-100ml.webp",
+    "source": "https://www.indiamart.com/proddetail/100-ml-corteva-delegate-insecticide-2859170818148.html",
+    "verification": "Corteva Delegate bottle matches the product; the retailer listing identifies this exact pack as 100 ml."
+  },
+  {
+    "name": "VIPUL BOOSTER (500ML)",
+    "category": "Growth Promoter",
+    "brand": "GODREJ",
+    "image": "/product-images/godrej-vipul-booster-500ml.webp",
+    "source": "https://www.indiamart.com/proddetail/vipul-booster-plant-growth-regulator-500ml-2850535606888.html",
+    "verification": "Vipul Booster bottle is labelled 500 ml and matches the product; the retailer listing identifies Godrej."
+  },
+  {
+    "name": "DHANUVIT (100GR)",
+    "category": "Pesticide",
+    "brand": "DHANUKA",
+    "image": "/product-images/dhanuka-dhanuvit-100g.webp",
+    "source": "https://www.indiamart.com/proddetail/dhanuvit-adjuvant-100-g-enhancing-spray-efficiency-2856383528048.html",
+    "verification": "Dhanuka Dhanuvit wetting-agent bottle matches the product; the retailer listing identifies the 100 g pack."
+  },
+  {
+    "name": "NIMITZ (1KG)",
+    "category": "Pesticide",
+    "brand": "ADAMA",
+    "image": "/product-images/adama-nimitz-1kg.webp",
+    "source": "https://www.indiamart.com/proddetail/adama-nimitz-1kg-27607618962.html",
+    "verification": "ADAMA Nimitz nematicide pack visibly states 1 kg."
+  },
+  {
+    "name": "SACTIMO (1LTR)",
+    "category": "HERBICIDE",
+    "brand": "SHIVALIK",
+    "image": "/product-images/shivalik-sactimo-1l.webp",
+    "source": "https://agribegri.com/products/buy-shivalik-sactimo-imazethapyr-10-sl.php",
+    "verification": "Product photo shows the Shivalik Sactimo 1 L pack."
+  },
+  {
+    "name": "ACTARA (5G)",
+    "category": "INSECTICIDE",
+    "brand": "SYNGENTA",
+    "image": "/product-images/syngenta-actara-5g.webp",
+    "source": "https://suluzorchids.com/products/actara-5g",
+    "verification": "The Syngenta Actara sachet shows 5 g on its label."
+  },
+  {
+    "name": "SHRIRAM SHAASAK (1LTR)",
+    "category": "HERBICIDE",
+    "brand": "SHRI RAM",
+    "image": "/product-images/shriram-shaasak-1l.webp",
+    "source": "https://shriramfarmsolutions.com/product/shriram-shaasak/",
+    "verification": "Official product photo shows the Shaasak 1 L bottle."
+  },
+  {
+    "name": "Sempra 36gm",
+    "category": "HERBICIDE",
+    "brand": "DHANUKA",
+    "image": "/product-images/dhanuka-sempra-36g.webp",
+    "source": "https://www.dhanuka.com/herbicide/sempra",
+    "verification": "Official Sempra product image; 36 g is a listed pack size."
+  },
+  {
+    "name": "NOVLECT (500ML)",
+    "category": "HERBICIDE",
+    "brand": "CORTEVA",
+    "image": "/product-images/corteva-novlect-500ml.webp",
+    "source": "https://highyieldsagro.com/product/corteva-novlect/",
+    "verification": "The product page lists a 500 ml Novlect bottle."
+  },
+  {
+    "name": "SHRIRAM ATRAZINE (500G)",
+    "category": "HERBICIDE",
+    "brand": "SHRIRAM",
+    "image": "/product-images/shriram-atrazine-500g.webp",
+    "source": "https://shriramfarmsolutions.com/product/shriram-atrazine/",
+    "verification": "Official Shriram product photo shows Net Content: 500 g."
+  },
+  {
+    "name": "ODYSSEY 100GR",
+    "category": "HERBICIDE",
+    "brand": "BASF",
+    "image": "/product-images/basf-odyssey-100g.webp",
+    "source": "https://crop-protection.basf.in/en/herbicide/odyssey",
+    "status": "unverified",
+    "verification": "Official BASF Odyssey product image; pack weight is not legible in the photo."
+  },
+  {
+    "name": "Bhaskar Makka",
+    "category": "SEEDS",
+    "brand": "ANKUR",
+    "image": "/product-images/ankur-bhaskar-makka.webp",
+    "source": "https://ankurseeds.com/product-details/hy-maize-ankur-bhaskar",
+    "verification": "Official Ankur Bhaskar hybrid maize seed pack image."
+  },
+  {
+    "name": "AGIl (500ml)",
+    "category": "INSECTICIDE",
+    "brand": "ADAMA",
+    "image": "/product-images/adama-agil-500ml.webp",
+    "source": "https://www.bighaat.com/products/agil-herbicide",
+    "verification": "Product photo shows the ADAMA Agil bottle with 500 ml on the label; source sheet classifies it as insecticide, while the product label says herbicide."
+  },
+  {
+    "name": "Groplus",
+    "category": "FERTILIZERS",
+    "brand": "COROMANDEL",
+    "image": "/product-images/coromandel-groplus.webp",
+    "source": "https://www.coromandel.biz/groplus/",
+    "verification": "Official GroPlus product photo; catalogue entry does not specify a pack size."
+  },
+  {
+    "name": "NATIVO (250GR)",
+    "category": "Pesticide",
+    "brand": "BAYER",
+    "image": "/product-images/bayer-nativo-250g.webp",
+    "source": "https://www.indiamart.com/proddetail/bayer-nativo-250-g-fungicide-23082017648.html",
+    "verification": "The pack shows Bayer Nativo; Bayer Crop Science India lists 250 g among official pack sizes, matching this catalogue variant."
+  },
+  {
+    "name": "OBERON (100ML)",
+    "category": "Pesticide",
+    "brand": "Bayer",
+    "image": "/product-images/bayer-oberon-100ml.webp",
+    "source": "https://suluzorchids.com/products/oberon-insecticide-100-ml",
+    "verification": "Bottle label shows Bayer Oberon 100 ml."
+  },
+  {
+    "name": "FORPIDO (3KG)",
+    "category": "Pesticide",
+    "brand": "ADAMA",
+    "image": "/product-images/adama-forpido-3kg.webp",
+    "source": "https://www.kisanshop.in/product/adama-forpido-insecticide",
+    "verification": "Pack image shows ADAMA Forpido 3 kg; deliberately not used for the 1.5 kg listing."
+  },
+  {
+    "name": "LAUDIS (57.5ML)",
+    "category": "HERBICIDE",
+    "brand": "Bayer",
+    "image": "/product-images/bayer-laudis-57-5ml.webp",
+    "source": "https://www.indiamart.com/proddetail/bayer-laudis-57-5-ml-selective-herbicide-23080347391.html",
+    "verification": "The bottle shows Bayer Laudis; Bayer Crop Science India lists 57.5 ml among official pack sizes, matching this catalogue variant."
+  },
+  {
+    "name": "ANTRACOL (250GR)",
+    "category": "FUNGICIDE",
+    "brand": "Bayer",
+    "image": "/product-images/bayer-antracol-250g.webp",
+    "source": "https://www.indiamart.com/proddetail/250gm-bayer-antracol-contact-fungicide-2855416625133.html",
+    "verification": "Packet label shows Bayer Antracol 250 g."
+  },
+  {
+    "name": "SOLOMON (250ML)",
+    "category": "INSECTICIDE",
+    "brand": "Bayer",
+    "image": "/product-images/bayer-solomon-250ml.jpg",
+    "source": "https://farme.in/product-view/Solomon",
+    "verification": "Bayer Solomon bottle visibly says 250 ml; Farme lists the same product with a 250 ml size option.",
+    "status": "verified"
+  },
+  {
+    "name": "DEKEL (100ML)",
+    "category": "Pesticide",
+    "brand": "ADAMA",
+    "image": "/product-images/adama-dekel-100ml.jpg",
+    "source": "https://beejmart.com/products/dekel-herbicide",
+    "verification": "The image shows the ADAMA Dekel bottle; the product listing identifies this pack as 100 ml.",
+    "status": "verified"
+  },
+  {
+    "name": "SHAKED (800ML)",
+    "category": "Pesticide",
+    "brand": "ADAMA",
+    "image": "/product-images/adama-shaked-800ml.jpg",
+    "source": "https://www.kisancenter.in/product/adama-shaked-herbicide-propaquizafop-imazethapyr-combination",
+    "verification": "The ADAMA Shaked box visibly states net quantity 800 ml and matches the catalogue product.",
+    "status": "verified"
+  },
+  {
+    "name": "PIRATE (170ML)",
+    "category": "INSECTICIDE",
+    "brand": "BASF",
+    "image": "/product-images/basf-pirate-170ml.webp",
+    "source": "https://crop-protection.basf.in/en/insecticide/pirater",
+    "verification": "Official BASF image filename identifies the 170 ml Pirate pack."
+  },
+  {
+    "name": "GAUCHO (50ML)",
+    "category": "Pesticide",
+    "brand": "Bayer",
+    "image": "/product-images/bayer-gaucho-50ml.jpg",
+    "source": "https://farmkey.in/product/bayer-gaucho-50ml/",
+    "verification": "The photographed bottle is labeled Bayer Gaucho, and Farmkey's exact 50 ml product listing links this pack image."
+  },
+  {
+    "name": "GAUCHO (1lt)",
+    "category": "Pesticide",
+    "brand": "Bayer",
+    "image": "/product-images/bayer-gaucho-1l.jpg",
+    "source": "https://www.indiamart.com/proddetail/bayer-gaucho-2855369977348.html",
+    "status": "verified",
+    "verification": "Bayer Gaucho seed-dressing bottle label visibly says 1 Litre; product and pack size match the catalogue."
+  },
+  {
+    "name": "WETCIT (100ML)",
+    "category": "INSECTICIDE",
+    "brand": "DHANUKA",
+    "image": "/product-images/dhanuka-wetcit-100ml.webp",
+    "source": "https://www.indiamart.com/proddetail/100-ml-dhanuka-wetcit-100-ml-regulators-24908559491.html",
+    "verification": "Bottle label shows Wetcit 100 ml; source sheet classifies it as insecticide."
+  },
+  {
+    "name": "CONIKA (300GR)",
+    "category": "FUNGICIDE",
+    "brand": "DHANUKA",
+    "image": "/product-images/dhanuka-conika-300g.webp",
+    "source": "https://www.dhanuka.com/fungicides/conika",
+    "status": "verified",
+    "verification": "Dhanuka's official product page identifies Conika, shows the matching pack image, and explicitly lists 300 g among its pack sizes."
+  },
+  {
+    "name": "KASU-B (250ML)",
+    "category": "FUNGICIDE",
+    "brand": "DHANUKA",
+    "image": "/product-images/dhanuka-kasu-b-250ml.webp",
+    "source": "https://farmkey.in/product/KASU-B%20-%20250%20ML",
+    "status": "verified",
+    "verification": "The local photo visibly identifies Dhanuka Kasu-B; Farmkey's product page is specifically for the 250 ml pack."
+  },
+  {
+    "name": "DHOOMKETU (500ML)",
+    "category": "Pesticide",
+    "brand": "CHAMBAL",
+    "image": "/product-images/chambal-dhoomketu-500ml.webp",
+    "source": "https://www.indiamart.com/proddetail/uttam-dhoomketu-imazethapyr-herbicide-2856623290730.html",
+    "status": "unverified",
+    "verification": "Product and brand match; 500 ml is in the source listing but not readable on the photographed pack."
+  },
+  {
+    "name": "ATTRACT (500GR)",
+    "category": "HERBICIDE",
+    "brand": "CHAMBAL",
+    "image": "/product-images/chambal-attract-500g.webp",
+    "source": "https://www.indiamart.com/proddetail/500gm-uttam-attract-selective-herbicide-2859216398433.html",
+    "status": "unverified",
+    "verification": "Product and brand match; 500 g is in the source listing but not readable on the photographed pack."
+  },
+  {
+    "name": "TRICEL (500ML)",
+    "category": "INSECTICIDE",
+    "brand": "SUMITOMO",
+    "image": "/product-images/sumitomo-tricel-500ml.webp",
+    "source": "https://www.bighaat.com/products/tricel-insecticide-chlorpyriphos",
+    "verification": "The bottle shows Sumitomo Tricel; KisanShop's product listing includes a 500 ml pack-size option, matching this catalogue variant."
+  },
+  {
+    "name": "TAKAF (500ML)",
+    "category": "INSECTICIDE",
+    "brand": "ADAMA",
+    "image": "/product-images/adama-takaf-500ml.webp",
+    "source": "https://www.indiamart.com/proddetail/500ml-adama-takaf-insecticide-27547424712.html",
+    "verification": "Bottle label clearly shows ADAMA Takaf 500 ml."
+  },
+  {
+    "name": "3302 (3.5kg)",
+    "category": "SEEDS",
+    "brand": "PIONEER",
+    "image": "/product-images/pioneer-p3302.webp",
+    "source": "https://www.kisanshop.in/product/pioneer-p3302-hybrid-corn-seeds",
+    "status": "unverified",
+    "verification": "Image shows Pioneer P3302 seed pack, but pack weight is not visible."
+  },
+  {
+    "name": "MERITOR (1L)",
+    "category": "FERTILIZERS",
+    "brand": "BASF",
+    "image": "/product-images/basf-meritor.webp",
+    "source": "https://www.kisanshop.in/product/basf-meritor-fertilizer",
+    "status": "unverified",
+    "verification": "Product image shows BASF Meritor; volume is not visible."
+  },
+  {
+    "name": "MERITOR (500ML)",
+    "category": "FERTILIZERS",
+    "brand": "BASF",
+    "image": "/product-images/basf-meritor.webp",
+    "source": "https://www.kisanshop.in/product/basf-meritor-fertilizer",
+    "status": "unverified",
+    "verification": "Product image shows BASF Meritor; volume is not visible."
+  },
+  {
+    "name": "PARASAC (1LT)",
+    "category": "HERBICIDE",
+    "brand": "SHIVALIK",
+    "image": "/product-images/shivalik-parasac-1l.webp",
+    "source": "https://www.indiamart.com/proddetail/shivalik-parasac-paraquat-dichloride-24-sl-broad-spectrum-contact-herbicide-2857111701188.html",
+    "verification": "Bottle label shows Shivalik Parasac 1 litre."
+  },
+  {
+    "name": "DECIDE (500GR)",
+    "category": "Pesticide",
+    "brand": "DHANUKA",
+    "image": "/product-images/dhanuka-decide.webp",
+    "source": "https://www.dhanuka.com/insecticides/decide",
+    "status": "unverified",
+    "verification": "Dhanuka manufacturer image shows Decide; DECIDE (500GR) is an available pack size, but the size is not readable in the packshot."
+  },
+  {
+    "name": "OMITE (500ML)",
+    "category": "Pesticide",
+    "brand": "DHANUKA",
+    "image": "/product-images/dhanuka-omite.webp",
+    "source": "https://www.dhanuka.com/insecticides/omite",
+    "status": "unverified",
+    "verification": "Dhanuka manufacturer image shows Omite; OMITE (500ML) is an available pack size, but the size is not readable in the packshot."
+  },
+  {
+    "name": "SEMPRA 18GR",
+    "category": "Pesticide",
+    "brand": "DHANUKA",
+    "image": "/product-images/dhanuka-sempra.webp",
+    "source": "https://www.dhanuka.com/herbicides/sempra",
+    "status": "unverified",
+    "verification": "Dhanuka manufacturer image shows Sempra; SEMPRA 18GR is an available pack size, but the size is not readable in the packshot."
+  },
+  {
+    "name": "SEMPRA (3.6GR)",
+    "category": "Pesticide",
+    "brand": "DHANUKA",
+    "image": "/product-images/dhanuka-sempra.webp",
+    "source": "https://www.dhanuka.com/herbicides/sempra",
+    "status": "unverified",
+    "verification": "Dhanuka manufacturer image shows Sempra; SEMPRA (3.6GR) is an available pack size, but the size is not readable in the packshot."
+  },
+  {
+    "name": "AREVA (250GR)",
+    "category": "Pesticide",
+    "brand": "DHANUKA",
+    "image": "/product-images/dhanuka-areva.webp",
+    "source": "https://www.dhanuka.com/insecticides/areva",
+    "status": "unverified",
+    "verification": "Dhanuka manufacturer image shows Areva; AREVA (250GR) is an available pack size, but the size is not readable in the packshot."
+  },
+  {
+    "name": "AREVA(5GR)",
+    "category": "Pesticide",
+    "brand": "DHANUKA",
+    "image": "/product-images/dhanuka-areva.webp",
+    "source": "https://www.dhanuka.com/insecticides/areva",
+    "status": "unverified",
+    "verification": "Dhanuka manufacturer image shows Areva; AREVA(5GR) is an available pack size, but the size is not readable in the packshot."
+  },
+  {
+    "name": "CALDAN-50-SP(250GR)",
+    "category": "Pesticide",
+    "brand": "DHANUKA",
+    "image": "/product-images/dhanuka-caldan-50-sp.webp",
+    "source": "https://www.dhanuka.com/insecticides/caldan-50-sp",
+    "status": "unverified",
+    "verification": "Dhanuka manufacturer image shows Caldan 50 SP; CALDAN-50-SP(250GR) is an available pack size, but the size is not readable in the packshot."
+  },
+  {
+    "name": "CALDAN-50-SP(100GR)",
+    "category": "Pesticide",
+    "brand": "DHANUKA",
+    "image": "/product-images/dhanuka-caldan-50-sp.webp",
+    "source": "https://www.dhanuka.com/insecticides/caldan-50-sp",
+    "status": "unverified",
+    "verification": "Dhanuka manufacturer image shows Caldan 50 SP; CALDAN-50-SP(100GR) is an available pack size, but the size is not readable in the packshot."
+  },
+  {
+    "name": "DECIDE(250GR)",
+    "category": "Pesticide",
+    "brand": "DHANUKA",
+    "image": "/product-images/dhanuka-decide.webp",
+    "source": "https://www.dhanuka.com/insecticides/decide",
+    "status": "unverified",
+    "verification": "Dhanuka manufacturer image shows Decide; DECIDE(250GR) is an available pack size, but the size is not readable in the packshot."
+  },
+  {
+    "name": "DHAN PREET (100GR)",
+    "category": "Pesticide",
+    "brand": "DHANUKA",
+    "image": "/product-images/dhanuka-dhanpreet.webp",
+    "source": "https://www.dhanuka.com/insecticides/dhanpreet",
+    "status": "unverified",
+    "verification": "Dhanuka manufacturer image shows Dhanpreet; DHAN PREET (100GR) is an available pack size, but the size is not readable in the packshot."
+  },
+  {
+    "name": "DHANUKA-M45-(250GR)",
+    "category": "Pesticide",
+    "brand": "DHANUKA",
+    "image": "/product-images/dhanuka-dhanuka-m-45.webp",
+    "source": "https://www.dhanuka.com/fungicides/dhanuka-m-45",
+    "status": "unverified",
+    "verification": "Dhanuka manufacturer image shows Dhanuka M-45; DHANUKA-M45-(250GR) is an available pack size, but the size is not readable in the packshot."
+  },
+  {
+    "name": "DHANUKA-M45 - (500GR)",
+    "category": "Pesticide",
+    "brand": "DHANUKA",
+    "image": "/product-images/dhanuka-dhanuka-m-45.webp",
+    "source": "https://www.dhanuka.com/fungicides/dhanuka-m-45",
+    "status": "unverified",
+    "verification": "Dhanuka manufacturer image shows Dhanuka M-45; DHANUKA-M45 - (500GR) is an available pack size, but the size is not readable in the packshot."
+  },
+  {
+    "name": "OMITE(100ML)",
+    "category": "Pesticide",
+    "brand": "DHANUKA",
+    "image": "/product-images/dhanuka-omite.webp",
+    "source": "https://www.dhanuka.com/insecticides/omite",
+    "status": "unverified",
+    "verification": "Dhanuka manufacturer image shows Omite; OMITE(100ML) is an available pack size, but the size is not readable in the packshot."
+  },
+  {
+    "name": "OMITE (250ML)",
+    "category": "Pesticide",
+    "brand": "DHANUKA",
+    "image": "/product-images/dhanuka-omite.webp",
+    "source": "https://www.dhanuka.com/insecticides/omite",
+    "status": "unverified",
+    "verification": "Dhanuka manufacturer image shows Omite; OMITE (250ML) is an available pack size, but the size is not readable in the packshot."
+  },
+  {
+    "name": "TARGA SUPER 500ML",
+    "category": "Pesticide",
+    "brand": "DHANUKA",
+    "image": "/product-images/dhanuka-targa-super.webp",
+    "source": "https://www.dhanuka.com/herbicides/targa-super",
+    "status": "unverified",
+    "verification": "Dhanuka manufacturer image shows Targa Super; TARGA SUPER 500ML is an available pack size, but the size is not readable in the packshot."
+  },
+  {
+    "name": "MEDIA (250ML)",
+    "category": "Pesticide",
+    "brand": "DHANUKA",
+    "image": "/product-images/dhanuka-media.webp",
+    "source": "https://www.dhanuka.com/insecticides/media",
+    "status": "unverified",
+    "verification": "Dhanuka manufacturer image shows Media; MEDIA (250ML) is an available pack size, but the size is not readable in the packshot."
+  },
+  {
+    "name": "MEDIA (100ML)",
+    "category": "Pesticide",
+    "brand": "DHANUKA",
+    "image": "/product-images/dhanuka-media.webp",
+    "source": "https://www.dhanuka.com/insecticides/media",
+    "status": "unverified",
+    "verification": "Dhanuka manufacturer image shows Media; MEDIA (100ML) is an available pack size, but the size is not readable in the packshot."
+  },
+  {
+    "name": "TARGASUPER (250ML)",
+    "category": "Pesticide",
+    "brand": "DHANUKA",
+    "image": "/product-images/dhanuka-targa-super.webp",
+    "source": "https://www.dhanuka.com/herbicides/targa-super",
+    "status": "unverified",
+    "verification": "Dhanuka manufacturer image shows Targa Super; TARGASUPER (250ML) is an available pack size, but the size is not readable in the packshot."
+  },
+  {
+    "name": "TARGASUPER (100ML)",
+    "category": "Pesticide",
+    "brand": "DHANUKA",
+    "image": "/product-images/dhanuka-targa-super.webp",
+    "source": "https://www.dhanuka.com/herbicides/targa-super",
+    "status": "unverified",
+    "verification": "Dhanuka manufacturer image shows Targa Super; TARGASUPER (100ML) is an available pack size, but the size is not readable in the packshot."
+  },
+  {
+    "name": "TARGASUPER (1LTR)",
+    "category": "Pesticide",
+    "brand": "DHANUKA",
+    "image": "/product-images/dhanuka-targa-super.webp",
+    "source": "https://www.dhanuka.com/herbicides/targa-super",
+    "status": "unverified",
+    "verification": "Dhanuka manufacturer image shows Targa Super; TARGASUPER (1LTR) is an available pack size, but the size is not readable in the packshot."
+  },
+  {
+    "name": "EM-1(100GR)",
+    "category": "Pesticide",
+    "brand": "DHANUKA",
+    "image": "/product-images/dhanuka-em-1.webp",
+    "source": "https://www.dhanuka.com/insecticides/em1",
+    "status": "unverified",
+    "verification": "Dhanuka manufacturer image shows EM-1; EM-1(100GR) is an available pack size, but the size is not readable in the packshot."
+  },
+  {
+    "name": "EM-1 (250GR)",
+    "category": "Pesticide",
+    "brand": "DHANUKA",
+    "image": "/product-images/dhanuka-em-1.webp",
+    "source": "https://www.dhanuka.com/insecticides/em1",
+    "status": "unverified",
+    "verification": "Dhanuka manufacturer image shows EM-1; EM-1 (250GR) is an available pack size, but the size is not readable in the packshot."
+  },
+  {
+    "name": "AREVA(500GR)",
+    "category": "Pesticide",
+    "brand": "DHANUKA",
+    "image": "/product-images/dhanuka-areva.webp",
+    "source": "https://www.dhanuka.com/insecticides/areva",
+    "status": "unverified",
+    "verification": "Dhanuka manufacturer image shows Areva; AREVA(500GR) is an available pack size, but the size is not readable in the packshot."
+  },
+  {
+    "name": "ACROBAT COMPLETE (1000GR)",
+    "category": "FUNGICIDE",
+    "brand": "BASF",
+    "image": "/product-images/basf-acrobat-complete.webp",
+    "source": "https://crop-protection.basf.in/en/fungicide/acrobat-complete",
+    "status": "unverified",
+    "verification": "BASF manufacturer packshot shows the named product; exact pack size is not readable in the image."
+  },
+  {
+    "name": "ACROBAT COMPLETE (500GR)",
+    "category": "FUNGICIDE",
+    "brand": "BASF",
+    "image": "/product-images/basf-acrobat-complete.webp",
+    "source": "https://crop-protection.basf.in/en/fungicide/acrobat-complete",
+    "status": "unverified",
+    "verification": "BASF manufacturer packshot shows the named product; exact pack size is not readable in the image."
+  },
+  {
+    "name": "ACROBAT (200GR)",
+    "category": "Pesticide",
+    "brand": "BASF",
+    "image": "/product-images/basf-acrobat.webp",
+    "source": "https://crop-protection.basf.in/en/fungicide/acrobat",
+    "status": "unverified",
+    "verification": "BASF manufacturer packshot shows the named product; exact pack size is not readable in the image."
+  },
+  {
+    "name": "ACROBAT (100GR)",
+    "category": "Pesticide",
+    "brand": "BASF",
+    "image": "/product-images/basf-acrobat.webp",
+    "source": "https://crop-protection.basf.in/en/fungicide/acrobat",
+    "status": "unverified",
+    "verification": "BASF manufacturer packshot shows the named product; exact pack size is not readable in the image."
+  },
+  {
+    "name": "POLYRAM (400GR)",
+    "category": "Pesticide",
+    "brand": "BASF",
+    "image": "/product-images/basf-polyram.webp",
+    "source": "https://crop-protection.basf.in/en/fungicide/polyram",
+    "status": "unverified",
+    "verification": "BASF manufacturer packshot shows the named product; exact pack size is not readable in the image."
+  },
+  {
+    "name": "EFFICON (280ML)",
+    "category": "Pesticide",
+    "brand": "BASF",
+    "image": "/product-images/basf-efficon.webp",
+    "source": "https://crop-protection.basf.in/en/insecticide/efficon",
+    "status": "unverified",
+    "verification": "BASF manufacturer packshot shows the named product; exact pack size is not readable in the image."
+  },
+  {
+    "name": "IMUNIT (240ML)",
+    "category": "Pesticide",
+    "brand": "BASF",
+    "image": "/product-images/basf-imunit.webp",
+    "source": "https://crop-protection.basf.in/en/insecticide/imunitr",
+    "verification": "BASF manufacturer packshot shows the named product and requested pack size."
+  },
+  {
+    "name": "MERIVON (80ML)",
+    "category": "Pesticide",
+    "brand": "BASF",
+    "image": "/product-images/basf-merivon.webp",
+    "source": "https://crop-protection.basf.in/en/fungicide/merivon",
+    "status": "unverified",
+    "verification": "BASF manufacturer packshot shows the named product; exact pack size is not readable in the image."
+  },
+  {
+    "name": "CABRIO-TOP (600GR)",
+    "category": "Pesticide",
+    "brand": "BASF",
+    "image": "/product-images/basf-cabrio-top.webp",
+    "source": "https://crop-protection.basf.in/en/fungicide/cabrio-top",
+    "status": "unverified",
+    "verification": "BASF manufacturer packshot shows the named product; exact pack size is not readable in the image."
+  },
+  {
+    "name": "STOMPXTRA (700ML)",
+    "category": "Pesticide",
+    "brand": "BASF",
+    "image": "/product-images/basf-stomp-xtra.webp",
+    "source": "https://crop-protection.basf.in/en/herbicide/stomp-xtrar",
+    "status": "unverified",
+    "verification": "BASF manufacturer packshot shows the named product; exact pack size is not readable in the image."
+  },
+  {
+    "name": "POLYRAM 800GR",
+    "category": "Pesticide",
+    "brand": "BASF",
+    "image": "/product-images/basf-polyram.webp",
+    "source": "https://crop-protection.basf.in/en/fungicide/polyram",
+    "status": "unverified",
+    "verification": "BASF manufacturer packshot shows the named product; exact pack size is not readable in the image."
+  },
+  {
+    "name": "VALOR-32(1LITER)",
+    "category": "Pesticide",
+    "brand": "BASF",
+    "image": "/product-images/basf-valor-32.webp",
+    "source": "https://crop-protection.basf.in/en/herbicide/valor-32",
+    "verification": "BASF manufacturer packshot shows the named product and requested pack size."
+  },
+  {
+    "name": "BASAGRAN(800ML)",
+    "category": "Pesticide",
+    "brand": "BASF",
+    "image": "/product-images/basf-basagran.webp",
+    "source": "https://crop-protection.basf.in/en/herbicide/basagran",
+    "status": "unverified",
+    "verification": "BASF manufacturer packshot shows the named product; exact pack size is not readable in the image."
+  },
+  {
+    "name": "ODYSSEY 40GR",
+    "category": "Pesticide",
+    "brand": "BASF",
+    "image": "/product-images/basf-odyssey.webp",
+    "source": "https://crop-protection.basf.in/en/herbicide/odyssey",
+    "status": "unverified",
+    "verification": "BASF manufacturer packshot shows the named product; exact pack size is not readable in the image."
+  },
+  {
+    "name": "CABRIOTOP 300GR",
+    "category": "Pesticide",
+    "brand": "BASF",
+    "image": "/product-images/basf-cabrio-top.webp",
+    "source": "https://crop-protection.basf.in/en/fungicide/cabrio-top",
+    "status": "unverified",
+    "verification": "BASF manufacturer packshot shows the named product; exact pack size is not readable in the image."
+  },
+  {
+    "name": "EXPONUS 17ML",
+    "category": "Pesticide",
+    "brand": "BASF",
+    "image": "/product-images/basf-exponus.webp",
+    "source": "https://crop-protection.basf.in/en/insecticide/exponus",
+    "verification": "BASF manufacturer packshot shows the named product and requested pack size."
+  },
+  {
+    "name": "SEFINA(400ML)",
+    "category": "Pesticide",
+    "brand": "BASF",
+    "image": "/product-images/basf-sefina.webp",
+    "source": "https://crop-protection.basf.in/en/insecticide/sefina",
+    "status": "unverified",
+    "verification": "BASF manufacturer packshot shows the named product; exact pack size is not readable in the image."
+  },
+  {
+    "name": "ANTRACOL (500GR)",
+    "category": "FUNGICIDE",
+    "brand": "Bayer",
+    "image": "/product-images/bayer-antracol-500g.webp",
+    "source": "https://www.bayercropscience.in/en/protect-crops/fungicides/antracol",
+    "verification": "Official Bayer packshot shows Antracol 500 g, matching the catalogue entry."
+  },
+  {
+    "name": "ALIETTE (1KG)",
+    "category": "Pesticide",
+    "brand": "Bayer",
+    "image": "/product-images/bayer-aliette-1kg.webp",
+    "source": "https://www.bayercropscience.in/en/protect-crops/fungicides/aliette",
+    "verification": "Official Bayer packshot shows Aliette 1 kg, matching the catalogue entry."
+  },
+  {
+    "name": "SOLOMON (1LITER)",
+    "category": "Pesticide",
+    "brand": "Bayer",
+    "image": "/product-images/bayer-solomon-1litre.webp",
+    "source": "https://www.bayercropscience.in/en/protect-crops/insecticides/solomon",
+    "verification": "Official Bayer packshot shows Solomon 1 Litre, matching the catalogue entry."
+  },
+  {
+    "name": "VAYEGO(100ML)",
+    "category": "Pesticide",
+    "brand": "Bayer",
+    "image": "/product-images/bayer-vayego-100ml.webp",
+    "source": "https://www.bayercropscience.in/en/protect-crops/insecticides/vayego",
+    "verification": "Official Bayer packshot shows Vayego 100 ml, matching the catalogue entry."
+  },
+  {
+    "name": "ATLANTIS (160GR)",
+    "category": "Pesticide",
+    "brand": "Bayer",
+    "image": "/product-images/bayer-atlantis-160g.webp",
+    "source": "https://www.bayercropscience.in/en/protect-crops/herbicides/atlantis",
+    "verification": "Official Bayer packshot shows Atlantis 160 g, matching the catalogue entry."
+  },
+  {
+    "name": "LAUDIS (115ML)",
+    "category": "Pesticide",
+    "brand": "Bayer",
+    "image": "/product-images/bayer-laudis-115ml.webp",
+    "source": "https://www.bayercropscience.in/en/protect-crops/herbicides/laudis",
+    "verification": "Official Bayer packshot shows Laudis 115 ml, matching the catalogue entry."
+  },
+  {
+    "name": "AMBITION (1LITER)",
+    "category": "Pesticide",
+    "brand": "Bayer",
+    "image": "/product-images/bayer-ambition-1litre.webp",
+    "source": "https://www.bayercropscience.in/en/protect-crops/crop-efficiency/ambition",
+    "verification": "Official Bayer packshot shows Ambition 1 Litre, matching the catalogue entry."
+  },
+  {
+    "name": "SHRIRAM FIT (16GR)",
+    "category": "Pesticide",
+    "brand": "SHRI RAM",
+    "image": "/product-images/shriram-fit-16g.webp",
+    "source": "https://shriramfarmsolutions.com/product/shriram-fit/",
+    "verification": "Official Shriram packshot clearly shows Net Quantity 16 g."
+  },
+  {
+    "name": "VAYEGO(50ML)",
+    "category": "Pesticide",
+    "brand": "Bayer",
+    "image": "/product-images/bayer-vayego-50ml.webp",
+    "source": "https://www.indiamart.com/proddetail/50ml-bayer-vayego-insecticide-27421718033.html",
+    "verification": "Retailer photograph clearly shows Bayer Vayego 50 ml; the size is printed on the bottle."
+  },
+  {
+    "name": "ANTRACOL (100GR)",
+    "category": "Pesticide",
+    "brand": "Bayer",
+    "image": "/product-images/bayer-antracol-100g.webp",
+    "source": "https://www.indiamart.com/proddetail/100g-bayer-antracol-contact-fungicide-2853870383791.html",
+    "verification": "Retailer photo shows Bayer Antracol 100 g on the packet."
+  },
+  {
+    "name": "SOLOMON (500ML)",
+    "category": "INSECTICIDE",
+    "brand": "Bayer",
+    "image": "/product-images/bayer-solomon-500ml.webp",
+    "source": "https://www.indiamart.com/proddetail/500ml-bayer-solomon-insecticide-2854452319062.html",
+    "verification": "Retailer photo shows Bayer Solomon 500 ml on the bottle."
+  },
+  {
+    "name": "VELUM PRIME( 250ML)",
+    "category": "Pesticide",
+    "brand": "Bayer",
+    "image": "/product-images/bayer-velum-prime-250ml.webp",
+    "source": "https://www.indiamart.com/proddetail/250ml-bayer-velum-prime-nematicide-26514309273.html",
+    "verification": "Retailer photo shows Bayer Velum Prime 250 ml on the bottle."
+  },
+  {
+    "name": "OBERON (200ML)",
+    "category": "INSECTICIDE",
+    "brand": "Bayer",
+    "image": "/product-images/bayer-oberon-200ml.webp",
+    "source": "https://www.indiamart.com/proddetail/bayer-oberon-200-ml-contact-insecticide-23072329591.html",
+    "verification": "The bottle shows Bayer Oberon; the retailer listing identifies this image with the 200 ml variant, which Bayer lists as an official pack size."
+  },
+  {
+    "name": "KORKO(300GR)",
+    "category": "Pesticide",
+    "brand": "SUMITOMO",
+    "image": "/product-images/sumitomo-korko.webp",
+    "source": "https://sumichem.co.in/products/ecc/insecticides/korko.php",
+    "verification": "Official Sumitomo box clearly shows Korko 300 g."
+  },
+  {
+    "name": "CAVITE 250GR",
+    "category": "Pesticide",
+    "brand": "SUMITOMO",
+    "image": "/product-images/sumitomo-caviet.webp",
+    "source": "https://sumichem.co.in/products/ecc/fungicides/caviet.php",
+    "status": "unverified",
+    "verification": "Official packshot shows Caviet 250 g; catalogue spells the name CAVITE, so the name needs checking."
+  },
+  {
+    "name": "CELOUIN (1LTR)",
+    "category": "Pesticide",
+    "brand": "SUMITOMO",
+    "image": "/product-images/sumitomo-celquin.webp",
+    "source": "https://sumichem.co.in/products/ecc/insecticides/celquin.php",
+    "status": "unverified",
+    "verification": "Official packshot shows Celquin 1 L; catalogue spells the name CELOUIN, so the name needs checking."
+  },
+  {
+    "name": "ROBOT (500GR)",
+    "category": "Pesticide",
+    "brand": "SUMITOMO",
+    "image": "/product-images/sumitomo-robot.webp",
+    "source": "https://sumichem.co.in/products/ecc/insecticides/robot.php",
+    "status": "unverified",
+    "verification": "Official Sumitomo Robot packshot; exact pack weight is not readable."
+  },
+  {
+    "name": "ROBOT(250GR)",
+    "category": "Pesticide",
+    "brand": "SUMITOMO",
+    "image": "/product-images/sumitomo-robot.webp",
+    "source": "https://sumichem.co.in/products/ecc/insecticides/robot.php",
+    "status": "unverified",
+    "verification": "Official Sumitomo Robot packshot; exact pack weight is not readable."
+  },
+  {
+    "name": "IMFI (40GR)",
+    "category": "Pesticide",
+    "brand": "SUMITOMO",
+    "image": "/product-images/sumitomo-imfi.webp",
+    "source": "https://sumichem.co.in/products/ecc/insecticides/imfi.php",
+    "status": "unverified",
+    "verification": "Official Sumitomo Imfi packshot; exact pack weight is not readable."
+  },
+  {
+    "name": "TRICEL(1LITER)",
+    "category": "Pesticide",
+    "brand": "SUMITOMO",
+    "image": "/product-images/sumitomo-tricel.webp",
+    "source": "https://sumichem.co.in/products/ecc/insecticides/tricel.php",
+    "status": "unverified",
+    "verification": "Official Sumitomo Tricel packshot; exact bottle size is not readable."
+  },
+  {
+    "name": "TRICEL (100ML)",
+    "category": "Pesticide",
+    "brand": "SUMITOMO",
+    "image": "/product-images/sumitomo-tricel.webp",
+    "source": "https://sumichem.co.in/products/ecc/insecticides/tricel.php",
+    "status": "unverified",
+    "verification": "Official Sumitomo Tricel packshot; exact bottle size is not readable."
+  },
+  {
+    "name": "TRICEL (250ML)",
+    "category": "Pesticide",
+    "brand": "SUMITOMO",
+    "image": "/product-images/sumitomo-tricel.webp",
+    "source": "https://sumichem.co.in/products/ecc/insecticides/tricel.php",
+    "status": "unverified",
+    "verification": "Official Sumitomo Tricel packshot; exact bottle size is not readable."
+  },
+  {
+    "name": "HITCEL (1LITER)",
+    "category": "INSECTICIDE",
+    "brand": "SUMITOMO",
+    "image": "/product-images/sumitomo-hitcel.webp",
+    "source": "https://sumichem.co.in/products/ecc/insecticides/hitcel.php",
+    "status": "unverified",
+    "verification": "Official Sumitomo Hitcel packshot; exact container size is not readable."
+  },
+  {
+    "name": "SWADHEEN (250GR)",
+    "category": "Pesticide",
+    "brand": "SUMITOMO",
+    "image": "/product-images/sumitomo-swadheen.webp",
+    "source": "https://sumichem.co.in/products/ecc/fungicides/swadheen.php",
+    "status": "unverified",
+    "verification": "Official Sumitomo Swadheen packshot; exact pack weight is not readable."
+  },
+  {
+    "name": "SWADHEEN (500GR)",
+    "category": "Pesticide",
+    "brand": "SUMITOMO",
+    "image": "/product-images/sumitomo-swadheen.webp",
+    "source": "https://sumichem.co.in/products/ecc/fungicides/swadheen.php",
+    "status": "unverified",
+    "verification": "Official Sumitomo Swadheen packshot; exact pack weight is not readable."
+  },
+  {
+    "name": "SWADHEEN 1KG",
+    "category": "Pesticide",
+    "brand": "SUMITOMO",
+    "image": "/product-images/sumitomo-swadheen.webp",
+    "source": "https://sumichem.co.in/products/ecc/fungicides/swadheen.php",
+    "status": "unverified",
+    "verification": "Official Sumitomo Swadheen packshot; exact pack weight is not readable."
+  },
+  {
+    "name": "SULFEX 500GR",
+    "category": "Pesticide",
+    "brand": "SUMITOMO",
+    "image": "/product-images/sumitomo-sulfex.webp",
+    "source": "https://sumichem.co.in/products/ecc/fungicides/sulfex.php",
+    "status": "unverified",
+    "verification": "Official Sumitomo Sulfex packshot; exact pack weight is not readable."
+  },
+  {
+    "name": "MOTO",
+    "category": "Pesticide",
+    "brand": "CHAMBAL",
+    "image": "/product-images/chambal-moto.webp",
+    "source": "https://www.chambalfertilisers.com/pdf/CHAMBAL_BOOK_FINAL_EN_Editable_2025.pdf#page=40",
+    "status": "unverified",
+    "verification": "Official Chambal booklet product image; exact pack size is not legible in the booklet photo."
+  },
+  {
+    "name": "PENVEER PLUS (700ML)",
+    "category": "Pesticide",
+    "brand": "CHAMBAL",
+    "image": "/product-images/chambal-penveer-plus.webp",
+    "source": "https://www.chambalfertilisers.com/pdf/CHAMBAL_BOOK_FINAL_EN_Editable_2025.pdf#page=49",
+    "status": "unverified",
+    "verification": "Official Chambal booklet product image; exact pack size is not legible in the booklet photo."
+  },
+  {
+    "name": "UTTAM FLUZI 400ML",
+    "category": "Pesticide",
+    "brand": "CHAMBAL",
+    "image": "/product-images/chambal-fluzi.webp",
+    "source": "https://www.chambalfertilisers.com/pdf/CHAMBAL_BOOK_FINAL_EN_Editable_2025.pdf#page=54",
+    "status": "unverified",
+    "verification": "Official Chambal booklet product image; exact pack size is not legible in the booklet photo."
+  },
+  {
+    "name": "FLUZI (1LITER)",
+    "category": "HERBICIDE",
+    "brand": "CHAMBAL",
+    "image": "/product-images/chambal-fluzi.webp",
+    "source": "https://www.chambalfertilisers.com/pdf/CHAMBAL_BOOK_FINAL_EN_Editable_2025.pdf#page=54",
+    "status": "unverified",
+    "verification": "Official Chambal booklet product image; exact pack size is not legible in the booklet photo."
+  },
+  {
+    "name": "TEMONE (57.5ML)",
+    "category": "Pesticide",
+    "brand": "CHAMBAL",
+    "image": "/product-images/chambal-temone.webp",
+    "source": "https://www.chambalfertilisers.com/pdf/CHAMBAL_BOOK_FINAL_EN_Editable_2025.pdf#page=55",
+    "status": "unverified",
+    "verification": "Official Chambal booklet product image; exact pack size is not legible in the booklet photo."
+  },
+  {
+    "name": "TEMONE 115 ML",
+    "category": "Pesticide",
+    "brand": "CHAMBAL",
+    "image": "/product-images/chambal-temone.webp",
+    "source": "https://www.chambalfertilisers.com/pdf/CHAMBAL_BOOK_FINAL_EN_Editable_2025.pdf#page=55",
+    "status": "unverified",
+    "verification": "Official Chambal booklet product image; exact pack size is not legible in the booklet photo."
+  },
+  {
+    "name": "ATLAS 175ML",
+    "category": "Pesticide",
+    "brand": "CHAMBAL",
+    "image": "/product-images/chambal-atlas.webp",
+    "source": "https://www.chambalfertilisers.com/pdf/CHAMBAL_BOOK_FINAL_EN_Editable_2025.pdf#page=61",
+    "status": "unverified",
+    "verification": "Official Chambal booklet product image; exact pack size is not legible in the booklet photo."
+  },
+  {
+    "name": "ATLAS 500ML",
+    "category": "Pesticide",
+    "brand": "CHAMBAL",
+    "image": "/product-images/chambal-atlas.webp",
+    "source": "https://www.chambalfertilisers.com/pdf/CHAMBAL_BOOK_FINAL_EN_Editable_2025.pdf#page=61",
+    "status": "unverified",
+    "verification": "Official Chambal booklet product image; exact pack size is not legible in the booklet photo."
+  },
+  {
+    "name": "NO GRASS (1 LITER)",
+    "category": "Pesticide",
+    "brand": "CHAMBAL",
+    "image": "/product-images/chambal-no-grass.webp",
+    "source": "https://www.chambalfertilisers.com/pdf/CHAMBAL_BOOK_FINAL_EN_Editable_2025.pdf#page=63",
+    "status": "unverified",
+    "verification": "Official Chambal booklet product image; exact pack size is not legible in the booklet photo."
+  },
+  {
+    "name": "NO GRASS 500ML",
+    "category": "Pesticide",
+    "brand": "CHAMBAL",
+    "image": "/product-images/chambal-no-grass.webp",
+    "source": "https://www.chambalfertilisers.com/pdf/CHAMBAL_BOOK_FINAL_EN_Editable_2025.pdf#page=63",
+    "status": "unverified",
+    "verification": "Official Chambal booklet product image; exact pack size is not legible in the booklet photo."
+  },
+  {
+    "name": "APNA 71 (100GR)",
+    "category": "HERBICIDE",
+    "brand": "CHAMBAL",
+    "image": "/product-images/chambal-apna-71.webp",
+    "source": "https://www.chambalfertilisers.com/pdf/CHAMBAL_BOOK_FINAL_EN_Editable_2025.pdf#page=71",
+    "status": "unverified",
+    "verification": "Official Chambal booklet product image; exact pack size is not legible in the booklet photo."
+  },
+  {
+    "name": "ACTO (100GR)",
+    "category": "Pesticide",
+    "brand": "CHAMBAL",
+    "image": "/product-images/chambal-acto.webp",
+    "source": "https://www.chambalfertilisers.com/pdf/CHAMBAL_BOOK_FINAL_EN_Editable_2025.pdf#page=94",
+    "status": "unverified",
+    "verification": "Official Chambal booklet product image; exact pack size is not legible in the booklet photo."
+  },
+  {
+    "name": "ACTO (250GR)",
+    "category": "Pesticide",
+    "brand": "CHAMBAL",
+    "image": "/product-images/chambal-acto.webp",
+    "source": "https://www.chambalfertilisers.com/pdf/CHAMBAL_BOOK_FINAL_EN_Editable_2025.pdf#page=94",
+    "status": "unverified",
+    "verification": "Official Chambal booklet product image; exact pack size is not legible in the booklet photo."
+  },
+  {
+    "name": "IMIDAVEER (100ML)",
+    "category": "INSECTICIDE",
+    "brand": "CHAMBAL",
+    "image": "/product-images/chambal-imidaveer.webp",
+    "source": "https://www.chambalfertilisers.com/pdf/CHAMBAL_BOOK_FINAL_EN_Editable_2025.pdf#page=99",
+    "status": "unverified",
+    "verification": "Official Chambal booklet product image; exact pack size is not legible in the booklet photo."
+  },
+  {
+    "name": "IMIDAVEER 250ML",
+    "category": "Pesticide",
+    "brand": "CHAMBAL",
+    "image": "/product-images/chambal-imidaveer.webp",
+    "source": "https://www.chambalfertilisers.com/pdf/CHAMBAL_BOOK_FINAL_EN_Editable_2025.pdf#page=99",
+    "status": "unverified",
+    "verification": "Official Chambal booklet product image; exact pack size is not legible in the booklet photo."
+  },
+  {
+    "name": "IMIDAVEER 500 ML",
+    "category": "Pesticide",
+    "brand": "CHAMBAL",
+    "image": "/product-images/chambal-imidaveer.webp",
+    "source": "https://www.chambalfertilisers.com/pdf/CHAMBAL_BOOK_FINAL_EN_Editable_2025.pdf#page=99",
+    "status": "unverified",
+    "verification": "Official Chambal booklet product image; exact pack size is not legible in the booklet photo."
+  },
+  {
+    "name": "STEMBO (1KG)",
+    "category": "Pesticide",
+    "brand": "CHAMBAL",
+    "image": "/product-images/chambal-stembo.webp",
+    "source": "https://www.chambalfertilisers.com/pdf/CHAMBAL_BOOK_FINAL_EN_Editable_2025.pdf#page=102",
+    "status": "unverified",
+    "verification": "Official Chambal booklet product image; exact pack size is not legible in the booklet photo."
+  },
+  {
+    "name": "IMEXO (100GR)",
+    "category": "Pesticide",
+    "brand": "CHAMBAL",
+    "image": "/product-images/chambal-imexo.webp",
+    "source": "https://www.chambalfertilisers.com/pdf/CHAMBAL_BOOK_FINAL_EN_Editable_2025.pdf#page=107",
+    "status": "unverified",
+    "verification": "Official Chambal booklet product image; exact pack size is not legible in the booklet photo."
+  },
+  {
+    "name": "IMEXO(250GR)",
+    "category": "Pesticide",
+    "brand": "CHAMBAL",
+    "image": "/product-images/chambal-imexo.webp",
+    "source": "https://www.chambalfertilisers.com/pdf/CHAMBAL_BOOK_FINAL_EN_Editable_2025.pdf#page=107",
+    "status": "unverified",
+    "verification": "Official Chambal booklet product image; exact pack size is not legible in the booklet photo."
+  },
+  {
+    "name": "IMEXO 500 GR",
+    "category": "Pesticide",
+    "brand": "CHAMBAL",
+    "image": "/product-images/chambal-imexo.webp",
+    "source": "https://www.chambalfertilisers.com/pdf/CHAMBAL_BOOK_FINAL_EN_Editable_2025.pdf#page=107",
+    "status": "unverified",
+    "verification": "Official Chambal booklet product image; exact pack size is not legible in the booklet photo."
+  },
+  {
+    "name": "VEERCOMBI-44 ( 500ML)",
+    "category": "Pesticide",
+    "brand": "CHAMBAL",
+    "image": "/product-images/chambal-veercombi-44.webp",
+    "source": "https://www.chambalfertilisers.com/pdf/CHAMBAL_BOOK_FINAL_EN_Editable_2025.pdf#page=112",
+    "status": "unverified",
+    "verification": "Official Chambal booklet product image; exact pack size is not legible in the booklet photo."
+  },
+  {
+    "name": "VEERCOMBI-44 ( 1LIT)",
+    "category": "Pesticide",
+    "brand": "CHAMBAL",
+    "image": "/product-images/chambal-veercombi-44.webp",
+    "source": "https://www.chambalfertilisers.com/pdf/CHAMBAL_BOOK_FINAL_EN_Editable_2025.pdf#page=112",
+    "status": "unverified",
+    "verification": "Official Chambal booklet product image; exact pack size is not legible in the booklet photo."
+  },
+  {
+    "name": "VEERCOMBI-44 250 ML",
+    "category": "Pesticide",
+    "brand": "CHAMBAL",
+    "image": "/product-images/chambal-veercombi-44.webp",
+    "source": "https://www.chambalfertilisers.com/pdf/CHAMBAL_BOOK_FINAL_EN_Editable_2025.pdf#page=112",
+    "status": "unverified",
+    "verification": "Official Chambal booklet product image; exact pack size is not legible in the booklet photo."
+  },
+  {
+    "name": "VEERCOMBI-505 250 ML",
+    "category": "Pesticide",
+    "brand": "CHAMBAL",
+    "image": "/product-images/chambal-veercombi-505.webp",
+    "source": "https://www.chambalfertilisers.com/pdf/CHAMBAL_BOOK_FINAL_EN_Editable_2025.pdf#page=113",
+    "status": "unverified",
+    "verification": "Official Chambal booklet product image; exact pack size is not legible in the booklet photo."
+  },
+  {
+    "name": "METROZ (120) GR",
+    "category": "Pesticide",
+    "brand": "CHAMBAL",
+    "image": "/product-images/chambal-metroz.webp",
+    "source": "https://www.chambalfertilisers.com/pdf/CHAMBAL_BOOK_FINAL_EN_Editable_2025.pdf#page=115",
+    "status": "unverified",
+    "verification": "Official Chambal booklet product image; exact pack size is not legible in the booklet photo."
+  },
+  {
+    "name": "IMEXOPLUS (250ML)",
+    "category": "Pesticide",
+    "brand": "CHAMBAL",
+    "image": "/product-images/chambal-imexo-plus.webp",
+    "source": "https://www.chambalfertilisers.com/pdf/CHAMBAL_BOOK_FINAL_EN_Editable_2025.pdf#page=118",
+    "status": "unverified",
+    "verification": "Official Chambal booklet product image; exact pack size is not legible in the booklet photo."
+  },
+  {
+    "name": "IMEXO PLUS (1LITER)",
+    "category": "Pesticide",
+    "brand": "CHAMBAL",
+    "image": "/product-images/chambal-imexo-plus.webp",
+    "source": "https://www.chambalfertilisers.com/pdf/CHAMBAL_BOOK_FINAL_EN_Editable_2025.pdf#page=118",
+    "status": "unverified",
+    "verification": "Official Chambal booklet product image; exact pack size is not legible in the booklet photo."
+  },
+  {
+    "name": "IMEXO PLUS 500ML",
+    "category": "Pesticide",
+    "brand": "CHAMBAL",
+    "image": "/product-images/chambal-imexo-plus.webp",
+    "source": "https://www.chambalfertilisers.com/pdf/CHAMBAL_BOOK_FINAL_EN_Editable_2025.pdf#page=118",
+    "status": "unverified",
+    "verification": "Official Chambal booklet product image; exact pack size is not legible in the booklet photo."
+  },
+  {
+    "name": "IMEXO PLUS 100ML",
+    "category": "Pesticide",
+    "brand": "CHAMBAL",
+    "image": "/product-images/chambal-imexo-plus.webp",
+    "source": "https://www.chambalfertilisers.com/pdf/CHAMBAL_BOOK_FINAL_EN_Editable_2025.pdf#page=118",
+    "status": "unverified",
+    "verification": "Official Chambal booklet product image; exact pack size is not legible in the booklet photo."
+  },
+  {
+    "name": "PIFRO 250 ML",
+    "category": "Pesticide",
+    "brand": "CHAMBAL",
+    "image": "/product-images/chambal-pifro.webp",
+    "source": "https://www.chambalfertilisers.com/pdf/CHAMBAL_BOOK_FINAL_EN_Editable_2025.pdf#page=121",
+    "status": "unverified",
+    "verification": "Official Chambal booklet product image; exact pack size is not legible in the booklet photo."
+  },
+  {
+    "name": "PIFRO 500ML",
+    "category": "Pesticide",
+    "brand": "CHAMBAL",
+    "image": "/product-images/chambal-pifro.webp",
+    "source": "https://www.chambalfertilisers.com/pdf/CHAMBAL_BOOK_FINAL_EN_Editable_2025.pdf#page=121",
+    "status": "unverified",
+    "verification": "Official Chambal booklet product image; exact pack size is not legible in the booklet photo."
+  },
+  {
+    "name": "MANZIM 500GR",
+    "category": "Pesticide",
+    "brand": "CHAMBAL",
+    "image": "/product-images/chambal-manzim.webp",
+    "source": "https://www.chambalfertilisers.com/pdf/CHAMBAL_BOOK_FINAL_EN_Editable_2025.pdf#page=151",
+    "status": "unverified",
+    "verification": "Official Chambal booklet product image; exact pack size is not legible in the booklet photo."
+  },
+  {
+    "name": "LEXON(100ML)",
+    "category": "Pesticide",
+    "brand": "CHAMBAL",
+    "image": "/product-images/chambal-lexon.webp",
+    "source": "https://www.chambalfertilisers.com/pdf/CHAMBAL_BOOK_FINAL_EN_Editable_2025.pdf#page=155",
+    "status": "unverified",
+    "verification": "Official Chambal booklet product image; exact pack size is not legible in the booklet photo."
+  },
+  {
+    "name": "LEXON(500ML)",
+    "category": "Pesticide",
+    "brand": "CHAMBAL",
+    "image": "/product-images/chambal-lexon.webp",
+    "source": "https://www.chambalfertilisers.com/pdf/CHAMBAL_BOOK_FINAL_EN_Editable_2025.pdf#page=155",
+    "status": "unverified",
+    "verification": "Official Chambal booklet product image; exact pack size is not legible in the booklet photo."
+  },
+  {
+    "name": "UTTAM ZNIC (3KG)",
+    "category": "FERTILIZERS",
+    "brand": "CHAMBAL",
+    "image": "/product-images/chambal-zinc.webp",
+    "source": "https://www.chambalfertilisers.com/pdf/CHAMBAL_BOOK_FINAL_EN_Editable_2025.pdf#page=176",
+    "status": "unverified",
+    "verification": "Official Chambal booklet product image; exact pack size is not legible in the booklet photo."
+  },
+  {
+    "name": "UTTAM SAMPOORN (5KG)",
+    "category": "FERTILIZERS",
+    "brand": "CHAMBAL",
+    "image": "/product-images/chambal-sampoorna.webp",
+    "source": "https://www.chambalfertilisers.com/pdf/CHAMBAL_BOOK_FINAL_EN_Editable_2025.pdf#page=181",
+    "status": "unverified",
+    "verification": "Official Chambal booklet product image; exact pack size is not legible in the booklet photo."
+  },
+  {
+    "name": "CALRICH (5KG)",
+    "category": "FERTILIZERS",
+    "brand": "CHAMBAL",
+    "image": "/product-images/chambal-calrich.webp",
+    "source": "https://www.chambalfertilisers.com/pdf/CHAMBAL_BOOK_FINAL_EN_Editable_2025.pdf#page=182",
+    "status": "unverified",
+    "verification": "Official Chambal booklet product image; exact pack size is not legible in the booklet photo."
+  },
+  {
+    "name": "CLARICH (5KG)",
+    "category": "FERTILIZERS",
+    "brand": "CHAMBAL",
+    "image": "/product-images/chambal-calrich.webp",
+    "source": "https://www.chambalfertilisers.com/pdf/CHAMBAL_BOOK_FINAL_EN_Editable_2025.pdf#page=182",
+    "status": "unverified",
+    "verification": "Official Chambal booklet product image; exact pack size is not legible in the booklet photo."
+  },
+  {
+    "name": "SUPERRIZA (4kg)",
+    "category": "FERTILIZERS",
+    "brand": "CHAMBAL",
+    "image": "/product-images/chambal-superrhiza.webp",
+    "source": "https://www.chambalfertilisers.com/pdf/CHAMBAL_BOOK_FINAL_EN_Editable_2025.pdf#page=189",
+    "status": "unverified",
+    "verification": "Official Chambal booklet product image; exact pack size is not legible in the booklet photo."
+  },
+  {
+    "name": "PRANAM (250ML)",
+    "category": "Pesticide",
+    "brand": "CHAMBAL",
+    "image": "/product-images/chambal-pranam.webp",
+    "source": "https://www.chambalfertilisers.com/pdf/CHAMBAL_BOOK_FINAL_EN_Editable_2025.pdf#page=201",
+    "status": "unverified",
+    "verification": "Official Chambal booklet product image; exact pack size is not legible in the booklet photo."
+  },
+  {
+    "name": "SULFINO GOLD (3KG)",
+    "category": "FERTILIZERS",
+    "brand": "CHAMBAL",
+    "image": "/product-images/chambal-sulfino-gold.webp",
+    "source": "https://www.chambalfertilisers.com/pdf/CHAMBAL_BOOK_FINAL_EN_Editable_2025.pdf#page=186",
+    "status": "unverified",
+    "verification": "Official Chambal Sulfino Gold packshot; exact pack weight is not legible in the booklet photo."
+  },
+  {
+    "name": "SULFINO GOLD (25KG)",
+    "category": "FERTILIZERS",
+    "brand": "CHAMBAL",
+    "image": "/product-images/chambal-sulfino-gold.webp",
+    "source": "https://www.chambalfertilisers.com/pdf/CHAMBAL_BOOK_FINAL_EN_Editable_2025.pdf#page=186",
+    "status": "unverified",
+    "verification": "Official Chambal Sulfino Gold packshot; exact pack weight is not legible in the booklet photo."
+  },
+  {
+    "name": "FANVEER DP (10KG)",
+    "category": "Pesticide",
+    "brand": "CHAMBAL",
+    "image": "/product-images/chambal-fenveer-dp.webp",
+    "source": "https://www.chambalfertilisers.com/pdf/CHAMBAL_BOOK_FINAL_EN_Editable_2025.pdf#page=106",
+    "status": "unverified",
+    "verification": "Official Chambal Fenveer DP image; sheet spells it FANVEER, and exact pack weight is not legible."
+  },
+  {
+    "name": "FANVEER DP (5KG)",
+    "category": "Pesticide",
+    "brand": "CHAMBAL",
+    "image": "/product-images/chambal-fenveer-dp.webp",
+    "source": "https://www.chambalfertilisers.com/pdf/CHAMBAL_BOOK_FINAL_EN_Editable_2025.pdf#page=106",
+    "status": "unverified",
+    "verification": "Official Chambal Fenveer DP image; sheet spells it FANVEER, and exact pack weight is not legible."
+  },
+  {
+    "name": "FANVEER DP (25KG)",
+    "category": "Pesticide",
+    "brand": "CHAMBAL",
+    "image": "/product-images/chambal-fenveer-dp.webp",
+    "source": "https://www.chambalfertilisers.com/pdf/CHAMBAL_BOOK_FINAL_EN_Editable_2025.pdf#page=106",
+    "status": "unverified",
+    "verification": "Official Chambal Fenveer DP image; sheet spells it FANVEER, and exact pack weight is not legible."
+  },
+  {
+    "name": "VEERM-45 (1KG)",
+    "category": "Pesticide",
+    "brand": "CHAMBAL",
+    "image": "/product-images/chambal-veer-m45.webp",
+    "source": "https://www.chambalfertilisers.com/pdf/CHAMBAL_BOOK_FINAL_EN_Editable_2025.pdf#page=158",
+    "status": "unverified",
+    "verification": "Official Chambal Veer M-45 image; exact pack weight is not legible."
+  },
+  {
+    "name": "VEER M 45 (500GM)",
+    "category": "Pesticide",
+    "brand": "CHAMBAL",
+    "image": "/product-images/chambal-veer-m45.webp",
+    "source": "https://www.chambalfertilisers.com/pdf/CHAMBAL_BOOK_FINAL_EN_Editable_2025.pdf#page=158",
+    "status": "unverified",
+    "verification": "Official Chambal Veer M-45 image; exact pack weight is not legible."
+  },
+  {
+    "name": "NATIVO (50GR)",
+    "category": "Pesticide",
+    "brand": "Bayer",
+    "image": "/product-images/bayer-nativo.webp",
+    "source": "https://www.cropscience.bayer.in/protect-crops/fungicides-en/nativo",
+    "status": "unverified",
+    "verification": "Official Bayer Nativo photo shows 500 g; catalogue pack size differs, and NAVITO is likely a spelling error."
+  },
+  {
+    "name": "NAVITO (100GR)",
+    "category": "Pesticide",
+    "brand": "Bayer",
+    "image": "/product-images/bayer-nativo.webp",
+    "source": "https://www.cropscience.bayer.in/protect-crops/fungicides-en/nativo",
+    "status": "unverified",
+    "verification": "Official Bayer Nativo photo shows 500 g; catalogue pack size differs, and NAVITO is likely a spelling error."
+  },
+  {
+    "name": "GAUCHO(500ML)",
+    "category": "INSECTICIDE",
+    "brand": "Bayer",
+    "image": "/product-images/bayer-gaucho.webp",
+    "source": "https://www.cropscience.bayer.in/protect-crops/seed-growth-en/gaucho",
+    "verification": "Official Bayer Gaucho packshot shows the 500 ml bottle."
+  },
+  {
+    "name": "PROTOBUZ (250ml)",
+    "category": "FERTILIZERS",
+    "brand": "SHRI RAM",
+    "image": "/product-images/shriram-protobuz.webp",
+    "source": "https://shriramfarmsolutions.com/product/shriram-protobuz/",
+    "status": "unverified",
+    "verification": "Official Shriram Protobuz bottle; photo appears to show 1 L rather than catalogue 250 ml."
+  },
+  {
+    "name": "PROTPBUZ 250 ML",
+    "category": "Pesticide",
+    "brand": "SHRI RAM",
+    "image": "/product-images/shriram-protobuz.webp",
+    "source": "https://shriramfarmsolutions.com/product/shriram-protobuz/",
+    "status": "unverified",
+    "verification": "Official Shriram Protobuz bottle; catalogue spelling and 250 ml pack need confirmation."
+  },
+  {
+    "name": "SHRIRAM POSHAK 19-19-19",
+    "category": "FERTILIZERS",
+    "brand": "SHRI RAM",
+    "image": "/product-images/shriram-poshak.webp",
+    "source": "https://shriramfarmsolutions.com/product/shriram-poshak/",
+    "verification": "Official Shriram Poshak NPK 19:19:19 packshot."
+  },
+  {
+    "name": "SHRIRAM SATHI NPK (00.52.34) 1 KG",
+    "category": "FERTILIZERS",
+    "brand": "SHRI RAM",
+    "image": "/product-images/shriram-sathi.webp",
+    "source": "https://shriramfarmsolutions.com/product/shriram-sathi/",
+    "verification": "Official Shriram Sathi NPK 00:52:34 packshot shows 1 kg."
+  },
+  {
+    "name": "SHAASAK (400ML)",
+    "category": "HERBICIDE",
+    "brand": "SHRI RAM",
+    "image": "/product-images/shriram-shaasak-1l.webp",
+    "source": "https://shriramfarmsolutions.com/product/shriram-shaasak/",
+    "status": "unverified",
+    "verification": "Official Shriram Shaasak image used for 1 L listing; 400 ml package image not confirmed."
+  },
+  {
+    "name": "DHANUCOP-50-WP(500GR)",
+    "category": "Pesticide",
+    "brand": "DHANUKA",
+    "image": "/product-images/dhanuka-dhanucop.webp",
+    "source": "https://www.dhanuka.com/fungicides/dhanucop",
+    "status": "unverified",
+    "verification": "Official Dhanuka Dhanucop 50% WP packshot; 500 g pack size is not visible."
+  },
+  {
+    "name": "AREVA (1KG)",
+    "category": "Pesticide",
+    "brand": "DHANUKA",
+    "image": "/product-images/dhanuka-areva.webp",
+    "source": "https://www.dhanuka.com/insecticides/areva",
+    "status": "unverified",
+    "verification": "Official Dhanuka Areva packshot; 1 kg pack size is not visible."
+  },
+  {
+    "name": "COVER (150ML)",
+    "category": "INSECTICIDE",
+    "brand": "DHANUKA",
+    "image": "/product-images/dhanuka-cover-liq.webp",
+    "source": "https://www.dhanuka.com/insecticides/cover-liq",
+    "status": "unverified",
+    "verification": "Official Dhanuka Cover liquid (18.5% SC) bottle; exact pack size is not visible."
+  },
+  {
+    "name": "COVER(30ML)",
+    "category": "Pesticide",
+    "brand": "DHANUKA",
+    "image": "/product-images/dhanuka-cover-liq.webp",
+    "source": "https://www.dhanuka.com/insecticides/cover-liq",
+    "status": "unverified",
+    "verification": "Official Dhanuka Cover liquid (18.5% SC) bottle; exact pack size is not visible."
+  },
+  {
+    "name": "SUPERKILLER-25 (1LT)",
+    "category": "INSECTICIDE",
+    "brand": "DHANUKA",
+    "image": "/product-images/dhanuka-superkiller-25.webp",
+    "source": "https://www.dhanuka.com/insecticides/superkiller-25-ec",
+    "status": "unverified",
+    "verification": "Official Dhanuka Superkiller-25 bottle; exact pack size is not visible; some catalogue spellings omit an L."
+  },
+  {
+    "name": "SUPERKILER-25 (500ML)",
+    "category": "Pesticide",
+    "brand": "DHANUKA",
+    "image": "/product-images/dhanuka-superkiller-25.webp",
+    "source": "https://www.dhanuka.com/insecticides/superkiller-25-ec",
+    "status": "unverified",
+    "verification": "Official Dhanuka Superkiller-25 bottle; exact pack size is not visible; some catalogue spellings omit an L."
+  },
+  {
+    "name": "SUPERKILER-25 (100ML)",
+    "category": "Pesticide",
+    "brand": "DHANUKA",
+    "image": "/product-images/dhanuka-superkiller-25.webp",
+    "source": "https://www.dhanuka.com/insecticides/superkiller-25-ec",
+    "status": "unverified",
+    "verification": "Official Dhanuka Superkiller-25 bottle; exact pack size is not visible; some catalogue spellings omit an L."
+  },
+  {
+    "name": "SUPERKILER-25 (250ML)",
+    "category": "Pesticide",
+    "brand": "DHANUKA",
+    "image": "/product-images/dhanuka-superkiller-25.webp",
+    "source": "https://www.dhanuka.com/insecticides/superkiller-25-ec",
+    "status": "unverified",
+    "verification": "Official Dhanuka Superkiller-25 bottle; exact pack size is not visible; some catalogue spellings omit an L."
+  },
+  {
+    "name": "WETCIT250 ML",
+    "category": "Pesticide",
+    "brand": "DHANUKA",
+    "image": "/product-images/dhanuka-wetcit.webp",
+    "source": "https://www.dhanuka.com/efficacy-enhancer/Wetcit",
+    "status": "unverified",
+    "verification": "Official Dhanuka Wetcit bottle; 250 ml pack size is not visible."
+  },
+  {
+    "name": "MYCORE",
+    "category": "FERTILIZERS",
+    "brand": "DHANUKA",
+    "image": "/product-images/dhanuka-mycore.webp",
+    "source": "https://www.dhanuka.com/bio-fertiliser/mycore",
+    "verification": "Official Dhanuka Mycore bio-fertilizer packshot."
+  },
+  {
+    "name": "RUMPUS 500ML",
+    "category": "Pesticide",
+    "brand": "SUMITOMO",
+    "image": "/product-images/sumitomo-rumpus.webp",
+    "source": "https://sumichem.co.in/products/ecc/fungicides/rumpus.php",
+    "status": "unverified",
+    "verification": "Official Sumitomo Rumpus packshot; 500 ml volume is not legible."
+  },
+  {
+    "name": "IMFI(100)",
+    "category": "Pesticide",
+    "brand": "SUMITOMO",
+    "image": "/product-images/sumitomo-imfi.webp",
+    "source": "https://sumichem.co.in/products/ecc/insecticides/imfi.php",
+    "status": "unverified",
+    "verification": "Official Sumitomo Imfi packshot; catalogue pack-size unit is unclear."
+  },
+  {
+    "name": "TAREEF 1LTR",
+    "category": "Pesticide",
+    "brand": "SUMITOMO",
+    "image": "/product-images/sumitomo-tareef.webp",
+    "source": "https://sumichem.co.in/products/ecc/pgr/tareef.php",
+    "verification": "Official Sumitomo Tareef packshot shows 1 L."
+  },
+  {
+    "name": "VIDYUT (50ML)",
+    "category": "Pesticide",
+    "brand": "SUMITOMO",
+    "image": "/product-images/sumitomo-vidyut.webp",
+    "source": "https://sumichem.co.in/products/ecc/pgr/vidyut.php",
+    "status": "unverified",
+    "verification": "Official Sumitomo Vidyut packshot; 50 ml volume is not legible."
+  },
+  {
+    "name": "IKU (4KG)",
+    "category": "FERTILIZERS",
+    "brand": "SUMITOMO",
+    "image": "/product-images/sumitomo-iku.webp",
+    "source": "https://sumichem.co.in/products/ecc/pgr/iku.php",
+    "verification": "Official Sumitomo Iku packshot shows 4 kg."
+  },
+  {
+    "name": "NAIVO (250GR)",
+    "category": "FUNGICIDE",
+    "brand": "Bayer",
+    "image": "/product-images/bayer-nativo-250g.webp",
+    "source": "https://www.indiamart.com/proddetail/bayer-nativo-250-g-fungicide-23082017648.html",
+    "status": "unverified",
+    "verification": "Photo shows Bayer Nativo 250 g; catalogue spells it NAIVO."
+  },
+  {
+    "name": "VALOR-32(5LITER)",
+    "category": "INSECTICIDE",
+    "brand": "BASF",
+    "image": "/product-images/basf-valor-32.webp",
+    "source": "https://crop-protection.basf.in/en/herbicide/valor-32",
+    "status": "unverified",
+    "verification": "Official Valor-32 packshot; 5 L container not confirmed."
+  },
+  {
+    "name": "IMUNIT(400ML)",
+    "category": "INSECTICIDE",
+    "brand": "BASF",
+    "image": "/product-images/basf-imunit.webp",
+    "source": "https://crop-protection.basf.in/en/insecticide/imunitr",
+    "status": "unverified",
+    "verification": "Official BASF Imunit packshot; 400 ml size not confirmed."
+  },
+  {
+    "name": "IMUNIT (120ML)",
+    "category": "Pesticide",
+    "brand": "BASF",
+    "image": "/product-images/basf-imunit.webp",
+    "source": "https://crop-protection.basf.in/en/insecticide/imunitr",
+    "status": "unverified",
+    "verification": "Official BASF Imunit packshot; 120 ml size not confirmed."
+  },
+  {
+    "name": "EFFICON (140ML)",
+    "category": "Pesticide",
+    "brand": "BASF",
+    "image": "/product-images/basf-efficon.webp",
+    "source": "https://crop-protection.basf.in/en/insecticide/efficon",
+    "status": "unverified",
+    "verification": "Official BASF Efficon packshot; 140 ml size not confirmed."
+  },
+  {
+    "name": "EXPONUS (34ML)",
+    "category": "Pesticide",
+    "brand": "BASF",
+    "image": "/product-images/basf-exponus.webp",
+    "source": "https://crop-protection.basf.in/en/insecticide/exponus",
+    "status": "unverified",
+    "verification": "Official BASF Exponus packshot; 34 ml size not confirmed."
+  },
+  {
+    "name": "STOMPXTRA3.5 (1LITER)",
+    "category": "Pesticide",
+    "brand": "BASF",
+    "image": "/product-images/basf-stomp-xtra.webp",
+    "source": "https://crop-protection.basf.in/en/herbicide/stomp-xtrar",
+    "status": "unverified",
+    "verification": "Official BASF Stomp Xtra packshot; catalogue label includes 3.5 and 1 L size needs confirmation."
+  },
+  {
+    "name": "SEFINA(280ML)",
+    "category": "Pesticide",
+    "brand": "BASF",
+    "image": "/product-images/basf-sefina.webp",
+    "source": "https://crop-protection.basf.in/en/insecticide/sefina",
+    "status": "unverified",
+    "verification": "Official BASF Sefina packshot; 280 ml size not confirmed."
+  },
+  {
+    "name": "EM-1 (500GR)",
+    "category": "Pesticide",
+    "brand": "DHANUKA",
+    "image": "/product-images/dhanuka-em-1.webp",
+    "source": "https://www.dhanuka.com/insecticides/em1",
+    "status": "unverified",
+    "verification": "Official Dhanuka EM-1 packshot; 500 g weight not confirmed."
+  },
+  {
+    "name": "ANOLIK (500ML)",
+    "category": "Pesticide",
+    "brand": "ADAMA",
+    "image": "/product-images/adama-anolik.webp",
+    "source": "https://agribegri.com/products/adama-anolik-insecticide.php",
+    "verification": "Product photo shows the Anolik 500 ml pack."
+  },
+  {
+    "name": "ANOLIK (200ml)",
+    "category": "Pesticide",
+    "brand": "ADAMA",
+    "image": "/product-images/adama-anolik.webp",
+    "source": "https://agribegri.com/products/adama-anolik-insecticide.php",
+    "status": "unverified",
+    "verification": "AgriBegri Anolik photo shows 500 ml; 200 ml package differs."
+  },
+  {
+    "name": "FLAMBERGE (1LITER)",
+    "category": "Pesticide",
+    "brand": "ADAMA",
+    "image": "/product-images/adama-flamberge.webp",
+    "source": "https://www.bighaat.com/products/flamberge-bio-stimulant",
+    "verification": "Product photo shows the Flamberge 1 L pack."
+  },
+  {
+    "name": "MONOLIK (1LT)",
+    "category": "INSECTICIDE",
+    "brand": "SHIVALIK",
+    "image": "/product-images/shivalik-monolik.webp",
+    "source": "https://5.imimg.com/data5/SELLER/Doc/2024/8/446672445/DL/DJ/KN/96410225/gokilaht.pdf#page=3",
+    "verification": "Shivalik catalogue Monolik packshot shows 1 L."
+  },
+  {
+    "name": "OXYFLO(50ML)",
+    "category": "Pesticide",
+    "brand": "SHIVALIK",
+    "image": "/product-images/shivalik-oxyflo.webp",
+    "source": "https://5.imimg.com/data5/SELLER/Doc/2024/8/446672445/DL/DJ/KN/96410225/gokilaht.pdf#page=6",
+    "status": "unverified",
+    "verification": "Shivalik catalogue Oxyflo packshot; 50 ml size is not legible."
+  },
+  {
+    "name": "OXYFLO(100ML)",
+    "category": "Pesticide",
+    "brand": "SHIVALIK",
+    "image": "/product-images/shivalik-oxyflo.webp",
+    "source": "https://5.imimg.com/data5/SELLER/Doc/2024/8/446672445/DL/DJ/KN/96410225/gokilaht.pdf#page=6",
+    "status": "unverified",
+    "verification": "Shivalik catalogue Oxyflo packshot; 100 ml size is not legible."
+  },
+  {
+    "name": "TRAXX (500GR)",
+    "category": "Pesticide",
+    "brand": "SHIVALIK",
+    "image": "/product-images/shivalik-traxx.webp",
+    "source": "https://5.imimg.com/data5/SELLER/Doc/2024/8/446672445/DL/DJ/KN/96410225/gokilaht.pdf#page=6",
+    "verification": "Shivalik catalogue Traxx image includes a 500 g pack."
+  },
+  {
+    "name": "SACRIP",
+    "category": "Pesticide",
+    "brand": "SHIVALIK",
+    "image": "/product-images/shivalik-sacrip.webp",
+    "source": "https://5.imimg.com/data5/SELLER/Doc/2024/8/446672445/DL/DJ/KN/96410225/gokilaht.pdf#page=6",
+    "status": "unverified",
+    "verification": "Shivalik catalogue labels the pack Sacrip Plus; sheet says Sacrip."
+  },
+  {
+    "name": "HUMIGOLD (1KG)",
+    "category": "FERTILIZERS",
+    "brand": "SHIVALIK",
+    "image": "/product-images/shivalik-humigold.webp",
+    "source": "https://www.kisanshop.in/product/shivalik-humigold-humic-biostimulant",
+    "verification": "KisanShop HumiGold packshot shows 1 kg."
+  },
+  {
+    "name": "SHIVAGOLD XTRA (1LTR)",
+    "category": "Pesticide",
+    "brand": "SHIVALIK",
+    "image": "/product-images/shivalik-shivagold-xtra.webp",
+    "source": "https://agribegri.com/products/shivalik-shiva-gold-xtra-tricontanol-01-ew-plant-growth-regulator.php",
+    "verification": "AgriBegri Shiva Gold Xtra photo shows 1 L."
+  },
+  {
+    "name": "UREA 45KG",
+    "category": "FERTILIZERS",
+    "brand": "CHAMBAL",
+    "image": "/product-images/chambal-bharat-urea.webp",
+    "source": "https://www.chambalfertilisers.com/pdf/CHAMBAL_BOOK_FINAL_EN_Editable_2025.pdf#page=11",
+    "status": "unverified",
+    "verification": "Official Chambal booklet shows Bharat Urea bag; catalogue row omits Bharat branding and weight is not legible."
+  },
+  {
+    "name": "12.32.16 CHAMBAL",
+    "category": "FERTILIZERS",
+    "brand": "CHAMBAL",
+    "image": "/product-images/chambal-bharat-npk-123216.webp",
+    "source": "https://www.chambalfertilisers.com/pdf/CHAMBAL_BOOK_FINAL_EN_Editable_2025.pdf#page=14",
+    "status": "unverified",
+    "verification": "Official Chambal booklet shows Bharat NPK bag on the 12:32:16 product page; ratio is not legible in the photo."
+  },
+  {
+    "name": "20.20.0.13(CHAMBAL) 50KG",
+    "category": "FERTILIZERS",
+    "brand": "CHAMBAL",
+    "image": "/product-images/chambal-bharat-aps.webp",
+    "source": "https://www.chambalfertilisers.com/pdf/CHAMBAL_BOOK_FINAL_EN_Editable_2025.pdf#page=15",
+    "status": "unverified",
+    "verification": "Official Chambal booklet shows Bharat APS on the 20:20:0:13 page; 50 kg weight is not legible."
+  },
+  {
+    "name": "LIBERAL ZN",
+    "category": "FERTILIZERS",
+    "brand": "BASF",
+    "image": "/product-images/basf-librel-zn.webp",
+    "source": "https://crop-protection.basf.in/en/librel-zn",
+    "status": "unverified",
+    "verification": "Official BASF Librel Zn pack photo shows a 100 g bag; catalogue uses the misspelled name 'Liberal Zn' and lists no pack size."
+  },
+  {
+    "name": "INTERPID (300ML)",
+    "category": "Pesticide",
+    "brand": "BASF",
+    "image": "/product-images/basf-intrepid-new-pack.webp",
+    "source": "https://crop-protection.basf.in/mr/node/456",
+    "status": "unverified",
+    "verification": "Official BASF Intrepid new-pack image; official 300 ml label confirms the volume, but the catalogue spells the name 'Interpid' and the promotional photo does not show the quantity."
+  },
+  {
+    "name": "OBERO N (100ML)",
+    "category": "INSECTICIDE",
+    "brand": "Bayer",
+    "image": "/product-images/bayer-oberon.webp",
+    "source": "https://www.bighaat.com/products/oberon-insecticide",
+    "status": "unverified",
+    "verification": "Bayer Oberon bottle photo; the catalogue spells the product name 'Obero N' and the pictured bottle's volume is not legible."
+  },
+  {
+    "name": "FENOS QUICK (100ML)",
+    "category": "Pesticide",
+    "brand": "Bayer",
+    "image": "/product-images/bayer-fenos-quick.webp",
+    "source": "https://www.kisanshop.in/product/bayer-fenos-quick-insecticide",
+    "status": "verified",
+    "verification": "The local photo visibly identifies Bayer Fenos Quick; KisanShop's page labels this image and selected pack as 100 ml."
+  },
+  {
+    "name": "EVER GOL XTEND (100ML)",
+    "category": "Pesticide",
+    "brand": "Bayer",
+    "image": "/product-images/bayer-evergol-xtend.webp",
+    "source": "https://www.kisanshop.in/product/bayer-evergol-xtend-fungicide-seed-treatment",
+    "status": "unverified",
+    "verification": "KisanShop photo is identified with the 100 ml EverGol Xtend product listing, but volume is not legible on the bottle."
+  },
+  {
+    "name": "(45S46) MUSTARD SEEDS",
+    "category": "SEEDS",
+    "brand": "PIONEER",
+    "image": "/product-images/pioneer-45s46.webp",
+    "source": "https://www.mystore.in/en/product/pioneer-45s46-mustard-seed",
+    "verification": "The package identifies Pioneer 45S46 mustard seed; no pack size is specified in the catalogue row."
+  },
+  {
+    "name": "BAJRA 151 (1.5KG)",
+    "category": "SEEDS",
+    "brand": "STAR AGRI SEEDS",
+    "image": "/product-images/star-agri-151.webp",
+    "source": "https://www.kisanshop.in/product/star-151-hybrid-bajra-seeds",
+    "verification": "The product photo identifies Star 151 hybrid bajra seed and shows the 1.5 kg pack."
+  },
+  {
+    "name": "STAR 325 GEHU (20KG)",
+    "category": "SEEDS",
+    "brand": "STAR AGRI SEEDS",
+    "image": "/product-images/star-agri-325.webp",
+    "source": "https://staragriseeds.com/wheat-seeds/star-325/",
+    "verification": "Official Star Agri product photo identifies Star 325 wheat and shows the 20 kg pack."
+  },
+  {
+    "name": "LOKI (AROOSA)",
+    "category": "SEEDS",
+    "brand": "NUNHEMS (BASF)",
+    "image": "/product-images/nunhems-aroosa.webp",
+    "source": "https://cultree.in/products/basf-nunhems-aroosa-f1-hybrid-bottle-gourd-seeds",
+    "verification": "The product photo identifies BASF Nunhems Aroosa F1 hybrid bottle-gourd seed; no pack size is specified in the catalogue row."
+  },
+  {
+    "name": "86M94 (1.5KG)",
+    "category": "SEEDS",
+    "brand": "PIONEER",
+    "image": "/product-images/pioneer-86m94.webp",
+    "source": "https://www.indiamart.com/proddetail/pioneer-hybrid-bajra-seed-86-m-94-2851290045788.html",
+    "status": "unverified",
+    "verification": "The packet clearly identifies Pioneer 86M94 hybrid bajra, but the pictured pack size is not legible."
+  },
+  {
+    "name": "86M38 (1.5KG)",
+    "category": "SEEDS",
+    "brand": "PIONEER",
+    "image": "/product-images/pioneer-86m38.webp",
+    "source": "https://agroshopy.com/index.php?route=product/product&product_id=702",
+    "verification": "The packet is visibly marked Pioneer 86M38; its listing identifies the product as a 1.5 kg pack."
+  },
+  {
+    "name": "86M90 (1.5KG)",
+    "category": "SEEDS",
+    "brand": "PIONEER",
+    "image": "/product-images/pioneer-86m90.webp",
+    "source": "https://www.indiamart.com/proddetail/86m90-pioneer-hybrid-bajra-seed-2852155338730.html",
+    "verification": "The packet is visibly marked Pioneer 86M90; the listing identifies the pack as 1.5 kg."
+  },
+  {
+    "name": "DEKALB 7074",
+    "category": "SEEDS",
+    "brand": "Bayer",
+    "image": "/product-images/bayer-dekalb-7074.webp",
+    "source": "https://qa.farmrise.bayer.com/seed-products/dkc-7074/214415",
+    "verification": "Bayer's product image clearly labels the maize seed bag DEKALB DKC 7074."
+  },
+  {
+    "name": "DEKALB 7074 (LOOSE 500gm)",
+    "category": "SEEDS",
+    "brand": "Bayer",
+    "image": "/product-images/bayer-dekalb-7074.webp",
+    "source": "https://qa.farmrise.bayer.com/seed-products/dkc-7074/214415",
+    "status": "unverified",
+    "verification": "The Bayer DEKALB DKC 7074 seed identity matches, but this is a retail bag, not a verified loose 500 g pack."
+  },
+  {
+    "name": "STAR 350 GEHU (20KG)",
+    "category": "SEEDS",
+    "brand": "STAR AGRI SEEDS",
+    "image": "/product-images/star-agri-350.webp",
+    "source": "https://staragriseeds.com/product/wheat-seeds/star-350/",
+    "verification": "Official Star Agri photo identifies Star 350 wheat and shows the 20 kg pack."
+  },
+  {
+    "name": "(45S47) MUSTARD SEED (1KG)",
+    "category": "SEEDS",
+    "brand": "PIONEER",
+    "image": "/product-images/pioneer-45s47.webp",
+    "source": "https://byebyemrp.com/sale-detail/mustard-seed-45s47-1-kg-pioneer-seeds/sale1695640520",
+    "verification": "The packet visibly reads Pioneer 45S47 Hybrid Mustard Seed; the listing specifies a 1 kg pack."
+  },
+  {
+    "name": "STAR 10-15 (MUSTARD SEEDS) (1KG)",
+    "category": "SEEDS",
+    "brand": "STAR AGRI SEEDS",
+    "image": "/product-images/star-agri-10-15.webp",
+    "source": "https://staragriseeds.com/product/mustard-seeds/star-10-15/",
+    "verification": "Official Star Agri packet identifies STAR 10-15 hybrid mustard seed and shows 1 kg."
+  },
+  {
+    "name": "DEKALB 8209",
+    "category": "SEEDS",
+    "brand": "Bayer",
+    "image": "/product-images/bayer-dekalb-8209.webp",
+    "source": "https://www.bayercropscience.in/en/seed-products/dkc-8209/214925",
+    "verification": "Bayer's product photo clearly labels the maize seed bag DEKALB DKC 8209."
+  },
+  {
+    "name": "DEKALB 8209 (LOOSE 500GM)",
+    "category": "SEEDS",
+    "brand": "Bayer",
+    "image": "/product-images/bayer-dekalb-8209.webp",
+    "source": "https://www.bayercropscience.in/en/seed-products/dkc-8209/214925",
+    "status": "unverified",
+    "verification": "The Bayer DEKALB DKC 8209 seed identity matches, but this photo shows a retail bag, not the loose 500 g pack."
+  },
+  {
+    "name": "Nath Super 27 Bajra",
+    "category": "SEEDS",
+    "brand": "NATH SEEDS",
+    "image": "/product-images/nath-super-27.webp",
+    "source": "https://www.nathbiogenes.com/product/field-crop-bajra-nbh-27-super-sattavis/",
+    "verification": "Official Nath Bio-Genes package photo identifies Super-27 hybrid bajra seed."
+  },
+  {
+    "name": "3028 BTBG (475GR)",
+    "category": "SEEDS",
+    "brand": "ANKUR",
+    "image": "/product-images/ankur-3028-bg2.webp",
+    "source": "https://ankurseeds.com/product-details/ankur-3028-bg-II",
+    "status": "unverified",
+    "verification": "Official Ankur photo identifies 3028 BG-II cotton seed, but the pictured packet does not show the catalogue's 475 g weight."
+  },
+  {
+    "name": "BAJRA 8860",
+    "category": "SEEDS",
+    "brand": "SHRIRAM",
+    "image": "/product-images/shriram-8860.webp",
+    "source": "https://shriramfarmsolutions.com/product/shriram-8860/",
+    "verification": "Official Shriram package photo identifies the product as 8860 hybrid bajra seed."
+  },
+  {
+    "name": "APANA POWER 1(1KG)",
+    "category": "FERTILIZERS",
+    "brand": "HURL",
+    "image": "/product-images/hurl-apna-power-1kg.webp",
+    "source": "https://hurl.net.in/apnapower/",
+    "verification": "Official HURL product photo identifies Apna Power; manufacturer lists 1 kg as an available pack size."
+  },
+  {
+    "name": "SARAGRIKA 500ML",
+    "category": "FERTILIZERS",
+    "brand": "IFFCO",
+    "image": "/product-images/iffco-sagarika-500ml.webp",
+    "source": "https://www.amazon.in/IFFCO-Sagarika-Seaweed-Based-Bio-Stimulant-Fertiliser/dp/B0F66NQDZ2",
+    "verification": "The product listing identifies the pictured IFFCO Sagarika seaweed fertilizer as the 500 ml product."
+  },
+  {
+    "name": "PDM (GRANULAR POTASH) 50KG",
+    "category": "FERTILIZERS",
+    "brand": "IPL",
+    "image": "/product-images/ipl-pdm-50kg.webp",
+    "source": "https://www.indiamart.com/proddetail/ipl-granular-potash-2856870578297.html",
+    "verification": "The IPL bag is labeled Granular Potash PDM and 50 kg; the product listing matches both."
+  },
+  {
+    "name": "Star 468 (2kg)",
+    "category": "SEEDS",
+    "brand": "STAR AGRI SEEDS",
+    "image": "/product-images/star-agri-468.webp",
+    "source": "https://www.indiamart.com/proddetail/star-agriseed-star-468-urad-seeds-2859287068862.html",
+    "verification": "The packet visibly identifies Star Agri STAR 468 black gram seed and shows 2 kg."
+  },
+  {
+    "name": "MOONG STAR 444 (2KG)",
+    "category": "SEEDS",
+    "brand": "STAR AGRI SEEDS",
+    "image": "/product-images/star-agri-444.webp",
+    "source": "https://staragriseeds.com/moong-seeds/star-444/",
+    "verification": "Official Star Agri packet identifies STAR 444 green gram seed and shows 2 kg."
+  },
+  {
+    "name": "JOWAR SEED (3KG) POSHAK-44",
+    "category": "SEEDS",
+    "brand": "STAR AGRI SEEDS",
+    "image": "/product-images/star-agri-poshak-44.webp",
+    "source": "https://staragriseeds.com/product/sudan-sorghum-grass-seeds/poshak-44/",
+    "verification": "Official Star Agri package identifies Poshak 44 hybrid sorghum and shows 3 kg."
+  },
+  {
+    "name": "JOO STAR AGRI (2121 ) 20KG",
+    "category": "SEEDS",
+    "brand": "STAR AGRI SEEDS",
+    "image": "/product-images/star-agri-2121.webp",
+    "source": "https://staragriseeds.com/barley-seeds/star-2121/",
+    "verification": "Official Star Agri packet identifies STAR 2121 barley seed and shows 20 kg, matching Joo (barley)."
+  },
+  {
+    "name": "111 SHRIRAM SUPER (KG)",
+    "category": "SEEDS",
+    "brand": "SHRI RAM",
+    "image": "/product-images/shriram-super-111.webp",
+    "source": "https://www.indiamart.com/proddetail/shriram-super-111-wheat-seed-27216801562.html",
+    "verification": "The packet is visibly labeled Shriram Super 111 Wheat Seeds."
+  },
+  {
+    "name": "SR-14 SHRIRAM SUPER (KG)",
+    "category": "SEEDS",
+    "brand": "SHRI RAM",
+    "image": "/product-images/shriram-super-sr14.webp",
+    "source": "https://shriramfarmsolutions.com/product/shriram-super-1-sr-14/",
+    "verification": "The official Shriram product graphic clearly displays the Super 1-SR-14 wheat-seed bag."
+  },
+  {
+    "name": "TIL (SONA-51 500GR",
+    "category": "SEEDS",
+    "brand": "SHRI RAM",
+    "image": "/product-images/shriram-sona-51.webp",
+    "source": "https://www.indiamart.com/proddetail/shree-ram-super-sona-51-tilli-sesamum-seeds-2859287273797.html",
+    "verification": "The photo shows the Shree Ram Super Sona-51 sesame seed packet; the listing identifies the 500 g pack."
+  },
+  {
+    "name": "Landson Bajra 8472",
+    "category": "SEEDS",
+    "brand": "landson",
+    "image": "/product-images/landson-8472.webp",
+    "source": "https://landsonagrofarms.com/hybrid-bajra-seeds-in-bhind.html",
+    "verification": "The packet shows Landson SON-8472 research hybrid bajra seed."
+  },
+  {
+    "name": "GUWAR NEELAM -61",
+    "category": "SEEDS",
+    "brand": "NEELAM",
+    "image": "/product-images/neelam-61.webp",
+    "source": "https://www.kisanestore.com/products/clusterbean-guar-neelam-61",
+    "verification": "The packet visibly identifies the product as Guwar Neelam-61."
+  },
+  {
+    "name": "JIRA (WESTERN C-60) (2KG)",
+    "category": "SEEDS",
+    "brand": "WESTERN SEED",
+    "image": "/product-images/western-c60.webp",
+    "source": "https://westernagriseeds.com/western-c-60-cumin/",
+    "status": "unverified",
+    "verification": "The official packet clearly identifies Western-C 60 research cumin, but the catalogue's 2 kg pack size is not shown."
+  },
+  {
+    "name": "COTTON JAI BG II",
+    "category": "SEEDS",
+    "brand": "ANKUR",
+    "image": "/product-images/ankur-jai-bg2.webp",
+    "source": "https://ankurseeds.com/product-details/ankur-jai-bg-ii-2",
+    "verification": "Official Ankur package identifies Jai BG-II cotton seed."
+  },
+  {
+    "name": "MOHAN WONDER WHEAT (20KG)",
+    "category": "SEEDS",
+    "brand": "NATH SEEDS",
+    "image": "/product-images/nath-mohan-wonder.webp",
+    "source": "https://www.nathbiogenes.com/product/field-crop-wheat-mohan-wonder/",
+    "verification": "Official Nath Bio-Genes package identifies Mohan Wonder wheat seed; a product listing confirms a 20 kg offering."
+  },
+  {
+    "name": "SUPER 303 WHEAT (20KG)",
+    "category": "SEEDS",
+    "brand": "SHRI RAM",
+    "image": "/product-images/shriram-super-303.webp",
+    "source": "https://www.indiamart.com/proddetail/shriram-super-303-wheat-seeds-20-kg-bag-2852839757591.html",
+    "verification": "Official Shriram package identifies Super 303 wheat seeds; product listing confirms the 20 kg bag."
+  },
+  {
+    "name": "FAME (100ML)",
+    "category": "Pesticide",
+    "brand": "Bayer",
+    "image": "/product-images/bayer-fame-100ml.webp",
+    "source": "https://www.indiamart.com/proddetail/bayer-fame-agricultural-insecticide-2856182848797.html",
+    "verification": "The listing identifies the pictured Bayer Fame bottle as the 100 ml pack."
+  },
+  {
+    "name": "FAME(250ML)",
+    "category": "Pesticide",
+    "brand": "Bayer",
+    "image": "/product-images/bayer-fame-250ml.webp",
+    "source": "https://rmpcagro.com/product/fame-insecticide-bayer-250ml/",
+    "verification": "The Bayer Fame bottle is legibly labeled 250 ml and matches the product listing."
+  },
+  {
+    "name": "MOBICEL-H (1KG)",
+    "category": "FERTILIZERS",
+    "brand": "SUMITOMO",
+    "image": "/product-images/sumitomo-mobicel-h-1kg.webp",
+    "source": "https://agribegri.com/products/sumitomo-mobicel-h-plant-growth-regulator",
+    "verification": "The Sumitomo Mobicel-H product page lists 1 kg as an available pack; the package identifies Mobicel-H."
+  },
+  {
+    "name": "AMPLIGO(500ML)",
+    "category": "INSECTICIDE",
+    "brand": "SYNGENTA",
+    "image": "/product-images/syngenta-ampligo-500ml.webp",
+    "source": "https://www.syngenta.co.in/ampligo",
+    "verification": "The package is labeled Syngenta Ampligo 500 ml, and Syngenta lists that pack size."
+  },
+  {
+    "name": "MASTERCOP (400ML)",
+    "category": "Pesticide",
+    "brand": "ADAMA",
+    "image": "/product-images/adama-mastercop-400ml.webp",
+    "source": "https://www.indiamart.com/proddetail/400ml-adama-mastercop-fungicide-2854463755673.html",
+    "verification": "The image shows the ADAMA Mastercop fungicide pack; the associated listing specifies 400 ml."
+  },
+  {
+    "name": "5.15.0.10 gromor",
+    "category": "FERTILIZERS",
+    "brand": "GROMOR",
+    "image": "/product-images/coromandel-gromor-515010.webp",
+    "source": "https://www.indiamart.com/proddetail/n-p-k-5-15-0-10-coromandel-2858877012648.html",
+    "verification": "The bag visibly identifies Gromor Urea Super Phosphate and grade 5-15-0-10, matching this catalogue item."
+  },
+  {
+    "name": "SATASAT 160GR",
+    "category": "Pesticide",
+    "brand": "UPL",
+    "image": "/product-images/swal-satasat.webp",
+    "source": "https://www.swal.in/herbicides/satasat",
+    "verification": "Official SWAL Satasat herbicide package and formulation match the product; the 160 g pack size is not legible in the image.",
+    "status": "unverified"
+  },
+  {
+    "name": "HUMICIL (1LITER)",
+    "category": "Pesticide",
+    "brand": "DOW",
+    "image": "/product-images/dow-humicil-1l.webp",
+    "source": "https://www.indiamart.com/proddetail/humicil-bio-stimulant-2850247720588.html",
+    "verification": "Humicil label matches the product and retailer listing identifies Dow Agro Sciences and 1 L; neither brand nor volume is visible on the supplied photo.",
+    "status": "unverified"
+  },
+  {
+    "name": "KISAN SULFO (13.5GR+500ML)",
+    "category": "HERBICIDE",
+    "brand": "NFL",
+    "image": "/product-images/nfl-kisan-sulfo-135g-500ml.webp",
+    "source": "https://eagrostore.com/item/nfl-kisan-sulfo-sulfosulfuron-75-wg-systemic/",
+    "verification": "Package visibly identifies NFL Kisan Sulfo, sulfosulfuron 75% WG, and net contents 13.5 g + 500 ml, exactly matching the catalogue item."
+  },
+  {
+    "name": "TSP (50KG)",
+    "category": "FERTILIZERS",
+    "brand": "IPL",
+    "image": "/product-images/ipl-tsp-50kg.webp",
+    "source": "https://indianpotash.org/fertilisers.html",
+    "verification": "Official IPL Bharat TSP bag visibly shows triple superphosphate (46% P2O5) and 50 kg net weight."
+  },
+  {
+    "name": "Pevota 30ml",
+    "category": "Pesticide",
+    "brand": "CHAMBAL",
+    "image": "/product-images/chambal-pevota.webp",
+    "source": "https://www.indiamart.com/proddetail/chambal-pevota-pesticide-24407291530.html",
+    "verification": "The bottle label identifies Chambal Pevota insecticide; the 30 ml size is not legible on this product photo.",
+    "status": "unverified"
+  },
+  {
+    "name": "KISAN MET (8GR)",
+    "category": "Pesticide",
+    "brand": "NFL",
+    "image": "/product-images/nfl-kisan-met-8g-200ml.webp",
+    "source": "https://www.indiamart.com/proddetail/kisan-met-metsulfuron-methyl-2853930892888.html",
+    "verification": "The label confirms NFL Kisan Met and net contents 8 g + 200 ml; the catalogue calls its category Pesticide while the package identifies a herbicide.",
+    "status": "unverified"
+  },
+  {
+    "name": "NANODAP(2-5-0) 1LITER",
+    "category": "FERTILIZERS",
+    "brand": "GROMOR",
+    "image": "/product-images/gromor-nano-dap-1l.webp",
+    "source": "https://www.coromandel.biz/gromor-nano-dap/",
+    "verification": "Official Coromandel package visibly identifies Gromor Nano DAP (2-5-0) and net quantity 1 litre."
+  },
+  {
+    "name": "LIQUID CONOSORTIA 500ML",
+    "category": "Pesticide",
+    "brand": "IFFCO",
+    "image": "/product-images/iffco-npk-liquid-consortia.webp",
+    "source": "https://www.justdial.com/jdmart/Bangalore/Iffco-NPK-Liquid-Consortia-500-ml/pid-219952635/080P5109186",
+    "verification": "The bottle visibly identifies IFFCO NPK Liquid Consortia; retailer listing specifies 500 ml, not printed legibly on this photo.",
+    "status": "unverified"
+  },
+  {
+    "name": "SSP (50KG) ANNADATA",
+    "category": "FERTILIZERS",
+    "brand": "ANNADATA",
+    "image": "/product-images/annadata-ssp-powder-50kg.webp",
+    "source": "https://www.mbapl.com/our-products.html",
+    "verification": "Official Annadata SSP powder bag; MBAPL lists Annadata SSP powder in 50 kg packaging."
+  },
+  {
+    "name": "SSP( DOUBAL HOURSE) 50KG",
+    "category": "FERTILIZERS",
+    "brand": "COROMANDEL",
+    "image": "/product-images/coromandel-double-horse-ssp-50kg.webp",
+    "source": "https://www.coromandel.biz/gromor-ssp/",
+    "verification": "Official Coromandel image shows Gromor Double Horse Super SSP bags (granular and powdered), each labeled 50 kg."
+  },
+  {
+    "name": "NPK (16.16.16)",
+    "category": "FERTILIZERS",
+    "brand": "IPL",
+    "image": "/product-images/ipl-acrona-161616-50kg.webp",
+    "source": "https://indianpotash.org/fertilisers.html",
+    "verification": "Official IPL Acrona Bharat NPK bag visibly shows grade 16:16:16 and net weight 50 kg."
+  },
+  {
+    "name": "Polysulphate 25KG",
+    "category": "FERTILIZERS",
+    "brand": "IPL",
+    "image": "/product-images/ipl-polysulphate-25kg.webp",
+    "source": "https://www.indiamart.com/proddetail/polysuphate-ipl-25kg-2859417930412.html",
+    "verification": "IPL bag labels the imported product Polysulphate/Polyhalite; listing specifies 25 kg, which is not legible on the photo.",
+    "status": "unverified"
+  },
+  {
+    "name": "BIRLA BALWAN 19.19.19 (1kg)",
+    "category": "FERTILIZERS",
+    "brand": "BIRLA BALVAAN",
+    "image": "/product-images/birla-balwan-191919-1kg.webp",
+    "source": "https://m.indiamart.com/proddetail/birla-balwan-npk-19-19-19-water-soluble-fertilizer-2859710310448.html",
+    "verification": "The bag visibly shows Birla Balwan NPK 19:19:19 and 1 kg net weight, matching the catalogue item."
+  },
+  {
+    "name": "XELORA (80ML)",
+    "category": "Pesticide",
+    "brand": "NUNHEMS (BASF)",
+    "image": "/product-images/basf-xelora.webp",
+    "source": "https://crop-protection.basf.in/en/fungicide/xelorar",
+    "verification": "The BASF Xelora formulation/product matches, but the 80 ml size is not legible on the package photo and the image identifies it as a fungicide while the sheet says pesticide.",
+    "status": "unverified"
+  },
+  {
+    "name": "DELEGATE (180ML)",
+    "category": "INSECTICIDE",
+    "brand": "CORTEVA",
+    "image": "/product-images/corteva-delegate-180ml.webp",
+    "source": "https://www.corteva.com/in/products-and-solutions/crop-protection/delegate.html",
+    "verification": "Official Corteva Delegate insecticide pack; Corteva's package asset is explicitly the 180 ml front label."
+  },
+  {
+    "name": "N.P.K. 15.15.15 RCF (50KG)",
+    "category": "FERTILIZERS",
+    "brand": "RCF",
+    "image": "/product-images/rcf-npk-151515-50kg.webp",
+    "source": "https://www.rcfltd.com/product-fertilizer/fertilizer-1",
+    "verification": "Official RCF Bharat NPK 15:15:15 bag visibly lists RCF and 50 kg net weight."
+  },
+  {
+    "name": "UREA GOLD RCF (40KG)",
+    "category": "FERTILIZERS",
+    "brand": "RCF",
+    "image": "/product-images/rcf-urea-gold-40kg.webp",
+    "source": "https://www.rcfltd.com/product-fertilizer/fertilizer-1",
+    "verification": "Official RCF Bharat Urea Gold bag shows 40 kg net weight and sulphur-coated urea label."
+  },
+  {
+    "name": "NPK(19.19.19) RECHARGE",
+    "category": "FERTILIZERS",
+    "brand": "CHAMBAL",
+    "image": "/product-images/chambal-recharge-191919.webp",
+    "source": "https://agribegri.com/products/uttam-recharge-npk-191919-fertilizer.php",
+    "verification": "The bag visibly shows Uttam Recharge NPK 19:19:19 and Chambal Fertilisers as marketer, matching the product row."
+  },
+  {
+    "name": "MOP (KG)",
+    "category": "FERTILIZERS",
+    "brand": "IPL",
+    "image": "/product-images/ipl-mop-50kg.webp",
+    "source": "https://www.indiamart.com/proddetail/ipl-muriate-of-potash-20946372191.html",
+    "verification": "IPL MOP product matches; the image shows a 50 kg sack while this row is sold by loose kilogram.",
+    "status": "unverified"
+  },
+  {
+    "name": "TSP LUSE",
+    "category": "FERTILIZERS",
+    "brand": "IPL",
+    "image": "/product-images/ipl-tsp-50kg.webp",
+    "source": "https://indianpotash.org/fertilisers.html",
+    "verification": "Official IPL Bharat TSP product matches; photo depicts its 50 kg bag rather than the loose sale unit.",
+    "status": "unverified"
+  },
+  {
+    "name": "SSP (LUSE) ANNADATA",
+    "category": "FERTILIZERS",
+    "brand": "ANNADATA",
+    "image": "/product-images/annadata-ssp-powder-50kg.webp",
+    "source": "https://www.mbapl.com/our-products.html",
+    "verification": "Official Annadata SSP powder bag matches the brand and grade; photo shows packaged product, while this row is sold loose.",
+    "status": "unverified"
+  },
+  {
+    "name": "SSP GROPLUS (LUSE)",
+    "category": "FERTILIZERS",
+    "brand": "COROMANDEL",
+    "image": "/product-images/coromandel-groplus-50kg.webp",
+    "source": "https://www.coromandel.biz/groplus/",
+    "verification": "Official Coromandel GroPlus SSP product matches; the image shows the packaged 50 kg product while this row is sold loose.",
+    "status": "unverified"
+  },
+  {
+    "name": "USP (50KG)",
+    "category": "FERTILIZERS",
+    "brand": "COROMANDEL",
+    "image": "/product-images/coromandel-gromor-515010.webp",
+    "source": "https://www.coromandel.biz/gromor-urea-super-phosphate-2/",
+    "verification": "Coromandel identifies Gromor Urea Super Phosphate as its USP fertilizer and lists the 50 kg pack; the bag photo shows Urea Super Phosphate grade 5-15-0-10."
+  },
+  {
+    "name": "NPK 15.15.15 LUSE",
+    "category": "FERTILIZERS",
+    "brand": "RCF",
+    "image": "/product-images/rcf-npk-151515-50kg.webp",
+    "source": "https://www.rcfltd.com/product-fertilizer/fertilizer-1",
+    "verification": "Official RCF Suphala/Bharat NPK 15:15:15 product matches; the photo is of its 50 kg bag while this row is sold loose.",
+    "status": "unverified"
+  },
+  {
+    "name": "Makka CP 333",
+    "category": "SEEDS",
+    "brand": "JASMINE",
+    "image": "/product-images/jasmine-cp333-maize.webp",
+    "source": "https://www.cpseeds-india.com/product/10629-8066/cp-333",
+    "verification": "The packet visibly carries the Jasmine logo and CP 333 variety name, matching the catalogue item."
+  },
+  {
+    "name": "NPK 00-52-34",
+    "category": "FERTILIZERS",
+    "brand": "ANNADATA",
+    "image": "/product-images/annadata-mkp-005234-1kg.webp",
+    "source": "https://www.amazon.in/Annadata-MKP-00-Fertiliser-Outdoor-Indoor/dp/B0DMVY12J2",
+    "verification": "The Annadata package visibly identifies mono potassium phosphate, MKP 00:52:34, and 1 kg net weight."
+  },
+  {
+    "name": "00.00.50 POTASSIUM SULPHATE (1KG)",
+    "category": "FERTILIZERS",
+    "brand": "ANNADATA",
+    "image": "/product-images/annadata-sop-0050-1kg.webp",
+    "source": "https://www.amazon.in/Annadata-SOP-Fertiliser-Fertilizer-Outdoor-Indoor/dp/B0DMWD5FN4",
+    "verification": "The Annadata Sulphate of Potash packet shows 1 kg net weight and nutrient specification 0% N, 0% P, and 50% K2O (00:00:50)."
+  },
+  {
+    "name": "ANNADATA MAP(12.61.00) 1KG",
+    "category": "FERTILIZERS",
+    "brand": "ANNADATA",
+    "image": "/product-images/annadata-map-126100-1kg.webp",
+    "source": "https://www.amazon.in/Annadata-MAP-12-61-Outdoor-Indoor/dp/B0DL68B9X4",
+    "verification": "The Annadata MAP package visibly shows 12-61-00 and 1 kg net weight, exactly matching the row."
+  },
+  {
+    "name": "SHRI RAM MAP-NPK (12..61.00)",
+    "category": "FERTILIZERS",
+    "brand": "SHRI RAM",
+    "image": "/product-images/shriram-map-126100-1kg.webp",
+    "source": "https://agribegri.com/products/shriram-map-mono-ammonium-phosphate-126100-1-kg-online-.php",
+    "verification": "The Shriram package visibly shows MAP / NPK 12:61:00 and net quantity 1 kg, matching the item."
+  },
+  {
+    "name": "SUGANDHA 111 FENEEL SEEDS (1KG)",
+    "category": "SEEDS",
+    "brand": "SHRI RAM",
+    "image": "/product-images/shriram-sugandha-111-fennel-1kg.webp",
+    "source": "https://www.indiamart.com/proddetail/sugandha-111-research-fennel-seeds-2851879975130.html",
+    "verification": "The packet visibly says Shree Ram Research Fennel Seeds Sugandha-111; listing identifies the 1 kg package."
+  },
+  {
+    "name": "STREPTOCYCLINE",
+    "category": "Pesticide",
+    "brand": "HINDUSTAN",
+    "image": "/product-images/hindustan-streptocycline-6g.webp",
+    "source": "https://agribegri.com/products/hindustan-antibiotics-streptocycline.php",
+    "verification": "The packet visibly names Streptocycline and Hindustan Antibiotics Ltd.; the catalogue does not specify a pack size."
+  },
+  {
+    "name": "Laxmi urad PU-31",
+    "category": "SEEDS",
+    "brand": "laxmi",
+    "image": "/product-images/laxmi-urad-pu31.jpg",
+    "source": "https://www.indiamart.com/proddetail/shri-lakshmi-pu-31-urad-seeds-2859250808188.html",
+    "verification": "The sack visibly identifies Blackgram variety PU-31 and Sri Laxmi Venkateswara Seeds, matching the catalogue brand and seed variety."
+  },
+  {
+    "name": "19.19.19 (SUJLA ) (1KG)",
+    "category": "FERTILIZERS",
+    "brand": "RCF",
+    "image": "/product-images/rcf-sujala-191919-1kg.jpg",
+    "source": "https://www.indiamart.com/proddetail/1kg-sujala-water-soluble-fertilizer-2855615622073.html",
+    "verification": "The photographed pack reads Sujala 19:19:19, identifies Rashtriya Chemicals and Fertilizers Limited, and states net weight 1 kg."
+  },
+  {
+    "name": "MESOTRINE (700ML)",
+    "category": "HERBICIDE",
+    "brand": "CHAMBAL",
+    "image": "/product-images/chambal-uttam-mesotrine.webp",
+    "source": "https://agribegri.com/products/uttam-mesotrine-mesotrione-227--atrazine-227-sc-herbicide.php",
+    "verification": "Bottle visibly matches Chambal Uttam MesoTrine and the listed mesotrione + atrazine formulation; the retailer specifies 700 ml, but the volume is not legible on the photo.",
+    "status": "unverified"
+  },
+  {
+    "name": "WEEDMAR-38 (24D) 250ML",
+    "category": "Pesticide",
+    "brand": "DHANUKA",
+    "image": "/product-images/dhanuka-weedmar-38-tin.webp",
+    "source": "https://agribegri.com/products/weedmar-38-herbicide.php",
+    "verification": "Photo shows Dhanuka Weedmar 38 and 2,4-D Ethyl Ester 38% EC, matching the product; the image does not identify whether the tin is 250 ml or 500 ml.",
+    "status": "unverified"
+  },
+  {
+    "name": "WEEDMAR 38 (24D 500ML)",
+    "category": "Pesticide",
+    "brand": "DHANUKA",
+    "image": "/product-images/dhanuka-weedmar-38-tin.webp",
+    "source": "https://agribegri.com/products/weedmar-38-herbicide.php",
+    "verification": "Photo shows Dhanuka Weedmar 38 and 2,4-D Ethyl Ester 38% EC, matching the product; the image does not identify whether the tin is 250 ml or 500 ml.",
+    "status": "unverified"
+  },
+  {
+    "name": "STAMBO (5KG)",
+    "category": "Pesticide",
+    "brand": "CHAMBAL",
+    "image": "/product-images/chambal-uttam-stembo-fipronil.jpg",
+    "source": "https://www.indiamart.com/proddetail/fipronil-0-3-gr-21167101897.html",
+    "verification": "Photo shows Chambal Uttam Stembo (Fipronil 0.3% GR), matching the product despite the catalogue spelling ‘Stambo’; 5 kg pack size is not legible in the image.",
+    "status": "unverified"
+  },
+  {
+    "name": "VARISH (1LTR)",
+    "category": "HERBICIDE",
+    "brand": "SHIVALIK",
+    "image": "/product-images/shivalik-waris-1l.png",
+    "source": "https://www.indiamart.com/proddetail/shivalik-waris-herbicide-sodium-acifluorfen-16-5-clodinafop-propargyl-8-ec-2857066960962.html",
+    "verification": "Bottle shows Shivalik Waris, the same brand and a 1 litre volume matching the catalogue. Catalogue spells the name ‘Varish’ while the pack says ‘Waris’, so identity needs retailer confirmation.",
+    "status": "unverified"
+  },
+  {
+    "name": "FURASAC (1KG)",
+    "category": "FERTILIZERS",
+    "brand": "SHIVALIK",
+    "image": "/product-images/shivalik-furasac-1kg.jpeg",
+    "source": "https://www.exportersindia.com/product-detail/carbofuran-3-g-encapsulated-insecticide-4115225176.htm",
+    "verification": "Pack photo reads Furasac; the seller identifies it as Shivalik Carbofuran 3% G and a university procurement listing confirms the Shivalik product in 1 kg. The image does not show a readable net weight.",
+    "status": "unverified"
+  },
+  {
+    "name": "SSP(GIBBO) 50KKG",
+    "category": "FERTILIZERS",
+    "brand": "ANNADATA",
+    "image": "/product-images/annadata-ssp-granular-50kg.png",
+    "source": "https://ostwal.in/our-business.html",
+    "verification": "Official Ostwal listing identifies Annadata SSP (G) as granular and 50 kg; the pack photo reads Annadata Super (Granular). The catalogue's ‘Gibbo’ descriptor is unexplained, so this mapping is unverified.",
+    "status": "unverified"
+  },
+  {
+    "name": "SSP(GRANULAR) 50KG",
+    "category": "FERTILIZERS",
+    "brand": "RAMA",
+    "image": "/product-images/rama-girnar-ssp-granular-50kg.webp",
+    "source": "https://ramaphosphates.com/products/girnar-single-super-phosphate",
+    "verification": "Rama Phosphates' official Girnar page shows a 50 kg granular SSP bag. The catalogue lists manufacturer ‘Rama’ but omits the Girnar product brand, so this mapping is unverified.",
+    "status": "unverified"
+  },
+  {
+    "name": "VELUM PRIME( 500ML)",
+    "category": "Pesticide",
+    "brand": "Bayer",
+    "image": "/product-images/bayer-velum-prime-500ml.jpg",
+    "source": "https://www.kisancenter.in/product/29205765/Bayer-Velum-Prime-Insecticide--Fluopyrum-34-48--SC-",
+    "verification": "Bayer Velum Prime bottle visibly says 500 ml; the exact pack photo is listed on a 500 ml product page.",
+    "status": "verified"
+  },
+  {
+    "name": "SOLOMON (100ML)",
+    "category": "Pesticide",
+    "brand": "Bayer",
+    "image": "/product-images/bayer-solomon-100ml.webp",
+    "source": "https://agrosiaa.com/products/detail/solomon-insecticide-100-ml",
+    "verification": "Bayer Solomon bottle visibly says 100 ml; the exact pack photo and specifications are shown on the 100 ml product page.",
+    "status": "verified"
+  },
+  {
+    "name": "PLANOFIX(100ML)",
+    "category": "Pesticide",
+    "brand": "Bayer",
+    "image": "/product-images/bayer-planofix-100ml.webp",
+    "source": "https://www.hdagrochemicals.com/product/29457982/Planofix--Alpha-Naphthyl-Acetic-Acid--4-5--w-w--100-ML",
+    "verification": "Bayer Planofix bottle visibly says 100 ml; the exact pack photo is shown on a 100 ml product page.",
+    "status": "verified"
+  },
+  {
+    "name": "KORKO (150GR)",
+    "category": "INSECTICIDE",
+    "brand": "SUMITOMO",
+    "image": "/product-images/sumitomo-korko-150g.jpg",
+    "source": "https://www.bighaat.com/products/korko-insecticide?variant=41545101967383",
+    "verification": "Sumitomo Korko package label visibly says 150 g; product and size match the catalogue.",
+    "status": "verified"
+  },
+  {
+    "name": "KORKO(750GR)",
+    "category": "Pesticide",
+    "brand": "SUMITOMO",
+    "image": "/product-images/sumitomo-korko-750g.png",
+    "source": "https://www.kisancenter.in/product/30300453/Sumitomo-Korko-Insecticide--Emamectine-Benzoate-1-5----Profenofos-35--WDG-",
+    "verification": "Sumitomo Korko package label visibly says 750 g and matches the catalogue variant.",
+    "status": "verified"
+  },
+  {
+    "name": "ALIETTE (250GR)",
+    "category": "Pesticide",
+    "brand": "Bayer",
+    "image": "/product-images/bayer-aliette-250g.png",
+    "source": "https://www.krushivista.com/products/aliette-fungicide-by-bayer/1477796000002005026",
+    "verification": "Bayer Aliette box visibly says 250 g Systemic Fungicide; product and size match the catalogue.",
+    "status": "verified"
+  },
+  {
+    "name": "LUNA (250ML)",
+    "category": "Pesticide",
+    "brand": "Bayer",
+    "image": "/product-images/bayer-luna-250ml.png",
+    "source": "https://kisancenter.com/product/bayer-luna-experience-fungicide-fluopyram-177-tebuconazole-177-ww-sc/217883",
+    "verification": "Bayer Luna Experience bottle label visibly says 250 ml; product and pack size match the catalogue.",
+    "status": "verified"
+  },
+  {
+    "name": "MONOLIK 250ML",
+    "category": "Pesticide",
+    "brand": "SHIVALIK",
+    "image": "/product-images/shivalik-monolik-250ml.webp",
+    "source": "https://agribegri.com/products/shivalik-monolik-monocrotophos-36-sl-insecticide.php",
+    "verification": "Shivalik Monolik bottle label visibly says 250 ml and matches the catalogue product and pack size.",
+    "status": "verified"
+  },
+  {
+    "name": "AMBITION (250ML)",
+    "category": "Pesticide",
+    "brand": "Bayer",
+    "image": "/product-images/bayer-ambition-250ml.png",
+    "source": "https://www.mystore.in/en/product/ambition-plant-growth-promoter-bayer",
+    "verification": "Bayer Ambition label and Mystore listing identify the 250 ml pack, matching the catalogue.",
+    "status": "verified"
+  },
+  {
+    "name": "AGIL (1LTR)",
+    "category": "Pesticide",
+    "brand": "ADAMA",
+    "image": "/product-images/adama-agil-1l.jpg",
+    "source": "https://sumichemchemical.com/product/agil-1-ltr/",
+    "verification": "ADAMA Agil bottle label visibly says 1 Litre; product and pack size match the catalogue.",
+    "status": "verified"
+  },
+  {
+    "name": "TAKAF (100ML)",
+    "category": "Pesticide",
+    "brand": "ADAMA",
+    "image": "/product-images/adama-takaf-100ml.webp",
+    "source": "https://www.agristores.in/products/takaf-insecticide",
+    "verification": "ADAMA Takaf bottle label visibly says 100 ml; exact product and size match the catalogue.",
+    "status": "verified"
+  },
+  {
+    "name": "FLAMBERGE (500ML)",
+    "category": "Pesticide",
+    "brand": "ADAMA",
+    "image": "/product-images/adama-flamberge-500ml.webp",
+    "source": "https://kisancenter.com/product/adama-flamberge-natural-bio-stimulant/217868",
+    "verification": "ADAMA Flamberge bottle label visibly says 500 ml; product and pack size match the catalogue.",
+    "status": "verified"
+  },
+  {
+    "name": "ACEMAIN 500GR",
+    "category": "Pesticide",
+    "brand": "ADAMA",
+    "image": "/product-images/adama-acemain-500g.png",
+    "source": "https://kisancenter.com/product/adama-acemain-insecticide-acephate-75-sp/217713",
+    "verification": "ADAMA Acemain packet back label visibly shows 500 g; product and pack size match the catalogue.",
+    "status": "verified"
+  },
+  {
+    "name": "CUSTODIA(500ML)",
+    "category": "Pesticide",
+    "brand": "ADAMA",
+    "image": "/product-images/adama-custodia-500ml.png",
+    "source": "https://cultree.in/products/adama-custodia-azoxystrobin-11-tebuconazole-18-3-w-w-sc-fungicide",
+    "verification": "ADAMA Custodia bottle label visibly says 500 ml; product, formulation, and size match the catalogue.",
+    "status": "verified"
+  },
+  {
+    "name": "BUONOS (250ML)",
+    "category": "Pesticide",
+    "brand": "Bayer",
+    "image": "/product-images/bayer-buonos-250ml.jpg",
+    "source": "https://www.tradeindia.com/products/buonos-tebuconazole-38-9-systemic-fungicide-for-leaf-spot-disease-7970141.html",
+    "verification": "Bayer Buonos bottle label visibly says 250 ml; product and size match the catalogue.",
+    "status": "verified"
+  },
+  {
+    "name": "AMBITION (500ML)",
+    "category": "Pesticide",
+    "brand": "Bayer",
+    "image": "/product-images/bayer-ambition-500ml.webp",
+    "source": "https://www.bighaat.com/products/ambition-fungicide",
+    "verification": "Bayer Ambition bottle label visibly says 500 ml and crop supplement, matching the product and size.",
+    "status": "verified"
+  },
+  {
+    "name": "LESENTA 100GR",
+    "category": "Pesticide",
+    "brand": "Bayer",
+    "image": "/product-images/bayer-lesenta-100g.webp",
+    "source": "https://www.bighaat.com/products/lesenta",
+    "verification": "Bayer Lesenta box visibly says 100 g; the exact product and size match the catalogue.",
+    "status": "verified"
+  },
+  {
+    "name": "LESENTA 40GR",
+    "category": "Pesticide",
+    "brand": "Bayer",
+    "image": "/product-images/bayer-lesenta-40g.jpeg",
+    "source": "https://www.exportersindia.com/product-detail/bayer-lesenta-insecticide-7216798878.htm",
+    "verification": "Bayer Lesenta box visibly says 40 g; the exact product and size match the catalogue.",
+    "status": "verified"
+  },
+  {
+    "name": "GAUCHO(250ML)",
+    "category": "Pesticide",
+    "brand": "Bayer",
+    "image": "/product-images/bayer-gaucho-250ml.jpg",
+    "source": "https://farme.in/product-view/Gaucho",
+    "verification": "Bayer Gaucho seed-dressing bottle label visibly says 250 ml; product and size match the catalogue.",
+    "status": "verified"
+  },
+  {
+    "name": "GAUCHO(100ML)",
+    "category": "Pesticide",
+    "brand": "Bayer",
+    "image": "/product-images/bayer-gaucho-100ml.jpg",
+    "source": "https://www.bayercropscience.in/en/protect-crops/seed-growth/gaucho",
+    "verification": "Official Bayer Gaucho packshot label visibly says 100 ml; product and size match the catalogue.",
+    "status": "verified"
+  },
+  {
+    "name": "VAYEGO(250ML)",
+    "category": "Pesticide",
+    "brand": "Bayer",
+    "image": "/product-images/bayer-vayego-250ml.jpg",
+    "source": "https://www.tradeindia.com/products/250ml-bayer-vayego-insecticide-9226647.html",
+    "verification": "Bayer Vayego bottle label visibly says 250 ml; the photo is attached to a product listing for the same pack.",
+    "status": "verified"
+  },
+  {
+    "name": "JUMP 2GM BAYER",
+    "category": "Pesticide",
+    "brand": "Bayer",
+    "image": "/product-images/bayer-jump-2g.jpg",
+    "source": "https://cultree.in/products/bayer-jump-fipronil-80-wg-insecticide",
+    "verification": "Bayer Jump sachet visibly says 2 g; product name and pack size match the catalogue item.",
+    "status": "verified"
+  },
+  {
+    "name": "CONFIDOR(500ML)",
+    "category": "INSECTICIDE",
+    "brand": "Bayer",
+    "image": "/product-images/bayer-confidor-500ml.jpeg",
+    "source": "https://gogreenkol.in/products/confidor",
+    "verification": "Bayer Confidor bottle label visibly says 500 ml and matches the catalogue brand and product.",
+    "status": "verified"
+  },
+  {
+    "name": "ALIETTE 100GR",
+    "category": "Pesticide",
+    "brand": "Bayer",
+    "image": "/product-images/bayer-aliette-100g.jpg",
+    "source": "https://agrofriend.com/Product_Details.aspx?cat=Crop+Protection&pid=1420&subcat=Fungicide+Bactericide",
+    "verification": "Bayer Aliette box visibly says 100 g; the pack photo identifies the same brand and fungicide.",
+    "status": "verified"
+  },
+  {
+    "name": "FLAMBERGE (250ML)",
+    "category": "Pesticide",
+    "brand": "ADAMA",
+    "image": "/product-images/adama-flamberge-250ml.jpg",
+    "source": "https://www.exportersindia.com/product-detail/adama-flamberge-bio-stimulant-5473317158.htm",
+    "verification": "The listing identifies Adama Flamberge and 250 ml packaging; the locally hosted image visibly matches the branded product bottle.",
+    "status": "verified"
+  },
+  {
+    "name": "AGIL (250ML)",
+    "category": "Pesticide",
+    "brand": "ADAMA",
+    "image": "/product-images/adama-agil-250ml.webp",
+    "source": "https://kisancenter.com/product/adama-agil-herbicide-propaquizafop-10/217825",
+    "verification": "The ADAMA Agil bottle label visibly reads 250 ml; the product page lists the matching 250 ml variant.",
+    "status": "verified"
+  },
+  {
+    "name": "MACOBAN-C (500GR)",
+    "category": "Pesticide",
+    "brand": "ADAMA",
+    "image": "/product-images/adama-macoban-c-500g.webp",
+    "source": "https://www.hdagrochemicals.com/product/32441631/Macoban-C--Mancozeb-63----Carbendazim-12--WP--500-GRM",
+    "verification": "The locally hosted packet visibly identifies ADAMA Macoban C and its formulation; the source listing is specifically for the 500 g pack.",
+    "status": "verified"
+  },
+  {
+    "name": "MACOBAN C (250GR)",
+    "category": "FUNGICIDE",
+    "brand": "ADAMA",
+    "image": "/product-images/adama-macoban-c-500g.webp",
+    "source": "https://www.adama.com/india/en/crop-protection/fungicides/macobanc",
+    "verification": "Official ADAMA page confirms the pictured Macoban C package and formulation. Its packaging image does not show a net weight, so it is suitable as product identification art for the catalogue's 250 g variant, whose size is confirmed in the Meghalaya Government approved product-size listing.",
+    "status": "verified"
+  }
+  ,{
+    "name": "FORPIDO (1.5KG)",
+    "category": "Pesticide",
+    "brand": "ADAMA",
+    "image": "/product-images/adama-forpido-3kg-unverified.jpg",
+    "source": "https://www.kisanshop.in/product/adama-forpido-insecticide",
+    "verification": "Exact ADAMA Forpido product, but the locally hosted photo visibly shows a 3 kg pack while the catalogue item is 1.5 kg; product match, pack size mismatch.",
+    "status": "unverified"
+  },
+  {
+    "name": "GENKLO (150ML)",
+    "category": "INSECTICIDE",
+    "brand": "SHIVALIK",
+    "image": "/product-images/shivalik-genklo-300ml-unverified.webp",
+    "source": "https://agribegri.com/products/shivalik-genklo-insecticide.php",
+    "verification": "Exact Shivalik Genklo product, but the locally hosted photo visibly shows 300 ml while the catalogue item is 150 ml; product match, pack size mismatch.",
+    "status": "unverified"
+  },
+  {
+    "name": "ACEMAIN (100GR)",
+    "category": "Pesticide",
+    "brand": "ADAMA",
+    "image": "/product-images/adama-acemain-1kg-unverified.webp",
+    "source": "https://www.kisanshop.in/product/adama-acemain-acephate-75-sp-insecticide",
+    "verification": "Exact ADAMA Acemain product, but the locally hosted photo visibly shows a 1 kg pack while the catalogue item is 100 g; product match, pack size mismatch.",
+    "status": "unverified"
+  },
+  {
+    "name": "ACEMAIN 250GR",
+    "category": "Pesticide",
+    "brand": "ADAMA",
+    "image": "/product-images/adama-acemain-1kg-unverified.webp",
+    "source": "https://www.kisanshop.in/product/adama-acemain-acephate-75-sp-insecticide",
+    "verification": "Exact ADAMA Acemain product, but the locally hosted photo visibly shows a 1 kg pack while the catalogue item is 250 g; product match, pack size mismatch.",
+    "status": "unverified"
+  },
+  {
+    "name": "EVER GOL XTEND 40ML",
+    "category": "Pesticide",
+    "brand": "Bayer",
+    "image": "/product-images/bayer-evergol-xtend-100ml-unverified.webp",
+    "source": "https://www.bighaat.com/products/evergol-xtend?variant=32934232162327",
+    "verification": "Exact Bayer EverGol Xtend product, but the locally hosted photo shows 100 ml while the catalogue item is 40 ml; product match, pack size mismatch.",
+    "status": "unverified"
+  },
+  {
+    "name": "RAZOR 500ML",
+    "category": "Pesticide",
+    "brand": "SHRI RAM",
+    "image": "/product-images/shriram-razor-1l-unverified.png",
+    "source": "https://shriramfarmsolutions.com/product/shriram-razor/",
+    "verification": "Official Shriram Razor product photo; the pictured bottle visibly reads 1 litre while the catalogue item is 500 ml; product match, pack size mismatch.",
+    "status": "unverified"
+  },
+  {
+    "name": "TAREEF 500ML",
+    "category": "Pesticide",
+    "brand": "SUMITOMO",
+    "image": "/product-images/sumitomo-tareef-1l-unverified.webp",
+    "source": "https://www.bighaat.com/products/tareef-plant-growth-regulator",
+    "verification": "Exact Sumitomo Tareef product, but the locally hosted photo visibly shows a 1 litre pack while the catalogue item is 500 ml; product match, pack size mismatch.",
+    "status": "unverified"
+  },
+  {
+    "name": "TAREEF 250 ML",
+    "category": "Pesticide",
+    "brand": "SUMITOMO",
+    "image": "/product-images/sumitomo-tareef-1l-unverified.webp",
+    "source": "https://www.bighaat.com/products/tareef-plant-growth-regulator",
+    "verification": "Exact Sumitomo Tareef product, but the locally hosted photo visibly shows a 1 litre pack while the catalogue item is 250 ml; product match, pack size mismatch.",
+    "status": "unverified"
+  }
+  ,{
+    "name": "UP-TURN (250ML)",
+    "category": "HERBICIDE",
+    "brand": "ADAMA",
+    "image": "/product-images/adama-upturn-1l-unverified.png",
+    "source": "https://www.adama.com/india/en/crop-protection/herbicide/upturn",
+    "verification": "Official ADAMA page confirms Upturn identity and formulation; the locally hosted product photo visibly shows a 1 litre bottle while the catalogue item is 250 ml; product match, pack size mismatch.",
+    "status": "unverified"
+  },
+  {
+    "name": "UP-TURN (500ML)",
+    "category": "HERBICIDE",
+    "brand": "ADAMA",
+    "image": "/product-images/adama-upturn-1l-unverified.png",
+    "source": "https://www.adama.com/india/en/crop-protection/herbicide/upturn",
+    "verification": "Official ADAMA page confirms Upturn identity and formulation; the locally hosted product photo visibly shows a 1 litre bottle while the catalogue item is 500 ml; product match, pack size mismatch.",
+    "status": "unverified"
+  },
+  {
+    "name": "SACTIMO (250ML)",
+    "category": "HERBICIDE",
+    "brand": "SHIVALIK",
+    "image": "/product-images/shivalik-sactimo-1l.webp",
+    "source": "https://agribegri.com/products/buy-shivalik-sactimo-imazethapyr-10-sl.php",
+    "verification": "Exact Shivalik Sactimo product; the locally hosted photo shows a 1 litre package and the catalogue item is 250 ml; product match, pack size mismatch.",
+    "status": "unverified"
+  },
+  {
+    "name": "SACTIMO (500ML)",
+    "category": "Pesticide",
+    "brand": "SHIVALIK",
+    "image": "/product-images/shivalik-sactimo-1l.webp",
+    "source": "https://agribegri.com/products/buy-shivalik-sactimo-imazethapyr-10-sl.php",
+    "verification": "Exact Shivalik Sactimo product; the locally hosted photo shows a 1 litre package and the catalogue item is 500 ml; product match, pack size mismatch.",
+    "status": "unverified"
+  },
+  {
+    "name": "DHOOMKETU (1LT)",
+    "category": "Pesticide",
+    "brand": "CHAMBAL",
+    "image": "/product-images/chambal-dhoomketu-unverified.jpg",
+    "source": "https://dehaat.in/product/CHAMBAL-FERTILIZER-DHOOMKETHU-7667",
+    "verification": "The photo identifies Chambal Dhoomkethu (Imazethapyr 10% SL), matching catalogue Dhoomketu; net pack size is not visible, so the 1 litre size is unverified.",
+    "status": "unverified"
+  }
+  ,{
+    "name": "LIHOCIN (250ML)",
+    "category": "INSECTICIDE",
+    "brand": "BASF",
+    "image": "/product-images/basf-lihocin-unverified.jpg",
+    "source": "https://crop-protection.basf.in/en/lihocin",
+    "verification": "Official BASF image identifies the exact Lihocin plant growth regulator; the depicted bottle does not show a readable pack size, so the catalogue's 250 ml size is unverified.",
+    "status": "unverified"
+  },
+  {
+    "name": "CUSTODIA (100ML)",
+    "category": "Pesticide",
+    "brand": "ADAMA",
+    "image": "/product-images/adama-custodia-500ml.png",
+    "source": "https://cultree.in/products/adama-custodia-azoxystrobin-11-tebuconazole-18-3-w-w-sc-fungicide",
+    "verification": "Exact ADAMA Custodia product, but the locally hosted photo visibly says 500 ml while the catalogue item is 100 ml; product match, pack size mismatch.",
+    "status": "unverified"
+  },
+  {
+    "name": "CUSTODIA (250ML)",
+    "category": "Pesticide",
+    "brand": "ADAMA",
+    "image": "/product-images/adama-custodia-500ml.png",
+    "source": "https://cultree.in/products/adama-custodia-azoxystrobin-11-tebuconazole-18-3-w-w-sc-fungicide",
+    "verification": "Exact ADAMA Custodia product, but the locally hosted photo visibly says 500 ml while the catalogue item is 250 ml; product match, pack size mismatch.",
+    "status": "unverified"
+  },
+  {
+    "name": "TRASSID (300ML)",
+    "category": "Pesticide",
+    "brand": "ADAMA",
+    "image": "/product-images/adama-trassid-300ml-unverified.webp",
+    "source": "https://agribegri.com/products/adama-trassid-insecticide.php",
+    "verification": "Exact ADAMA Trassid product; the locally hosted bottle visibly says 1 litre while the catalogue item is 300 ml; product match, pack size mismatch.",
+    "status": "unverified"
+  },
+  {
+    "name": "LAUDIS (230ML)",
+    "category": "Pesticide",
+    "brand": "Bayer",
+    "image": "/product-images/bayer-laudis-230ml-unverified.jpg",
+    "source": "https://www.bighaat.com/products/laudis-herbicide",
+    "verification": "Exact Bayer Laudis product; a matching retailer listing offers a 230 ml variant, but pack size is not legible on the locally hosted bottle image.",
+    "status": "unverified"
+  },
+  {
+    "name": "ACERBO(250ML)",
+    "category": "Pesticide",
+    "brand": "Bayer",
+    "image": "/product-images/bayer-acerbo-unverified.jpg",
+    "source": "https://www.bayercropscience.in/en/protect-crops/fungicides/acerbo",
+    "verification": "Official Bayer photo identifies Acerbo but shows a 1 litre pack; the catalogue lists 250 ml, and Bayer's page lists 100 ml, 200 ml, 500 ml and 1 litre—not 250 ml—so both the pictured size and catalogue pack entry are flagged unverified.",
+    "status": "unverified"
+  }
+  ,{
+    "name": "KILLDAN (1KG)",
+    "category": "INSECTICIDE",
+    "brand": "SHIVALIK",
+    "image": "/product-images/shivalik-killdan-100g-unverified.jpg",
+    "source": "https://www.tradeindia.com/products/100gm-killdang-sp-agricultural-insecticides-contain-cartap-hydrochloride-50-sp-for-all-types-of-crops-7485995.html",
+    "verification": "The photo shows Shivalik Kildan SP (Cartap Hydrochloride 50% SP), matching the catalogue product; the photo says 100 g while the row is 1 kg, so pack size is mismatched.",
+    "status": "unverified"
+  },
+  {
+    "name": "CARTAP KILDAN (1KG)",
+    "category": "INSECTICIDE",
+    "brand": "SHIVALIK",
+    "image": "/product-images/shivalik-killdan-100g-unverified.jpg",
+    "source": "https://www.tradeindia.com/products/100gm-killdang-sp-agricultural-insecticides-contain-cartap-hydrochloride-50-sp-for-all-types-of-crops-7485995.html",
+    "verification": "The photo shows Shivalik Kildan SP (Cartap Hydrochloride 50% SP), matching the catalogue product; the photo says 100 g while the row is 1 kg, so pack size is mismatched.",
+    "status": "unverified"
+  },
+  {
+    "name": "CARTAP KILDAN (5KG)",
+    "category": "INSECTICIDE",
+    "brand": "SHIVALIK",
+    "image": "/product-images/shivalik-killdan-100g-unverified.jpg",
+    "source": "https://www.tradeindia.com/products/100gm-killdang-sp-agricultural-insecticides-contain-cartap-hydrochloride-50-sp-for-all-types-of-crops-7485995.html",
+    "verification": "The photo shows Shivalik Kildan SP (Cartap Hydrochloride 50% SP), matching the catalogue product; the photo says 100 g while the row is 5 kg, so pack size is mismatched.",
+    "status": "unverified"
+  },
+  {
+    "name": "SHAMIR (500ML)",
+    "category": "FUNGICIDE",
+    "brand": "ADAMA",
+    "image": "/product-images/adama-shamir-unverified.jpg",
+    "source": "https://www.exportersindia.com/product-detail/adama-shamir-fungicide-2755416367.htm",
+    "verification": "Exact ADAMA Shamir fungicide; source listing confirms 500 ml is an available variant, but the locally hosted bottle photo does not show a legible net quantity, so the pictured size is unverified.",
+    "status": "unverified"
+  },
+  {
+    "name": "SHAMIR(250ML)",
+    "category": "Pesticide",
+    "brand": "ADAMA",
+    "image": "/product-images/adama-shamir-unverified.jpg",
+    "source": "https://www.exportersindia.com/product-detail/adama-shamir-fungicide-2755416367.htm",
+    "verification": "Exact ADAMA Shamir fungicide; source listing confirms 250 ml is an available variant, but the locally hosted bottle photo does not show a legible net quantity, so the pictured size is unverified.",
+    "status": "unverified"
+  },
+  {
+    "name": "FLAMBERGE (100ML)",
+    "category": "Pesticide",
+    "brand": "ADAMA",
+    "image": "/product-images/adama-flamberge-250ml.jpg",
+    "source": "https://www.exportersindia.com/product-detail/adama-flamberge-bio-stimulant-5473317158.htm",
+    "verification": "Exact ADAMA Flamberge product; the locally hosted photo visibly shows 250 ml while the catalogue item is 100 ml; product match, pack size mismatch.",
+    "status": "unverified"
+  },
+  {
+    "name": "SUCKGNA (100GR)",
+    "category": "Pesticide",
+    "brand": "ADAMA",
+    "image": "/product-images/adama-suckgan-1kg-unverified.webp",
+    "source": "https://www.adama.com/india/en/crop-protection/insecticides/suckgan",
+    "verification": "Official ADAMA Suckgan matches the product brand and thiamethoxam 25% WG; catalogue spelling is ‘SUCKGNA’ and the photo shows 1 kg while the row is 100 g, so spelling and pack-size mapping remain unverified.",
+    "status": "unverified"
+  }
+  ,{
+    "name": "WIN CHI WIN (250ML)",
+    "category": "INSECTICIDE",
+    "brand": "NATH BIO GENES",
+    "image": "/product-images/nath-win-chi-win-100ml-unverified.png",
+    "source": "https://www.desikheti.com/products/win-chi-win",
+    "verification": "Exact Win-Chi-Win product and Nath Seeds brand; photo visibly shows 100 ml, while the catalogue says 250 ml. The source describes it as a crop balancer, not an insecticide, so catalogue category also needs review.",
+    "status": "unverified"
+  },
+  {
+    "name": "WIN CHI WIN (50ML)",
+    "category": "Pesticide",
+    "brand": "NATH BIO GENES",
+    "image": "/product-images/nath-win-chi-win-100ml-unverified.png",
+    "source": "https://www.desikheti.com/products/win-chi-win",
+    "verification": "Exact Win-Chi-Win product and Nath Seeds brand; photo visibly shows 100 ml, while the catalogue says 50 ml. The source describes it as a crop balancer, not an insecticide, so catalogue category also needs review.",
+    "status": "unverified"
+  },
+  {
+    "name": "WIN-CHI-WIN (10ML)",
+    "category": "Pesticide",
+    "brand": "NATH BIO GENES",
+    "image": "/product-images/nath-win-chi-win-100ml-unverified.png",
+    "source": "https://www.desikheti.com/products/win-chi-win",
+    "verification": "Exact Win-Chi-Win product and Nath Seeds brand; photo visibly shows 100 ml, while the catalogue says 10 ml. The source describes it as a crop balancer, not an insecticide, so catalogue category also needs review.",
+    "status": "unverified"
+  },
+  {
+    "name": "VEERKILL (500ML)",
+    "category": "Pesticide",
+    "brand": "CHAMBAL",
+    "image": "/product-images/chambal-veerkill-1l-unverified.jpeg",
+    "source": "https://www.mystore.in/en/product/veer-kill-herbicide-1000-ml",
+    "verification": "Exact Chambal VeerKill herbicide; source photo/listing is for a 1 litre bottle while the catalogue item is 500 ml; product match, pack size mismatch.",
+    "status": "unverified"
+  },
+  {
+    "name": "HITWEED (250ML)",
+    "category": "Pesticide",
+    "brand": "GODREJ",
+    "image": "/product-images/godrej-hitweed-500ml-unverified.jpg",
+    "source": "https://www.agriplexindia.com/collections/herbicides",
+    "verification": "Exact Godrej Hitweed herbicide; the locally hosted bottle visibly says 500 ml while the catalogue item is 250 ml; product match, pack size mismatch.",
+    "status": "unverified"
+  },
+  {
+    "name": "TYNZER 15ML",
+    "category": "Pesticide",
+    "brand": "BASF",
+    "image": "/product-images/basf-tynzer-30ml-unverified.jpg",
+    "source": "https://agrivruddhi.com/products/tynzer",
+    "verification": "Exact BASF Tynzer herbicide; photo visibly says 30 ml Tynzer and 300 ml Outright, while the catalogue item is 15 ml; product match, pack size mismatch.",
+    "status": "unverified"
+  },
+  {
+    "name": "AGRIWET GOLD (250ML)",
+    "category": "Pesticide",
+    "brand": "SHIVALIK",
+    "image": "/product-images/shivalik-agriwet-gold-unverified.jpg",
+    "source": "https://www.ghadgetraders.in/silicon-based-super-spreader-and-activator-9867414.html",
+    "verification": "The product listing identifies Shivalik Agriwet Gold and offers 250 ml packaging; the locally hosted product image does not show a readable net quantity, so exact pictured pack is unverified.",
+    "status": "unverified"
+  },
+  {
+    "name": "SHIVAGOLD XTRA (500ML)",
+    "category": "Pesticide",
+    "brand": "SHIVALIK",
+    "image": "/product-images/shivalik-shivagold-xtra-1l-unverified.webp",
+    "source": "https://agribegri.com/products/shivalik-shiva-gold-xtra-tricontanol-01-ew-plant-growth-regulator.php",
+    "verification": "Exact Shivalik Shiva Gold Xtra product; the locally hosted bottle visibly says 1 litre while the catalogue item is 500 ml; product match, pack size mismatch.",
+    "status": "unverified"
+  },
+  {
+    "name": "TAKAF (250ML)",
+    "category": "Pesticide",
+    "brand": "ADAMA",
+    "image": "/product-images/adama-takaf-unverified.jpg",
+    "source": "https://www.navadhanyaagroseeds.com/public/products/105",
+    "verification": "Exact ADAMA Takaf insecticide bottle and brand; pack size is not legible on the locally hosted photo, so its match to the catalogue's 250 ml pack remains unverified.",
+    "status": "unverified"
+  },
+  {
+    "name": "LUCIFER (20GR)",
+    "category": "Pesticide",
+    "brand": "Bayer",
+    "image": "/product-images/bayer-lucifer-160g-unverified.jpg",
+    "source": "https://www.bayercropscience.in/en/protect-crops/herbicides/lucifer",
+    "verification": "Official Bayer Lucifer photo visibly shows a 160 g herbicide pack, while the catalogue says 20 g; product/brand match but major pack-size and category discrepancies remain unverified.",
+    "status": "unverified"
+  }
+]

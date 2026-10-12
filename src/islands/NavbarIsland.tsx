@@ -20,8 +20,10 @@ export default function NavbarIsland() {
     <>
       {/* Mobile hamburger button */}
       <button
-        class="lg:hidden p-2 text-white z-50"
+        class="lg:hidden min-w-11 min-h-11 p-2 text-white z-50 inline-flex items-center justify-center rounded-full hover:bg-white/10 transition-colors"
         aria-label={open ? "Close menu" : "Open menu"}
+        aria-expanded={open}
+        aria-controls="mobile-navigation"
         onClick={() => setOpen(o => !o)}
       >
         {open ? (
@@ -33,21 +35,21 @@ export default function NavbarIsland() {
 
       {/* Mobile menu overlay */}
       {open && (
-        <div class="fixed inset-0 bg-primary z-40 flex flex-col pt-24 px-8 pb-8 gap-6 lg:hidden">
+        <div id="mobile-navigation" class="fixed inset-0 bg-primary z-40 flex flex-col pt-24 px-8 pb-8 gap-5 overflow-y-auto lg:hidden">
           {[
             ["/#about","About Us"],
             ["/#why-choose-us","Why Us"],
+            ["/products","Products"],
             ["/#testimonials","Testimonials"],
             ["/#licenses","Licenses"],
-            ["/#branches","Branches"],
+            ["/#locations","Locations"],
             ["/#awards","Awards"],
-            ["/products","Products"],
-            ["/contact","Contact"],
+            ["/#contact","Contact"],
           ].map(([href, label]) => (
             <a
               key={href}
               href={href}
-              class="text-2xl font-bold text-white tracking-tight hover:text-accent transition-colors"
+              class="min-h-11 flex items-center text-2xl font-bold text-white tracking-tight hover:text-accent transition-colors"
               onClick={() => setOpen(false)}
             >
               {label}

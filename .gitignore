@@ -5,6 +5,7 @@ dist/
 
 # dependencies
 node_modules/
+.firecrawl/
 
 # logs
 npm-debug.log*

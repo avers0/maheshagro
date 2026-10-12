@@ -1,2 +1,507 @@
-﻿name,description,image,category,brand
-Sample Product,This is a sample product description,https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&q=80&w=400,Seeds,Sample Brand
+name,category,brand,selling_price,mrp,image,description,show_online,listing_type
+VARISH (1LTR),HERBICIDE,SHIVALIK,1700.00,1700.00,/product-images/shivalik-waris-1l.png,,no,catalogue
+VARISH (400ML),HERBICIDE,SHIVALIK,800.00,800.00,,,no,catalogue
+SACTIMO (1LTR),HERBICIDE,SHIVALIK,900.00,1000.00,/product-images/shivalik-sactimo-1l.webp,,no,catalogue
+ATTRAZINE NFL,HERBICIDE,NFL,220.00,440.00,,,no,catalogue
+ACTARA (5G),INSECTICIDE,SYNGENTA,30.00,30.00,/product-images/syngenta-actara-5g.webp,,no,catalogue
+UP-TURN (250ML),HERBICIDE,ADAMA,700.00,1000.00,/product-images/adama-upturn-1l-unverified.png,,no,catalogue
+SHRIRAM SHAASAK (1LTR),HERBICIDE,SHRI RAM,2000.00,3000.00,/product-images/shriram-shaasak-1l.webp,,no,catalogue
+Sempra 36gm,HERBICIDE,DHANUKA,1350.00,1481.00,/product-images/dhanuka-sempra-36g.webp,,no,catalogue
+BIRLA BALWAN 19.19.19 (1kg),FERTILIZERS,BIRLA BALVAAN,150.00,225.00,/product-images/birla-balwan-191919-1kg.webp,,no,catalogue
+NOVLECT (500ML),HERBICIDE,CORTEVA,1750.00,1800.00,/product-images/corteva-novlect-500ml.webp,,no,catalogue
+SHRIRAM ATRAZINE (500G),HERBICIDE,SHRIRAM,200.00,470.00,/product-images/shriram-atrazine-500g.webp,,no,catalogue
+ODYSSEY 100GR,HERBICIDE,BASF,2500.00,2700.00,/product-images/basf-odyssey-100g.webp,,no,catalogue
+UP-TURN (500ML),HERBICIDE,ADAMA,1400.00,1800.00,/product-images/adama-upturn-1l-unverified.png,,no,catalogue
+BAJRA 8860,SEEDS,SHRIRAM,780.00,850.00,/product-images/shriram-8860.webp,,no,catalogue
+Bhaskar Makka,SEEDS,ANKUR,1600.00,1900.00,/product-images/ankur-bhaskar-makka.webp,,no,catalogue
+AGIl (500ml),INSECTICIDE,ADAMA,900.00,1700.00,/product-images/adama-agil-500ml.webp,,no,catalogue
+DEKALB 8209 (LOOSE 500GM),SEEDS,Bayer,200.00,200.00,/product-images/bayer-dekalb-8209.webp,,no,catalogue
+DEKALB 7074 (LOOSE 500gm),SEEDS,Bayer,175.00,175.00,/product-images/bayer-dekalb-7074.webp,,no,catalogue
+UTTAM RBH 279,SEEDS,CHAMBAL,820.00,820.00,,,no,catalogue
+BAJRA RBH-876,SEEDS,CHAMBAL,820.00,900.00,,,no,catalogue
+Groplus,FERTILIZERS,COROMANDEL,800.00,1000.00,/product-images/coromandel-groplus.webp,,no,catalogue
+Pevota 30ml,Pesticide,CHAMBAL,180.00,220.00,/product-images/chambal-pevota.webp,,no,catalogue
+SOYABEAN 9560 (per kg) - 30kg bag,SEEDS,ROHIT SEEDS,3600.00,3600.00,,,no,catalogue
+NSC JOWAR CSV-15,SEEDS,NSC,300.00,400.00,/product-images/nsc-jowar-csv-15-5kg.webp,,no,catalogue
+TIL PARAS DINKAR,SEEDS,DINKAR SEEDS,200.00,300.00,/product-images/dinkar-til-paras-2.png,,no,catalogue
+Oswal Makka Super Power 9002,SEEDS,OSWAL,0.00,0.00,,,no,catalogue
+Makka 6305 Syngenta,SEEDS,SYNGENTA,1200.00,1450.00,,,no,catalogue
+Makka 6110 Syngenta,SEEDS,SYNGENTA,1900.00,1900.00,,,no,catalogue
+Laxmi urad PU-31,SEEDS,laxmi,800.00,1530.00,/product-images/laxmi-urad-pu31.jpg,,no,catalogue
+Dayal Urad PU-31,SEEDS,dayal,883.00,883.00,/product-images/dayal-pu31-urad.jpg,,no,catalogue
+Siluk seed gowar (2kg),SEEDS,siluk,400.00,600.00,,,no,catalogue
+Nath Super 27 Bajra,SEEDS,NATH SEEDS,750.00,850.00,/product-images/nath-super-27.webp,,no,catalogue
+Landson Bajra 8472,SEEDS,landson,750.00,840.00,/product-images/landson-8472.webp,,no,catalogue
+Amarnath Jowar (3kg),SEEDS,NATH SEEDS,650.00,1200.00,/product-images/nath-amarnath-2000-jowar.png,,no,catalogue
+Shivaji Jowar (3kg),SEEDS,nu-genes,650.00,1320.00,/product-images/nugenes-nitya-shivaji-jowar.jpg,,no,catalogue
+CRYSTAL BAJRA 9001 (1.5KG),SEEDS,PRO-AGRO,780.00,800.00,/product-images/crystal-proagro-bajra-9001-15kg.png,,no,catalogue
+artiko CSV-15 Jowar seeds,SEEDS,artiko,225.00,550.00,,,no,catalogue
+Makka CP 333,SEEDS,jasmine,1400.00,2600.00,/product-images/jasmine-cp333-maize.webp,,no,catalogue
+5.15.0.10 gromor,FERTILIZERS,GROMOR,675.00,900.00,/product-images/coromandel-gromor-515010.webp,,no,catalogue
+5.15.0.10,FERTILIZERS,ANNADATA,650.00,800.00,,,no,catalogue
+3302 (3.5kg),SEEDS,PIONEER,1600.00,1785.00,/product-images/pioneer-p3302.webp,,no,catalogue
+SALTON (10KG),FERTILIZERS,BIRLA BALVAAN,800.00,1000.00,,,no,catalogue
+ZIVA BALTI (8KG),FERTILIZERS,SHRI RAM,1200.00,1500.00,/product-images/shriram-ziva-2-5kg-unverified.png,,no,catalogue
+CALRICH (5KG),FERTILIZERS,CHAMBAL,350.00,675.00,/product-images/chambal-calrich.webp,,no,catalogue
+POTASSIUM NITRATE 0.0.50,FERTILIZERS,BIRLA BALVAAN,150.00,215.00,,,no,catalogue
+POTASSIUM NITRATE BIRLA BALWAN 13.0.45,FERTILIZERS,CHAMBAL,200.00,245.00,,,no,catalogue
+UTTAM SAMPOORN (5KG),FERTILIZERS,CHAMBAL,300.00,400.00,/product-images/chambal-sampoorna.webp,,no,catalogue
+86M98 (1.5KG),SEEDS,PIONEER,860.00,885.00,,,no,catalogue
+86M38 (1.5KG),SEEDS,PIONEER,800.00,885.00,/product-images/pioneer-86m38.webp,,no,catalogue
+86M95 (1.5KG),SEEDS,PIONEER,830.00,885.00,,,no,catalogue
+86M90 (1.5KG),SEEDS,PIONEER,830.00,885.00,/product-images/pioneer-86m90.webp,,no,catalogue
+86M94 (1.5KG),SEEDS,PIONEER,830.00,885.00,/product-images/pioneer-86m94.webp,,no,catalogue
+RBH 36 UTTAM BAJRA (1.5KG),SEEDS,CHAMBAL,700.00,800.00,,,no,catalogue
+MOONG SHARIF (2KG),SEEDS,DINKAR SEEDS,460.00,500.00,/product-images/dinkar-moong-sharif-2kg.jpg,,no,catalogue
+MOONG SAHRIF GOLD (2KG),SEEDS,DINKAR SEEDS,500.00,600.00,/product-images/dinkar-moong-sharif-gold-2kg.png,,no,catalogue
+BAJRA 151 (1.5KG),SEEDS,STAR AGRI SEEDS,700.00,1000.00,/product-images/star-agri-151.webp,,no,catalogue
+JOWAR RAJ SEEDS (CSV-41)(4KG),SEEDS,KRASHI VIBAGH RAJASTHAN,280.00,300.00,,,no,catalogue
+NPK 13:0:45 1KG,FERTILIZERS,HINDALCO,200.00,245.00,,,no,catalogue
+ANNADATA MKP (00:52:34) 1kg,FERTILIZERS,CHAMBAL,250.00,350.00,,,no,catalogue
+CLARICH (5KG),FERTILIZERS,CHAMBAL,350.00,675.00,/product-images/chambal-calrich.webp,,no,catalogue
+RECHARGE 12:61:0 (1KG),FERTILIZERS,CHAMBAL,200.00,375.00,/product-images/chambal-uttam-recharge-unverified.png,,no,catalogue
+KISAN NPK 19:19:19 (1kg),FERTILIZERS,NFL,150.00,294.00,/product-images/nfl-kisan-npk-191919-1kg.jpg,,no,catalogue
+FORPIDO (1.5KG),Pesticide,ADAMA,600.00,900.00,/product-images/adama-forpido-3kg-unverified.jpg,,no,catalogue
+OBERON (100ML),Pesticide,Bayer,400.00,810.00,/product-images/bayer-oberon-100ml.webp,,no,catalogue
+KISAN CHLORI SUPER (1LT),Pesticide,NFL,400.00,720.00,/product-images/nfl-kisan-chlori-super-1l.webp,,no,catalogue
+NATIVO (250GR),Pesticide,Bayer,1800.00,2840.00,/product-images/bayer-nativo-250g.webp,,no,catalogue
+PROTOBUZ (250ml),FERTILIZERS,SHRI RAM,250.00,263.00,/product-images/shriram-protobuz.webp,,no,catalogue
+WEEDBLOCK (250ML),Pesticide,ADAMA,250.00,550.00,,,no,catalogue
+FORPIDO (3KG),Pesticide,ADAMA,1300.00,1650.00,/product-images/adama-forpido-3kg.webp,,no,catalogue
+GAUCHO (1lt),Pesticide,Bayer,4000.00,5050.00,/product-images/bayer-gaucho-1l.jpg,,no,catalogue
+WEEDMAR 38 (24D 500ML),Pesticide,DHANUKA,250.00,271.00,/product-images/dhanuka-weedmar-38-tin.webp,,no,catalogue
+DHOOMKETU (500ML),Pesticide,CHAMBAL,600.00,1000.00,/product-images/chambal-dhoomketu-500ml.webp,,no,catalogue
+DHOOMKETU (1LT),Pesticide,CHAMBAL,1100.00,1950.00,/product-images/chambal-dhoomketu-unverified.jpg,,no,catalogue
+Star 468 (2kg),SEEDS,STAR AGRI SEEDS,560.00,750.00,/product-images/star-agri-468.webp,,no,catalogue
+Sarthak-11 Guwar Seeds (2kg),SEEDS,SHRI RAM,0.00,0.00,,,no,catalogue
+ATTRACT (500GR),HERBICIDE,CHAMBAL,230.00,475.00,/product-images/chambal-attract-500g.webp,,no,catalogue
+LAUDIS (57.5ML),HERBICIDE,Bayer,750.00,1120.00,/product-images/bayer-laudis-57-5ml.webp,,no,catalogue
+TRICEL (500ML),INSECTICIDE,SUMITOMO,220.00,283.00,/product-images/sumitomo-tricel-500ml.webp,,no,catalogue
+JUMP 2GM BAYER,Pesticide,Bayer,80.00,80.00,/product-images/bayer-jump-2g.jpg,,no,catalogue
+TAKAF (500ML),INSECTICIDE,ADAMA,1400.00,2200.00,/product-images/adama-takaf-500ml.webp,,no,catalogue
+Magnesium sulphate (5kg),FERTILIZERS,CHAMBAL,250.00,500.00,,,no,catalogue
+BORON NETTADE C.N. (25KG),FERTILIZERS,HINDALCO,1625.00,2000.00,,,no,catalogue
+COTTON JAI BG II,SEEDS,ANKUR,900.00,901.00,/product-images/ankur-jai-bg2.webp,,no,catalogue
+3028 BTBG (475GR),SEEDS,ANKUR,900.00,901.00,/product-images/ankur-3028-bg2.webp,,no,catalogue
+UVOTA (150ML),INSECTICIDE,CHAMBAL,900.00,1325.00,,,no,catalogue
+UVOTA (60ML),INSECTICIDE,CHAMBAL,400.00,560.00,,,no,catalogue
+WETCIT (100ML),INSECTICIDE,DHANUKA,200.00,242.00,/product-images/dhanuka-wetcit-100ml.webp,,no,catalogue
+KORKO (150GR),INSECTICIDE,SUMITOMO,500.00,690.00,/product-images/sumitomo-korko-150g.jpg,,no,catalogue
+ANTRACOL (250GR),FUNGICIDE,Bayer,250.00,350.00,/product-images/bayer-antracol-250g.webp,,no,catalogue
+ANTRACOL (500GR),FUNGICIDE,Bayer,450.00,600.00,/product-images/bayer-antracol-500g.webp,,no,catalogue
+OBERON (200ML),INSECTICIDE,Bayer,1100.00,1580.00,/product-images/bayer-oberon-200ml.webp,,no,catalogue
+OBERO N (100ML),INSECTICIDE,Bayer,600.00,810.00,/product-images/bayer-oberon.webp,,no,catalogue
+SOLOMON (250ML),INSECTICIDE,Bayer,800.00,1050.00,/product-images/bayer-solomon-250ml.jpg,,no,catalogue
+SOLOMON (500ML),INSECTICIDE,Bayer,1400.00,2000.00,/product-images/bayer-solomon-500ml.webp,,no,catalogue
+IZAVIA (250ML),INSECTICIDE,ADAMA,3000.00,3450.00,/product-images/adama-izavia.webp,,no,catalogue
+VIPUL BOOSTER (500ML),GROWTH PROMOTER,GODREJ,450.00,550.00,/product-images/godrej-vipul-booster-500ml.webp,,no,catalogue
+SUPERKILLER-25 (1LT),INSECTICIDE,DHANUKA,700.00,851.00,/product-images/dhanuka-superkiller-25.webp,,no,catalogue
+BORON PRO-20 (250GR),FERTILIZERS,SHIVALIK,150.00,160.00,/product-images/shivalik-boropro-250g.jpg,,no,catalogue
+KILLDAN (1KG),INSECTICIDE,SHIVALIK,110.00,200.00,/product-images/shivalik-killdan-100g-unverified.jpg,,no,catalogue
+TRICHODERMA (1000GR),FUNGICIDE,KRASHI VIBAGH RAJASTHAN,125.00,125.00,,,no,catalogue
+KISAN 24D,HERBICIDE,NFL,150.00,250.00,/product-images/nfl-kisan-d-24d.webp,,no,catalogue
+KISAN SULFO (13.5GR+500ML),HERBICIDE,NFL,350.00,405.00,/product-images/nfl-kisan-sulfo-135g-500ml.webp,,no,catalogue
+SHIVA GOLD XTRA ( BALTI 10KG),FERTILIZERS,SHIVALIK,650.00,1200.00,/product-images/shivalik-shiva-gold-xtra-1l.webp,,no,catalogue
+HUMIGOLD (1KG),FERTILIZERS,SHIVALIK,600.00,1200.00,/product-images/shivalik-humigold.webp,,no,catalogue
+PARASAC (1LT),HERBICIDE,SHIVALIK,400.00,800.00,/product-images/shivalik-parasac-1l.webp,,no,catalogue
+TOPAZ ( 160GR),HERBICIDE,SHIVALIK,250.00,490.00,/product-images/shivalik-topaz-160g.webp,,no,catalogue
+SHAASAK (400ML),HERBICIDE,SHRI RAM,800.00,1236.00,/product-images/shriram-shaasak-1l.webp,,no,catalogue
+SACTIMO (250ML),HERBICIDE,SHIVALIK,250.00,400.00,/product-images/shivalik-sactimo-1l.webp,,no,catalogue
+GENKLO (150ML),INSECTICIDE,SHIVALIK,600.00,2250.00,/product-images/shivalik-genklo-300ml-unverified.webp,,no,catalogue
+MONOLIK (1LT),INSECTICIDE,SHIVALIK,600.00,750.00,/product-images/shivalik-monolik.webp,,no,catalogue
+CLODUX (500GR),INSECTICIDE,SHIVALIK,50.00,65.00,/product-images/shivalik-clodux-500g.webp,,no,catalogue
+ACROBAT COMPLETE (1000GR),FUNGICIDE,BASF,1600.00,2168.00,/product-images/basf-acrobat-complete.webp,,no,catalogue
+ACROBAT COMPLETE (500GR),FUNGICIDE,BASF,800.00,1120.00,/product-images/basf-acrobat-complete.webp,,no,catalogue
+PIRATE (170ML),INSECTICIDE,BASF,1200.00,1411.00,/product-images/basf-pirate-170ml.webp,,no,catalogue
+LIBERAL ZN,FERTILIZERS,BASF,500.00,835.00,/product-images/basf-librel-zn.webp,,no,catalogue
+MERITOR (1L),FERTILIZERS,BASF,1200.00,1530.00,/product-images/basf-meritor.webp,,no,catalogue
+MERITOR (500ML),FERTILIZERS,BASF,600.00,830.00,/product-images/basf-meritor.webp,,no,catalogue
+MACOBAN C (250GR),FUNGICIDE,ADAMA,200.00,330.00,/product-images/adama-macoban-c-500g.webp,,no,catalogue
+SHAMIR (500ML),FUNGICIDE,ADAMA,700.00,930.00,/product-images/adama-shamir-unverified.jpg,,no,catalogue
+KASU-B (250ML),FUNGICIDE,DHANUKA,250.00,363.00,/product-images/dhanuka-kasu-b-250ml.webp,,no,catalogue
+CONIKA (300GR),FUNGICIDE,DHANUKA,900.00,1021.00,/product-images/dhanuka-conika-300g.webp,,no,catalogue
+IMIDAVEER (100ML),INSECTICIDE,CHAMBAL,150.00,215.00,/product-images/chambal-imidaveer.webp,,no,catalogue
+APNA 71 (100GR),HERBICIDE,CHAMBAL,100.00,185.00,/product-images/chambal-apna-71.webp,,no,catalogue
+MESOTRINE (700ML),HERBICIDE,CHAMBAL,1200.00,1476.00,/product-images/chambal-uttam-mesotrine.webp,,no,catalogue
+NAIVO (250GR),FUNGICIDE,Bayer,1900.00,2840.00,/product-images/bayer-nativo-250g.webp,,no,catalogue
+DEKALB 7074,SEEDS,Bayer,1360.00,1880.00,/product-images/bayer-dekalb-7074.webp,,no,catalogue
+DEKALB 8209,SEEDS,Bayer,1550.00,1848.00,/product-images/bayer-dekalb-8209.webp,,no,catalogue
+UTTAM FLUZI 400ML,Pesticide,CHAMBAL,1115.00,1115.00,/product-images/chambal-fluzi.webp,,no,catalogue
+DAPP,FERTILIZERS,NFL,0.00,0.00,/product-images/nfl-navratna-dap.jpg,,no,catalogue
+LOKI (AROOSA),SEEDS,NUNHEMS (BASF),180.00,180.00,/product-images/nunhems-aroosa.webp,,no,catalogue
+FLUZI (1LITER),HERBICIDE,CHAMBAL,1600.00,2699.00,/product-images/chambal-fluzi.webp,,no,catalogue
+FENOS QUICK (100ML),Pesticide,Bayer,500.00,500.00,/product-images/bayer-fenos-quick.webp,,no,catalogue
+GUWAR NEELAM -61,SEEDS,NEELAM,350.00,350.00,/product-images/neelam-61.webp,,no,catalogue
+COVER (150ML),INSECTICIDE,DHANUKA,1500.00,1500.00,/product-images/dhanuka-cover-liq.webp,,no,catalogue
+20.20.0.13(CHAMBAL) 50KG,FERTILIZERS,CHAMBAL,1350.00,1350.00,/product-images/chambal-bharat-aps.webp,,no,catalogue
+GUAR MASTI 36 (2KG),SEEDS,MAURTI,300.00,300.00,,,no,catalogue
+SSP(GIBBO) LUSE,FERTILIZERS,ANNADATA,14.00,14.00,,,no,catalogue
+NIRMAL NUL-71 URAD,SEEDS,NIRMAL SEEDS,150.00,150.00,,,no,catalogue
+CONFIDOR(500ML),INSECTICIDE,Bayer,1000.00,1000.00,/product-images/bayer-confidor-500ml.jpeg,,no,catalogue
+AMPLIGO(500ML),INSECTICIDE,SYNGENTA,3500.00,3500.00,/product-images/syngenta-ampligo-500ml.webp,,no,catalogue
+VALOR-32(5LITER),INSECTICIDE,BASF,0.00,0.00,/product-images/basf-valor-32.webp,,no,catalogue
+IMUNIT(400ML),INSECTICIDE,BASF,1650.00,1650.00,/product-images/basf-imunit.webp,,no,catalogue
+MOONG DEEPAK 8888(2KG),SEEDS,DEEPAK SEEDS,360.00,360.00,/product-images/deepak-moong-8888.jpg,,no,catalogue
+DELEGATE (180ML),INSECTICIDE,CORTEVA,1700.00,1700.00,/product-images/corteva-delegate-180ml.webp,,no,catalogue
+JOWAR DINKAR (5KG) SSG-999,SEEDS,DINKAR SEEDS,400.00,400.00,/product-images/dinkar-jowar-ssg-999.webp,,no,catalogue
+TAMATAR PACKET,SEEDS,NUNHEMS (BASF),20.00,20.00,,,no,catalogue
+MIRCHI PACKET,SEEDS,NUNHEMS (BASF),20.00,20.00,,,no,catalogue
+SAILER 32 (1LITER),Pesticide,SHIVALIK,700.00,700.00,/product-images/shivalik-sailer-32-1l.webp,,no,catalogue
+BHINDI SEED (3500NAG),SEEDS,NUNHEMS (BASF),1125.00,1125.00,,,no,catalogue
+FALI SEED,SEEDS,NUNHEMS (BASF),20.00,20.00,,,no,catalogue
+LOKI SEED,SEEDS,BASF,20.00,20.00,,,no,catalogue
+BHINDI,SEEDS,DINKAR SEEDS,20.00,20.00,,,no,catalogue
+GUWAR FALI,SEEDS,DINKAR SEEDS,20.00,20.00,,,no,catalogue
+MOONG DEEPAK SML 668 (2KG),SEEDS,DEEPAK SEEDS,240.00,240.00,,,no,catalogue
+URAD (1KG ),SEEDS,NILKANTH,0.00,0.00,,,no,catalogue
+TIL (SONA-51 500GR,SEEDS,SHRI RAM,200.00,200.00,/product-images/shriram-sona-51.webp,,no,catalogue
+URAD (1KG),SEEDS,DINKAR SEEDS,260.00,260.00,,,no,catalogue
+SVM MOONG (2KG),SEEDS,SHAKTI VARDHAK SEED,440.00,440.00,,,no,catalogue
+MOONG GOLDY (2KG),SEEDS,VISHWAS SEED,400.00,400.00,,,no,catalogue
+LIHOCIN (250ML),INSECTICIDE,BASF,400.00,400.00,/product-images/basf-lihocin-unverified.jpg,,no,catalogue
+WIN CHI WIN (100ML),INSECTICIDE,NATH BIO GENES,1370.00,1370.00,/product-images/nath-win-chi-win-100ml.webp,,no,catalogue
+WIN CHI WIN (250ML),INSECTICIDE,NATH BIO GENES,3422.00,3422.00,/product-images/nath-win-chi-win-100ml-unverified.png,,no,catalogue
+13.0.45 (1kg) RECHARGE,FERTILIZERS,CHAMBAL,200.00,200.00,/product-images/chambal-uttam-recharge-unverified.png,,no,catalogue
+JOWAR RED SEED(5KG),SEEDS,GAYATHRI,300.00,300.00,,,no,catalogue
+JOWAR WHITE SEED (5KG),SEEDS,GAYATHRI,330.00,330.00,,,no,catalogue
+JOWAR SEED (3KG) POSHAK-44,SEEDS,STAR AGRI SEEDS,450.00,450.00,/product-images/star-agri-poshak-44.webp,,no,catalogue
+MOONG DEEPAK SML 668 (5KG),SEEDS,DEEPAK SEEDS,575.00,575.00,,,no,catalogue
+LUNA (250ML),Pesticide,Bayer,1700.00,1700.00,/product-images/bayer-luna-250ml.png,,no,catalogue
+MOBICEL-H (1KG),FERTILIZERS,SUMITOMO,0.00,0.00,/product-images/sumitomo-mobicel-h-1kg.webp,,no,catalogue
+IMFI (40GR),Pesticide,SUMITOMO,500.00,500.00,/product-images/sumitomo-imfi.webp,,no,catalogue
+SACRIP,Pesticide,SHIVALIK,70.00,70.00,/product-images/shivalik-sacrip.webp,,no,catalogue
+BARAZIDE (100ML),Pesticide,Bayer,380.00,380.00,,,no,catalogue
+BUONOS (250ML),Pesticide,Bayer,400.00,400.00,/product-images/bayer-buonos-250ml.jpg,,no,catalogue
+00.00.50 POTASSIUM SULPHATE (1KG),FERTILIZERS,ANNADATA,150.00,150.00,/product-images/annadata-sop-0050-1kg.webp,,no,catalogue
+HUMICIL (1LITER),Pesticide,DOW,800.00,800.00,/product-images/dow-humicil-1l.webp,,no,catalogue
+PRANAM (250ML),Pesticide,CHAMBAL,350.00,350.00,/product-images/chambal-pranam.webp,,no,catalogue
+KHARBHUJA SEED,SEEDS,NUNHEMS (BASF),700.00,700.00,,,no,catalogue
+MOONG STAR 444 (2KG),SEEDS,STAR AGRI SEEDS,560.00,560.00,/product-images/star-agri-444.webp,,no,catalogue
+BAJARA SEED (1KG) PREMIUM 10+,SEEDS,DINKAR SEEDS,130.00,130.00,,,no,catalogue
+13.0.45 (1KG),FERTILIZERS,BIRLA BALVAAN,200.00,200.00,,,no,catalogue
+PDM (GRANULAR POTASH) 50KG,FERTILIZERS,IPL,650.00,650.00,/product-images/ipl-pdm-50kg.webp,,no,catalogue
+ROBOT (500GR),Pesticide,SUMITOMO,1100.00,1100.00,/product-images/sumitomo-robot.webp,,no,catalogue
+Magnesium sulfate (10KG),FERTILIZERS,ANNADATA,400.00,400.00,,,no,catalogue
+IKU (10KG BALTI ),FERTILIZERS,SUMITOMO,1800.00,1800.00,/product-images/sumitomo-iku-4kg-unverified.jpg,,no,catalogue
+DOUBLE (250ML),Pesticide,GODREJ,1500.00,1500.00,/product-images/godrej-double-250ml.jpg,,no,catalogue
+KORKO(750GR),Pesticide,SUMITOMO,2900.00,2900.00,/product-images/sumitomo-korko-750g.png,,no,catalogue
+24D (250ML) NFL,Pesticide,NFL,0.00,0.00,/product-images/nfl-kisan-d-250ml.webp,,no,catalogue
+NATIVO (50GR),Pesticide,Bayer,650.00,650.00,/product-images/bayer-nativo.webp,,no,catalogue
+NAVITO (100GR),Pesticide,Bayer,900.00,900.00,/product-images/bayer-nativo.webp,,no,catalogue
+SWADHEEN (250GR),Pesticide,SUMITOMO,250.00,250.00,/product-images/sumitomo-swadheen.webp,,no,catalogue
+SATASAT 160GR,Pesticide,UPL,700.00,700.00,/product-images/swal-satasat.webp,,no,catalogue
+WEEDMAR-38 (24D) 250ML,Pesticide,DHANUKA,150.00,150.00,/product-images/dhanuka-weedmar-38-tin.webp,,no,catalogue
+NPK(19.19.19) RECHARGE,FERTILIZERS,CHAMBAL,150.00,150.00,/product-images/chambal-recharge-191919.webp,,no,catalogue
+MYCORE,FERTILIZERS,DHANUKA,560.00,560.00,/product-images/dhanuka-mycore.webp,,no,catalogue
+SANJIVANI BORON (500GR),FERTILIZERS,ANNADATA,200.00,250.00,/product-images/annadata-sanjivani-boron-500g.jpg,,no,catalogue
+DHANUVIT (100GR),Pesticide,DHANUKA,30.00,30.00,/product-images/dhanuka-dhanuvit-100g.webp,,no,catalogue
+SANDESH,INSECTICIDE,OSWAL,600.00,600.00,,,no,catalogue
+KISAN MAT (8GR+200ML),Pesticide,NFL,80.00,80.00,/product-images/nfl-kisan-met-8g-200ml.jpeg,,no,catalogue
+SHRIRAM FIT (16GR),Pesticide,SHRI RAM,800.00,800.00,/product-images/shriram-fit-16g.webp,,no,catalogue
+ATLANTIS (160GR),Pesticide,Bayer,800.00,800.00,/product-images/bayer-atlantis-160g.webp,,no,catalogue
+DECIDE (500GR),Pesticide,DHANUKA,1300.00,1300.00,/product-images/dhanuka-decide.webp,,no,catalogue
+MACOBAN-C (500GR),Pesticide,ADAMA,0.00,0.00,/product-images/adama-macoban-c-500g.webp,,no,catalogue
+"2,4-D SODIUM SALT (500GR)",Pesticide,ADAMA,250.00,250.00,/product-images/adama-24d-agan-500g.webp,,no,catalogue
+TAKAF (100ML),Pesticide,ADAMA,450.00,450.00,/product-images/adama-takaf-100ml.webp,,no,catalogue
+INTERPID (300ML),Pesticide,BASF,1300.00,1300.00,/product-images/basf-intrepid-new-pack.webp,,no,catalogue
+KORKO(300GR),Pesticide,SUMITOMO,1000.00,1000.00,/product-images/sumitomo-korko.webp,,no,catalogue
+IMUNIT (120ML),Pesticide,BASF,550.00,550.00,/product-images/basf-imunit.webp,,no,catalogue
+VELUM PRIME( 500ML),Pesticide,Bayer,1900.00,3800.00,/product-images/bayer-velum-prime-500ml.jpg,,no,catalogue
+TSP LUSE,FERTILIZERS,IPL,30.00,30.00,/product-images/ipl-tsp-50kg.webp,,no,catalogue
+FAN(1KG),FERTILIZERS,CHAMBAL,50.00,50.00,,,no,catalogue
+MOTO,Pesticide,CHAMBAL,120.00,120.00,/product-images/chambal-moto.webp,,no,catalogue
+TSP (50KG),FERTILIZERS,IPL,1350.00,1350.00,/product-images/ipl-tsp-50kg.webp,,no,catalogue
+ACROBAT (200GR),Pesticide,BASF,1150.00,1150.00,/product-images/basf-acrobat.webp,,no,catalogue
+ACROBAT (100GR),Pesticide,BASF,0.00,0.00,/product-images/basf-acrobat.webp,,no,catalogue
+SSP (LUSE) ANNADATA,FERTILIZERS,ANNADATA,10.00,10.00,/product-images/annadata-ssp-powder-50kg.webp,,no,catalogue
+KISAN MET (8GR),Pesticide,NFL,50.00,50.00,/product-images/nfl-kisan-met-8g-200ml.webp,,no,catalogue
+LUCIFER (20GR),Pesticide,Bayer,50.00,50.00,/product-images/bayer-lucifer-160g-unverified.jpg,,no,catalogue
+POLYRAM (400GR),Pesticide,BASF,450.00,450.00,/product-images/basf-polyram.webp,,no,catalogue
+EFFICON (140ML),Pesticide,BASF,800.00,800.00,/product-images/basf-efficon.webp,,no,catalogue
+EFFICON (280ML),Pesticide,BASF,1600.00,1600.00,/product-images/basf-efficon.webp,,no,catalogue
+IMUNIT (240ML),Pesticide,BASF,1050.00,1050.00,/product-images/basf-imunit.webp,,no,catalogue
+MERIVON (80ML),Pesticide,BASF,1050.00,1050.00,/product-images/basf-merivon.webp,,no,catalogue
+CABRIO-TOP (600GR),Pesticide,BASF,1150.00,1150.00,/product-images/basf-cabrio-top.webp,,no,catalogue
+VESTA,Pesticide,UPL,550.00,550.00,/product-images/upl-vesta.webp,,no,catalogue
+SACKWEED 38 (500ML),Pesticide,SHIVALIK,250.00,250.00,/product-images/shivalik-sackweed-38-500ml.png,,no,catalogue
+STAR 350 GEHU (20KG),SEEDS,STAR AGRI SEEDS,75.00,75.00,/product-images/star-agri-350.webp,,no,catalogue
+VEERKILL (1LITER),Pesticide,CHAMBAL,450.00,450.00,/product-images/chambal-veer-kill-1l.webp,,no,catalogue
+VEERKILL (500ML),Pesticide,CHAMBAL,260.00,260.00,/product-images/chambal-veerkill-1l-unverified.jpeg,,no,catalogue
+VEERKILL (250ML),Pesticide,CHAMBAL,150.00,150.00,/product-images/chambal-veer-kill-250ml.webp,,no,catalogue
+SSP GROPLUS (LUSE),FERTILIZERS,COROMANDEL,290.00,290.00,/product-images/coromandel-groplus-50kg.webp,,no,catalogue
+ACEMAIN (100GR),Pesticide,ADAMA,100.00,100.00,/product-images/adama-acemain-1kg-unverified.webp,,no,catalogue
+19.19.19 (SUJLA ) (1KG),FERTILIZERS,RCF,150.00,150.00,/product-images/rcf-sujala-191919-1kg.jpg,,no,catalogue
+0.52.34 (MPP) (1KG),FERTILIZERS,BIRLA BALVAAN,250.00,250.00,,,no,catalogue
+JIRA (WESTERN C-60) (2KG),SEEDS,WESTERN SEED,1100.00,1100.00,/product-images/western-c60.webp,,no,catalogue
+VIRAT RESEARCH GEHU (20KG),SEEDS,VERVA AGROTECH,0.00,0.00,,,no,catalogue
+1581 (BALAJI ) (KG) LUSE,SEEDS,BALAJI SEEDS,100.00,100.00,,,no,catalogue
+SR-14 SHRIRAM SUPER (KG),SEEDS,SHRI RAM,95.00,95.00,/product-images/shriram-super-sr14.webp,,no,catalogue
+MOHAN WONDER WHEAT (20KG),SEEDS,NATH SEEDS,80.00,80.00,/product-images/nath-mohan-wonder.webp,,no,catalogue
+CARTAP KILDAN (5KG),INSECTICIDE,SHIVALIK,500.00,500.00,/product-images/shivalik-killdan-100g-unverified.jpg,,no,catalogue
+JOO STAR AGRI (2121 ) 20KG,SEEDS,STAR AGRI SEEDS,80.00,80.00,/product-images/star-agri-2121.webp,,no,catalogue
+STAR 325 GEHU (20KG),SEEDS,STAR AGRI SEEDS,75.00,75.00,/product-images/star-agri-325.webp,,no,catalogue
+111 SHRIRAM SUPER (KG),SEEDS,SHRI RAM,95.00,95.00,/product-images/shriram-super-111.webp,,no,catalogue
+1581 (BALAJI ) (KG),SEEDS,BALAJI SEEDS,100.00,100.00,,,no,catalogue
+UTTAM 3077(40KG),FERTILIZERS,CHAMBAL,45.00,45.00,,,no,catalogue
+UTTAM 4037 (40KG),FERTILIZERS,CHAMBAL,45.00,45.00,,,no,catalogue
+UTTAM 3765 (40KG),FERTILIZERS,CHAMBAL,45.00,45.00,,,no,catalogue
+USP (50KG),FERTILIZERS,COROMANDEL,600.00,600.00,/product-images/coromandel-gromor-515010.webp,,no,catalogue
+CUSTODIA (100ML),Pesticide,ADAMA,700.00,700.00,/product-images/adama-custodia-500ml.png,,no,catalogue
+RAJKA (1YEAR) (1KG),SEEDS,ALAMDAR SEED,400.00,400.00,,,no,catalogue
+JOO CHANDAN (15kg),SEEDS,VERVA AGROTECH,825.00,825.00,,,no,catalogue
+PENVEER PLUS (700ML),Pesticide,CHAMBAL,700.00,700.00,/product-images/chambal-penveer-plus.webp,,no,catalogue
+TRICEL(1LITER),Pesticide,SUMITOMO,450.00,450.00,/product-images/sumitomo-tricel.webp,,no,catalogue
+20.20.00.13 (LUSE) KG,FERTILIZERS,IPL,30.00,30.00,,,no,catalogue
+CAHANA SWASTIK (KG),SEEDS,SWASTIK,100.00,100.00,,,no,catalogue
+NPK 15.15.15 LUSE,FERTILIZERS,RCF,30.00,30.00,/product-images/rcf-npk-151515-50kg.webp,,no,catalogue
+RAJKA (1YEAR) (2KG),SEEDS,ALAMDAR SEED,800.00,800.00,,,no,catalogue
+UREA GOLD RCF (40KG),FERTILIZERS,RCF,280.00,280.00,/product-images/rcf-urea-gold-40kg.webp,,no,catalogue
+SHRIRAM MAXO (10KG BALTI),FERTILIZERS,SHRI RAM,600.00,600.00,/product-images/shriram-maxo-10kg-bucket.jpg,,no,catalogue
+CHANA SEED LUSE (KG),SEEDS,DINKAR SEEDS,750.00,750.00,,,no,catalogue
+N.P.K. 15.15.15 RCF (50KG),FERTILIZERS,RCF,2000.00,2000.00,/product-images/rcf-npk-151515-50kg.webp,,no,catalogue
+XELORA (80ML),Pesticide,NUNHEMS (BASF),500.00,500.00,/product-images/basf-xelora.webp,,no,catalogue
+20.20.0.13 OSHWAL NPK (LUSE),FERTILIZERS,ANNADATA,28.00,28.00,,,no,catalogue
+SUPER 303 WHEAT (20KG),SEEDS,SHRI RAM,0.00,0.00,/product-images/shriram-super-303.webp,,no,catalogue
+CHANA 1581 (30KG),SEEDS,KANCHAN JYOTI,100.00,100.00,,,no,catalogue
+FENNEL SEEDS KHUSHBU -77(500GR),SEEDS,SAVYA SEEDS,500.00,500.00,,,no,catalogue
+JIVA(8KG),INSECTICIDE,SHRI RAM,1500.00,1500.00,,,no,catalogue
+CUSTODIA (250ML),Pesticide,ADAMA,2900.00,2900.00,/product-images/adama-custodia-500ml.png,,no,catalogue
+RAJKA SEED THREE YERA (2KG),SEEDS,ALAMDAR SEED,1000.00,1000.00,,,no,catalogue
+RAJKA SEED THREE YERA (1KG),SEEDS,ALAMDAR SEED,500.00,500.00,,,no,catalogue
+SUGANDHA 111 FENEEL SEEDS (1KG),SEEDS,SHRI RAM,280.00,280.00,/product-images/shriram-sugandha-111-fennel-1kg.webp,,no,catalogue
+SUGANDHA PLUS FENEEL SEEDS (400GR),SEEDS,SHRI RAM,600.00,600.00,,,no,catalogue
+DEKEL (100ML),Pesticide,ADAMA,400.00,400.00,/product-images/adama-dekel-100ml.jpg,,no,catalogue
+OSWAL 4037 (CHOTA LOKVAN) KG,SEEDS,OSWAL,45.00,45.00,/product-images/oswal-raj-4037.jpg,,no,catalogue
+LOK 1 (BADA LOKVAN) KG,SEEDS,OSWAL,45.00,45.00,,,no,catalogue
+SUPER SHARBATI (14001) (KG),SEEDS,OSWAL,1400.00,1400.00,,,no,catalogue
+WESTERN PRATAP (CHANA ) (10KG),SEEDS,WESTERN SEED,1300.00,1300.00,,,no,catalogue
+TRASSID (300ML),Pesticide,ADAMA,3500.00,3500.00,/product-images/adama-trassid-300ml-unverified.webp,,no,catalogue
+RAJ-3 RAJKA (1KG),SEEDS,DINKAR SEEDS,450.00,450.00,,,no,catalogue
+RAJ-3 RAJKA (2KG),SEEDS,DINKAR SEEDS,1000.00,1000.00,,,no,catalogue
+IMEXOPLUS (250ML),Pesticide,CHAMBAL,400.00,400.00,/product-images/chambal-imexo-plus.webp,,no,catalogue
+SALTON(5KG),FERTILIZERS,BIRLA BALVAAN,350.00,350.00,,,no,catalogue
+20.20.0.13 OSHWAL NPK (50KG),FERTILIZERS,ANNADATA,1350.00,1350.00,,,no,catalogue
+GAUCHO(500ML),INSECTICIDE,Bayer,2200.00,2200.00,/product-images/bayer-gaucho.webp,,no,catalogue
+WIN CHI WIN (50ML),Pesticide,NATH BIO GENES,500.00,500.00,/product-images/nath-win-chi-win-100ml-unverified.png,,no,catalogue
+OMITE (500ML),Pesticide,DHANUKA,851.00,851.00,/product-images/dhanuka-omite.webp,,no,catalogue
+ANTRACOL (100GR),Pesticide,Bayer,80.00,100.00,/product-images/bayer-antracol-100g.webp,,no,catalogue
+SALTONE (5KG) CHAMBAL,FERTILIZERS,CHAMBAL,450.00,450.00,/product-images/chambal-uttam-sultone-5kg.jpg,,no,catalogue
+SALTONE (10 KG) CHAMBAL,FERTILIZERS,CHAMBAL,850.00,850.00,/product-images/chambal-uttam-sultone-10kg.webp,,no,catalogue
+SALTONE (25KG) CHAMBAL,FERTILIZERS,CHAMBAL,2000.00,2000.00,/product-images/chambal-uttam-sultone-10kg.webp,,no,catalogue
+SALTONE(50 KG ) CHAMBAL,FERTILIZERS,CHAMBAL,3750.00,3750.00,/product-images/chambal-uttam-sultone-10kg.webp,,no,catalogue
+HITCEL (1LITER),INSECTICIDE,SUMITOMO,750.00,750.00,/product-images/sumitomo-hitcel.webp,,no,catalogue
+WATER SPRAY MACHINE (20LITER),SPRAYMACHINE,BALWAN SPRAY MACHINE,3000.00,3000.00,/product-images/balwaan-20l-sprayer.jpg,,no,catalogue
+WATER SPRAY MACHIN E (18LITER),SPRAYMACHINE,BALWAN SPRAY MACHINE,2500.00,2500.00,/product-images/balwaan-18l-bs21-sprayer.jpg,,no,catalogue
+WATER SPRAY MACHINE (18LITER),SPRAYMACHINE,BALWAN SPRAY MACHINE,2200.00,2200.00,/product-images/balwaan-18l-bs21-sprayer.jpg,,no,catalogue
+GAUCHO(100ML),Pesticide,Bayer,600.00,650.00,/product-images/bayer-gaucho-100ml.jpg,,no,catalogue
+GAUCHO(250ML),Pesticide,Bayer,1200.00,1378.00,/product-images/bayer-gaucho-250ml.jpg,,no,catalogue
+GAUCHO (50ML),Pesticide,Bayer,300.00,350.00,/product-images/bayer-gaucho-50ml.jpg,,no,catalogue
+WIN-CHI-WIN (10ML),Pesticide,NATH BIO GENES,160.00,160.00,/product-images/nath-win-chi-win-100ml-unverified.png,,no,catalogue
+SUPERRHIZA (BALTI) 10KG,FERTILIZERS,CHAMBAL,1800.00,1800.00,/product-images/chambal-uttam-superrhiza-10kg.jpg,,no,catalogue
+(45S47) MUSTARD SEED (1KG),SEEDS,PIONEER,995.00,995.00,/product-images/pioneer-45s47.webp,,no,catalogue
+(45S35) MUSTARD SEEDS HYBRID,SEEDS,PIONEER,695.00,695.00,/product-images/pioneer-45s35.jpg,,no,catalogue
+(45S46) MUSTARD SEEDS,SEEDS,PIONEER,1095.00,1095.00,/product-images/pioneer-45s46.webp,,no,catalogue
+CHANA SEEDS DINKAR,SEEDS,DINKAR SEEDS,1300.00,1300.00,,,no,catalogue
+STOMPXTRA (700ML),Pesticide,BASF,800.00,800.00,/product-images/basf-stomp-xtra.webp,,no,catalogue
+STEMBO (1KG),Pesticide,CHAMBAL,100.00,120.00,/product-images/chambal-stembo.webp,,no,catalogue
+STAR 10-15 (MUSTARD SEEDS) (1KG),SEEDS,STAR AGRI SEEDS,1020.00,1020.00,/product-images/star-agri-10-15.webp,,no,catalogue
+KISAN BENTONITE SULPHUR (5KG),FERTILIZERS,NFL,350.00,450.00,/product-images/nfl-kisan-bentonite-sulphur.jpg,,no,catalogue
+MUSTARD SEEDS HYBRID (1666),SEEDS,SHRI RAM,1000.00,1280.00,/product-images/shriram-mustard-1666.jpg,,no,catalogue
+VIDYUT (50ML),Pesticide,SUMITOMO,700.00,899.00,/product-images/sumitomo-vidyut.webp,,no,catalogue
+EMA (100GR),Pesticide,CHAMBAL,300.00,400.00,/product-images/chambal-uttam-ema-100g.webp,,no,catalogue
+EXPONUS (34ML),Pesticide,BASF,2000.00,2363.00,/product-images/basf-exponus.webp,,no,catalogue
+ANOLIK (500ML),Pesticide,ADAMA,1750.00,1750.00,/product-images/adama-anolik.webp,,no,catalogue
+MOP (KG),FERTILIZERS,IPL,36.00,36.00,/product-images/ipl-mop-50kg.webp,,no,catalogue
+NPK (16.16.16),FERTILIZERS,IPL,1600.00,1600.00,/product-images/ipl-acrona-161616-50kg.webp,,no,catalogue
+DAP LUSEA (50KG),FERTILIZERS,DAP,30.00,30.00,,,no,catalogue
+UREA LUSE (45KG),FERTILIZERS,CHAMBAL,7.00,7.00,,,no,catalogue
+NFL POTAS (50KG),FERTILIZERS,NFL,700.00,700.00,/product-images/nfl-bharat-mop-50kg.webp,,no,catalogue
+DAP IPL,FERTILIZERS,DAP,1400.00,1400.00,/product-images/ipl-dap-50kg.webp,,no,catalogue
+SEMPRA 18GR,Pesticide,DHANUKA,750.00,811.00,/product-images/dhanuka-sempra.webp,,no,catalogue
+UTTAM ZNIC (3KG),FERTILIZERS,CHAMBAL,375.00,375.00,/product-images/chambal-zinc.webp,,no,catalogue
+BIRLA BALVAAN CALCIUM NITRATE (10KG),FERTILIZERS,HINDALCO,1200.00,1200.00,,,no,catalogue
+BIRLA BALVAAN CALCIUM NITRATE (5KG),FERTILIZERS,HINDALCO,600.00,600.00,,,no,catalogue
+SUPERRIZA (4kg),FERTILIZERS,CHAMBAL,720.00,980.00,/product-images/chambal-superrhiza.webp,,no,catalogue
+ACEMAIN 500GR,Pesticide,ADAMA,900.00,1000.00,/product-images/adama-acemain-500g.png,,no,catalogue
+ACEMAIN 250GR,Pesticide,ADAMA,250.00,366.00,/product-images/adama-acemain-1kg-unverified.webp,,no,catalogue
+FACT 100GR,Pesticide,SHIVALIK,100.00,190.00,,,no,catalogue
+SUPERKILER-25 (500ML),Pesticide,DHANUKA,380.00,446.00,/product-images/dhanuka-superkiller-25.webp,,no,catalogue
+SEMPRA (3.6GR),Pesticide,DHANUKA,220.00,281.00,/product-images/dhanuka-sempra.webp,,no,catalogue
+CARTAP KILDAN (1KG),INSECTICIDE,SHIVALIK,120.00,200.00,/product-images/shivalik-killdan-100g-unverified.jpg,,no,catalogue
+FURASAC (1KG),FERTILIZERS,SHIVALIK,120.00,150.00,/product-images/shivalik-furasac-1kg.jpeg,,no,catalogue
+APANA POWER 1(1KG),FERTILIZERS,HURL,200.00,253.00,/product-images/hurl-apna-power-1kg.webp,,no,catalogue
+AMAZAE 20KG,FERTILIZERS,AMAZAE,2000.00,3300.00,,,no,catalogue
+Polysulphate 25KG,FERTILIZERS,IPL,50.00,50.00,/product-images/ipl-polysulphate-25kg.webp,,no,catalogue
+IKU (4KG),FERTILIZERS,SUMITOMO,800.00,996.00,/product-images/sumitomo-iku.webp,,no,catalogue
+ZINC SULPHATE 5KG,FERTILIZERS,CHAMBAL,500.00,600.00,,,no,catalogue
+SULFINO GOLD (3KG),FERTILIZERS,CHAMBAL,450.00,510.00,/product-images/chambal-sulfino-gold.webp,,no,catalogue
+SARAGRIKA 500ML,FERTILIZERS,IFFCO,250.00,285.00,/product-images/iffco-sagarika-500ml.webp,,no,catalogue
+LIQUID CONOSORTIA 500ML,Pesticide,IFFCO,100.00,110.00,/product-images/iffco-npk-liquid-consortia.webp,,no,catalogue
+13-00-45,FERTILIZERS,SHRI RAM,220.00,335.00,/product-images/shriram-npk-130045.jpg,,no,catalogue
+NPK 00-00-50,FERTILIZERS,SHRI RAM,150.00,300.00,/product-images/shriram-sop-000050.webp,,no,catalogue
+SHRIRAM POSHAK 19-19-19,FERTILIZERS,SHRI RAM,150.00,375.00,/product-images/shriram-poshak.webp,,no,catalogue
+STAMBO (5KG),Pesticide,CHAMBAL,500.00,525.00,/product-images/chambal-uttam-stembo-fipronil.jpg,,no,catalogue
+SULFINO GOLD (25KG),FERTILIZERS,CHAMBAL,3250.00,3850.00,/product-images/chambal-sulfino-gold.webp,,no,catalogue
+FANVEER DP (10KG),Pesticide,CHAMBAL,300.00,440.00,/product-images/chambal-fenveer-dp.webp,,no,catalogue
+FANVEER DP (5KG),Pesticide,CHAMBAL,200.00,235.00,/product-images/chambal-fenveer-dp.webp,,no,catalogue
+FANVEER DP (25KG),Pesticide,CHAMBAL,650.00,1050.00,/product-images/chambal-fenveer-dp.webp,,no,catalogue
+NPK 00-52-34,FERTILIZERS,ANNADATA,250.00,350.00,/product-images/annadata-mkp-005234-1kg.webp,,no,catalogue
+AREVA (250GR),Pesticide,DHANUKA,350.00,467.00,/product-images/dhanuka-areva.webp,,no,catalogue
+(MERA) EXCHL MARG-71,Pesticide,SUMITOMO,100.00,152.00,/product-images/sumitomo-excel-mera-71-100g.jpg,,no,catalogue
+SWADHEEN (500GR),Pesticide,SUMITOMO,450.00,605.00,/product-images/sumitomo-swadheen.webp,,no,catalogue
+CELPHOS 10GR,Pesticide,SUMITOMO,40.00,55.00,/product-images/sumitomo-celphos-10g.webp,,no,catalogue
+HITWEED (250ML),Pesticide,GODREJ,1150.00,1350.00,/product-images/godrej-hitweed-500ml-unverified.jpg,,no,catalogue
+POLYRAM 800GR,Pesticide,BASF,800.00,1096.00,/product-images/basf-polyram.webp,,no,catalogue
+EVER GOL XTEND 40ML,Pesticide,Bayer,350.00,440.00,/product-images/bayer-evergol-xtend-100ml-unverified.webp,,no,catalogue
+NIMITZ 5(KG),Pesticide,ADAMA,2500.00,3250.00,/product-images/adama-nimitz-5kg.webp,,no,catalogue
+NIMITZ (1KG),Pesticide,ADAMA,500.00,650.00,/product-images/adama-nimitz-1kg.webp,,no,catalogue
+COVER(30ML),Pesticide,DHANUKA,500.00,597.00,/product-images/dhanuka-cover-liq.webp,,no,catalogue
+DELEGATE (20ML),Pesticide,CORTEVA,300.00,366.00,/product-images/corteva-delegate-20ml.webp,,no,catalogue
+DELEGATE (100ML),Pesticide,CORTEVA,1250.00,1528.00,/product-images/corteva-delegate-100ml.webp,,no,catalogue
+PROTPBUZ 250 ML,Pesticide,SHRI RAM,240.00,263.00,/product-images/shriram-protobuz.webp,,no,catalogue
+SHRI RAM BOSS (500GR),FERTILIZERS,SHRI RAM,250.00,400.00,/product-images/shriram-boss-boron-1kg-unverified.webp,,no,catalogue
+IMEXO PLUS (1LITER),Pesticide,CHAMBAL,1100.00,1600.00,/product-images/chambal-imexo-plus.webp,,no,catalogue
+IMEXO PLUS 500ML,Pesticide,CHAMBAL,600.00,825.00,/product-images/chambal-imexo-plus.webp,,no,catalogue
+IMIDAVEER 250ML,Pesticide,CHAMBAL,400.00,525.00,/product-images/chambal-imidaveer.webp,,no,catalogue
+NO GRASS (1 LITER),Pesticide,CHAMBAL,900.00,1000.00,/product-images/chambal-no-grass.webp,,no,catalogue
+LEXON(100ML),Pesticide,CHAMBAL,350.00,400.00,/product-images/chambal-lexon.webp,,no,catalogue
+LEXON(500ML),Pesticide,CHAMBAL,1600.00,1925.00,/product-images/chambal-lexon.webp,,no,catalogue
+METROZ (120) GR,Pesticide,CHAMBAL,500.00,800.00,/product-images/chambal-metroz.webp,,no,catalogue
+SHRIRAM SATHI NPK (00.52.34) 1 KG,FERTILIZERS,SHRI RAM,250.00,480.00,/product-images/shriram-sathi.webp,,no,catalogue
+SHRI RAM MAP-NPK (12..61.00),FERTILIZERS,SHRI RAM,200.00,310.00,/product-images/shriram-map-126100-1kg.webp,,no,catalogue
+POTASSIUM SULPHATE SUP. (00.00.56) 1 KG,FERTILIZERS,ANNADATA,150.00,250.00,,,no,catalogue
+POTASSIUM NITRATE (13.00.45) 1KG,FERTILIZERS,ANNADATA,200.00,300.00,,,no,catalogue
+ANNADATA MAP(12.61.00) 1KG,FERTILIZERS,ANNADATA,300.00,320.00,/product-images/annadata-map-126100-1kg.webp,,no,catalogue
+NANODAP(2-5-0) 1LITER,FERTILIZERS,GROMOR,600.00,600.00,/product-images/gromor-nano-dap-1l.webp,,no,catalogue
+PCB CULTURE (500MML),FERTILIZERS,NFL,60.00,90.00,,,no,catalogue
+FAME (100ML),Pesticide,Bayer,2000.00,2780.00,/product-images/bayer-fame-100ml.webp,,no,catalogue
+VAYEGO(50ML),Pesticide,Bayer,700.00,850.00,/product-images/bayer-vayego-50ml.webp,,no,catalogue
+VAYEGO(100ML),Pesticide,Bayer,1300.00,1665.00,/product-images/bayer-vayego-100ml.webp,,no,catalogue
+VELUM PRIME( 250ML),Pesticide,Bayer,1900.00,2920.00,/product-images/bayer-velum-prime-250ml.webp,,no,catalogue
+MELODYDUO (400GR),Pesticide,Bayer,1300.00,1440.00,/product-images/bayer-melody-duo-400g.webp,,no,catalogue
+ALIETTE (1KG),Pesticide,Bayer,3100.00,3680.00,/product-images/bayer-aliette-1kg.webp,,no,catalogue
+ALIETTE (250GR),Pesticide,Bayer,850.00,1010.00,/product-images/bayer-aliette-250g.png,,no,catalogue
+ALIETTE 100GR,Pesticide,Bayer,400.00,490.00,/product-images/bayer-aliette-100g.jpg,,no,catalogue
+LESENTA 100GR,Pesticide,Bayer,1400.00,1900.00,/product-images/bayer-lesenta-100g.webp,,no,catalogue
+LESENTA 40GR,Pesticide,Bayer,770.00,770.00,/product-images/bayer-lesenta-40g.jpeg,,no,catalogue
+FAME(250ML),Pesticide,Bayer,5000.00,6850.00,/product-images/bayer-fame-250ml.webp,,no,catalogue
+VAYEGO(250ML),Pesticide,Bayer,3400.00,4000.00,/product-images/bayer-vayego-250ml.jpg,,no,catalogue
+ACERBO(250ML),Pesticide,Bayer,1650.00,1880.00,/product-images/bayer-acerbo-unverified.jpg,,no,catalogue
+LAUDIS (115ML),Pesticide,Bayer,1400.00,2220.00,/product-images/bayer-laudis-115ml.webp,,no,catalogue
+LAUDIS (230ML),Pesticide,Bayer,2600.00,3980.00,/product-images/bayer-laudis-230ml-unverified.jpg,,no,catalogue
+SOLOMON (1LITER),Pesticide,Bayer,2800.00,3285.00,/product-images/bayer-solomon-1litre.webp,,no,catalogue
+EVER GOL XTEND (100ML),Pesticide,Bayer,1000.00,1220.00,/product-images/bayer-evergol-xtend.webp,,no,catalogue
+SOLOMON (100ML),Pesticide,Bayer,400.00,450.00,/product-images/bayer-solomon-100ml.webp,,no,catalogue
+AMBITION (250ML),Pesticide,Bayer,350.00,410.00,/product-images/bayer-ambition-250ml.png,,no,catalogue
+AMBITION (500ML),Pesticide,Bayer,650.00,800.00,/product-images/bayer-ambition-500ml.webp,,no,catalogue
+AMBITION (1LITER),Pesticide,Bayer,1200.00,1550.00,/product-images/bayer-ambition-1litre.webp,,no,catalogue
+PLANOFIX(100ML),Pesticide,Bayer,130.00,150.00,/product-images/bayer-planofix-100ml.webp,,no,catalogue
+VALOR-32(1LITER),Pesticide,BASF,1450.00,1692.00,/product-images/basf-valor-32.webp,,no,catalogue
+STOMPXTRA3.5 (1LITER),Pesticide,BASF,3200.00,4410.00,/product-images/basf-stomp-xtra.webp,,no,catalogue
+BASAGRAN(800ML),Pesticide,BASF,1000.00,1256.00,/product-images/basf-basagran.webp,,no,catalogue
+ODYSSEY 40GR,Pesticide,BASF,1000.00,1272.00,/product-images/basf-odyssey.webp,,no,catalogue
+CABRIOTOP 300GR,Pesticide,BASF,650.00,1068.00,/product-images/basf-cabrio-top.webp,,no,catalogue
+TYNZER 15ML,Pesticide,BASF,1000.00,1362.00,/product-images/basf-tynzer-30ml-unverified.jpg,,no,catalogue
+EXPONUS 17ML,Pesticide,BASF,1000.00,1224.00,/product-images/basf-exponus.webp,,no,catalogue
+SEFINA(280ML),Pesticide,BASF,1500.00,1771.00,/product-images/basf-sefina.webp,,no,catalogue
+SEFINA(400ML),Pesticide,BASF,2200.00,2440.00,/product-images/basf-sefina.webp,,no,catalogue
+TRAXX (500GR),Pesticide,SHIVALIK,180.00,370.00,/product-images/shivalik-traxx.webp,,no,catalogue
+SACTIMO (500ML),Pesticide,SHIVALIK,500.00,720.00,/product-images/shivalik-sactimo-1l.webp,,no,catalogue
+SACKWEED 38(250ML),Pesticide,SHIVALIK,150.00,196.00,/product-images/shivalik-sackweed-38-250ml.jpg,,no,catalogue
+AGRIWET GOLD (250ML),Pesticide,SHIVALIK,300.00,500.00,/product-images/shivalik-agriwet-gold-unverified.jpg,,no,catalogue
+SHIVAGOLD XTRA (500ML),Pesticide,SHIVALIK,350.00,450.00,/product-images/shivalik-shivagold-xtra-1l-unverified.webp,,no,catalogue
+SHIVAGOLD XTRA (1LTR),Pesticide,SHIVALIK,500.00,800.00,/product-images/shivalik-shivagold-xtra.webp,,no,catalogue
+BORONPRO-20-(500GR),FERTILIZERS,SHIVALIK,130.00,310.00,/product-images/shivalik-boronpro-20-250g-unverified.jpg,,no,catalogue
+OXYFLO(50ML),Pesticide,SHIVALIK,100.00,135.00,/product-images/shivalik-oxyflo.webp,,no,catalogue
+OXYFLO(100ML),Pesticide,SHIVALIK,200.00,250.00,/product-images/shivalik-oxyflo.webp,,no,catalogue
+MONOLIK 250ML,Pesticide,SHIVALIK,150.00,210.00,/product-images/shivalik-monolik-250ml.webp,,no,catalogue
+SHAKED (800ML),Pesticide,ADAMA,1300.00,1680.00,/product-images/adama-shaked-800ml.jpg,,no,catalogue
+WEEDBLOCK (500ML),Pesticide,ADAMA,600.00,930.00,,,no,catalogue
+FLAMBERGE (100ML),Pesticide,ADAMA,200.00,230.00,/product-images/adama-flamberge-250ml.jpg,,no,catalogue
+FLAMBERGE (250ML),Pesticide,ADAMA,350.00,460.00,/product-images/adama-flamberge-250ml.jpg,,no,catalogue
+FLAMBERGE (500ML),Pesticide,ADAMA,650.00,800.00,/product-images/adama-flamberge-500ml.webp,,no,catalogue
+FLAMBERGE (1LITER),Pesticide,ADAMA,1100.00,1400.00,/product-images/adama-flamberge.webp,,no,catalogue
+ANOLIK (200ml),Pesticide,ADAMA,450.00,500.00,/product-images/adama-anolik.webp,,no,catalogue
+SHAMIR(250ML),Pesticide,ADAMA,350.00,490.00,/product-images/adama-shamir-unverified.jpg,,no,catalogue
+SUCKGNA (100GR),Pesticide,ADAMA,160.00,223.00,/product-images/adama-suckgan-1kg-unverified.webp,,no,catalogue
+TAKAF (250ML),Pesticide,ADAMA,750.00,1109.00,/product-images/adama-takaf-unverified.jpg,,no,catalogue
+MASTERCOP (400ML),Pesticide,ADAMA,650.00,744.00,/product-images/adama-mastercop-400ml.webp,,no,catalogue
+CUSTODIA(500ML),Pesticide,ADAMA,1000.00,2350.00,/product-images/adama-custodia-500ml.png,,no,catalogue
+AGIL (250ML),Pesticide,ADAMA,500.00,1000.00,/product-images/adama-agil-250ml.webp,,no,catalogue
+AGIL (1LTR),Pesticide,ADAMA,1500.00,3400.00,/product-images/adama-agil-1l.jpg,,no,catalogue
+WEEDMAR802(4D) 500GR,Pesticide,DHANUKA,200.00,256.00,/product-images/dhanuka-weedmar-80-500g.webp,,no,catalogue
+EM-1 (500GR),Pesticide,DHANUKA,1200.00,1972.00,/product-images/dhanuka-em-1.webp,,no,catalogue
+AREVA(5GR),Pesticide,DHANUKA,20.00,26.00,/product-images/dhanuka-areva.webp,,no,catalogue
+DHANUCOP-50-WP(500GR),Pesticide,DHANUKA,400.00,595.00,/product-images/dhanuka-dhanucop.webp,,no,catalogue
+CALDAN-50-SP(250GR),Pesticide,DHANUKA,500.00,551.00,/product-images/dhanuka-caldan-50-sp.webp,,no,catalogue
+CALDAN-50-SP(100GR),Pesticide,DHANUKA,200.00,246.00,/product-images/dhanuka-caldan-50-sp.webp,,no,catalogue
+DECIDE(250GR),Pesticide,DHANUKA,680.00,755.00,/product-images/dhanuka-decide.webp,,no,catalogue
+DHAN PREET (100GR),Pesticide,DHANUKA,150.00,186.00,/product-images/dhanuka-dhanpreet.webp,,no,catalogue
+DHANUKA-M45-(250GR),Pesticide,DHANUKA,100.00,156.00,/product-images/dhanuka-dhanuka-m-45.webp,,no,catalogue
+DHANUKA-M45 - (500GR),Pesticide,DHANUKA,200.00,291.00,/product-images/dhanuka-dhanuka-m-45.webp,,no,catalogue
+OMITE(100ML),Pesticide,DHANUKA,170.00,201.00,/product-images/dhanuka-omite.webp,,no,catalogue
+OMITE (250ML),Pesticide,DHANUKA,380.00,442.00,/product-images/dhanuka-omite.webp,,no,catalogue
+TARGA SUPER 500ML,Pesticide,DHANUKA,800.00,955.00,/product-images/dhanuka-targa-super.webp,,no,catalogue
+MEDIA (250ML),Pesticide,DHANUKA,400.00,560.00,/product-images/dhanuka-media.webp,,no,catalogue
+MEDIA (100ML),Pesticide,DHANUKA,200.00,236.00,/product-images/dhanuka-media.webp,,no,catalogue
+TARGASUPER (250ML),Pesticide,DHANUKA,400.00,485.00,/product-images/dhanuka-targa-super.webp,,no,catalogue
+TARGASUPER (100ML),Pesticide,DHANUKA,200.00,225.00,/product-images/dhanuka-targa-super.webp,,no,catalogue
+TARGASUPER (1LTR),Pesticide,DHANUKA,1500.00,1865.00,/product-images/dhanuka-targa-super.webp,,no,catalogue
+SUPERKILER-25 (100ML),Pesticide,DHANUKA,100.00,115.00,/product-images/dhanuka-superkiller-25.webp,,no,catalogue
+SUPERKILER-25 (250ML),Pesticide,DHANUKA,200.00,241.00,/product-images/dhanuka-superkiller-25.webp,,no,catalogue
+DHANUVIT (250GR),Pesticide,DHANUKA,80.00,105.00,/product-images/dhanuka-dhanuvit-100g.webp,,no,catalogue
+EM-1(100GR),Pesticide,DHANUKA,300.00,551.00,/product-images/dhanuka-em-1.webp,,no,catalogue
+EM-1 (250GR),Pesticide,DHANUKA,700.00,1211.00,/product-images/dhanuka-em-1.webp,,no,catalogue
+AREVA(500GR),Pesticide,DHANUKA,600.00,885.00,/product-images/dhanuka-areva.webp,,no,catalogue
+AREVA (1KG),Pesticide,DHANUKA,1000.00,1601.00,/product-images/dhanuka-areva.webp,,no,catalogue
+STREPTOCYCLINE,Pesticide,HINDUSTAN,40.00,54.00,/product-images/hindustan-streptocycline-6g.webp,,no,catalogue
+RIDOMIL GOLD,Pesticide,SYNGENTA,100.00,100.00,/product-images/syngenta-ridomil-gold-100g.webp,,no,catalogue
+RAZOR 500ML,Pesticide,SHRI RAM,500.00,985.00,/product-images/shriram-razor-1l-unverified.png,,no,catalogue
+CELPHOS 60 GR,Pesticide,SUMITOMO,150.00,275.00,/product-images/sumitomo-celphos-official-unverified.jpg,,no,catalogue
+TAREEF 500ML,Pesticide,SUMITOMO,400.00,475.00,/product-images/sumitomo-tareef-1l-unverified.webp,,no,catalogue
+TAREEF 1LTR,Pesticide,SUMITOMO,800.00,899.00,/product-images/sumitomo-tareef.webp,,no,catalogue
+ROBOT(250GR),Pesticide,SUMITOMO,600.00,1700.00,/product-images/sumitomo-robot.webp,,no,catalogue
+TELOCEL 250ML,Pesticide,SUMITOMO,750.00,820.00,,,no,catalogue
+RUMPUS 500ML,Pesticide,SUMITOMO,900.00,1063.00,/product-images/sumitomo-rumpus.webp,,no,catalogue
+CAVITE 250GR,Pesticide,SUMITOMO,700.00,810.00,/product-images/sumitomo-caviet.webp,,no,catalogue
+IMFI(100),Pesticide,SUMITOMO,1300.00,1450.00,/product-images/sumitomo-imfi.webp,,no,catalogue
+SWADHEEN 1KG,Pesticide,SUMITOMO,900.00,1149.00,/product-images/sumitomo-swadheen.webp,,no,catalogue
+SULFEX 500GR,Pesticide,SUMITOMO,80.00,105.00,/product-images/sumitomo-sulfex.webp,,no,catalogue
+TAREEF 250 ML,Pesticide,SUMITOMO,250.00,325.00,/product-images/sumitomo-tareef-1l-unverified.webp,,no,catalogue
+TRICEL (100ML),Pesticide,SUMITOMO,60.00,84.00,/product-images/sumitomo-tricel.webp,,no,catalogue
+TRICEL (250ML),Pesticide,SUMITOMO,140.00,172.00,/product-images/sumitomo-tricel.webp,,no,catalogue
+CELOUIN (1LTR),Pesticide,SUMITOMO,750.00,990.00,/product-images/sumitomo-celquin.webp,,no,catalogue
+ACTO (100GR),Pesticide,CHAMBAL,150.00,250.00,/product-images/chambal-acto.webp,,no,catalogue
+ACTO (250GR),Pesticide,CHAMBAL,400.00,550.00,/product-images/chambal-acto.webp,,no,catalogue
+IMEXO (100GR),Pesticide,CHAMBAL,150.00,195.00,/product-images/chambal-imexo.webp,,no,catalogue
+VEERCOMBI-44 ( 500ML),Pesticide,CHAMBAL,400.00,750.00,/product-images/chambal-veercombi-44.webp,,no,catalogue
+IMEXO(250GR),Pesticide,CHAMBAL,400.00,455.00,/product-images/chambal-imexo.webp,,no,catalogue
+VEERCOMBI-44 ( 1LIT),Pesticide,CHAMBAL,700.00,1450.00,/product-images/chambal-veercombi-44.webp,,no,catalogue
+VEERM-45 (1KG),Pesticide,CHAMBAL,400.00,890.00,/product-images/chambal-veer-m45.webp,,no,catalogue
+VEER M 45 (500GM),Pesticide,CHAMBAL,220.00,450.00,/product-images/chambal-veer-m45.webp,,no,catalogue
+EMA 500GR,Pesticide,CHAMBAL,1200.00,1850.00,/product-images/chambal-uttam-ema-500g.webp,,no,catalogue
+EMA 250 GR,Pesticide,CHAMBAL,700.00,950.00,/product-images/chambal-uttam-ema-250g.webp,,no,catalogue
+IMEXO PLUS 100ML,Pesticide,CHAMBAL,160.00,175.00,/product-images/chambal-imexo-plus.webp,,no,catalogue
+MANZIM 500GR,Pesticide,CHAMBAL,350.00,625.00,/product-images/chambal-manzim.webp,,no,catalogue
+ATLAS 175ML,Pesticide,CHAMBAL,850.00,950.00,/product-images/chambal-atlas.webp,,no,catalogue
+ATLAS 500ML,Pesticide,CHAMBAL,2000.00,2600.00,/product-images/chambal-atlas.webp,,no,catalogue
+DHOOMKETU 250 ML,Pesticide,CHAMBAL,300.00,513.00,/product-images/chambal-dhoomketu-unverified.jpg,,no,catalogue
+TEMONE (57.5ML),Pesticide,CHAMBAL,700.00,866.00,/product-images/chambal-temone.webp,,no,catalogue
+IMEXO 500 GR,Pesticide,CHAMBAL,800.00,865.00,/product-images/chambal-imexo.webp,,no,catalogue
+VEERCOMBI-44 250 ML,Pesticide,CHAMBAL,300.00,388.00,/product-images/chambal-veercombi-44.webp,,no,catalogue
+NO GRASS 500ML,Pesticide,CHAMBAL,450.00,525.00,/product-images/chambal-no-grass.webp,,no,catalogue
+TEMONE 115 ML,Pesticide,CHAMBAL,1400.00,1850.00,/product-images/chambal-temone.webp,,no,catalogue
+PIFRO 250 ML,Pesticide,CHAMBAL,350.00,370.00,/product-images/chambal-pifro.webp,,no,catalogue
+PIFRO 500ML,Pesticide,CHAMBAL,680.00,730.00,/product-images/chambal-pifro.webp,,no,catalogue
+IMIDAVEER 500 ML,Pesticide,CHAMBAL,800.00,1025.00,/product-images/chambal-imidaveer.webp,,no,catalogue
+VEERCOMBI-505 250 ML,Pesticide,CHAMBAL,300.00,400.00,/product-images/chambal-veercombi-505.webp,,no,catalogue
+20.20.0.13(IPL) 50KG,FERTILIZERS,IPL,1400.00,1400.00,,,no,catalogue
+12.32.16 CHAMBAL,FERTILIZERS,CHAMBAL,1470.00,1470.00,/product-images/chambal-bharat-npk-123216.webp,,no,catalogue
+MOP 50KG,FERTILIZERS,IPL,1700.00,1700.00,/product-images/ipl-mop-50kg.webp,,no,catalogue
+SSP(GIBBO) 50KKG,FERTILIZERS,ANNADATA,600.00,650.00,/product-images/annadata-ssp-granular-50kg.png,,no,catalogue
+SSP(GROPLUS) 50KG,FERTILIZERS,COROMANDEL,700.00,700.00,/product-images/coromandel-groplus-50kg.webp,,no,catalogue
+SSP(GRANULAR) 50KG,FERTILIZERS,RAMA,500.00,500.00,/product-images/rama-girnar-ssp-granular-50kg.webp,,no,catalogue
+SSP( DOUBAL HOURSE) 50KG,FERTILIZERS,COROMANDEL,500.00,500.00,/product-images/coromandel-double-horse-ssp-50kg.webp,,no,catalogue
+SSP (50KG) ANNADATA,FERTILIZERS,ANNADATA,500.00,500.00,/product-images/annadata-ssp-powder-50kg.webp,,no,catalogue
+UREA 45KG,FERTILIZERS,CHAMBAL,280.00,280.00,/product-images/chambal-bharat-urea.webp,,no,catalogue
+WETCIT250 ML,Pesticide,DHANUKA,400.00,456.00,/product-images/dhanuka-wetcit.webp,,no,catalogue

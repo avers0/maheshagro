@@ -1,179 +1,163 @@
-﻿import { useState, useEffect } from "preact/hooks";
+import { useEffect, useMemo, useState } from "preact/hooks";
 import Papa from "papaparse";
 
 interface Product {
+  item_code?: string;
   name: string;
-  description: string;
-  image: string;
   category: string;
   brand: string;
+  selling_price?: string;
+  mrp?: string;
+  image?: string;
+  description?: string;
+  show_online?: string;
+  listing_type?: string;
 }
 
-const CATEGORIES = ["All Products", "Seeds", "Fertilizers", "Pesticides", "Tools"];
-
+const GROUPS = ["All products", "Seeds", "Fertilizers", "Crop protection", "Spray equipment"];
+const PAGE_SIZE = 24;
 const WA_NUMBER = "919166029301";
 
-function buildWAMessage(product: Product) {
-  return `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(`Hi, I am interested in: ${product.name} (${product.brand}). Please provide more details.`)}`;
+function groupFor(category: string) {
+  const value = category.trim().toLowerCase();
+  if (value === "seeds") return "Seeds";
+  if (value === "fertilizers") return "Fertilizers";
+  if (value === "spraymachine") return "Spray equipment";
+  return "Crop protection";
+}
+
+function enquiryUrl(product?: Product, category?: string, need?: string, location?: string) {
+  if (product) {
+    return `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(`Hi, I would like to enquire about ${product.name}${product.brand ? ` (${product.brand})` : ""}. Please share current details and availability.`)}`;
+  }
+  const subject = category && category !== "All products" ? category.toLowerCase() : "agricultural products";
+  const details = [need?.trim() && `I need: ${need.trim()}.`, location?.trim() && `My location: ${location.trim()}.`].filter(Boolean).join(" ");
+  return `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(`Hi, I would like to enquire about ${subject}. ${details} Please share current options and availability.`.replace(/\s+/g, " ").trim())}`;
+}
+
+function priceLabel(value?: string) {
+  if (!value) return null;
+  const amount = Number(value.replaceAll(",", ""));
+  return Number.isFinite(amount) && amount > 0 ? new Intl.NumberFormat("en-IN", { style: "currency", currency: "INR", minimumFractionDigits: 0, maximumFractionDigits: 2 }).format(amount) : null;
 }
 
 export default function ProductsIsland() {
   const [products, setProducts] = useState<Product[]>([]);
-  const [filtered, setFiltered] = useState<Product[]>([]);
-  const [category, setCategory] = useState("All Products");
+  const [group, setGroup] = useState("All products");
+  const [brand, setBrand] = useState("All brands");
   const [search, setSearch] = useState("");
+  const [page, setPage] = useState(1);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
+  const [error, setError] = useState(false);
+  const [retry, setRetry] = useState(0);
+  const [need, setNeed] = useState("");
+  const [location, setLocation] = useState("");
 
-  // Load CSV on mount
   useEffect(() => {
-    Papa.parse("/products.csv", {
+    const value = new URLSearchParams(window.location.search).get("category")?.toLowerCase();
+    const match = GROUPS.find(item => item.toLowerCase() === value);
+    if (match) setGroup(match);
+  }, []);
+
+  useEffect(() => {
+    let cancelled = false;
+    setLoading(true);
+    setError(false);
+    Papa.parse<Product>("/products.csv", {
       header: true,
       download: true,
       skipEmptyLines: true,
-      complete: (results) => {
-        const data = results.data as Product[];
-        setProducts(data);
-        setFiltered(data);
+      complete: result => {
+        if (cancelled) return;
+        if (result.errors.length > 0) { setError(true); setLoading(false); return; }
+        setProducts(result.data.filter(item => item.name?.trim() && item.name.trim().toLowerCase() !== "sample product" && (item.show_online?.trim().toLowerCase() === "yes" || ["directory", "catalogue"].includes(item.listing_type?.trim().toLowerCase() || ""))));
         setLoading(false);
       },
-      error: (err) => {
-        setError("Failed to load products. " + err.message);
-        setLoading(false);
-      },
+      error: () => { if (!cancelled) { setError(true); setLoading(false); } },
     });
-  }, []);
+    return () => { cancelled = true; };
+  }, [retry]);
 
-  // Filter whenever category or search changes
-  useEffect(() => {
-    let result = products;
-    if (category !== "All Products") {
-      result = result.filter(p => p.category?.toLowerCase() === category.toLowerCase());
-    }
-    if (search.trim()) {
-      const q = search.toLowerCase();
-      result = result.filter(p =>
-        p.name?.toLowerCase().includes(q) ||
-        p.brand?.toLowerCase().includes(q) ||
-        p.description?.toLowerCase().includes(q)
-      );
-    }
-    setFiltered(result);
-  }, [category, search, products]);
+  const brands = useMemo(() => ["All brands", ...Array.from(new Set(products.map(item => item.brand?.trim()).filter(Boolean))).sort((a, b) => a.localeCompare(b))], [products]);
+  const filtered = useMemo(() => {
+    const query = search.trim().toLowerCase();
+    return products.filter(item => {
+      if (group !== "All products" && groupFor(item.category || "") !== group) return false;
+      if (brand !== "All brands" && item.brand !== brand) return false;
+      return !query || `${item.name} ${item.brand} ${item.category} ${item.item_code || ""}`.toLowerCase().includes(query);
+    });
+  }, [products, group, brand, search]);
+  const pageCount = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
+  const visible = filtered.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
 
-  if (loading) {
-    return (
-      <div class="py-32 flex flex-col items-center gap-4 text-primary">
-        <div class="w-12 h-12 border-4 border-accent border-t-transparent rounded-full animate-spin"></div>
-        <p class="font-medium text-sm uppercase tracking-widest">Loading Products...</p>
-      </div>
-    );
-  }
+  const chooseGroup = (next: string) => {
+    setGroup(next);
+    setBrand("All brands");
+    setPage(1);
+    window.history.replaceState(null, "", next === "All products" ? "/products#catalogue" : `/products?category=${encodeURIComponent(next)}#catalogue`);
+  };
 
-  if (error) {
-    return (
-      <div class="py-32 text-center">
-        <p class="text-red-600 font-medium">{error}</p>
-      </div>
-    );
-  }
+  if (loading) return <div class="container-custom py-14" role="status"><p class="text-primary">Loading products…</p></div>;
+  if (error) return (
+    <div class="container-custom"><div class="rounded-2xl bg-background-cream p-8 md:p-10" role="alert">
+      <h3 class="text-xl font-semibold text-primary">We couldn’t load the catalogue</h3>
+      <p class="mt-3 text-text-muted">Please try again or contact our team for product details.</p>
+      <div class="mt-6 flex flex-wrap gap-3"><button type="button" class="btn-accent" onClick={() => setRetry(value => value + 1)}>Try again</button><a href={enquiryUrl()} target="_blank" rel="noopener noreferrer" class="btn-outline">Ask on WhatsApp</a></div>
+    </div></div>
+  );
 
-  return (
-    <div>
-      {/* Sticky filter bar */}
-      <div class="py-6 border-b border-border bg-white sticky top-[68px] z-30 shadow-sm">
-        <div class="container mx-auto px-6">
-          <div class="flex flex-col lg:flex-row gap-6 justify-between items-center">
-            {/* Category tabs */}
-            <div class="flex overflow-x-auto pb-2 lg:pb-0 w-full lg:w-auto gap-2 scrollbar-hide">
-              {CATEGORIES.map(cat => (
-                <button
-                  key={cat}
-                  class={`px-6 py-2.5 rounded-full font-bold whitespace-nowrap transition-all ${
-                    category === cat
-                      ? "bg-primary text-white shadow-lg"
-                      : "bg-gray-100 text-gray-500 hover:bg-accent hover:text-primary"
-                  }`}
-                  onClick={() => setCategory(cat)}
-                >
-                  {cat}
-                </button>
-              ))}
-            </div>
-            {/* Search */}
-            <div class="relative w-full lg:w-96">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400" aria-hidden="true"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
-              <input
-                type="text"
-                placeholder="Search products or brands..."
-                class="w-full pl-12 pr-4 py-3 rounded-2xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all bg-gray-50"
-                value={search}
-                onInput={(e) => setSearch((e.target as HTMLInputElement).value)}
-              />
-            </div>
-          </div>
+  if (products.length === 0) return (
+    <div class="container-custom">
+      <div class="rounded-2xl bg-background-cream p-6 sm:p-8 md:p-10">
+        <div class="max-w-2xl">
+          <h3 class="text-2xl font-semibold text-primary">{group === "All products" ? "Tell us what you need" : `Ask about ${group.toLowerCase()}`}</h3>
+          <p class="mt-3 leading-relaxed text-text-muted">Our online listings are not available yet. Share your crop, product name, or preferred brand, and we’ll help you find current options.</p>
         </div>
-      </div>
-
-      {/* Results count */}
-      <div class="container mx-auto px-6 pt-8 pb-4">
-        <p class="text-sm text-gray-500">
-          Showing <span class="font-bold text-primary">{filtered.length}</span> product{filtered.length !== 1 ? "s" : ""}
-          {category !== "All Products" && <> in <span class="font-bold text-primary">{category}</span></>}
-          {search && <> matching <span class="font-bold text-primary">"{search}"</span></>}
-        </p>
-      </div>
-
-      {/* Product grid */}
-      <div class="container mx-auto px-6 pb-16">
-        {filtered.length === 0 ? (
-          <div class="py-24 text-center">
-            <p class="text-gray-500 text-lg font-medium">No products found.</p>
-            <button class="mt-4 text-primary font-bold underline" onClick={() => { setCategory("All Products"); setSearch(""); }}>Clear filters</button>
-          </div>
-        ) : (
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-            {filtered.map((product, i) => (
-              <div key={i} class="bg-white rounded-[2rem] border border-gray-100 overflow-hidden hover:shadow-2xl hover:shadow-primary/10 transition-all group flex flex-col h-full">
-                <div class="relative aspect-[4/3] overflow-hidden bg-gray-100">
-                  <img
-                    src={product.image || `https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&q=80&w=400`}
-                    alt={product.name}
-                    class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                    loading="lazy"
-                    onError={(e) => { (e.target as HTMLImageElement).src = `https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&q=80&w=400`; }}
-                  />
-                  {product.category && (
-                    <div class="absolute top-4 left-4">
-                      <span class="bg-white/90 backdrop-blur-md px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-widest text-primary shadow-sm">
-                        {product.category}
-                      </span>
-                    </div>
-                  )}
-                </div>
-                <div class="p-6 flex flex-col flex-grow">
-                  <div class="mb-4">
-                    {product.brand && <p class="text-xs font-bold text-primary uppercase tracking-wider mb-1">{product.brand}</p>}
-                    <h3 class="text-xl font-bold text-gray-900 leading-tight group-hover:text-primary transition-colors">{product.name}</h3>
-                  </div>
-                  {product.description && (
-                    <p class="text-gray-500 text-sm line-clamp-2 mb-6 flex-grow">{product.description}</p>
-                  )}
-                  <a
-                    href={buildWAMessage(product)}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="w-full flex items-center justify-center space-x-2 bg-[#25D366] hover:bg-[#20ba5a] text-white py-3.5 rounded-2xl font-bold transition-all active:scale-95 shadow-lg shadow-green-500/20"
-                  >
-                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719"/></svg>
-                    <span>WhatsApp Enquire</span>
-                  </a>
-                </div>
-              </div>
-            ))}
-          </div>
-        )}
+        <div class="mt-7 flex flex-wrap gap-2" role="group" aria-label="Product category">
+          {GROUPS.map(item => <button key={item} type="button" aria-pressed={group === item} class={`min-h-11 rounded-full px-4 text-sm font-semibold transition-colors ${group === item ? "bg-primary text-white" : "bg-white text-primary hover:bg-accent/30"}`} onClick={() => chooseGroup(item)}>{item}</button>)}
+        </div>
+        <div class="mt-7 grid gap-4 md:grid-cols-2">
+          <label class="block text-sm font-semibold text-primary">Crop, product, or brand
+            <input type="text" value={need} onInput={event => setNeed((event.target as HTMLInputElement).value)} placeholder="e.g. wheat seed or preferred brand" class="mt-2 min-h-12 w-full rounded-xl border border-border bg-white px-4 font-normal text-primary placeholder:text-text-muted focus:border-primary" />
+          </label>
+          <label class="block text-sm font-semibold text-primary">Your location <span class="font-normal text-text-muted">(optional)</span>
+            <input type="text" value={location} onInput={event => setLocation((event.target as HTMLInputElement).value)} placeholder="Village or town" class="mt-2 min-h-12 w-full rounded-xl border border-border bg-white px-4 font-normal text-primary placeholder:text-text-muted focus:border-primary" />
+          </label>
+        </div>
+        <div class="mt-6 flex flex-wrap items-center gap-4">
+          <a href={enquiryUrl(undefined, group, need, location)} target="_blank" rel="noopener noreferrer" class="btn-accent justify-center">Send enquiry on WhatsApp</a>
+          <a href="tel:+919166029301" class="inline-flex min-h-11 items-center font-semibold text-primary underline decoration-accent decoration-2 underline-offset-4">Or call +91 91660 29301</a>
+        </div>
       </div>
     </div>
   );
+
+  return <div class="container-custom">
+    <div class="border-y border-border py-5">
+      <div class="flex flex-wrap gap-2" role="group" aria-label="Product category">
+        {GROUPS.map(item => <button key={item} type="button" aria-pressed={group === item} class={`min-h-11 rounded-full px-5 text-sm font-semibold transition-colors ${group === item ? "bg-primary text-white" : "bg-background-cream text-primary hover:bg-accent/30"}`} onClick={() => chooseGroup(item)}>{item}</button>)}
+      </div>
+      <div class="mt-4 grid gap-3 sm:grid-cols-[minmax(0,1fr)_minmax(11rem,14rem)]">
+        <label class="block"><span class="sr-only">Search products and brands</span><input type="search" value={search} onInput={event => { setSearch((event.target as HTMLInputElement).value); setPage(1); }} placeholder="Search products or brands" class="min-h-12 w-full rounded-xl border border-border bg-white px-4 text-primary placeholder:text-text-muted focus:border-primary" /></label>
+        <label class="block"><span class="sr-only">Filter by brand</span><select value={brand} onChange={event => { setBrand((event.target as HTMLSelectElement).value); setPage(1); }} class="min-h-12 w-full rounded-xl border border-border bg-white px-4 text-primary focus:border-primary">{brands.map(item => <option key={item} value={item}>{item}</option>)}</select></label>
+      </div>
+    </div>
+    <p class="py-6 text-sm text-text-muted" role="status">{filtered.length} {filtered.length === 1 ? "product" : "products"} found</p>
+    {filtered.length === 0 ? <div class="rounded-2xl bg-background-cream p-8 md:p-10"><h3 class="text-xl font-semibold text-primary">No matching products</h3><p class="mt-2 text-text-muted">Try another search or ask our team for help.</p><div class="mt-5 flex flex-wrap gap-3"><button type="button" class="btn-accent" onClick={() => { setGroup("All products"); setBrand("All brands"); setSearch(""); setPage(1); }}>Clear filters</button><a href={enquiryUrl()} class="btn-outline" target="_blank" rel="noopener noreferrer">Ask our team</a></div></div> : <>
+      <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        {visible.map((item, index) => <article key={`${item.item_code || item.name}-${index}`} class="flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-white transition-shadow hover:shadow-card">
+          {item.image && <div class="aspect-[4/3] bg-background-cream"><img src={item.image} alt={item.name} class="h-full w-full object-contain p-4" loading="lazy" /></div>}
+          <div class="flex flex-1 flex-col p-6">
+            <p class="text-xs font-semibold uppercase tracking-wide text-primary-light">{item.brand || groupFor(item.category)}</p>
+            <h3 class="mt-2 text-lg font-semibold leading-snug text-primary">{item.name}</h3>
+            <p class="mt-3 text-xs text-text-muted">{item.category}</p>
+            {item.listing_type !== "directory" && priceLabel(item.selling_price) ? <p class="mt-5 text-xl font-semibold text-primary">{priceLabel(item.selling_price)}</p> : <p class="mt-5 text-sm font-semibold text-primary">Ask for price</p>}
+            {item.listing_type !== "directory" && priceLabel(item.mrp) && priceLabel(item.mrp) !== priceLabel(item.selling_price) && <p class="mt-1 text-xs text-text-muted">MRP {priceLabel(item.mrp)}</p>}
+            <a href={enquiryUrl(item)} target="_blank" rel="noopener noreferrer" aria-label={`Enquire about ${item.name} on WhatsApp`} class="mt-6 inline-flex min-h-11 items-center justify-center rounded-full bg-primary px-5 py-3 text-sm font-semibold text-white hover:bg-primary-light">Enquire on WhatsApp</a>
+          </div>
+        </article>)}
+      </div>
+      {pageCount > 1 && <nav class="mt-9 flex items-center justify-center gap-4" aria-label="Product pages"><button type="button" disabled={page === 1} onClick={() => { setPage(value => value - 1); document.getElementById("catalogue")?.scrollIntoView(); }} class="btn-outline disabled:cursor-not-allowed disabled:opacity-40">Previous</button><span class="text-sm text-text-muted">Page {page} of {pageCount}</span><button type="button" disabled={page === pageCount} onClick={() => { setPage(value => value + 1); document.getElementById("catalogue")?.scrollIntoView(); }} class="btn-outline disabled:cursor-not-allowed disabled:opacity-40">Next</button></nav>}
+    </>}
+  </div>;
 }
