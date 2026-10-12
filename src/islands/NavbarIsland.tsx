@@ -39,7 +39,7 @@ export default function NavbarIsland() {
           {[
             ["/#about","About Us"],
             ["/#why-choose-us","Why Us"],
-            ["/products","Products"],
+            [`${import.meta.env.BASE_URL.replace(/\/?$/, "/")}products`,"Products"],
             ["/#testimonials","Testimonials"],
             ["/#licenses","Licenses"],
             ["/#locations","Locations"],

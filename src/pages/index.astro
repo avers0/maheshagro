@@ -4,6 +4,7 @@ import { brandPartners } from '../data/brandPartners';
 import { testimonials } from '../data/testimonials';
 import { branches } from '../data/branches';
 import ContactFormIsland from '../islands/ContactFormIsland';
+const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
 ---
 <BaseLayout
   title="Mahesh Agro | Trusted Agriculture Retail Partner"
@@ -15,8 +16,8 @@ import ContactFormIsland from '../islands/ContactFormIsland';
     <section id="home" class="relative min-h-[100svh] flex items-center overflow-hidden py-28 md:py-32">
       <div class="absolute inset-0 z-0">
         <picture>
-          <source media="(max-width: 768px)" srcset="/Images/Mobile-Background.png" />
-          <img src="/Images/Background.png" alt="Lush green agricultural field" class="w-full h-full object-cover" loading="eager" />
+          <source media="(max-width: 768px)" srcset={`${base}Images/Mobile-Background.png`} />
+          <img src={`${base}Images/Background.png`} alt="Lush green agricultural field" class="w-full h-full object-cover" loading="eager" />
         </picture>
         <div class="absolute inset-0 bg-gradient-to-t from-primary/95 via-primary/20 to-transparent"></div>
       </div>
@@ -76,7 +77,7 @@ import ContactFormIsland from '../islands/ContactFormIsland';
           {[...brandPartners, ...brandPartners].map((p, i) => (
             <div class="flex flex-col items-center gap-4 group" key={i}>
               <div class="h-28 w-56 bg-white rounded-2xl border border-primary/10 flex items-center justify-center p-6 shadow-md group-hover:scale-105 group-hover:shadow-xl transition-all duration-500">
-                <img src={p.image} alt={p.alt} class="max-h-full max-w-full object-contain mix-blend-multiply" loading="lazy" />
+                <img src={`${base}${p.image.replace(/^\/+/, "")}`} alt={p.alt} class="max-h-full max-w-full object-contain mix-blend-multiply" loading="lazy" />
               </div>
               <span class="text-[12px] md:text-[14px] font-bold text-primary/80 tracking-widest uppercase group-hover:text-primary transition-all duration-500">{p.name}</span>
             </div>
@@ -91,7 +92,7 @@ import ContactFormIsland from '../islands/ContactFormIsland';
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-stretch mb-10 lg:mb-14">
           <div class="lg:col-span-4 reveal-scale">
             <div class="relative min-h-[19rem] h-full overflow-hidden rounded-[2rem] shadow-card">
-              <img src="/Images/Farmer.png" alt="Professional Indian farmer" class="absolute inset-0 w-full h-full object-cover" loading="lazy" />
+              <img src={`${base}Images/Farmer.png`} alt="Professional Indian farmer" class="absolute inset-0 w-full h-full object-cover" loading="lazy" />
               <div class="absolute inset-0 bg-gradient-to-t from-primary/85 via-primary/10 to-transparent"></div>
               <div class="absolute left-6 right-6 bottom-6 flex items-center gap-2 text-white">
                 <div class="w-1.5 h-1.5 bg-accent rounded-full"></div>
@@ -133,7 +134,7 @@ import ContactFormIsland from '../islands/ContactFormIsland';
             </div>
           </article>
           <div class="aspect-square rounded-2xl overflow-hidden shadow-card group reveal-scale">
-            <img src="/Images/Wheat.png" alt="Golden wheat field harvest" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" loading="lazy" />
+            <img src={`${base}Images/Wheat.png`} alt="Golden wheat field harvest" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" loading="lazy" />
           </div>
           <article class="bg-primary p-6 md:p-7 rounded-2xl border border-primary flex flex-col aspect-square reveal-scale transition-all duration-500 hover:-translate-y-1 hover:shadow-premium">
             <div>
@@ -186,7 +187,7 @@ import ContactFormIsland from '../islands/ContactFormIsland';
           </div>
           <div class="order-1 lg:order-2 reveal-scale">
             <div class="relative">
-              <img src="/Images/Cards.png" alt="Agricultural expertise" class="w-full rounded-[2.5rem] shadow-premium" loading="lazy" />
+              <img src={`${base}Images/Cards.png`} alt="Agricultural expertise" class="w-full rounded-[2.5rem] shadow-premium" loading="lazy" />
             </div>
           </div>
         </div>
@@ -206,10 +207,10 @@ import ContactFormIsland from '../islands/ContactFormIsland';
         </div>
         <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-10">
           {[
-            { label: "Seeds", img: "/Images/Rice.png", desc: "Hybrid & open-pollinated varieties" },
-            { label: "Fertilizers", img: "/Images/Soyabean.png", desc: "Macro & micronutrient solutions" },
-            { label: "Pesticides", img: "/Images/Cotton.png", desc: "Insecticides, fungicides & herbicides" },
-            { label: "Tools", img: "/Images/Wheat.png", desc: "Sprayers, irrigation & more" },
+            { label: "Seeds", img: `${base}Images/Rice.png`, desc: "Hybrid & open-pollinated varieties" },
+            { label: "Fertilizers", img: `${base}Images/Soyabean.png`, desc: "Macro & micronutrient solutions" },
+            { label: "Pesticides", img: `${base}Images/Cotton.png`, desc: "Insecticides, fungicides & herbicides" },
+            { label: "Tools", img: `${base}Images/Wheat.png`, desc: "Sprayers, irrigation & more" },
           ].map(cat => (
             <div class="group reveal-scale">
               <div class="aspect-square rounded-2xl overflow-hidden bg-[#f4f1eb] shadow-card group-hover:shadow-premium transition-all mb-3">
@@ -221,7 +222,7 @@ import ContactFormIsland from '../islands/ContactFormIsland';
           ))}
         </div>
         <div class="text-center reveal">
-          <a href="/products" class="btn-accent !text-sm !px-10 !py-4">Browse All Products</a>
+          <a href={`${base}products`} class="btn-accent !text-sm !px-10 !py-4">Browse All Products</a>
         </div>
       </div>
     </section>
@@ -308,11 +309,11 @@ import ContactFormIsland from '../islands/ContactFormIsland';
         </div>
         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mb-10 reveal">
           {[
-            { src: "/Images/MA/Outlet Pics.jpg", alt: "Mahesh Agro outlet exterior" },
-            { src: "/Images/MA/Photo from Mudit Jindal.jpg", alt: "Mahesh Agro store interior" },
-            { src: "/Images/MA/Photo from Mudit Jindal(1).jpg", alt: "Mahesh Agro products and team" },
-            { src: "/Images/MA/Photo from Mudit Jindal(2).jpg", alt: "Mahesh Agro farmers and products" },
-            { src: "/Images/MA/Outlet Pics(1).jpg", alt: "Mahesh Agro service center" },
+            { src: `${base}Images/MA/Outlet Pics.jpg`, alt: "Mahesh Agro outlet exterior" },
+            { src: `${base}Images/MA/Photo from Mudit Jindal.jpg`, alt: "Mahesh Agro store interior" },
+            { src: `${base}Images/MA/Photo from Mudit Jindal(1).jpg`, alt: "Mahesh Agro products and team" },
+            { src: `${base}Images/MA/Photo from Mudit Jindal(2).jpg`, alt: "Mahesh Agro farmers and products" },
+            { src: `${base}Images/MA/Outlet Pics(1).jpg`, alt: "Mahesh Agro service center" },
           ].map((location, index) => (
             <figure class:list={["overflow-hidden rounded-[1.5rem] border border-[#e2e8e0] bg-white shadow-card", index === 4 && "col-span-2 md:col-span-1"]}>
               <img src={location.src} alt={location.alt} class="h-40 md:h-52 lg:h-56 w-full object-cover" loading="lazy" />
@@ -361,13 +362,13 @@ import ContactFormIsland from '../islands/ContactFormIsland';
         </div>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {[
-            { img: "/Images/MA/CHAMBAL FERTILIZERS BEST PERFORMANCE AWARD- 2011-12.jpg", title: "Chambal Fertilizers Best Performance Award 2011-12" },
-            { img: "/Images/MA/CORTEVA AGRISCIENCE MARK OF EXCELLENCE AWARD- 2023.jpg", title: "Corteva Agriscience Mark of Excellence Award 2023" },
-            { img: "/Images/MA/Highest PHN Business Award- 2022.jpg", title: "Highest PHN Business Award 2022" },
-            { img: "/Images/MA/IPL Award Ceremony_.jpg", title: "IPL Award Ceremony" },
-            { img: "/Images/MA/PLATINUM AWARD FOR HIGHEST SALES OF WCW IN 2024-25.jpg", title: "Platinum Award for Highest Sales of WCW 2024-25" },
-            { img: "/Images/MA/BAYER CERTIFICATION OF APPRECIATION FOR TRUST- 2024.jpg", title: "Bayer Certification of Appreciation for Trust 2024" },
-            { img: "/Images/MA/BAYER State Level Awards- 2025.jpg", title: "Bayer State Level Awards 2025" },
+            { img: `${base}Images/MA/CHAMBAL FERTILIZERS BEST PERFORMANCE AWARD- 2011-12.jpg`, title: "Chambal Fertilizers Best Performance Award 2011-12" },
+            { img: `${base}Images/MA/CORTEVA AGRISCIENCE MARK OF EXCELLENCE AWARD- 2023.jpg`, title: "Corteva Agriscience Mark of Excellence Award 2023" },
+            { img: `${base}Images/MA/Highest PHN Business Award- 2022.jpg`, title: "Highest PHN Business Award 2022" },
+            { img: `${base}Images/MA/IPL Award Ceremony_.jpg`, title: "IPL Award Ceremony" },
+            { img: `${base}Images/MA/PLATINUM AWARD FOR HIGHEST SALES OF WCW IN 2024-25.jpg`, title: "Platinum Award for Highest Sales of WCW 2024-25" },
+            { img: `${base}Images/MA/BAYER CERTIFICATION OF APPRECIATION FOR TRUST- 2024.jpg`, title: "Bayer Certification of Appreciation for Trust 2024" },
+            { img: `${base}Images/MA/BAYER State Level Awards- 2025.jpg`, title: "Bayer State Level Awards 2025" },
           ].map(award => (
             <div class="group aspect-[4/3] rounded-[2rem] overflow-hidden shadow-card hover:shadow-premium transition-all reveal-scale">
               <img src={award.img} alt={award.title}

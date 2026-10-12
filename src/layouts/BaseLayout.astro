@@ -41,6 +41,7 @@ const schemaOrg = {
   },
   "sameAs": ["https://www.facebook.com/maheshagro","https://www.instagram.com/maheshagro"]
 };
+const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -58,8 +59,8 @@ const schemaOrg = {
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content={ogTitle} />
   <meta name="twitter:description" content={ogDescription} />
-  <link rel="icon" href="/favicon.ico" sizes="256x256" type="image/x-icon" />
-  <link rel="preload" as="image" href="/Images/logo.png" />
+  <link rel="icon" href={`${base}favicon.ico`} sizes="256x256" type="image/x-icon" />
+  <link rel="preload" as="image" href={`${base}Images/logo.png`} />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />

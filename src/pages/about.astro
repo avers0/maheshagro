@@ -1,6 +1,7 @@
 ﻿---
 import BaseLayout from '../layouts/BaseLayout.astro';
-return Astro.redirect('/#about');
+const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
+return Astro.redirect(`${base}#about`);
 ---
 <BaseLayout
   title="About | Mahesh Agro"
@@ -29,12 +30,12 @@ return Astro.redirect('/#about');
             <p class="text-[#6b7a6e] text-lg mb-10 max-w-2xl leading-relaxed font-normal">
               By combining innovation with sustainability, we empower farmers to increase productivity, reduce waste, and contribute to a healthier planet. Together, we are shaping the future of farming, ensuring it thrives for generations to come.
             </p>
-            <a href="/contact" class="btn-outline">Learn More</a>
+            <a href={`${base}#contact`} class="btn-outline">Learn More</a>
           </div>
           <div class="grid grid-cols-2 gap-6">
             <div class="aspect-square rounded-[2rem] overflow-hidden shadow-premium group">
-              <img src="/Images/MA/Photo from Mudit Jindal(1).jpg" alt="Farmer field" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" loading="lazy"
-                onerror="this.src='/Images/Farmer.png'" />
+              <img src={`${base}Images/MA/Photo from Mudit Jindal(1).jpg`} alt="Farmer field" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" loading="lazy"
+                onerror={`this.src='${base}Images/Farmer.png'`} />
             </div>
             <div class="bg-[#f4f1eb] p-10 rounded-[2rem] border border-[#e2e8e0] flex flex-col justify-between group hover:shadow-premium transition-all">
               <h2 class="text-6xl font-bold text-primary">50+</h2>
@@ -44,8 +45,8 @@ return Astro.redirect('/#about');
               </div>
             </div>
             <div class="aspect-square rounded-[2rem] overflow-hidden shadow-premium group">
-              <img src="/Images/MA/Photo from Mudit Jindal(2).jpg" alt="Agricultural products" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" loading="lazy"
-                onerror="this.src='/Images/Wheat.png'" />
+              <img src={`${base}Images/MA/Photo from Mudit Jindal(2).jpg`} alt="Agricultural products" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" loading="lazy"
+                onerror={`this.src='${base}Images/Wheat.png'`} />
             </div>
             <div class="bg-accent p-10 rounded-[2rem] border border-accent flex flex-col justify-between group hover:shadow-glow transition-all">
               <h2 class="text-6xl font-bold text-primary">1 Lakh+</h2>

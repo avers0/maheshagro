@@ -1,25 +1,26 @@
 ﻿---
 // Navbar.astro - Static shell, NavbarIsland handles interactivity
 import NavbarIsland from '../islands/NavbarIsland';
+const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
 ---
 <nav id="main-nav" class="fixed w-full z-50 transition-all duration-500 py-2">
   <div class="container-custom flex items-center justify-between w-full">
     <!-- Logo -->
-    <a href="/" class="flex items-center group">
+    <a href={base} class="flex items-center group">
       <div class="w-14 h-14 md:w-16 md:h-16 flex items-center justify-center relative group-hover:scale-105 transition-all duration-500">
-        <img src="/Images/logo.png" alt="Mahesh Agro Logo" class="w-full h-full object-contain" loading="eager" />
+        <img src={`${base}Images/logo.png`} alt="Mahesh Agro Logo" class="w-full h-full object-contain" loading="eager" />
       </div>
     </a>
 
     <!-- Desktop nav links -->
     <div class="hidden lg:flex items-center gap-6">
-      <a href="/#about" class="text-sm font-medium transition-all hover:text-accent tracking-wide uppercase text-white/90">About Us</a>
-      <a href="/#why-choose-us" class="text-sm font-medium transition-all hover:text-accent tracking-wide uppercase text-white/90">Why Us</a>
-      <a href="/products" class="text-sm font-medium transition-all hover:text-accent tracking-wide uppercase text-white/90">Products</a>
-      <a href="/#testimonials" class="text-sm font-medium transition-all hover:text-accent tracking-wide uppercase text-white/90">Testimonials</a>
-      <a href="/#licenses" class="text-sm font-medium transition-all hover:text-accent tracking-wide uppercase text-white/90">Licenses</a>
-      <a href="/#locations" class="text-sm font-medium transition-all hover:text-accent tracking-wide uppercase text-white/90">Locations</a>
-      <a href="/#awards" class="text-sm font-medium transition-all hover:text-accent tracking-wide uppercase text-white/90">Awards</a>
+      <a href={`${base}#about`} class="text-sm font-medium transition-all hover:text-accent tracking-wide uppercase text-white/90">About Us</a>
+      <a href={`${base}#why-choose-us`} class="text-sm font-medium transition-all hover:text-accent tracking-wide uppercase text-white/90">Why Us</a>
+      <a href={`${base}products`} class="text-sm font-medium transition-all hover:text-accent tracking-wide uppercase text-white/90">Products</a>
+      <a href={`${base}#testimonials`} class="text-sm font-medium transition-all hover:text-accent tracking-wide uppercase text-white/90">Testimonials</a>
+      <a href={`${base}#licenses`} class="text-sm font-medium transition-all hover:text-accent tracking-wide uppercase text-white/90">Licenses</a>
+      <a href={`${base}#locations`} class="text-sm font-medium transition-all hover:text-accent tracking-wide uppercase text-white/90">Locations</a>
+      <a href={`${base}#awards`} class="text-sm font-medium transition-all hover:text-accent tracking-wide uppercase text-white/90">Awards</a>
     </div>
 
     <!-- Desktop CTAs -->

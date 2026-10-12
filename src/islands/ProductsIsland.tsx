@@ -17,6 +17,7 @@ interface Product {
 const GROUPS = ["All products", "Seeds", "Fertilizers", "Crop protection", "Spray equipment"];
 const PAGE_SIZE = 24;
 const WA_NUMBER = "919166029301";
+const BASE_URL = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
 
 function groupFor(category: string) {
   const value = category.trim().toLowerCase();
@@ -63,7 +64,7 @@ export default function ProductsIsland() {
     let cancelled = false;
     setLoading(true);
     setError(false);
-    Papa.parse<Product>("/products.csv", {
+    Papa.parse<Product>(`${BASE_URL}products.csv`, {
       header: true,
       download: true,
       skipEmptyLines: true,
@@ -94,7 +95,7 @@ export default function ProductsIsland() {
     setGroup(next);
     setBrand("All brands");
     setPage(1);
-    window.history.replaceState(null, "", next === "All products" ? "/products#catalogue" : `/products?category=${encodeURIComponent(next)}#catalogue`);
+    window.history.replaceState(null, "", next === "All products" ? `${BASE_URL}products#catalogue` : `${BASE_URL}products?category=${encodeURIComponent(next)}#catalogue`);
   };
 
   if (loading) return <div class="container-custom py-14" role="status"><p class="text-primary">Loading products…</p></div>;
@@ -146,7 +147,7 @@ export default function ProductsIsland() {
     {filtered.length === 0 ? <div class="rounded-2xl bg-background-cream p-8 md:p-10"><h3 class="text-xl font-semibold text-primary">No matching products</h3><p class="mt-2 text-text-muted">Try another search or ask our team for help.</p><div class="mt-5 flex flex-wrap gap-3"><button type="button" class="btn-accent" onClick={() => { setGroup("All products"); setBrand("All brands"); setSearch(""); setPage(1); }}>Clear filters</button><a href={enquiryUrl()} class="btn-outline" target="_blank" rel="noopener noreferrer">Ask our team</a></div></div> : <>
       <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {visible.map((item, index) => <article key={`${item.item_code || item.name}-${index}`} class="flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-white transition-shadow hover:shadow-card">
-          {item.image && <div class="aspect-[4/3] bg-background-cream"><img src={item.image} alt={item.name} class="h-full w-full object-contain p-4" loading="lazy" /></div>}
+          {item.image && <div class="aspect-[4/3] bg-background-cream"><img src={item.image.startsWith("/") ? `${BASE_URL}${item.image.slice(1)}` : item.image} alt={item.name} class="h-full w-full object-contain p-4" loading="lazy" /></div>}
           <div class="flex flex-1 flex-col p-6">
             <p class="text-xs font-semibold uppercase tracking-wide text-primary-light">{item.brand || groupFor(item.category)}</p>
             <h3 class="mt-2 text-lg font-semibold leading-snug text-primary">{item.name}</h3>

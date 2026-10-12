@@ -1,6 +1,7 @@
 ﻿---
 import BaseLayout from '../layouts/BaseLayout.astro';
-return Astro.redirect('/#licenses');
+const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
+return Astro.redirect(`${base}#licenses`);
 ---
 <BaseLayout title="Licenses | Mahesh Agro" description="View all licenses and certifications held by Mahesh Agro Service Centre.">
   <main class="min-h-screen bg-gray-50">
