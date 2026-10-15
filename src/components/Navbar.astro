@@ -25,10 +25,9 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
 
     <!-- Desktop CTAs -->
     <div class="hidden lg:flex items-center gap-4">
-      <!-- Hindi stub -->
-      <button type="button" class="min-h-11 flex items-center gap-2 px-3 py-1.5 rounded-full border transition-all border-white/20 text-white hover:border-white" aria-label="Hindi language support coming soon" title="Hindi language support coming soon">
+      <button type="button" data-language-toggle class="min-h-11 flex items-center gap-2 px-3 py-1.5 rounded-full border transition-all border-white/20 text-white hover:border-white focus-visible:outline-white" aria-label="Switch language to English" title="Switch language to English">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
-        <span class="text-xs font-bold uppercase tracking-widest">हिन्दी</span>
+        <span data-language-label class="text-xs font-bold uppercase tracking-widest">English</span>
       </button>
       <a href="https://wa.me/919166029301" target="_blank" rel="noopener noreferrer" class="btn-accent !py-2 !px-5 shadow-glow">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"/></svg>

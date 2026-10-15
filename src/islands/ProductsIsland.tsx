@@ -147,7 +147,7 @@ export default function ProductsIsland() {
     {filtered.length === 0 ? <div class="rounded-2xl bg-background-cream p-8 md:p-10"><h3 class="text-xl font-semibold text-primary">No matching products</h3><p class="mt-2 text-text-muted">Try another search or ask our team for help.</p><div class="mt-5 flex flex-wrap gap-3"><button type="button" class="btn-accent" onClick={() => { setGroup("All products"); setBrand("All brands"); setSearch(""); setPage(1); }}>Clear filters</button><a href={enquiryUrl()} class="btn-outline" target="_blank" rel="noopener noreferrer">Ask our team</a></div></div> : <>
       <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {visible.map((item, index) => <article key={`${item.item_code || item.name}-${index}`} class="flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-white transition-shadow hover:shadow-card">
-          {item.image && <div class="aspect-[4/3] bg-background-cream"><img src={item.image.startsWith("/") ? `${BASE_URL}${item.image.slice(1)}` : item.image} alt={item.name} class="h-full w-full object-contain p-4" loading="lazy" /></div>}
+          {item.image && <div class="flex h-56 shrink-0 items-center justify-center overflow-hidden bg-background-cream p-4 sm:h-60"><img src={item.image.startsWith("/") ? `${BASE_URL}${item.image.slice(1)}` : item.image} alt={item.name} class="max-h-full max-w-full object-contain object-center" loading="lazy" /></div>}
           <div class="flex flex-1 flex-col p-6">
             <p class="text-xs font-semibold uppercase tracking-wide text-primary-light">{item.brand || groupFor(item.category)}</p>
             <h3 class="mt-2 text-lg font-semibold leading-snug text-primary">{item.name}</h3>

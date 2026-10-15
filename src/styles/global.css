@@ -37,6 +37,76 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+html[lang="hi"] body {
+  font-family: "Noto Sans Devanagari", var(--font-inter);
+}
+
+.language-dialog {
+  width: min(28rem, calc(100vw - 2rem));
+  max-width: none;
+  padding: 0;
+  border: 1px solid rgba(28, 58, 39, 0.12);
+  border-radius: 1.25rem;
+  color: var(--color-primary);
+  box-shadow: 0 24px 80px rgba(10, 31, 17, 0.24);
+}
+
+.language-dialog::backdrop {
+  background: rgba(13, 28, 17, 0.58);
+  backdrop-filter: blur(3px);
+}
+
+.language-dialog-content {
+  padding: clamp(1.5rem, 6vw, 2.25rem);
+}
+
+.language-dialog-kicker {
+  margin: 0 0 0.65rem;
+  color: var(--color-accent-dark);
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+}
+
+.language-dialog h2 {
+  margin: 0;
+  font-size: clamp(1.5rem, 5vw, 1.9rem);
+  font-weight: 700;
+}
+
+.language-dialog-copy {
+  margin: 0.75rem 0 1.5rem;
+  color: #536456;
+  line-height: 1.65;
+}
+
+.language-dialog-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+
+.language-dialog-actions button {
+  min-height: 3rem;
+  border: 1px solid var(--color-primary);
+  border-radius: 999px;
+  background: var(--color-primary);
+  color: white;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.language-dialog-actions button + button {
+  background: white;
+  color: var(--color-primary);
+}
+
+.language-dialog-actions button:focus-visible {
+  outline: 3px solid var(--color-accent-dark);
+  outline-offset: 3px;
+}
+
 ::selection {
   background: var(--color-accent);
   color: var(--color-primary);

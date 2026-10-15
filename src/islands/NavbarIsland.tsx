@@ -2,6 +2,7 @@
 
 export default function NavbarIsland() {
   const [open, setOpen] = useState(false);
+  const base = import.meta.env.BASE_URL.endsWith("/") ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
 
   // Close on escape
   useEffect(() => {
@@ -37,14 +38,14 @@ export default function NavbarIsland() {
       {open && (
         <div id="mobile-navigation" class="fixed inset-0 bg-primary z-40 flex flex-col pt-24 px-8 pb-8 gap-5 overflow-y-auto lg:hidden">
           {[
-            ["/#about","About Us"],
-            ["/#why-choose-us","Why Us"],
-            [`${import.meta.env.BASE_URL.replace(/\/?$/, "/")}products`,"Products"],
-            ["/#testimonials","Testimonials"],
-            ["/#licenses","Licenses"],
-            ["/#locations","Locations"],
-            ["/#awards","Awards"],
-            ["/#contact","Contact"],
+            [`${base}#about`, "About Us"],
+            [`${base}#why-choose-us`, "Why Us"],
+            [`${base}products`, "Products"],
+            [`${base}#testimonials`, "Testimonials"],
+            [`${base}#licenses`, "Licenses"],
+            [`${base}#locations`, "Locations"],
+            [`${base}#awards`, "Awards"],
+            [`${base}#contact`, "Contact"],
           ].map(([href, label]) => (
             <a
               key={href}
@@ -55,6 +56,9 @@ export default function NavbarIsland() {
               {label}
             </a>
           ))}
+          <button type="button" data-language-toggle aria-label="Switch language to English" class="min-h-11 self-start rounded-full border border-white/30 px-5 py-2 text-sm font-bold text-white hover:border-accent hover:text-accent">
+            <span data-language-label>English</span>
+          </button>
           <a
             href="https://wa.me/919166029301"
             target="_blank"

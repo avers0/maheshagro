@@ -44,7 +44,7 @@ const schemaOrg = {
 const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
 ---
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
@@ -63,13 +63,24 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
   <link rel="preload" as="image" href={`${base}Images/logo.png`} />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=Montserrat:wght@400;500;600;700;800;900&family=Noto+Sans+Devanagari:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <script type="application/ld+json" set:html={JSON.stringify(schemaOrg)} />
 </head>
 <body>
   <Navbar />
   <slot />
   <Footer />
+  <dialog id="language-dialog" class="language-dialog" aria-labelledby="language-dialog-title" data-language-static>
+    <div class="language-dialog-content">
+      <p class="language-dialog-kicker">LANGUAGE / भाषा</p>
+      <h2 id="language-dialog-title">अपनी भाषा चुनें</h2>
+      <p class="language-dialog-copy">Choose how you’d like to browse Mahesh Agro. You can change this later from the language button.</p>
+      <div class="language-dialog-actions">
+        <button type="button" data-language-choice="hi" lang="hi">हिन्दी</button>
+        <button type="button" data-language-choice="en" lang="en">English</button>
+      </div>
+    </div>
+  </dialog>
   <!-- Scroll reveal + nav scroll script -->
   <script>
     // Nav scroll behavior
@@ -94,6 +105,10 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
     }, { threshold: 0.1 });
 
     document.querySelectorAll('.reveal, .reveal-scale').forEach(el => observer.observe(el));
+  </script>
+  <script>
+    import { initLanguage } from '../scripts/language';
+    initLanguage();
   </script>
 </body>
 </html>

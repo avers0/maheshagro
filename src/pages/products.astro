@@ -4,10 +4,10 @@ import ProductsIsland from '../islands/ProductsIsland';
 const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
 
 const categories = [
-  { name: 'Seeds', detail: 'Options for the crops you grow', image: `${base}Images/Wheat.png` },
-  { name: 'Fertilizers', detail: 'Crop nutrition and soil inputs', image: `${base}Images/Soyabean.png` },
-  { name: 'Crop protection', detail: 'Pesticides and crop care', image: `${base}Images/Cotton.png` },
-  { name: 'Spray equipment', detail: 'Tools for applying crop inputs', image: `${base}Images/MA/Outlet Pics.jpg` },
+  { name: 'Seeds', detail: 'Options for the crops you grow' },
+  { name: 'Fertilizers', detail: 'Crop nutrition and soil inputs' },
+  { name: 'Crop protection', detail: 'Pesticides and crop care' },
+  { name: 'Spray equipment', detail: 'Tools for applying crop inputs' },
 ];
 ---
 <BaseLayout
@@ -16,7 +16,7 @@ const categories = [
 >
   <main class="min-h-screen bg-background-cream">
     <section class="relative overflow-hidden bg-primary pt-32 pb-16 text-white md:pt-40 md:pb-24">
-      <img src={`${base}Images/Wheat.png`} alt="" class="absolute inset-0 h-full w-full object-cover opacity-20" aria-hidden="true" />
+      <img src={`${base}Images/MA/Outlet Pics.jpg`} alt="" class="absolute inset-0 h-full w-full object-cover opacity-20" aria-hidden="true" />
       <div class="absolute inset-0 bg-gradient-to-r from-primary via-primary/90 to-primary/60" aria-hidden="true"></div>
       <div class="container-custom relative">
         <h1 class="max-w-3xl text-[clamp(2.5rem,6vw,5rem)] font-semibold leading-[1.05] tracking-[-0.035em]">Find the right inputs for your farm</h1>
@@ -35,13 +35,12 @@ const categories = [
       </div>
       <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         {categories.map((item) => (
-          <a href={`${base}products?category=${encodeURIComponent(item.name)}#catalogue`} class="group relative flex min-h-60 flex-col justify-end overflow-hidden rounded-2xl bg-primary text-white transition-transform duration-300 hover:-translate-y-1">
-            <img src={item.image} alt="" class="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
-            <span class="absolute inset-0 bg-gradient-to-t from-primary via-primary/40 to-primary/5" aria-hidden="true"></span>
-            <span class="relative p-6">
+          <a href={`${base}products?category=${encodeURIComponent(item.name)}#catalogue`} class="group flex min-h-56 flex-col justify-between rounded-2xl border border-border bg-white p-6 text-primary transition-all duration-300 hover:-translate-y-1 hover:border-accent hover:shadow-lg">
+            <span class="text-xs font-semibold uppercase tracking-[0.16em] text-accent">Mahesh Agro</span>
+            <span>
               <span class="block text-xl font-semibold">{item.name}</span>
-              <span class="mt-1 block text-sm text-white/85">{item.detail}</span>
-              <span class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-accent">Ask about options</span>
+              <span class="mt-2 block text-sm text-text-muted">{item.detail}</span>
+              <span class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-primary">Ask about options <span aria-hidden="true">→</span></span>
             </span>
           </a>
         ))}
