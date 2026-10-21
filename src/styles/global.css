@@ -38,6 +38,9 @@
 
 html { scroll-behavior: smooth; }
 
+/* Anchor jumps (nav links like #about) land below the fixed navbar */
+section[id] { scroll-margin-top: 5rem; }
+
 body {
   margin: 0;
   font-family: var(--font-inter);
@@ -245,23 +248,7 @@ html[lang="hi"] .font-display { font-family: var(--font-display-hi); font-weight
   .paper-grain-dark::before { opacity: 0.6; mix-blend-mode: overlay; }
 }
 
-/* ── Landscape backdrop (Backdrop.astro) ── */
-.backdrop {
-  position: fixed;
-  inset: 0;
-  z-index: -1;
-  pointer-events: none;
-}
-.backdrop svg { width: 100%; height: 100%; display: block; }
-/* Phones get their own portrait drawing so the sun and ridges are not cropped away */
-.backdrop-tall { display: none !important; }
-@media (max-width: 767px) {
-  .backdrop-wide { display: none !important; }
-  .backdrop-tall { display: block !important; }
-}
-.backdrop-layer { will-change: transform; }
-
-/* Sections that let the backdrop show through */
+/* Soft band colour for alternating sections */
 .surface-deep { background-color: rgba(239, 230, 211, 0.78); }
 
 /* ── Form fields (islands) ── */

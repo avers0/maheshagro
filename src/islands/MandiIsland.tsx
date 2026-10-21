@@ -34,6 +34,7 @@ export default function MandiIsland() {
             <input
               type="text"
               placeholder="Search commodity or market..."
+              aria-label="Search commodity or market"
               class="field !pl-12"
               value={search}
               onInput={(e) => setSearch((e.target as HTMLInputElement).value)}

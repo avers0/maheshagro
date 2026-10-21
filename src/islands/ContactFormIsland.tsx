@@ -19,8 +19,9 @@ export default function ContactFormIsland() {
       <form class="space-y-6" onSubmit={handleSubmit}>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>
-            <label class="field-label">Full Name</label>
+            <label class="field-label" for="contact-name">Full Name</label>
             <input
+              id="contact-name"
               required
               type="text"
               class="field"
@@ -30,8 +31,9 @@ export default function ContactFormIsland() {
             />
           </div>
           <div>
-            <label class="field-label">Phone Number</label>
+            <label class="field-label" for="contact-phone">Phone Number</label>
             <input
+              id="contact-phone"
               required
               type="tel"
               class="field"
@@ -42,8 +44,9 @@ export default function ContactFormIsland() {
           </div>
         </div>
         <div>
-          <label class="field-label">Message</label>
+          <label class="field-label" for="contact-message">Message</label>
           <textarea
+              id="contact-message"
             required
             rows={6}
             class="field"

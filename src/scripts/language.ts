@@ -140,6 +140,7 @@ const hindi: Record<string, string> = {
   "Mandi Prices": "मंडी भाव",
   "Stay updated with today's agricultural commodity prices at local mandis.": "स्थानीय मंडियों में कृषि जिंसों के आज के भाव जानें।",
   "Search commodity or market...": "फसल या मंडी खोजें...",
+  "Search commodity or market": "फसल या मंडी खोजें",
   "Commodity": "जिंस",
   "Variety": "किस्म",
   "Market": "मंडी",

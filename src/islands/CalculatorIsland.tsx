@@ -41,8 +41,9 @@ export default function CalculatorIsland() {
       <div class="card-paper p-6 md:p-10">
         <div class="space-y-6">
           <div>
-            <label class="field-label">Crop Type</label>
+            <label class="field-label" for="calc-crop">Crop Type</label>
             <select
+              id="calc-crop"
               class="field"
               value={cropType}
               onChange={(e) => setCropType((e.target as HTMLSelectElement).value)}
@@ -52,8 +53,9 @@ export default function CalculatorIsland() {
           </div>
           <div class="grid grid-cols-2 gap-4">
             <div>
-              <label class="field-label">Area</label>
+              <label class="field-label" for="calc-area">Area</label>
               <input
+              id="calc-area"
                 type="number"
                 min="0.1"
                 step="0.1"
@@ -63,8 +65,9 @@ export default function CalculatorIsland() {
               />
             </div>
             <div>
-              <label class="field-label">Unit</label>
+              <label class="field-label" for="calc-unit">Unit</label>
               <select
+              id="calc-unit"
                 class="field"
                 value={unit}
                 onChange={(e) => setUnit((e.target as HTMLSelectElement).value)}

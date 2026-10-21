@@ -29,8 +29,8 @@ export default function WeatherIsland() {
     <div class="max-w-2xl mx-auto">
       <div class="card-paper p-6 md:p-10">
         <div class="mb-8">
-          <label class="field-label">Select Location</label>
-          <div class="flex flex-wrap gap-3">
+          <p class="field-label" id="weather-city-label">Select Location</p>
+          <div class="flex flex-wrap gap-3" role="group" aria-labelledby="weather-city-label">
             {cities.map(c => (
               <button
                 key={c}
