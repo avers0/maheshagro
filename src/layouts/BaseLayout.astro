@@ -94,9 +94,16 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
     const nav = document.getElementById('main-nav');
     if (nav) {
       const solid = document.body.dataset.solidNav === 'true';
+      let lastY = window.scrollY;
       const onScroll = () => {
-        if (solid || window.scrollY > 50) nav.classList.add('nav-scrolled');
+        const y = window.scrollY;
+        if (solid || y > 50) nav.classList.add('nav-scrolled');
         else nav.classList.remove('nav-scrolled');
+        // Tuck the bar away while reading down the page; bring it back on any upward scroll.
+        const menuOpen = !!document.getElementById('mobile-navigation');
+        if (!menuOpen && y > 400 && y > lastY + 6) nav.classList.add('nav-hidden');
+        else if (menuOpen || y < lastY - 6 || y <= 400) nav.classList.remove('nav-hidden');
+        if (Math.abs(y - lastY) > 6) lastY = y;
       };
       window.addEventListener('scroll', onScroll, { passive: true });
       onScroll();

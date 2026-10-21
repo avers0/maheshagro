@@ -253,6 +253,12 @@ html[lang="hi"] .font-display { font-family: var(--font-display-hi); font-weight
   pointer-events: none;
 }
 .backdrop svg { width: 100%; height: 100%; display: block; }
+/* Phones get their own portrait drawing so the sun and ridges are not cropped away */
+.backdrop-tall { display: none !important; }
+@media (max-width: 767px) {
+  .backdrop-wide { display: none !important; }
+  .backdrop-tall { display: block !important; }
+}
 .backdrop-layer { will-change: transform; }
 
 /* Sections that let the backdrop show through */
@@ -391,6 +397,52 @@ html[lang="hi"] .font-display { font-family: var(--font-display-hi); font-weight
 .nav-scrolled .nav-pill { border-color: var(--color-border) !important; }
 .nav-scrolled .nav-link:hover { color: var(--color-soil) !important; }
 
+/* ── Light motion (all CSS; switched off by the reduced-motion rule below) ── */
+@keyframes rise-in { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+@keyframes fade-in { from { opacity: 0; } to { opacity: 1; } }
+@keyframes spin-in { from { opacity: 0; transform: rotate(-90deg) scale(0.6); } to { opacity: 1; transform: none; } }
+@keyframes pop-in { 0% { opacity: 0; transform: scale(0.4); } 70% { transform: scale(1.08); } 100% { opacity: 1; transform: none; } }
+@keyframes ring { 0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5); } 100% { box-shadow: 0 0 0 16px rgba(37, 211, 102, 0); } }
+@keyframes dot-pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.35; } }
+
+/* Hero: one staggered entrance on page load */
+.hero-in { animation: rise-in 0.7s cubic-bezier(0.2, 0.8, 0.2, 1) both; animation-delay: calc(var(--d, 0) * 110ms + 120ms); }
+
+/* Mobile menu: panel fades in, links follow one after another */
+.menu-overlay { animation: fade-in 0.25s ease-out both; }
+.menu-item { animation: rise-in 0.45s cubic-bezier(0.2, 0.8, 0.2, 1) both; animation-delay: calc(var(--i, 0) * 40ms + 80ms); }
+.menu-icon { animation: spin-in 0.3s ease-out both; }
+
+/* Desktop nav links: mustard underline grows from the left */
+.nav-underline { position: relative; }
+.nav-underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -6px;
+  height: 2px;
+  border-radius: 2px;
+  background: var(--color-mustard);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.25s ease;
+}
+.nav-underline:hover::after,
+.nav-underline:focus-visible::after { transform: scaleX(1); }
+
+/* Navbar tucks away while scrolling down, returns on scroll up */
+#main-nav.nav-hidden { transform: translateY(-110%); }
+
+/* Press feedback on buttons and tappable cards */
+.btn-accent:active, .btn-mustard:active, .btn-primary:active, .btn-outline:active { transform: scale(0.97); }
+.shelf-bay { transition: transform 0.2s ease; }
+.shelf-bay:active { transform: scale(0.985); }
+
+/* Open-now dot breathes; floating WhatsApp pops in and rings twice */
+.is-open .open-dot { animation: dot-pulse 1.8s ease-in-out infinite; }
+.fab-whatsapp { animation: pop-in 0.5s 0.9s cubic-bezier(0.2, 0.8, 0.2, 1) both, ring 1.4s 1.6s ease-out 2; }
+
 /* ── Dukaan shelf (ShopShelf.astro) ── */
 .font-display-hi { font-family: var(--font-display-hi); font-weight: 400; }
 .shelf-pack {
@@ -426,6 +478,7 @@ html[lang="hi"] .shelf-label-en { display: inline; }
   *, *::before, *::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
+    animation-delay: 0s !important;
     scroll-behavior: auto !important;
     transition-duration: 0.01ms !important;
   }

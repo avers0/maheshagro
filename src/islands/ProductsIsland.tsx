@@ -145,16 +145,17 @@ export default function ProductsIsland() {
     </div>
     <p class="py-6 text-sm text-text-muted" role="status">{filtered.length} {filtered.length === 1 ? "product" : "products"} found</p>
     {filtered.length === 0 ? <div class="rounded-[14px] border border-border bg-paper p-8 md:p-10"><h3 class="text-xl text-primary">No matching products</h3><p class="mt-2 text-text-muted">Try another search or ask our team for help.</p><div class="mt-5 flex flex-wrap gap-3"><button type="button" class="btn-accent" onClick={() => { setGroup("All products"); setBrand("All brands"); setSearch(""); setPage(1); }}>Clear filters</button><a href={enquiryUrl()} class="btn-outline" target="_blank" rel="noopener noreferrer">Ask our team</a></div></div> : <>
-      <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+      <div class="grid grid-cols-2 gap-3 sm:gap-5 lg:grid-cols-3 xl:grid-cols-4">
         {visible.map((item, index) => <article key={`${item.item_code || item.name}-${index}`} class="card-paper group flex h-full flex-col overflow-hidden transition-all hover:-translate-y-0.5 hover:border-mustard hover:shadow-card">
-          {item.image && <div class="flex h-56 shrink-0 items-center justify-center overflow-hidden bg-white p-4 sm:h-60"><img src={item.image.startsWith("/") ? `${BASE_URL}${item.image.slice(1)}` : item.image} alt={item.name} class="max-h-full max-w-full object-contain object-center" loading="lazy" /></div>}
-          <div class="flex flex-1 flex-col p-6">
-            <p class="text-[11px] font-semibold uppercase tracking-[0.14em] text-soil">{item.brand || groupFor(item.category)}</p>
-            <h3 class="mt-2 text-lg leading-snug text-primary">{item.name}</h3>
-            <p class="mt-3 text-xs text-text-muted">{item.category}</p>
-            {item.listing_type !== "directory" && priceLabel(item.selling_price) ? <p class="mt-5 font-display text-2xl text-primary tabular-nums">{priceLabel(item.selling_price)}</p> : <p class="mt-5 text-sm font-semibold text-primary">Ask for price</p>}
+          {item.image ? <div class="flex h-32 shrink-0 items-center justify-center overflow-hidden bg-white p-2 sm:h-60 sm:p-4"><img src={item.image.startsWith("/") ? `${BASE_URL}${item.image.slice(1)}` : item.image} alt={item.name} class="max-h-full max-w-full object-contain object-center" loading="lazy" /></div> : <div class="flex h-32 shrink-0 items-center justify-center bg-paper-deep text-soil/40 sm:h-60" aria-hidden="true"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22V12"/><path d="M12 12C12 7 8 4 3 4c0 5 3.5 8 9 8Z"/><path d="M12 12c0-4 3-7 8-7 0 4.5-3 7-8 7Z"/></svg></div>}
+          <div class="flex flex-1 flex-col p-3 sm:p-6">
+            <p class="truncate text-[10px] font-semibold uppercase tracking-[0.12em] text-soil sm:text-[11px] sm:tracking-[0.14em]">{item.brand || groupFor(item.category)}</p>
+            <h3 class="mt-1 text-sm leading-snug text-primary sm:mt-2 sm:text-lg">{item.name}</h3>
+            <p class="mt-1 text-[11px] text-text-muted sm:mt-3 sm:text-xs">{item.category}</p>
+            {item.listing_type !== "directory" && priceLabel(item.selling_price) ? <p class="mt-3 font-display text-lg text-primary tabular-nums sm:mt-5 sm:text-2xl">{priceLabel(item.selling_price)}</p> : <p class="mt-3 text-xs font-semibold text-primary sm:mt-5 sm:text-sm">Ask for price</p>}
             {item.listing_type !== "directory" && priceLabel(item.mrp) && priceLabel(item.mrp) !== priceLabel(item.selling_price) && <p class="mt-1 text-xs text-text-muted">MRP {priceLabel(item.mrp)}</p>}
-            <a href={enquiryUrl(item)} target="_blank" rel="noopener noreferrer" aria-label={`Enquire about ${item.name} on WhatsApp`} class="btn-primary mt-6 justify-center">Enquire on WhatsApp</a>
+            <span class="block h-3 sm:h-6" aria-hidden="true"></span>
+            <a href={enquiryUrl(item)} target="_blank" rel="noopener noreferrer" aria-label={`Enquire about ${item.name} on WhatsApp`} class="btn-primary mt-auto justify-center !min-h-10 !px-3 !py-2 !text-xs sm:!min-h-11 sm:!px-5 sm:!text-sm"><span class="sm:hidden">Enquire</span><span class="hidden sm:inline">Enquire on WhatsApp</span></a>
           </div>
         </article>)}
       </div>

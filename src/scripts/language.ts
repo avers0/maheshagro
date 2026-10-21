@@ -118,6 +118,7 @@ const hindi: Record<string, string> = {
   "Ask for price": "कीमत पूछें",
   "MRP": "अधिकतम खुदरा मूल्य",
   "Enquire on WhatsApp": "व्हाट्सऐप पर पूछताछ करें",
+  "Enquire": "पूछें",
   "Enquire about": "इसके बारे में पूछें",
   "Previous": "पिछला",
   "Page": "पृष्ठ",

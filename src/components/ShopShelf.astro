@@ -50,46 +50,47 @@ const bays = [
   },
 ];
 ---
-<div class="grid gap-4 lg:grid-cols-12">
+<div class="grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-12">
   {bays.map(bay => (
     <a
       href={`${base}products?category=${encodeURIComponent(bay.group)}#catalogue`}
-      class:list={["shelf-bay group paper-grain relative flex min-h-[25rem] flex-col overflow-hidden rounded-[18px]", bay.tone, bay.grain, bay.span]}
+      class:list={["shelf-bay group paper-grain relative flex flex-col overflow-hidden rounded-[14px] sm:min-h-[22rem] sm:rounded-[18px] lg:min-h-[25rem]", bay.tone, bay.grain, bay.span]}
     >
-      <div class="relative z-10 p-6 md:p-8">
+      <div class="relative z-10 p-4 sm:p-6 md:p-8">
         <div class="flex items-start justify-between gap-4">
           <div>
-            <p class:list={["text-2xl leading-none", bay.hiTone]} data-language-static>
+            <p class:list={["text-base leading-none sm:text-2xl", bay.hiTone]} data-language-static>
               <span class="shelf-label-hi font-display-hi" lang="hi">{bay.hi}</span>
               <span class="shelf-label-en font-display" lang="en">{bay.title}</span>
             </p>
-            <h3 class="mt-2 text-[clamp(2rem,3.2vw,2.75rem)] leading-none">{bay.title}</h3>
+            <h3 class="mt-1.5 text-[1.35rem] leading-[1.05] sm:mt-2 sm:text-[clamp(2rem,3.2vw,2.75rem)] sm:leading-none">{bay.title}</h3>
+            <p class:list={["mt-1.5 text-xs sm:hidden", bay.mutedTone]}><span class="font-semibold" data-language-static>{counts[bay.group] ?? 0}</span> <span>products</span></p>
           </div>
-          <p class="text-right leading-tight">
+          <p class="hidden text-right leading-tight sm:block">
             <span class="block font-display text-4xl tabular-nums" data-language-static>{counts[bay.group] ?? 0}</span>
             <span class:list={["text-sm", bay.mutedTone]}>products</span>
           </p>
         </div>
-        <p class:list={["mt-4 max-w-sm text-sm leading-relaxed", bay.mutedTone]}>{bay.desc}</p>
-        <p class="mt-1 max-w-md text-sm font-semibold" data-language-static>{bay.brands}</p>
+        <p class:list={["mt-4 hidden max-w-sm text-sm leading-relaxed sm:block", bay.mutedTone]}>{bay.desc}</p>
+        <p class="mt-1 hidden max-w-md text-sm font-semibold sm:block" data-language-static>{bay.brands}</p>
       </div>
 
       <!-- Packs on the plank -->
-      <div class="relative mt-auto px-6 md:px-8">
+      <div class="relative mt-auto px-4 sm:px-6 md:px-8">
         <div class="flex items-end justify-center gap-0 sm:justify-start">
           {bay.packs.map((pack, i) => (
             <span
-              class:list={["shelf-pack -ml-3 first:ml-0 rounded-[6px] bg-white p-1.5 shadow-[0_10px_18px_-10px_rgba(0,0,0,0.55)]", i >= 4 && "hidden sm:inline-block"]}
+              class:list={["shelf-pack -ml-2 first:ml-0 rounded-[5px] bg-white p-1 shadow-[0_10px_18px_-10px_rgba(0,0,0,0.55)] sm:-ml-3 sm:rounded-[6px] sm:p-1.5", i >= 2 && "hidden sm:inline-block"]}
               style={`--tilt:${[-3, 2, -1.5, 3, -2][i % 5]}deg; --lift:${i * 30}ms; z-index:${10 - Math.abs(i - 1)}`}
             >
-              <img src={`${base}Images/shelf/${pack}.webp`} alt="" class="h-24 w-auto object-contain sm:h-28 md:h-32" loading="lazy" />
+              <img src={`${base}Images/shelf/${pack}.webp`} alt="" class="h-14 w-auto object-contain sm:h-28 md:h-32" loading="lazy" />
             </span>
           ))}
         </div>
         <div class="shelf-plank" aria-hidden="true"></div>
       </div>
 
-      <div class:list={["relative flex items-center justify-between px-6 py-4 text-sm font-semibold md:px-8", bay.mutedTone]}>
+      <div class:list={["relative hidden items-center justify-between px-6 py-4 text-sm font-semibold sm:flex md:px-8", bay.mutedTone]}>
         <span>Browse {bay.title.toLowerCase()}</span>
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="transition-transform duration-300 group-hover:translate-x-1" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
       </div>

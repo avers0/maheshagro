@@ -51,15 +51,15 @@ const reasons = [
       </div>
       <div class="container-custom relative z-10 w-full">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-end">
-          <div class="lg:col-span-7 reveal">
-            <SectionKicker hi="डोल्टा, राजस्थान" en="Since 1973" light class="mb-6" />
-            <h1 class="text-white text-[clamp(2.6rem,6.5vw,5.25rem)] leading-[1.02] mb-6 max-w-3xl">
+          <div class="lg:col-span-7">
+            <SectionKicker hi="डोल्टा, राजस्थान" en="Since 1973" light class="mb-6 hero-in" />
+            <h1 class="hero-in text-white text-[clamp(2.6rem,6.5vw,5.25rem)] leading-[1.02] mb-6 max-w-3xl" style="--d:1">
               Dolta's trusted farm store since 1973
             </h1>
-            <p class="text-white/85 text-base md:text-lg mb-9 max-w-xl leading-relaxed">
+            <p class="hero-in text-white/85 text-base md:text-lg mb-9 max-w-xl leading-relaxed" style="--d:2">
               Leading agriculture retail partner providing 100% genuine seeds, fertilizers, and expert guidance to maximize your yield since 1973.
             </p>
-            <div class="flex flex-wrap gap-3 items-center">
+            <div class="hero-in flex flex-wrap gap-3 items-center" style="--d:3">
               <a href="https://wa.me/919166029301" target="_blank" rel="noopener noreferrer" class="btn-accent !px-7 !py-3.5">
                 <span>WhatsApp Chat</span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
@@ -69,12 +69,12 @@ const reasons = [
           </div>
 
           <!-- Visit card -->
-          <div class="lg:col-span-5 xl:col-span-4 xl:col-start-9 reveal">
+          <div class="hero-in lg:col-span-5 xl:col-span-4 xl:col-start-9" style="--d:4">
             <div class="paper-grain rounded-[14px] bg-paper p-6 md:p-7 text-ink shadow-premium">
               <div class="flex items-center justify-between gap-3 mb-4">
                 <h2 class="text-xl md:text-2xl text-primary">Visit our store</h2>
                 <span class="inline-flex shrink-0 items-center gap-1.5 whitespace-nowrap rounded-full px-3 py-1 text-xs font-bold" data-open-chip>
-                  <span class="h-2 w-2 rounded-full bg-current" aria-hidden="true"></span>
+                  <span class="open-dot h-2 w-2 rounded-full bg-current" aria-hidden="true"></span>
                   <span data-open-state="open" hidden>Open now</span>
                   <span data-open-state="closed" hidden>Closed now</span>
                 </span>
@@ -127,7 +127,7 @@ const reasons = [
               <img src={`${base}Images/MA/Photo from Mudit Jindal(3).jpg`} alt="Farmers and Mahesh Agro team at the store" class="relative aspect-[4/3] lg:aspect-[4/5] w-full rounded-[14px] object-cover shadow-card" loading="lazy" />
             </div>
           </div>
-          <div class="lg:col-span-7 reveal">
+          <div class="lg:col-span-7">
             <SectionKicker hi="हमारे बारे में" en="About us" class="mb-5" />
             <h2 class="text-primary text-[clamp(2rem,4vw,3.25rem)] leading-[1.08] mb-6">Rooted on the Jaipur–Kota road since 1973</h2>
             <p class="text-text-muted text-base md:text-lg mb-8 max-w-2xl leading-relaxed">
@@ -467,7 +467,7 @@ const reasons = [
       const hour = Number(new Intl.DateTimeFormat('en-GB', { timeZone: 'Asia/Kolkata', hour: 'numeric', hourCycle: 'h23' }).format(new Date()));
       const open = hour >= 9 && hour < 20;
       chip.querySelector<HTMLElement>(`[data-open-state="${open ? 'open' : 'closed'}"]`)?.removeAttribute('hidden');
-      chip.classList.add(...(open ? ['bg-accent/25', 'text-primary'] : ['bg-soil/15', 'text-soil']));
+      chip.classList.add(...(open ? ['bg-accent/25', 'text-primary', 'is-open'] : ['bg-soil/15', 'text-soil']));
     }
 
     // Highlight the current sowing season: Rabi Oct–Mar, Kharif Apr–Sep (incl. pre-monsoon prep).
