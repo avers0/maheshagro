@@ -54,6 +54,7 @@ html[lang="hi"] body {
 .language-dialog {
   width: min(28rem, calc(100vw - 2rem));
   max-width: none;
+  margin: auto;
   padding: 0;
   border: 1px solid var(--color-border);
   border-radius: 14px;
