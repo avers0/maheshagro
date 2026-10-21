@@ -100,8 +100,8 @@ export default function ProductsIsland() {
 
   if (loading) return <div class="container-custom py-14" role="status"><p class="text-primary">Loading products…</p></div>;
   if (error) return (
-    <div class="container-custom"><div class="rounded-2xl bg-background-cream p-8 md:p-10" role="alert">
-      <h3 class="text-xl font-semibold text-primary">We couldn’t load the catalogue</h3>
+    <div class="container-custom"><div class="rounded-[14px] border border-border bg-paper p-8 md:p-10" role="alert">
+      <h3 class="text-xl text-primary">We couldn’t load the catalogue</h3>
       <p class="mt-3 text-text-muted">Please try again or contact our team for product details.</p>
       <div class="mt-6 flex flex-wrap gap-3"><button type="button" class="btn-accent" onClick={() => setRetry(value => value + 1)}>Try again</button><a href={enquiryUrl()} target="_blank" rel="noopener noreferrer" class="btn-outline">Ask on WhatsApp</a></div>
     </div></div>
@@ -109,20 +109,20 @@ export default function ProductsIsland() {
 
   if (products.length === 0) return (
     <div class="container-custom">
-      <div class="rounded-2xl bg-background-cream p-6 sm:p-8 md:p-10">
+      <div class="rounded-[14px] border border-border bg-paper p-6 sm:p-8 md:p-10">
         <div class="max-w-2xl">
-          <h3 class="text-2xl font-semibold text-primary">{group === "All products" ? "Tell us what you need" : `Ask about ${group.toLowerCase()}`}</h3>
+          <h3 class="text-2xl text-primary">{group === "All products" ? "Tell us what you need" : `Ask about ${group.toLowerCase()}`}</h3>
           <p class="mt-3 leading-relaxed text-text-muted">Our online listings are not available yet. Share your crop, product name, or preferred brand, and we’ll help you find current options.</p>
         </div>
         <div class="mt-7 flex flex-wrap gap-2" role="group" aria-label="Product category">
-          {GROUPS.map(item => <button key={item} type="button" aria-pressed={group === item} class={`min-h-11 rounded-full px-4 text-sm font-semibold transition-colors ${group === item ? "bg-primary text-white" : "bg-white text-primary hover:bg-accent/30"}`} onClick={() => chooseGroup(item)}>{item}</button>)}
+          {GROUPS.map(item => <button key={item} type="button" aria-pressed={group === item} class={`min-h-11 rounded-full px-4 text-sm font-semibold transition-colors ${group === item ? "bg-primary text-white" : "bg-[#fffdf8] border border-border text-primary hover:border-mustard"}`} onClick={() => chooseGroup(item)}>{item}</button>)}
         </div>
         <div class="mt-7 grid gap-4 md:grid-cols-2">
           <label class="block text-sm font-semibold text-primary">Crop, product, or brand
-            <input type="text" value={need} onInput={event => setNeed((event.target as HTMLInputElement).value)} placeholder="e.g. wheat seed or preferred brand" class="mt-2 min-h-12 w-full rounded-xl border border-border bg-white px-4 font-normal text-primary placeholder:text-text-muted focus:border-primary" />
+            <input type="text" value={need} onInput={event => setNeed((event.target as HTMLInputElement).value)} placeholder="e.g. wheat seed or preferred brand" class="field mt-2 font-normal" />
           </label>
           <label class="block text-sm font-semibold text-primary">Your location <span class="font-normal text-text-muted">(optional)</span>
-            <input type="text" value={location} onInput={event => setLocation((event.target as HTMLInputElement).value)} placeholder="Village or town" class="mt-2 min-h-12 w-full rounded-xl border border-border bg-white px-4 font-normal text-primary placeholder:text-text-muted focus:border-primary" />
+            <input type="text" value={location} onInput={event => setLocation((event.target as HTMLInputElement).value)} placeholder="Village or town" class="field mt-2 font-normal" />
           </label>
         </div>
         <div class="mt-6 flex flex-wrap items-center gap-4">
@@ -136,25 +136,25 @@ export default function ProductsIsland() {
   return <div class="container-custom">
     <div class="border-y border-border py-5">
       <div class="flex flex-wrap gap-2" role="group" aria-label="Product category">
-        {GROUPS.map(item => <button key={item} type="button" aria-pressed={group === item} class={`min-h-11 rounded-full px-5 text-sm font-semibold transition-colors ${group === item ? "bg-primary text-white" : "bg-background-cream text-primary hover:bg-accent/30"}`} onClick={() => chooseGroup(item)}>{item}</button>)}
+        {GROUPS.map(item => <button key={item} type="button" aria-pressed={group === item} class={`min-h-11 rounded-full px-5 text-sm font-semibold transition-colors ${group === item ? "bg-primary text-white" : "bg-[#fffdf8] border border-border text-primary hover:border-mustard"}`} onClick={() => chooseGroup(item)}>{item}</button>)}
       </div>
       <div class="mt-4 grid gap-3 sm:grid-cols-[minmax(0,1fr)_minmax(11rem,14rem)]">
-        <label class="block"><span class="sr-only">Search products and brands</span><input type="search" value={search} onInput={event => { setSearch((event.target as HTMLInputElement).value); setPage(1); }} placeholder="Search products or brands" class="min-h-12 w-full rounded-xl border border-border bg-white px-4 text-primary placeholder:text-text-muted focus:border-primary" /></label>
-        <label class="block"><span class="sr-only">Filter by brand</span><select value={brand} onChange={event => { setBrand((event.target as HTMLSelectElement).value); setPage(1); }} class="min-h-12 w-full rounded-xl border border-border bg-white px-4 text-primary focus:border-primary">{brands.map(item => <option key={item} value={item}>{item}</option>)}</select></label>
+        <label class="block"><span class="sr-only">Search products and brands</span><input type="search" value={search} onInput={event => { setSearch((event.target as HTMLInputElement).value); setPage(1); }} placeholder="Search products or brands" class="field" /></label>
+        <label class="block"><span class="sr-only">Filter by brand</span><select value={brand} onChange={event => { setBrand((event.target as HTMLSelectElement).value); setPage(1); }} class="field">{brands.map(item => <option key={item} value={item}>{item}</option>)}</select></label>
       </div>
     </div>
     <p class="py-6 text-sm text-text-muted" role="status">{filtered.length} {filtered.length === 1 ? "product" : "products"} found</p>
-    {filtered.length === 0 ? <div class="rounded-2xl bg-background-cream p-8 md:p-10"><h3 class="text-xl font-semibold text-primary">No matching products</h3><p class="mt-2 text-text-muted">Try another search or ask our team for help.</p><div class="mt-5 flex flex-wrap gap-3"><button type="button" class="btn-accent" onClick={() => { setGroup("All products"); setBrand("All brands"); setSearch(""); setPage(1); }}>Clear filters</button><a href={enquiryUrl()} class="btn-outline" target="_blank" rel="noopener noreferrer">Ask our team</a></div></div> : <>
+    {filtered.length === 0 ? <div class="rounded-[14px] border border-border bg-paper p-8 md:p-10"><h3 class="text-xl text-primary">No matching products</h3><p class="mt-2 text-text-muted">Try another search or ask our team for help.</p><div class="mt-5 flex flex-wrap gap-3"><button type="button" class="btn-accent" onClick={() => { setGroup("All products"); setBrand("All brands"); setSearch(""); setPage(1); }}>Clear filters</button><a href={enquiryUrl()} class="btn-outline" target="_blank" rel="noopener noreferrer">Ask our team</a></div></div> : <>
       <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-        {visible.map((item, index) => <article key={`${item.item_code || item.name}-${index}`} class="flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-white transition-shadow hover:shadow-card">
-          {item.image && <div class="flex h-56 shrink-0 items-center justify-center overflow-hidden bg-background-cream p-4 sm:h-60"><img src={item.image.startsWith("/") ? `${BASE_URL}${item.image.slice(1)}` : item.image} alt={item.name} class="max-h-full max-w-full object-contain object-center" loading="lazy" /></div>}
+        {visible.map((item, index) => <article key={`${item.item_code || item.name}-${index}`} class="card-paper group flex h-full flex-col overflow-hidden transition-all hover:-translate-y-0.5 hover:border-mustard hover:shadow-card">
+          {item.image && <div class="flex h-56 shrink-0 items-center justify-center overflow-hidden bg-white p-4 sm:h-60"><img src={item.image.startsWith("/") ? `${BASE_URL}${item.image.slice(1)}` : item.image} alt={item.name} class="max-h-full max-w-full object-contain object-center" loading="lazy" /></div>}
           <div class="flex flex-1 flex-col p-6">
-            <p class="text-xs font-semibold uppercase tracking-wide text-primary-light">{item.brand || groupFor(item.category)}</p>
-            <h3 class="mt-2 text-lg font-semibold leading-snug text-primary">{item.name}</h3>
+            <p class="text-[11px] font-semibold uppercase tracking-[0.14em] text-soil">{item.brand || groupFor(item.category)}</p>
+            <h3 class="mt-2 text-lg leading-snug text-primary">{item.name}</h3>
             <p class="mt-3 text-xs text-text-muted">{item.category}</p>
-            {item.listing_type !== "directory" && priceLabel(item.selling_price) ? <p class="mt-5 text-xl font-semibold text-primary">{priceLabel(item.selling_price)}</p> : <p class="mt-5 text-sm font-semibold text-primary">Ask for price</p>}
+            {item.listing_type !== "directory" && priceLabel(item.selling_price) ? <p class="mt-5 font-display text-2xl text-primary tabular-nums">{priceLabel(item.selling_price)}</p> : <p class="mt-5 text-sm font-semibold text-primary">Ask for price</p>}
             {item.listing_type !== "directory" && priceLabel(item.mrp) && priceLabel(item.mrp) !== priceLabel(item.selling_price) && <p class="mt-1 text-xs text-text-muted">MRP {priceLabel(item.mrp)}</p>}
-            <a href={enquiryUrl(item)} target="_blank" rel="noopener noreferrer" aria-label={`Enquire about ${item.name} on WhatsApp`} class="mt-6 inline-flex min-h-11 items-center justify-center rounded-full bg-primary px-5 py-3 text-sm font-semibold text-white hover:bg-primary-light">Enquire on WhatsApp</a>
+            <a href={enquiryUrl(item)} target="_blank" rel="noopener noreferrer" aria-label={`Enquire about ${item.name} on WhatsApp`} class="btn-primary mt-6 justify-center">Enquire on WhatsApp</a>
           </div>
         </article>)}
       </div>

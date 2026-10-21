@@ -193,25 +193,84 @@ const hindi: Record<string, string> = {
   "Mandi": "मंडी",
   "Calculator": "कैलकुलेटर",
   "Developed by": "निर्माता",
+
+  // Heritage redesign
+  "Dolta's trusted farm store since 1973": "1973 से डोल्टा के किसानों का भरोसा",
+  "Visit our store": "हमारी दुकान पर आएं",
+  "Open now": "अभी खुला है",
+  "Closed now": "अभी बंद है",
+  "Open daily": "रोज़ खुला",
+  "9:00 AM - 8:00 PM": "सुबह 9 बजे – रात 8 बजे",
+  "Directions": "रास्ता देखें",
+  "Rooted on the Jaipur–Kota road since 1973": "1973 से जयपुर–कोटा रोड पर, किसानों के साथ",
+  "Brand Partners": "ब्रांड साझेदार",
+  "Contact Experts": "विशेषज्ञों से बात करें",
+  "Why farmers keep coming back": "किसान बार-बार हमारे पास क्यों आते हैं",
+  "Everything for the season, under one roof": "हर मौसम की हर ज़रूरत, एक ही जगह",
+  "What's in season": "इस मौसम की फसलें",
+  "Plan your inputs before sowing starts.": "बुवाई शुरू होने से पहले अपनी ज़रूरतों की तैयारी करें।",
+  "In season now": "अभी का मौसम",
+  "October – March": "अक्टूबर – मार्च",
+  "June – September": "जून – सितंबर",
+  "Rabi": "रबी",
+  "Kharif": "खरीफ",
+  "Wheat, mustard, gram and barley": "गेहूं, सरसों, चना और जौ",
+  "Cotton, bajra, soybean and moong": "कपास, बाजरा, सोयाबीन और मूंग",
+  "Ask us on WhatsApp": "व्हाट्सऐप पर हमसे पूछें",
+  "what your field needs this season.": "— इस मौसम में आपके खेत को क्या चाहिए।",
+  "Pesticide License": "कीटनाशक लाइसेंस",
+  "Fertilizer License": "उर्वरक लाइसेंस",
+  "Seeds License": "बीज लाइसेंस",
+  "Come visit us": "हमसे मिलने आएं",
+  "Mahesh Agro Service Centre - Dolta": "महेश एग्रो सर्विस सेंटर - डोल्टा",
+  "Branch Office - Sangaria": "शाखा कार्यालय - संगरिया",
+  "The trophy shelf": "हमारे सम्मान",
+  "Best Performance Award": "सर्वश्रेष्ठ प्रदर्शन पुरस्कार",
+  "Mark of Excellence Award": "मार्क ऑफ़ एक्सीलेंस पुरस्कार",
+  "Highest PHN Business Award": "सर्वाधिक PHN व्यवसाय पुरस्कार",
+  "Platinum Award for Highest Sales": "सर्वाधिक बिक्री के लिए प्लैटिनम पुरस्कार",
+  "Certificate of Appreciation for Trust": "भरोसे के लिए प्रशंसा प्रमाणपत्र",
+  "State Level Award": "राज्य स्तरीय पुरस्कार",
+  "IPL Award Ceremony": "IPL पुरस्कार समारोह",
+  "Mahesh Agro Service Centre, Dolta": "महेश एग्रो सर्विस सेंटर, डोल्टा",
+  "Sowing soon? Talk to us first.": "बुवाई करने वाले हैं? पहले हमसे बात करें।",
+  "Mahesh Agro": "महेश एग्रो",
+  "Empowering farmers since 1973 with genuine agricultural inputs and expert consultation for a prosperous harvest.": "1973 से असली कृषि सामग्री और विशेषज्ञ सलाह के साथ किसानों की समृद्ध फसल में भागीदार।",
+  "Quick Links": "मुख्य लिंक",
+  "Farmer Tools": "किसान उपकरण",
+  "Visit Us": "हमसे मिलें",
+  "Made with": "प्यार से बनाया",
+  "This field is still fallow": "यह खेत अभी खाली है",
+  "Options for the crops you grow": "आपकी फसलों के लिए विकल्प",
+  "Crop nutrition and soil inputs": "फसल पोषण और मिट्टी के लिए सामग्री",
+  "Pesticides and crop care": "कीटनाशक और फसल सुरक्षा",
+  "Tools for applying crop inputs": "छिड़काव और प्रयोग के उपकरण",
+  "Call +91 91660 29301": "कॉल करें +91 91660 29301",
+  "Calculate Fertilizer Needs": "खाद की ज़रूरत निकालें",
+  "Rice/Paddy": "धान",
+  "Next": "अगला",
 };
 
 const textOriginals = new WeakMap<Text, string>();
+const textApplied = new WeakMap<Text, string>();
 const attributeOriginals = new WeakMap<Element, Map<string, string>>();
 const translatableAttributes = ["aria-label", "title", "placeholder", "alt"];
 
 function translateText(node: Text, language: Language) {
-  const source = textOriginals.get(node) ?? node.nodeValue ?? "";
-  if (!textOriginals.has(node)) textOriginals.set(node, source);
+  const current = node.nodeValue ?? "";
+  // If something else (e.g. a Preact island) changed the text since we last wrote it, that is the new original.
+  if (!textOriginals.has(node) || current !== textApplied.get(node)) textOriginals.set(node, current);
+  const source = textOriginals.get(node) ?? current;
   const key = source.trim();
   const translation = language === "hi" ? hindi[key] : undefined;
-  if (translation === undefined) {
-    if (node.nodeValue !== source) node.nodeValue = source;
-    return;
+  let next = source;
+  if (translation !== undefined) {
+    const leading = source.match(/^\s*/)?.[0] ?? "";
+    const trailing = source.match(/\s*$/)?.[0] ?? "";
+    next = `${leading}${translation}${trailing}`;
   }
-  const leading = source.match(/^\s*/)?.[0] ?? "";
-  const trailing = source.match(/\s*$/)?.[0] ?? "";
-  const translated = `${leading}${translation}${trailing}`;
-  if (node.nodeValue !== translated) node.nodeValue = translated;
+  if (node.nodeValue !== next) node.nodeValue = next;
+  textApplied.set(node, next);
 }
 
 function translateElement(element: Element, language: Language) {
