@@ -244,6 +244,19 @@ html[lang="hi"] .font-display { font-family: var(--font-display-hi); font-weight
   .paper-grain-dark::before { opacity: 0.6; mix-blend-mode: overlay; }
 }
 
+/* ── Landscape backdrop (Backdrop.astro) ── */
+.backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+}
+.backdrop svg { width: 100%; height: 100%; display: block; }
+.backdrop-layer { will-change: transform; }
+
+/* Sections that let the backdrop show through */
+.surface-deep { background-color: rgba(239, 230, 211, 0.78); }
+
 /* ── Form fields (islands) ── */
 .field {
   width: 100%;
@@ -376,6 +389,27 @@ html[lang="hi"] .font-display { font-family: var(--font-display-hi); font-weight
 .nav-scrolled .nav-link { color: var(--color-primary) !important; }
 .nav-scrolled .nav-pill { border-color: var(--color-border) !important; }
 .nav-scrolled .nav-link:hover { color: var(--color-soil) !important; }
+
+/* ── Dukaan shelf (ShopShelf.astro) ── */
+.font-display-hi { font-family: var(--font-display-hi); font-weight: 400; }
+.shelf-pack {
+  position: relative;
+  transform: rotate(var(--tilt, 0deg));
+  transition: transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1) var(--lift, 0ms);
+}
+.shelf-bay:hover .shelf-pack,
+.shelf-bay:focus-visible .shelf-pack { transform: rotate(0deg) translateY(-8px); }
+.shelf-plank {
+  height: 14px;
+  margin: 0 -2rem;
+  background: linear-gradient(180deg, #a87550 0%, #7a4e31 55%, #5e3a24 100%);
+  box-shadow: 0 10px 16px -8px rgba(30, 18, 8, 0.6);
+}
+.shelf-bay:focus-visible { outline-offset: 3px; }
+/* The small label shows the other language from the page, so it never repeats the title */
+.shelf-label-en { display: none; }
+html[lang="hi"] .shelf-label-hi { display: none; }
+html[lang="hi"] .shelf-label-en { display: inline; }
 
 /* Award "trophy shelf" frame */
 .award-frame {

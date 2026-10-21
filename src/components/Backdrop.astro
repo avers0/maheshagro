@@ -1,0 +1,78 @@
+---
+// Fixed line-drawn Rajasthan landscape behind the page: Aravalli ridges, low sun, a khejri tree,
+// field rows running to the horizon and wheat at the edges. Layers drift slightly on scroll.
+const rows = Array.from({ length: 15 }, (_, i) => -560 + i * 194);
+---
+<div class="backdrop" aria-hidden="true">
+  <svg viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMax slice" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Sun -->
+    <g class="backdrop-layer" data-depth="0.06">
+      <circle cx="1210" cy="330" r="74" stroke="var(--color-mustard)" stroke-width="2" opacity="0.5" />
+      <circle cx="1210" cy="330" r="104" stroke="var(--color-mustard)" stroke-width="1.2" opacity="0.28" stroke-dasharray="2 10" />
+      <path d="M1120 250c-10-6-20-6-28 0M1104 228c-8-5-16-5-22 0" stroke="var(--color-primary)" stroke-width="1.6" opacity="0.28" />
+      <path d="M1330 210c-7-5-15-5-21 0M1348 226c-6-4-12-4-17 0" stroke="var(--color-primary)" stroke-width="1.4" opacity="0.22" />
+    </g>
+
+    <!-- Far Aravalli ridge -->
+    <g class="backdrop-layer" data-depth="0.035">
+      <path d="M-40 600C60 590 120 540 200 552c70 10 110 50 180 40 80-12 120-80 210-86 90-6 130 52 220 54 70 2 110-44 190-50 100-8 140 60 240 58 80-2 120-46 200-48 110-2 150 52 240 58" stroke="var(--color-primary)" stroke-width="1.6" opacity="0.14" />
+      <path d="M-40 640c120-6 190-40 300-36 110 4 170 40 280 38 120-2 180-48 300-46 110 2 170 38 290 36 120-2 200-34 320-30 70 2 110 12 150 18" stroke="var(--color-primary)" stroke-width="1.4" opacity="0.1" />
+    </g>
+
+    <!-- Horizon, khejri tree and field rows -->
+    <g class="backdrop-layer" data-depth="0.015">
+      <path d="M-40 700H1640" stroke="var(--color-primary)" stroke-width="1.4" opacity="0.16" />
+      <!-- Khejri -->
+      <g stroke="var(--color-primary)" stroke-width="1.8" opacity="0.26" transform="translate(300 0)">
+        <path d="M70 700c4-28-6-48 2-70 6-16 2-28-6-40" />
+        <path d="M72 630c14-10 30-12 44-24M68 620c-14-8-30-8-44-20M66 600c-6-14-2-26 6-34" />
+        <path d="M-6 588c-14-2-22-14-14-26 4-8 14-10 20-8 0-12 12-20 24-16 6-12 22-16 32-6 10-8 26-6 32 6 12-4 26 4 26 16 12 2 18 14 12 24 8 8 4 22-8 24-4 10-16 14-26 8-10 8-26 8-34 0-12 6-28 4-34-6-10 4-24 0-30-10z" />
+      </g>
+      <!-- Small field hut -->
+      <g stroke="var(--color-primary)" stroke-width="1.5" opacity="0.2">
+        <path d="M1380 700v-26h40v26M1372 676l28-20 28 20" />
+      </g>
+      <!-- Furrows converging on the horizon -->
+      <g stroke-width="1.3">
+        {rows.map((x, i) => (
+          <path d={`M${x} 1000L${800 + (x - 800) * 0.18} 700`} stroke={i % 3 === 1 ? 'var(--color-mustard)' : 'var(--color-primary)'} opacity={i % 3 === 1 ? 0.3 : 0.1} />
+        ))}
+      </g>
+    </g>
+
+    <!-- Wheat at the edges -->
+    <g class="backdrop-layer" data-depth="-0.03" stroke="var(--color-soil)" stroke-width="1.6" opacity="0.35">
+      <g transform="translate(40 640)">
+        <path d="M30 360C34 260 40 160 60 40" />
+        <path d="M60 40c-12 8-14 22-6 30M60 40c12 6 16 20 8 30M56 70c-12 8-14 22-6 30M56 70c12 6 16 20 8 30M52 100c-12 8-14 22-6 30M52 100c12 6 16 20 8 30M60 40l6-30" />
+        <path d="M80 360C80 280 90 210 112 130" />
+        <path d="M112 130c-12 8-14 22-6 30M112 130c12 6 16 20 8 30M106 160c-12 8-14 22-6 30M106 160c12 6 16 20 8 30M112 130l8-28" />
+      </g>
+      <g transform="translate(1600 660) scale(-1 1)">
+        <path d="M40 340C44 250 52 170 74 70" />
+        <path d="M74 70c-12 8-14 22-6 30M74 70c12 6 16 20 8 30M70 100c-12 8-14 22-6 30M70 100c12 6 16 20 8 30M66 130c-12 8-14 22-6 30M66 130c12 6 16 20 8 30M74 70l6-30" />
+      </g>
+    </g>
+  </svg>
+</div>
+
+<script>
+  // Gentle parallax: each layer drifts by its depth × scroll distance. Skipped for reduced motion.
+  const layers = document.querySelectorAll<SVGGElement>('.backdrop-layer');
+  if (layers.length && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    let ticking = false;
+    const update = () => {
+      const max = document.documentElement.scrollHeight - window.innerHeight;
+      const progress = max > 0 ? window.scrollY / max : 0;
+      layers.forEach(layer => {
+        const depth = Number(layer.dataset.depth || 0);
+        layer.style.transform = `translate3d(0, ${-(progress * depth * 1000).toFixed(1)}px, 0)`;
+      });
+      ticking = false;
+    };
+    window.addEventListener('scroll', () => {
+      if (!ticking) { ticking = true; requestAnimationFrame(update); }
+    }, { passive: true });
+    update();
+  }
+</script>

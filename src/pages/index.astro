@@ -1,7 +1,8 @@
-﻿---
+---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import SectionKicker from '../components/SectionKicker.astro';
 import FurrowDivider from '../components/FurrowDivider.astro';
+import ShopShelf from '../components/ShopShelf.astro';
 import { brandPartners } from '../data/brandPartners';
 import { testimonials } from '../data/testimonials';
 import { branches } from '../data/branches';
@@ -18,13 +19,6 @@ const awards = [
   { img: 'wcw-platinum-2024-25', brand: 'WCW', title: 'Platinum Award for Highest Sales', year: '2024–25' },
   { img: 'bayer-trust-2024', brand: 'Bayer', title: 'Certificate of Appreciation for Trust', year: '2024' },
   { img: 'ipl-ceremony', brand: 'Indian Potash Limited', title: 'IPL Award Ceremony', year: '', wide: true },
-];
-
-const categories = [
-  { label: 'Seeds', desc: 'Hybrid & open-pollinated varieties', group: 'Seeds', icon: 'seed' },
-  { label: 'Fertilizers', desc: 'Macro & micronutrient solutions', group: 'Fertilizers', icon: 'bag' },
-  { label: 'Pesticides', desc: 'Insecticides, fungicides & herbicides', group: 'Crop protection', icon: 'shield' },
-  { label: 'Tools', desc: 'Sprayers, irrigation & more', group: 'Spray equipment', icon: 'spray' },
 ];
 
 const seasons = [
@@ -104,7 +98,7 @@ const reasons = [
     </section>
 
     <!-- ═══ BRAND PARTNERS MARQUEE ═══ -->
-    <section id="brand-partners" class="bg-paper pt-14 pb-10 overflow-hidden">
+    <section id="brand-partners" class="pt-14 pb-10 overflow-hidden">
       <div class="container-custom mb-8 flex flex-wrap items-baseline justify-between gap-3">
         <h2 class="text-xl md:text-2xl text-primary">Trusted Brand Partners</h2>
         <SectionKicker hi="भरोसेमंद ब्रांड" en={`${brandPartners.length} brands`} />
@@ -124,7 +118,7 @@ const reasons = [
     </section>
 
     <!-- ═══ ABOUT ═══ -->
-    <section id="about" class="bg-paper pt-12 pb-20 md:pb-28">
+    <section id="about" class="pt-12 pb-20 md:pb-28">
       <div class="container-custom">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
           <div class="lg:col-span-5 reveal-scale">
@@ -165,10 +159,10 @@ const reasons = [
       </div>
     </section>
 
-    <FurrowDivider top="var(--color-paper)" bottom="var(--color-paper-deep)" />
+    <FurrowDivider top="transparent" bottom="rgba(239,230,211,0.78)" />
 
     <!-- ═══ WHY CHOOSE US ═══ -->
-    <section id="why-choose-us" class="paper-grain bg-paper-deep pt-12 pb-20 md:pb-28">
+    <section id="why-choose-us" class="paper-grain surface-deep pt-12 pb-20 md:pb-28">
       <div class="container-custom">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           <div class="order-2 lg:order-1">
@@ -207,10 +201,10 @@ const reasons = [
       </div>
     </section>
 
-    <FurrowDivider top="var(--color-paper-deep)" bottom="var(--color-paper)" flip />
+    <FurrowDivider top="rgba(239,230,211,0.78)" bottom="transparent" flip />
 
     <!-- ═══ PRODUCTS PREVIEW ═══ -->
-    <section id="products" class="bg-paper pt-12 pb-20 md:pb-28">
+    <section id="products" class="pt-12 pb-20 md:pb-28">
       <div class="container-custom">
         <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-10 reveal">
           <div class="max-w-2xl">
@@ -221,24 +215,8 @@ const reasons = [
           <a href={`${base}products`} class="btn-accent self-start lg:self-auto">Browse All Products</a>
         </div>
 
-        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-14">
-          {categories.map(cat => (
-            <a href={`${base}products?category=${encodeURIComponent(cat.group)}#catalogue`} class="card-paper group relative flex flex-col justify-between gap-8 overflow-hidden p-5 md:p-6 transition-all duration-300 hover:-translate-y-1 hover:border-mustard reveal-scale">
-              <span class="absolute inset-x-0 bottom-0 h-1 origin-left scale-x-0 bg-mustard transition-transform duration-300 group-hover:scale-x-100" aria-hidden="true"></span>
-              <span class="w-12 h-12 rounded-full bg-primary text-paper flex items-center justify-center">
-                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  {cat.icon === 'seed' && <><path d="M12 22V12"/><path d="M12 12C12 7 8 4 3 4c0 5 3.5 8 9 8Z"/><path d="M12 12c0-4 3-7 8-7 0 4.5-3 7-8 7Z"/></>}
-                  {cat.icon === 'bag' && <><path d="M6 3h12l-1 4H7Z"/><path d="M7 7c-2 3-2 10 0 14h10c2-4 2-11 0-14"/><path d="M9.5 13.5h5"/></>}
-                  {cat.icon === 'shield' && <><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="M12 8v8"/><path d="M8.5 12h7"/></>}
-                  {cat.icon === 'spray' && <><path d="M10 8h5v13H8V10a2 2 0 0 1 2-2Z"/><path d="M12 8V4h4"/><path d="M19 3v.01"/><path d="M21 5v.01"/><path d="M19 7v.01"/></>}
-                </svg>
-              </span>
-              <span>
-                <span class="block font-display text-xl md:text-2xl text-primary">{cat.label}</span>
-                <span class="mt-1.5 block text-sm leading-relaxed text-text-muted">{cat.desc}</span>
-              </span>
-            </a>
-          ))}
+        <div class="mb-16">
+          <ShopShelf />
         </div>
 
         <!-- What's in season -->
@@ -269,10 +247,10 @@ const reasons = [
       </div>
     </section>
 
-    <FurrowDivider top="var(--color-paper)" bottom="var(--color-paper-deep)" />
+    <FurrowDivider top="transparent" bottom="rgba(239,230,211,0.78)" />
 
     <!-- ═══ TESTIMONIALS ═══ -->
-    <section id="testimonials" class="paper-grain bg-paper-deep pt-12 pb-20 md:pb-28">
+    <section id="testimonials" class="paper-grain surface-deep pt-12 pb-20 md:pb-28">
       <div class="container-custom">
         <div class="mb-12 reveal text-center">
           <SectionKicker hi="किसानों की राय" en="Testimonials" class="mb-5 justify-center" />
@@ -301,10 +279,10 @@ const reasons = [
       </div>
     </section>
 
-    <FurrowDivider top="var(--color-paper-deep)" bottom="var(--color-paper)" flip />
+    <FurrowDivider top="rgba(239,230,211,0.78)" bottom="transparent" flip />
 
     <!-- ═══ LICENSES ═══ -->
-    <section id="licenses" class="bg-paper pt-12 pb-20 md:pb-28">
+    <section id="licenses" class="pt-12 pb-20 md:pb-28">
       <div class="container-custom">
         <div class="grid xl:grid-cols-12 gap-10 items-start">
           <div class="xl:col-span-4 reveal">
@@ -339,10 +317,10 @@ const reasons = [
       </div>
     </section>
 
-    <FurrowDivider top="var(--color-paper)" bottom="var(--color-paper-deep)" />
+    <FurrowDivider top="transparent" bottom="rgba(239,230,211,0.78)" />
 
     <!-- ═══ LOCATIONS ═══ -->
-    <section id="locations" class="paper-grain bg-paper-deep pt-12 pb-20 md:pb-28">
+    <section id="locations" class="paper-grain surface-deep pt-12 pb-20 md:pb-28">
       <div class="container-custom">
         <div class="mb-10 reveal">
           <SectionKicker hi="हमारे केंद्र" en="Our presence" class="mb-5" />
@@ -390,10 +368,10 @@ const reasons = [
       </div>
     </section>
 
-    <FurrowDivider top="var(--color-paper-deep)" bottom="var(--color-paper)" flip />
+    <FurrowDivider top="rgba(239,230,211,0.78)" bottom="transparent" flip />
 
     <!-- ═══ AWARDS: trophy shelf ═══ -->
-    <section id="awards" class="bg-paper pt-12 pb-20 md:pb-28">
+    <section id="awards" class="pt-12 pb-20 md:pb-28">
       <div class="container-custom">
         <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10 reveal">
           <div>
@@ -425,10 +403,10 @@ const reasons = [
       </div>
     </section>
 
-    <FurrowDivider top="var(--color-paper)" bottom="var(--color-paper-deep)" />
+    <FurrowDivider top="transparent" bottom="rgba(239,230,211,0.78)" />
 
     <!-- ═══ CONTACT ═══ -->
-    <section id="contact" class="paper-grain bg-paper-deep pt-12 pb-20 md:pb-28">
+    <section id="contact" class="paper-grain surface-deep pt-12 pb-20 md:pb-28">
       <div class="container-custom">
         <div class="grid grid-cols-1 lg:grid-cols-5 gap-6 lg:gap-10 items-stretch">
           <div class="paper-grain paper-grain-dark lg:col-span-2 flex flex-col justify-between rounded-[14px] bg-primary p-8 md:p-10 text-white reveal">
@@ -465,7 +443,7 @@ const reasons = [
       </div>
     </section>
 
-    <FurrowDivider top="var(--color-paper-deep)" bottom="var(--color-primary)" line="var(--color-accent)" />
+    <FurrowDivider top="rgba(239,230,211,0.78)" bottom="var(--color-primary)" line="var(--color-accent)" />
 
     <!-- ═══ CTA ═══ -->
     <section class="paper-grain paper-grain-dark bg-primary pt-14 pb-28 md:pb-36">

@@ -248,6 +248,12 @@ const hindi: Record<string, string> = {
   "Call +91 91660 29301": "कॉल करें +91 91660 29301",
   "Calculate Fertilizer Needs": "खाद की ज़रूरत निकालें",
   "Rice/Paddy": "धान",
+  "Sprayers": "स्प्रे मशीन",
+  "18 and 20 litre spray machines": "18 और 20 लीटर की स्प्रे मशीनें",
+  "Browse seeds": "बीज देखें",
+  "Browse fertilizers": "उर्वरक देखें",
+  "Browse crop protection": "फसल सुरक्षा उत्पाद देखें",
+  "Browse sprayers": "स्प्रे मशीनें देखें",
   "Next": "अगला",
 };
 
