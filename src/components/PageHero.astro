@@ -1,0 +1,27 @@
+---
+import SectionKicker from './SectionKicker.astro';
+import FurrowDivider from './FurrowDivider.astro';
+
+interface Props {
+  kickerHi: string;
+  kickerEn: string;
+  title: string;
+  intro?: string;
+  next?: string;
+}
+const { kickerHi, kickerEn, title, intro, next = 'var(--color-paper)' } = Astro.props;
+---
+<section class="paper-grain relative overflow-hidden bg-paper-deep pt-32 md:pt-40">
+  <svg class="pointer-events-none absolute -right-24 top-16 hidden w-[34rem] text-primary/10 md:block" viewBox="0 0 400 260" fill="none" aria-hidden="true">
+    <path d="M20 250C120 250 260 190 390 40" stroke="currentColor" stroke-width="18" stroke-linecap="round" />
+    <path d="M70 250C160 245 270 200 390 100" stroke="currentColor" stroke-width="10" stroke-linecap="round" />
+    <path d="M140 252C220 246 300 215 390 160" stroke="var(--color-mustard)" stroke-opacity="0.35" stroke-width="8" stroke-linecap="round" />
+  </svg>
+  <div class="container-custom relative pb-12 md:pb-16">
+    <SectionKicker hi={kickerHi} en={kickerEn} class="mb-5" />
+    <h1 class="max-w-3xl text-[clamp(2.4rem,5.5vw,4.25rem)] leading-[1.05] text-primary">{title}</h1>
+    {intro && <p class="mt-5 max-w-2xl text-base leading-relaxed text-text-muted md:text-lg">{intro}</p>}
+    {Astro.slots.has('default') && <div class="mt-8 flex flex-wrap gap-3"><slot /></div>}
+  </div>
+  <FurrowDivider top="var(--color-paper-deep)" bottom={next} />
+</section>

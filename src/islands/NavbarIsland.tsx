@@ -1,4 +1,4 @@
-﻿import { useState, useEffect } from "preact/hooks";
+import { useState, useEffect } from "preact/hooks";
 
 export default function NavbarIsland() {
   const [open, setOpen] = useState(false);
@@ -21,7 +21,7 @@ export default function NavbarIsland() {
     <>
       {/* Mobile hamburger button */}
       <button
-        class="lg:hidden min-w-11 min-h-11 p-2 text-white z-50 inline-flex items-center justify-center rounded-full hover:bg-white/10 transition-colors"
+        class={`lg:hidden relative min-w-11 min-h-11 p-2 z-50 inline-flex items-center justify-center rounded-full transition-colors ${open ? "text-primary hover:bg-primary/10" : "nav-link text-white hover:bg-white/10"}`}
         aria-label={open ? "Close menu" : "Open menu"}
         aria-expanded={open}
         aria-controls="mobile-navigation"
@@ -36,7 +36,7 @@ export default function NavbarIsland() {
 
       {/* Mobile menu overlay */}
       {open && (
-        <div id="mobile-navigation" class="fixed inset-0 bg-primary z-40 flex flex-col pt-24 px-8 pb-8 gap-5 overflow-y-auto lg:hidden">
+        <div id="mobile-navigation" class="paper-grain fixed inset-0 bg-paper z-40 flex flex-col pt-24 px-8 pb-8 gap-3 overflow-y-auto lg:hidden">
           {[
             [`${base}#about`, "About Us"],
             [`${base}#why-choose-us`, "Why Us"],
@@ -50,13 +50,13 @@ export default function NavbarIsland() {
             <a
               key={href}
               href={href}
-              class="min-h-11 flex items-center text-2xl font-bold text-white tracking-tight hover:text-accent transition-colors"
+              class="font-display min-h-11 flex items-center border-b border-border pb-2 text-2xl font-semibold text-primary hover:text-soil transition-colors"
               onClick={() => setOpen(false)}
             >
               {label}
             </a>
           ))}
-          <button type="button" data-language-toggle aria-label="Switch language to English" class="min-h-11 self-start rounded-full border border-white/30 px-5 py-2 text-sm font-bold text-white hover:border-accent hover:text-accent">
+          <button type="button" data-language-toggle aria-label="Switch language to English" class="mt-3 min-h-11 self-start rounded-full border border-primary/30 px-5 py-2 text-sm font-bold text-primary hover:border-mustard">
             <span data-language-label>English</span>
           </button>
           <a
