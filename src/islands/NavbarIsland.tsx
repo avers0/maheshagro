@@ -36,11 +36,13 @@ export default function NavbarIsland() {
 
       {/* Mobile menu overlay */}
       {open && (
-        <div id="mobile-navigation" class="menu-overlay paper-grain fixed inset-0 bg-paper z-40 flex flex-col pt-24 px-8 pb-8 gap-3 overflow-y-auto lg:hidden">
+        <div id="mobile-navigation" class="menu-overlay paper-grain fixed inset-0 bg-paper z-40 flex flex-col pt-24 px-8 pb-8 gap-2 overflow-y-auto lg:hidden">
           {[
             [`${base}#about`, "About Us"],
             [`${base}#why-choose-us`, "Why Us"],
             [`${base}products`, "Products"],
+            [`${base}tools/mandi`, "Mandi Prices"],
+            [`${base}tools/weather`, "Weather"],
             [`${base}#testimonials`, "Testimonials"],
             [`${base}#licenses`, "Licenses"],
             [`${base}#locations`, "Locations"],
@@ -57,14 +59,14 @@ export default function NavbarIsland() {
               {label}
             </a>
           ))}
-          <button type="button" data-language-toggle aria-label="Switch language to English" style="--i:8" class="menu-item mt-3 min-h-11 self-start rounded-full border border-primary/30 px-5 py-2 text-sm font-bold text-primary hover:border-mustard">
+          <button type="button" data-language-toggle aria-label="Switch language to English" style="--i:10" class="menu-item mt-3 min-h-11 self-start rounded-full border border-primary/30 px-5 py-2 text-sm font-bold text-primary hover:border-mustard">
             <span data-language-label>English</span>
           </button>
           <a
             href="https://wa.me/919166029301"
             target="_blank"
             rel="noopener noreferrer"
-            style="--i:9" class="menu-item btn-accent mt-4 w-full justify-center"
+            style="--i:11" class="menu-item btn-accent mt-4 w-full justify-center"
             onClick={() => setOpen(false)}
           >
             WhatsApp Chat

@@ -418,6 +418,30 @@ html[lang="hi"] .font-display { font-family: var(--font-display-hi); font-weight
 .nav-underline:hover::after,
 .nav-underline:focus-visible::after { transform: scaleX(1); }
 
+/* Current page in the desktop nav keeps its mustard underline */
+.nav-underline[aria-current="page"]::after { transform: scaleX(1); }
+
+/* Desktop "More" dropdown */
+.nav-more-menu {
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(-6px);
+  transition: opacity 0.18s ease, transform 0.18s ease, visibility 0s linear 0.18s;
+}
+.nav-more.is-open .nav-more-menu,
+.nav-more:focus-within .nav-more-menu {
+  visibility: visible;
+  opacity: 1;
+  transform: none;
+  transition: opacity 0.18s ease, transform 0.18s ease, visibility 0s;
+}
+@media (hover: hover) {
+  .nav-more:hover .nav-more-menu { visibility: visible; opacity: 1; transform: none; transition: opacity 0.18s ease, transform 0.18s ease, visibility 0s; }
+  .nav-more:hover .nav-more-chevron { transform: rotate(180deg); }
+}
+.nav-more.is-open .nav-more-chevron { transform: rotate(180deg); }
+.nav-more-menu a[aria-current="page"] { background: var(--color-paper-deep); color: var(--color-soil); }
+
 /* Navbar tucks away while scrolling down, returns on scroll up */
 #main-nav.nav-hidden { transform: translateY(-110%); }
 

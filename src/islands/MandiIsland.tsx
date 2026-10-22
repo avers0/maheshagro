@@ -28,6 +28,10 @@ export default function MandiIsland() {
   return (
     <div class="max-w-4xl mx-auto">
       <div class="card-paper p-6 md:p-10">
+        <div class="mb-6 flex flex-col gap-2 rounded-[12px] border-l-4 border-mustard bg-mustard/15 p-4 text-sm text-primary sm:flex-row sm:items-center sm:justify-between">
+          <p>These are reference prices, not live mandi rates.</p>
+          <a href="https://agmarknet.gov.in/" target="_blank" rel="noopener noreferrer" class="shrink-0 font-semibold underline decoration-mustard decoration-2 underline-offset-4 hover:text-soil">See today's rates on Agmarknet</a>
+        </div>
         <div class="flex flex-col sm:flex-row gap-4 mb-8">
           <div class="relative flex-1">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="absolute left-4 top-1/2 -translate-y-1/2 text-text-muted" aria-hidden="true"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
