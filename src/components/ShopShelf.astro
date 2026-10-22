@@ -1,0 +1,99 @@
+---
+// "Dukaan shelf": each product category is a painted wall bay with real pack shots on a wooden plank.
+// Counts come from public/products.csv at build time, using the same grouping as ProductsIsland.
+import fs from 'node:fs';
+import path from 'node:path';
+import Papa from 'papaparse';
+
+const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
+
+const csv = fs.readFileSync(path.join(process.cwd(), 'public/products.csv'), 'utf-8');
+const rows = Papa.parse<{ category: string; brand: string }>(csv, { header: true, skipEmptyLines: true }).data;
+const groupFor = (category = '') => {
+  const value = category.trim().toLowerCase();
+  if (value === 'seeds') return 'Seeds';
+  if (value === 'fertilizers') return 'Fertilizers';
+  if (value === 'spraymachine') return 'Spray equipment';
+  return 'Crop protection';
+};
+const counts: Record<string, number> = {};
+rows.forEach(row => { const g = groupFor(row.category); counts[g] = (counts[g] || 0) + 1; });
+
+const bays = [
+  {
+    group: 'Seeds', hi: 'बीज', title: 'Seeds', desc: 'Hybrid & open-pollinated varieties',
+    brands: 'Pioneer, Dekalb, Ankur, Star Agri, Shriram',
+    packs: ['ankur-bhaskar-makka', 'bayer-dekalb-8209', 'star-agri-151', 'ankur-jai-bg2'],
+    tone: 'bg-primary text-paper', hiTone: 'text-mustard-soft', mutedTone: 'text-paper/75', grain: 'paper-grain-dark',
+    span: 'lg:col-span-7',
+  },
+  {
+    group: 'Fertilizers', hi: 'उर्वरक', title: 'Fertilizers', desc: 'Macro & micronutrient solutions',
+    brands: 'Chambal, IPL, Coromandel, NFL, Shivalik',
+    packs: ['coromandel-groplus', 'shivalik-humigold', 'dhanuka-mycore', 'basf-meritor'],
+    tone: 'bg-mustard text-ink', hiTone: 'text-soil', mutedTone: 'text-ink/75', grain: '',
+    span: 'lg:col-span-5',
+  },
+  {
+    group: 'Crop protection', hi: 'फसल सुरक्षा', title: 'Crop protection', desc: 'Insecticides, fungicides & herbicides',
+    brands: 'Bayer, BASF, Adama, Dhanuka, Sumitomo, Syngenta',
+    packs: ['shriram-shaasak-1l', 'bayer-antracol-250g', 'adama-forpido-3kg', 'basf-odyssey-100g', 'sumitomo-tricel-500ml'],
+    tone: 'bg-soil text-white', hiTone: 'text-mustard-soft', mutedTone: 'text-white/75', grain: 'paper-grain-dark',
+    span: 'lg:col-span-8',
+  },
+  {
+    group: 'Spray equipment', hi: 'स्प्रे मशीन', title: 'Sprayers', desc: '18 and 20 litre spray machines',
+    brands: 'Balwaan',
+    packs: ['balwaan-20l-sprayer'],
+    tone: 'bg-accent text-primary', hiTone: 'text-primary-light', mutedTone: 'text-primary/80', grain: '',
+    span: 'lg:col-span-4',
+  },
+];
+---
+<div class="grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-12">
+  {bays.map(bay => (
+    <a
+      href={`${base}products?category=${encodeURIComponent(bay.group)}#catalogue`}
+      class:list={["shelf-bay group paper-grain relative flex flex-col overflow-hidden rounded-[14px] sm:min-h-[22rem] sm:rounded-[18px] lg:min-h-[25rem]", bay.tone, bay.grain, bay.span]}
+    >
+      <div class="relative z-10 p-4 sm:p-6 md:p-8">
+        <div class="flex items-start justify-between gap-4">
+          <div>
+            <p class:list={["text-base leading-none sm:text-2xl", bay.hiTone]} data-language-static>
+              <span class="shelf-label-hi font-display-hi" lang="hi">{bay.hi}</span>
+              <span class="shelf-label-en font-display" lang="en">{bay.title}</span>
+            </p>
+            <h3 class="mt-1.5 text-[1.35rem] leading-[1.05] sm:mt-2 sm:text-[clamp(2rem,3.2vw,2.75rem)] sm:leading-none">{bay.title}</h3>
+            <p class:list={["mt-1.5 text-xs sm:hidden", bay.mutedTone]}><span class="font-semibold" data-language-static>{counts[bay.group] ?? 0}+</span> <span>products</span></p>
+          </div>
+          <p class="hidden text-right leading-tight sm:block">
+            <span class="block font-display text-4xl tabular-nums" data-language-static>{counts[bay.group] ?? 0}+</span>
+            <span class:list={["text-sm", bay.mutedTone]}>products</span>
+          </p>
+        </div>
+        <p class:list={["mt-4 hidden max-w-sm text-sm leading-relaxed sm:block", bay.mutedTone]}>{bay.desc}</p>
+        <p class="mt-1 hidden max-w-md text-sm font-semibold sm:block" data-language-static>{bay.brands}</p>
+      </div>
+
+      <!-- Packs on the plank -->
+      <div class="relative mt-auto px-4 sm:px-6 md:px-8">
+        <div class="flex items-end justify-center gap-0 sm:justify-start">
+          {bay.packs.map((pack, i) => (
+            <span
+              class:list={["shelf-pack -ml-2 first:ml-0 rounded-[5px] bg-white p-1 shadow-[0_10px_18px_-10px_rgba(0,0,0,0.55)] sm:-ml-3 sm:rounded-[6px] sm:p-1.5", i >= 2 && "hidden sm:inline-block"]}
+              style={`--tilt:${[-3, 2, -1.5, 3, -2][i % 5]}deg; --lift:${i * 30}ms; z-index:${10 - Math.abs(i - 1)}`}
+            >
+              <img src={`${base}Images/shelf/${pack}.webp`} alt="" class="h-14 w-auto object-contain sm:h-28 md:h-32" loading="lazy" />
+            </span>
+          ))}
+        </div>
+        <div class="shelf-plank" aria-hidden="true"></div>
+      </div>
+
+      <div class:list={["relative hidden items-center justify-between px-6 py-4 text-sm font-semibold sm:flex md:px-8", bay.mutedTone]}>
+        <span>Browse {bay.title.toLowerCase()}</span>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="transition-transform duration-300 group-hover:translate-x-1" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+      </div>
+    </a>
+  ))}
+</div>

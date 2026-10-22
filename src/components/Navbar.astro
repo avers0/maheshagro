@@ -1,37 +1,74 @@
-﻿---
-// Navbar.astro - Static shell, NavbarIsland handles interactivity
-import NavbarIsland from '../islands/NavbarIsland';
-const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
 ---
-<nav id="main-nav" class="fixed w-full z-50 transition-all duration-500 py-2">
+// Navbar.astro - Static shell, NavbarIsland handles the mobile menu
+import NavbarIsland from '../islands/NavbarIsland';
+interface Props {
+  /** Pages without a dark photo hero start with the solid paper bar (no flash on load). */
+  solid?: boolean;
+}
+const { solid = false } = Astro.props;
+const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
+const path = Astro.url.pathname.replace(/\/+$/, '/');
+// Top-level links; page links get aria-current on their own page
+const links = [
+  { href: `${base}#about`, label: 'About Us' },
+  { href: `${base}products`, label: 'Products', page: `${base}products/` },
+  { href: `${base}tools/mandi`, label: 'Mandi Prices', page: `${base}tools/mandi/` },
+  { href: `${base}tools/weather`, label: 'Weather', page: `${base}tools/weather/` },
+  { href: `${base}#locations`, label: 'Locations' },
+];
+// Homepage sections that sit under "More" on desktop
+const more = [
+  [`${base}#why-choose-us`, 'Why Us'],
+  [`${base}#testimonials`, 'Testimonials'],
+  [`${base}#licenses`, 'Licenses'],
+  [`${base}#awards`, 'Awards'],
+  [`${base}tools/calculator`, 'Fertilizer Calculator'],
+];
+---
+<nav id="main-nav" class:list={["fixed w-full z-50 transition-all duration-500 py-2", solid && "nav-scrolled"]}>
   <div class="container-custom flex items-center justify-between w-full">
     <!-- Logo -->
-    <a href={base} class="flex items-center group">
-      <div class="w-14 h-14 md:w-16 md:h-16 flex items-center justify-center relative group-hover:scale-105 transition-all duration-500">
+    <a href={base} class="flex items-center gap-3 group">
+      <span class="w-12 h-12 md:w-14 md:h-14 flex items-center justify-center rounded-full bg-paper/95 p-1 shadow-soft group-hover:scale-105 transition-transform duration-500">
         <img src={`${base}Images/logo.png`} alt="Mahesh Agro Logo" class="w-full h-full object-contain" loading="eager" />
-      </div>
+      </span>
+      <span class="nav-link hidden sm:flex lg:hidden xl:flex flex-col whitespace-nowrap leading-none text-white">
+        <span class="font-display text-lg font-semibold">Mahesh Agro</span>
+        <span class="text-[10px] font-semibold uppercase tracking-[0.18em] opacity-75" data-language-static>Since 1973 · Deoli</span>
+      </span>
     </a>
 
     <!-- Desktop nav links -->
-    <div class="hidden lg:flex items-center gap-6">
-      <a href={`${base}#about`} class="text-sm font-medium transition-all hover:text-accent tracking-wide uppercase text-white/90">About Us</a>
-      <a href={`${base}#why-choose-us`} class="text-sm font-medium transition-all hover:text-accent tracking-wide uppercase text-white/90">Why Us</a>
-      <a href={`${base}products`} class="text-sm font-medium transition-all hover:text-accent tracking-wide uppercase text-white/90">Products</a>
-      <a href={`${base}#testimonials`} class="text-sm font-medium transition-all hover:text-accent tracking-wide uppercase text-white/90">Testimonials</a>
-      <a href={`${base}#licenses`} class="text-sm font-medium transition-all hover:text-accent tracking-wide uppercase text-white/90">Licenses</a>
-      <a href={`${base}#locations`} class="text-sm font-medium transition-all hover:text-accent tracking-wide uppercase text-white/90">Locations</a>
-      <a href={`${base}#awards`} class="text-sm font-medium transition-all hover:text-accent tracking-wide uppercase text-white/90">Awards</a>
+    <div class="hidden lg:flex items-center gap-5 xl:gap-6">
+      {links.map(link => (
+        <a
+          href={link.href}
+          aria-current={link.page && path === link.page ? 'page' : undefined}
+          class="nav-link nav-underline whitespace-nowrap text-sm font-medium text-white/90 transition-colors hover:text-mustard"
+        >{link.label}</a>
+      ))}
+      <div class="nav-more relative" data-nav-more>
+        <button type="button" class="nav-link flex min-h-11 items-center gap-1 whitespace-nowrap text-sm font-medium text-white/90 transition-colors hover:text-mustard" aria-expanded="false" aria-controls="nav-more-menu" data-nav-more-button>
+          <span>More</span>
+          <svg class="nav-more-chevron transition-transform duration-200" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div id="nav-more-menu" class="nav-more-menu absolute right-0 top-full w-56 rounded-[12px] border border-border bg-paper p-2 shadow-premium">
+          {more.map(([href, label]) => (
+            <a href={href} class="block rounded-[8px] px-3 py-2.5 text-sm font-medium text-primary transition-colors hover:bg-paper-deep hover:text-soil" aria-current={path === `${href}/` ? 'page' : undefined}>{label}</a>
+          ))}
+        </div>
+      </div>
     </div>
 
     <!-- Desktop CTAs -->
-    <div class="hidden lg:flex items-center gap-4">
-      <button type="button" data-language-toggle class="min-h-11 flex items-center gap-2 px-3 py-1.5 rounded-full border transition-all border-white/20 text-white hover:border-white focus-visible:outline-white" aria-label="Switch language to English" title="Switch language to English">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
-        <span data-language-label class="text-xs font-bold uppercase tracking-widest">English</span>
+    <div class="hidden lg:flex items-center gap-3">
+      <button type="button" data-language-toggle class="nav-link nav-pill min-h-11 flex items-center gap-2 px-4 py-1.5 rounded-full border transition-all border-white/30 text-white hover:border-mustard focus-visible:outline-white" aria-label="Switch language to English" title="Switch language to English">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-mustard" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+        <span data-language-label class="text-sm font-semibold">English</span>
       </button>
-      <a href="https://wa.me/919166029301" target="_blank" rel="noopener noreferrer" class="btn-accent !py-2 !px-5 shadow-glow">
+      <a href="https://wa.me/919166029301" target="_blank" rel="noopener noreferrer" class="btn-accent !py-2 !px-3 xl:!px-5" aria-label="WhatsApp Chat">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"/></svg>
-        <span>WhatsApp Chat</span>
+        <span class="hidden xl:inline">WhatsApp Chat</span>
       </a>
     </div>
 
@@ -39,3 +76,20 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
     <NavbarIsland client:load />
   </div>
 </nav>
+
+<script>
+  // "More" dropdown: opens on hover (CSS) or click/tap, closes on outside click and Escape.
+  const wrap = document.querySelector<HTMLElement>('[data-nav-more]');
+  const button = wrap?.querySelector<HTMLButtonElement>('[data-nav-more-button]');
+  if (wrap && button) {
+    const setOpen = (open: boolean) => {
+      wrap.classList.toggle('is-open', open);
+      button.setAttribute('aria-expanded', String(open));
+    };
+    button.addEventListener('click', () => setOpen(!wrap.classList.contains('is-open')));
+    document.addEventListener('click', event => { if (!wrap.contains(event.target as Node)) setOpen(false); });
+    document.addEventListener('keydown', event => {
+      if (event.key === 'Escape' && wrap.classList.contains('is-open')) { setOpen(false); button.focus(); }
+    });
+  }
+</script>

@@ -1,4 +1,4 @@
-﻿export interface Testimonial {
+export interface Testimonial {
   name: string;
   location: string;
   quote: string;
@@ -9,7 +9,7 @@
 export const testimonials: Testimonial[] = [
   {
     name: "Ramkishan Sharma",
-    location: "Dolta, Rajasthan",
+    location: "Daulta, Rajasthan",
     quote: "Mahesh Agro has been my go-to store for over 20 years. The quality of seeds and fertilizers is always genuine, and the staff provides excellent guidance on crop management.",
     rating: 5,
     crop: "Wheat & Mustard",

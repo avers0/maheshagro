@@ -30,7 +30,6 @@ const hindi: Record<string, string> = {
   "Growing community": "बढ़ता किसान परिवार",
   "Customers Served": "किसानों की सेवा",
   "Trusted by farmers for high-quality inputs and expert advice when it matters most.": "महत्वपूर्ण समय पर गुणवत्तापूर्ण कृषि सामग्री और विशेषज्ञ सलाह के लिए किसानों का भरोसा।",
-  "Why Choose Us": "हमें क्यों चुनें",
   "Legacy of Excellence": "उत्कृष्ट सेवा की परंपरा",
   "Empowering farmers across the region since 1973 with dedicated service.": "1973 से पूरे क्षेत्र के किसानों को समर्पित सेवा के साथ सशक्त बना रहे हैं।",
   "Genuine Products": "असली उत्पाद",
@@ -118,6 +117,7 @@ const hindi: Record<string, string> = {
   "Ask for price": "कीमत पूछें",
   "MRP": "अधिकतम खुदरा मूल्य",
   "Enquire on WhatsApp": "व्हाट्सऐप पर पूछताछ करें",
+  "Enquire": "पूछें",
   "Enquire about": "इसके बारे में पूछें",
   "Previous": "पिछला",
   "Page": "पृष्ठ",
@@ -139,6 +139,7 @@ const hindi: Record<string, string> = {
   "Mandi Prices": "मंडी भाव",
   "Stay updated with today's agricultural commodity prices at local mandis.": "स्थानीय मंडियों में कृषि जिंसों के आज के भाव जानें।",
   "Search commodity or market...": "फसल या मंडी खोजें...",
+  "Search commodity or market": "फसल या मंडी खोजें",
   "Commodity": "जिंस",
   "Variety": "किस्म",
   "Market": "मंडी",
@@ -193,25 +194,144 @@ const hindi: Record<string, string> = {
   "Mandi": "मंडी",
   "Calculator": "कैलकुलेटर",
   "Developed by": "निर्माता",
+
+  // Heritage redesign
+  "Deoli's trusted farm store since 1973": "1973 से देवली के किसानों का भरोसा",
+  "Visit our store": "हमारी दुकान पर आएं",
+  "Open now": "अभी खुला है",
+  "Closed now": "अभी बंद है",
+  "Open daily": "रोज़ खुला",
+  "9:00 AM - 8:00 PM": "सुबह 9 बजे – रात 8 बजे",
+  "Directions": "रास्ता देखें",
+  "Rooted on the Jaipur–Kota road since 1973": "1973 से जयपुर–कोटा रोड पर, किसानों के साथ",
+  "Brand Partners": "ब्रांड साझेदार",
+  "Contact Experts": "विशेषज्ञों से बात करें",
+  "Why farmers keep coming back": "किसान बार-बार हमारे पास क्यों आते हैं",
+  "Everything for the season, under one roof": "हर मौसम की हर ज़रूरत, एक ही जगह",
+  "What's in season": "इस मौसम की फसलें",
+  "Plan your inputs before sowing starts.": "बुवाई शुरू होने से पहले अपनी ज़रूरतों की तैयारी करें।",
+  "In season now": "अभी का मौसम",
+  "October – March": "अक्टूबर – मार्च",
+  "June – September": "जून – सितंबर",
+  "Rabi": "रबी",
+  "Kharif": "खरीफ",
+  "Wheat, mustard, gram and barley": "गेहूं, सरसों, चना और जौ",
+  "Cotton, bajra, soybean and moong": "कपास, बाजरा, सोयाबीन और मूंग",
+  "Ask us on WhatsApp": "व्हाट्सऐप पर हमसे पूछें",
+  "what your field needs this season.": "— इस मौसम में आपके खेत को क्या चाहिए।",
+  "Pesticide License": "कीटनाशक लाइसेंस",
+  "Fertilizer License": "उर्वरक लाइसेंस",
+  "Seeds License": "बीज लाइसेंस",
+  "Come visit us": "हमसे मिलने आएं",
+  "Mahesh Agro Service Centre - Daulta": "महेश एग्रो सर्विस सेंटर - दौलता",
+  "RTO Office, Jaipur-Kota Road, Madhosinghpura (Daulta), Tonk (Raj.)": "आरटीओ ऑफिस, जयपुर-कोटा रोड, माधोसिंहपुरा (दौलता), टोंक (राज.)",
+  "Mahesh Agro Service Centre - Nehru Market": "महेश एग्रो सर्विस सेंटर - नेहरू मार्केट",
+  "Opp. Sabzi Mandi, Mamta Circle, Deoli, Tonk (Raj.) 304804": "सब्ज़ी मंडी के सामने, ममता सर्किल, देवली, टोंक (राजस्थान) 304804",
+  "The trophy shelf": "हमारे सम्मान",
+  "Best Performance Award": "सर्वश्रेष्ठ प्रदर्शन पुरस्कार",
+  "Mark of Excellence Award": "मार्क ऑफ़ एक्सीलेंस पुरस्कार",
+  "Highest PHN Business Award": "सर्वाधिक PHN व्यवसाय पुरस्कार",
+  "Platinum Award for Highest Sales": "सर्वाधिक बिक्री के लिए प्लैटिनम पुरस्कार",
+  "Certificate of Appreciation for Trust": "भरोसे के लिए प्रशंसा प्रमाणपत्र",
+  "State Level Award": "राज्य स्तरीय पुरस्कार",
+  "IPL Award Ceremony": "IPL पुरस्कार समारोह",
+  "Mahesh Agro Service Centre, Daulta": "महेश एग्रो सर्विस सेंटर, दौलता",
+  "Daulta, Rajasthan": "दौलता, राजस्थान",
+  "Sowing soon? Talk to us first.": "बुवाई करने वाले हैं? पहले हमसे बात करें।",
+  "Mahesh Agro": "महेश एग्रो",
+  "Empowering farmers since 1973 with genuine agricultural inputs and expert consultation for a prosperous harvest.": "1973 से असली कृषि सामग्री और विशेषज्ञ सलाह के साथ किसानों की समृद्ध फसल में भागीदार।",
+  "Quick Links": "मुख्य लिंक",
+  "Farmer Tools": "किसान उपकरण",
+  "Visit Us": "हमसे मिलें",
+  "Made with": "प्यार से बनाया",
+  "This field is still fallow": "यह खेत अभी खाली है",
+  "Options for the crops you grow": "आपकी फसलों के लिए विकल्प",
+  "Crop nutrition and soil inputs": "फसल पोषण और मिट्टी के लिए सामग्री",
+  "Pesticides and crop care": "कीटनाशक और फसल सुरक्षा",
+  "Tools for applying crop inputs": "छिड़काव और प्रयोग के उपकरण",
+  "Call +91 91660 29301": "कॉल करें +91 91660 29301",
+  "Calculate Fertilizer Needs": "खाद की ज़रूरत निकालें",
+  "Rice/Paddy": "धान",
+  "Sprayers": "स्प्रे मशीन",
+  "More": "और",
+  "Reference prices for major crops at nearby mandis. For today's rates, call us or check Agmarknet.": "आसपास की मंडियों में मुख्य फसलों के अनुमानित भाव। आज के भाव के लिए हमें कॉल करें या एगमार्कनेट देखें।",
+  "These are reference prices, not live mandi rates.": "ये अनुमानित भाव हैं, मंडी के लाइव भाव नहीं।",
+  "See today's rates on Agmarknet": "एगमार्कनेट पर आज के भाव देखें",
+  "Deoli": "देवली",
+  "Tonk": "टोंक",
+  "Jaipur": "जयपुर",
+  "Kota": "कोटा",
+  "Ajmer": "अजमेर",
+  "Bhilwara": "भीलवाड़ा",
+  ", Rajasthan": ", राजस्थान",
+  "Today": "आज",
+  "Tomorrow": "कल",
+  "Monday": "सोमवार",
+  "Tuesday": "मंगलवार",
+  "Wednesday": "बुधवार",
+  "Thursday": "गुरुवार",
+  "Friday": "शुक्रवार",
+  "Saturday": "शनिवार",
+  "Sunday": "रविवार",
+  "Clear sky": "साफ़ आसमान",
+  "Mainly clear": "ज़्यादातर साफ़",
+  "Partly cloudy": "आंशिक बादल",
+  "Overcast": "घने बादल",
+  "Fog": "कोहरा",
+  "Drizzle": "बूंदाबांदी",
+  "Rain": "बारिश",
+  "Snow": "बर्फ़बारी",
+  "Thunderstorm": "आंधी-तूफ़ान",
+  "Next 3 days": "अगले 3 दिन",
+  "Couldn't load the weather right now. Check your internet connection and try again.": "अभी मौसम की जानकारी नहीं मिल पाई। इंटरनेट कनेक्शन जांचें और फिर कोशिश करें।",
+  "Rain is likely in the next few days. Hold off on spraying and fertilizer top-dressing until it passes.": "अगले कुछ दिनों में बारिश की संभावना है। बारिश थमने तक छिड़काव और खाद डालना रोक कर रखें।",
+  "Windy conditions. Spray in the calm early morning to avoid drift.": "हवा तेज़ है। दवा उड़ने से बचाने के लिए सुबह शांत समय में छिड़काव करें।",
+  "High temperature. Irrigate on time and avoid spraying in the afternoon heat.": "तापमान ज़्यादा है। समय पर सिंचाई करें और दोपहर की गर्मी में छिड़काव न करें।",
+  "High humidity. Watch for fungal diseases and consider a preventive fungicide.": "नमी ज़्यादा है। फफूंद रोगों पर नज़र रखें और बचाव के लिए फफूंदनाशक पर विचार करें।",
+  "Good conditions for field work, sowing and spraying.": "खेत के काम, बुवाई और छिड़काव के लिए मौसम अच्छा है।",
+  "Live weather from": "लाइव मौसम:",
+  ", updated every 15 minutes.": ", हर 15 मिनट में अपडेट।",
+  "From our archives": "पुरानी यादें",
+  "Vishal Kisan Sammelan, Tonk": "विशाल किसान सम्मेलन, टोंक",
+  "Chilli growers' meet, Village Negadiya": "मिर्च उत्पादक समारोह, ग्राम नेगड़िया",
+  "A felicitation at the store": "दुकान पर सम्मान समारोह",
+  "Bayer awards won by Mahesh Agro": "महेश एग्रो को मिले बायर पुरस्कार",
+  "Dekalb seeds and Bayer crop protection on the store shelves": "दुकान की अलमारियों पर डेकाल्ब बीज और बायर फसल सुरक्षा उत्पाद",
+  "Pioneer hybrid mustard seed display at the store": "दुकान पर पायनियर हाइब्रिड सरसों बीज",
+  "Our product list is still growing": "हमारी उत्पाद सूची अभी बढ़ रही है",
+  "Not every product is listed here yet, and prices may differ from what you see. Please call or WhatsApp us to confirm stock and the latest price before you order.": "अभी सभी उत्पाद यहाँ नहीं दिखाए गए हैं, और कीमतें यहाँ दिखी कीमतों से अलग हो सकती हैं। ऑर्डर करने से पहले उपलब्धता और ताज़ा कीमत के लिए हमें कॉल या व्हाट्सऐप करें।",
+  "Director Club Sales Award": "डायरेक्टर क्लब बिक्री पुरस्कार",
+  "Master of Solution & Promising Star awards": "मास्टर ऑफ़ सॉल्यूशन और प्रॉमिसिंग स्टार पुरस्कार",
+  "Mahesh Agro Service Centre storefront": "महेश एग्रो सर्विस सेंटर की दुकान",
+  "Mahesh Agro Service Centre at Nehru Market, Deoli": "नेहरू मार्केट, देवली में महेश एग्रो सर्विस सेंटर",
+  "18 and 20 litre spray machines": "18 और 20 लीटर की स्प्रे मशीनें",
+  "Browse seeds": "बीज देखें",
+  "Browse fertilizers": "उर्वरक देखें",
+  "Browse crop protection": "फसल सुरक्षा उत्पाद देखें",
+  "Browse sprayers": "स्प्रे मशीनें देखें",
+  "Next": "अगला",
 };
 
 const textOriginals = new WeakMap<Text, string>();
+const textApplied = new WeakMap<Text, string>();
 const attributeOriginals = new WeakMap<Element, Map<string, string>>();
 const translatableAttributes = ["aria-label", "title", "placeholder", "alt"];
 
 function translateText(node: Text, language: Language) {
-  const source = textOriginals.get(node) ?? node.nodeValue ?? "";
-  if (!textOriginals.has(node)) textOriginals.set(node, source);
+  const current = node.nodeValue ?? "";
+  // If something else (e.g. a Preact island) changed the text since we last wrote it, that is the new original.
+  if (!textOriginals.has(node) || current !== textApplied.get(node)) textOriginals.set(node, current);
+  const source = textOriginals.get(node) ?? current;
   const key = source.trim();
   const translation = language === "hi" ? hindi[key] : undefined;
-  if (translation === undefined) {
-    if (node.nodeValue !== source) node.nodeValue = source;
-    return;
+  let next = source;
+  if (translation !== undefined) {
+    const leading = source.match(/^\s*/)?.[0] ?? "";
+    const trailing = source.match(/\s*$/)?.[0] ?? "";
+    next = `${leading}${translation}${trailing}`;
   }
-  const leading = source.match(/^\s*/)?.[0] ?? "";
-  const trailing = source.match(/\s*$/)?.[0] ?? "";
-  const translated = `${leading}${translation}${trailing}`;
-  if (node.nodeValue !== translated) node.nodeValue = translated;
+  if (node.nodeValue !== next) node.nodeValue = next;
+  textApplied.set(node, next);
 }
 
 function translateElement(element: Element, language: Language) {

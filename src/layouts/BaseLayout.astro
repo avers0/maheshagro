@@ -1,13 +1,16 @@
-﻿---
+---
 import '../styles/global.css';
 import Navbar from '../components/Navbar.astro';
 import Footer from '../components/Footer.astro';
+import FloatingWhatsApp from '../components/FloatingWhatsApp.astro';
 
 interface Props {
   title?: string;
   description?: string;
   ogTitle?: string;
   ogDescription?: string;
+  /** Pages without a dark photo hero keep the paper navbar from the top. */
+  solidNav?: boolean;
 }
 
 const {
@@ -15,6 +18,7 @@ const {
   description = 'Mahesh Agro provides quality seeds, fertilizers, and pesticides to farmers with expert guidance and trust. Serving farmers with authentic products since 1973.',
   ogTitle = 'Mahesh Agro | Trusted Agriculture Retail Partner',
   ogDescription = 'Quality seeds, fertilizers, and pesticides with expert guidance.',
+  solidNav = false,
 } = Astro.props;
 
 const schemaOrg = {
@@ -25,10 +29,11 @@ const schemaOrg = {
   "@id": "https://maheshagro.com",
   "url": "https://maheshagro.com",
   "telephone": "+919166029301",
+  "email": "rohit.krml@yahoo.com",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "RTO Office, Jaipur-Kota Road, Madhosinghpura (Daulta)",
-    "addressLocality": "Dolta",
+    "addressLocality": "Tonk",
     "addressRegion": "RJ",
     "addressCountry": "IN"
   },
@@ -47,7 +52,7 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
 <html lang="hi">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>{title}</title>
   <meta name="description" content={description} />
   <meta name="author" content="Mahesh Agro" />
@@ -60,16 +65,17 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
   <meta name="twitter:title" content={ogTitle} />
   <meta name="twitter:description" content={ogDescription} />
   <link rel="icon" href={`${base}favicon.ico`} sizes="256x256" type="image/x-icon" />
-  <link rel="preload" as="image" href={`${base}Images/logo.png`} />
+  <meta name="theme-color" content="#1c3a27" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=Montserrat:wght@400;500;600;700;800;900&family=Noto+Sans+Devanagari:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..600&family=Inter:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Tiro+Devanagari+Hindi&display=swap" rel="stylesheet" />
   <script type="application/ld+json" set:html={JSON.stringify(schemaOrg)} />
 </head>
-<body>
-  <Navbar />
+<body data-solid-nav={solidNav ? 'true' : undefined}>
+  <Navbar solid={solidNav} />
   <slot />
   <Footer />
+  <FloatingWhatsApp />
   <dialog id="language-dialog" class="language-dialog" aria-labelledby="language-dialog-title" data-language-static>
     <div class="language-dialog-content">
       <p class="language-dialog-kicker">LANGUAGE / भाषा</p>
@@ -86,15 +92,24 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
     // Nav scroll behavior
     const nav = document.getElementById('main-nav');
     if (nav) {
+      const solid = document.body.dataset.solidNav === 'true';
+      let lastY = window.scrollY;
       const onScroll = () => {
-        if (window.scrollY > 50) nav.classList.add('nav-scrolled');
+        const y = window.scrollY;
+        if (solid || y > 50) nav.classList.add('nav-scrolled');
         else nav.classList.remove('nav-scrolled');
+        // Tuck the bar away while reading down the page; bring it back on any upward scroll.
+        const menuOpen = !!document.getElementById('mobile-navigation');
+        if (!menuOpen && y > 400 && y > lastY + 6) nav.classList.add('nav-hidden');
+        else if (menuOpen || y < lastY - 6 || y <= 400) nav.classList.remove('nav-hidden');
+        if (Math.abs(y - lastY) > 6) lastY = y;
       };
       window.addEventListener('scroll', onScroll, { passive: true });
       onScroll();
     }
 
-    // IntersectionObserver reveal
+    // IntersectionObserver reveal (content stays visible without JS)
+    document.documentElement.classList.add('js-reveal');
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(e => {
         if (e.isIntersecting) {
@@ -102,7 +117,7 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
           observer.unobserve(e.target);
         }
       });
-    }, { threshold: 0.1 });
+    }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
 
     document.querySelectorAll('.reveal, .reveal-scale').forEach(el => observer.observe(el));
   </script>

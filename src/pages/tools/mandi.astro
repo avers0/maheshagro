@@ -1,17 +1,13 @@
-﻿---
+---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import PageHero from '../../components/PageHero.astro';
 import MandiIsland from '../../islands/MandiIsland';
 ---
-<BaseLayout title="Mandi Prices | Mahesh Agro Tools" description="Check today's agricultural commodity prices at local mandis in Rajasthan.">
-  <main class="min-h-screen bg-gray-50">
-    <section class="pt-32 pb-16 bg-primary text-white">
-      <div class="container mx-auto px-6 text-center">
-        <h1 class="text-4xl md:text-5xl font-black mb-4">Mandi Prices</h1>
-        <p class="text-xl text-white/80 max-w-2xl mx-auto">Stay updated with today's agricultural commodity prices at local mandis.</p>
-      </div>
-    </section>
-    <section class="py-16">
-      <div class="container mx-auto px-6">
+<BaseLayout title="Mandi Prices | Mahesh Agro Tools" description="Reference prices for major crops at mandis near Deoli and Tonk, with a link to today's official rates." solidNav>
+  <main class="min-h-screen">
+    <PageHero kickerHi="मंडी भाव" kickerEn="Farmer tools" title="Mandi Prices" intro="Reference prices for major crops at nearby mandis. For today's rates, call us or check Agmarknet." />
+    <section class="pb-24 pt-4">
+      <div class="container-custom">
         <MandiIsland client:load />
       </div>
     </section>

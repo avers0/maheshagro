@@ -1,0 +1,19 @@
+---
+// Small static landscape strip (rising sun over two Aravalli ridge lines) for a section's empty
+// bottom padding. Sits absolutely at the bottom of a `relative` parent, never behind text.
+interface Props {
+  flip?: boolean;
+}
+const { flip = false } = Astro.props;
+---
+<div
+  class="pointer-events-none absolute inset-x-0 bottom-0 h-16 md:h-24"
+  style={flip ? 'transform:scaleX(-1)' : undefined}
+  aria-hidden="true"
+>
+  <svg viewBox="0 0 1600 120" preserveAspectRatio="xMidYMax slice" class="h-full w-full" fill="none" stroke-linecap="round">
+    <path d="M1012 96a38 38 0 0 1 76 0" stroke="var(--color-mustard)" stroke-width="2" opacity="0.6" />
+    <path d="M-20 100c90-4 150-30 240-28 90 2 140 26 230 24 100-2 150-34 250-34 90 0 140 30 230 32 90 2 150-28 240-30 100-2 160 22 250 26 70 3 110-2 180-8" stroke="var(--color-primary)" stroke-width="1.6" opacity="0.18" />
+    <path d="M-20 114c140-4 230-18 360-16 130 2 210 14 340 12 140-2 220-18 360-16 130 2 220 14 340 12 70-1 110-4 220-8" stroke="var(--color-mustard)" stroke-width="1.6" opacity="0.4" />
+  </svg>
+</div>

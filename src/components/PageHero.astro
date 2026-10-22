@@ -1,0 +1,24 @@
+---
+import SectionKicker from './SectionKicker.astro';
+import FurrowDivider from './FurrowDivider.astro';
+import HorizonBand from './HorizonBand.astro';
+
+interface Props {
+  kickerHi: string;
+  kickerEn: string;
+  title: string;
+  intro?: string;
+  next?: string;
+}
+const { kickerHi, kickerEn, title, intro, next = 'transparent' } = Astro.props;
+---
+<section class="paper-grain relative overflow-hidden surface-deep pt-32 md:pt-40">
+  <div class="container-custom relative pb-20 md:pb-28">
+    <SectionKicker hi={kickerHi} en={kickerEn} class="mb-5" />
+    <h1 class="max-w-3xl text-[clamp(2.4rem,5.5vw,4.25rem)] leading-[1.05] text-primary">{title}</h1>
+    {intro && <p class="mt-5 max-w-2xl text-base leading-relaxed text-text-muted md:text-lg">{intro}</p>}
+    {Astro.slots.has('default') && <div class="mt-8 flex flex-wrap gap-3"><slot /></div>}
+  </div>
+  <HorizonBand />
+</section>
+<FurrowDivider top="rgba(239,230,211,0.78)" bottom={next} />

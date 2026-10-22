@@ -1,0 +1,19 @@
+---
+// Bilingual section label. Marked static so the language switcher leaves both scripts visible.
+interface Props {
+  hi: string;
+  en: string;
+  light?: boolean;
+  class?: string;
+}
+const { hi, en, light = false, class: className = '' } = Astro.props;
+---
+<p class:list={["kicker", light && "kicker-light", className]} data-language-static>
+  <svg width="22" height="12" viewBox="0 0 22 12" fill="none" aria-hidden="true">
+    <path d="M1 11C7 11 14 7 21 1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+    <path d="M1 6C6 6 10 4.5 14 1" stroke="var(--color-mustard)" stroke-width="1.6" stroke-linecap="round" />
+  </svg>
+  <span class="kicker-hi" lang="hi">{hi}</span>
+  <span class="kicker-dot" aria-hidden="true"></span>
+  <span class="kicker-en" lang="en">{en}</span>
+</p>

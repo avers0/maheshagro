@@ -1,59 +1,53 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import ProductsIsland from '../islands/ProductsIsland';
+import PageHero from '../components/PageHero.astro';
+import ShopShelf from '../components/ShopShelf.astro';
 const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
-
-const categories = [
-  { name: 'Seeds', detail: 'Options for the crops you grow' },
-  { name: 'Fertilizers', detail: 'Crop nutrition and soil inputs' },
-  { name: 'Crop protection', detail: 'Pesticides and crop care' },
-  { name: 'Spray equipment', detail: 'Tools for applying crop inputs' },
-];
 ---
 <BaseLayout
   title="Products | Mahesh Agro"
   description="Explore seeds, fertilizers, crop protection, and spray equipment at Mahesh Agro. Contact our team to confirm product availability."
+  solidNav
 >
-  <main class="min-h-screen bg-background-cream">
-    <section class="relative overflow-hidden bg-primary pt-32 pb-16 text-white md:pt-40 md:pb-24">
-      <img src={`${base}Images/MA/Outlet Pics.jpg`} alt="" class="absolute inset-0 h-full w-full object-cover opacity-20" aria-hidden="true" />
-      <div class="absolute inset-0 bg-gradient-to-r from-primary via-primary/90 to-primary/60" aria-hidden="true"></div>
-      <div class="container-custom relative">
-        <h1 class="max-w-3xl text-[clamp(2.5rem,6vw,5rem)] font-semibold leading-[1.05] tracking-[-0.035em]">Find the right inputs for your farm</h1>
-        <p class="mt-6 max-w-2xl text-base leading-relaxed text-white/85 md:text-lg">Explore product categories and talk with our team about options for your crop. We can help you confirm details and availability.</p>
-        <div class="mt-8 flex flex-wrap gap-3">
-          <a href="#product-categories-heading" class="btn-accent justify-center !text-sm">Explore categories</a>
-          <a href="https://wa.me/919166029301?text=Hi%2C%20I%20would%20like%20help%20finding%20an%20agricultural%20product." target="_blank" rel="noopener noreferrer" class="inline-flex min-h-11 items-center justify-center rounded-full border border-white/50 px-6 py-3 text-sm font-semibold text-white hover:bg-white hover:text-primary">Ask our team</a>
-        </div>
-      </div>
-    </section>
+  <main class="min-h-screen">
+    <PageHero kickerHi="उत्पाद" kickerEn="Products" title="Find the right inputs for your farm" intro="Explore product categories and talk with our team about options for your crop. We can help you confirm details and availability.">
+      <a href="#product-categories-heading" class="btn-accent justify-center">Explore categories</a>
+      <a href="https://wa.me/919166029301?text=Hi%2C%20I%20would%20like%20help%20finding%20an%20agricultural%20product." target="_blank" rel="noopener noreferrer" class="btn-outline">Ask our team</a>
+    </PageHero>
 
-    <section class="container-custom py-16 md:py-20" aria-labelledby="product-categories-heading">
+    <!-- Catalogue notice -->
+    <div class="container-custom pt-2">
+      <aside class="flex flex-col gap-4 rounded-[14px] border border-mustard/50 border-l-4 border-l-mustard bg-mustard-soft/60 p-5 sm:flex-row sm:items-center sm:justify-between md:p-6" role="note" aria-labelledby="catalogue-notice-title">
+        <div class="flex gap-3">
+          <svg class="mt-0.5 shrink-0 text-soil" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+          <div>
+            <p id="catalogue-notice-title" class="font-semibold text-ink">Our product list is still growing</p>
+            <p class="mt-1 max-w-2xl text-sm leading-relaxed text-ink/80">Not every product is listed here yet, and prices may differ from what you see. Please call or WhatsApp us to confirm stock and the latest price before you order.</p>
+          </div>
+        </div>
+        <div class="flex shrink-0 flex-wrap gap-2 pl-9 sm:pl-0">
+          <a href="tel:+919166029301" class="btn-primary !min-h-10 !px-4 !py-2 !text-sm">Call Now</a>
+          <a href="https://wa.me/919166029301?text=Hi%2C%20I%20would%20like%20to%20check%20product%20availability%20and%20prices." target="_blank" rel="noopener noreferrer" class="btn-accent !min-h-10 !px-4 !py-2 !text-sm">WhatsApp Chat</a>
+        </div>
+      </aside>
+    </div>
+
+    <section class="container-custom pt-6 pb-16 md:pb-20" aria-labelledby="product-categories-heading">
       <div class="mb-8 max-w-2xl">
-        <h2 id="product-categories-heading" class="text-[clamp(1.75rem,3vw,2.5rem)] font-semibold tracking-[-0.025em] text-primary">Browse by need</h2>
+        <h2 id="product-categories-heading" class="scroll-mt-28 text-[clamp(1.75rem,3vw,2.5rem)] text-primary">Browse by need</h2>
         <p class="mt-3 leading-relaxed text-text-muted">Start with the type of product you need. Our team can help you narrow down the options.</p>
       </div>
-      <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-        {categories.map((item) => (
-          <a href={`${base}products?category=${encodeURIComponent(item.name)}#catalogue`} class="group flex min-h-56 flex-col justify-between rounded-2xl border border-border bg-white p-6 text-primary transition-all duration-300 hover:-translate-y-1 hover:border-accent hover:shadow-lg">
-            <span class="text-xs font-semibold uppercase tracking-[0.16em] text-accent">Mahesh Agro</span>
-            <span>
-              <span class="block text-xl font-semibold">{item.name}</span>
-              <span class="mt-2 block text-sm text-text-muted">{item.detail}</span>
-              <span class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-primary">Ask about options <span aria-hidden="true">→</span></span>
-            </span>
-          </a>
-        ))}
-      </div>
+      <ShopShelf />
     </section>
 
-    <section id="catalogue" class="scroll-mt-24 border-t border-border bg-white py-16 md:py-20" aria-labelledby="catalogue-heading">
+    <section id="catalogue" class="paper-grain scroll-mt-24 border-t border-border surface-deep py-16 md:py-20" aria-labelledby="catalogue-heading">
       <div class="container-custom mb-8 flex flex-col justify-between gap-5 md:flex-row md:items-end">
         <div>
-          <h2 id="catalogue-heading" class="text-[clamp(1.75rem,3vw,2.5rem)] font-semibold tracking-[-0.025em] text-primary">Find a product</h2>
+          <h2 id="catalogue-heading" class="text-[clamp(1.75rem,3vw,2.5rem)] text-primary">Find a product</h2>
           <p class="mt-3 max-w-2xl leading-relaxed text-text-muted">Browse products and listed prices. Confirm the latest price and availability with our team before buying.</p>
         </div>
-        <a href="tel:+919166029301" class="inline-flex min-h-11 shrink-0 items-center font-semibold text-primary underline decoration-accent decoration-2 underline-offset-4 hover:text-primary-light">Call +91 91660 29301</a>
+        <a href="tel:+919166029301" class="inline-flex min-h-11 shrink-0 items-center font-semibold text-primary underline decoration-mustard decoration-2 underline-offset-4 hover:text-soil">Call +91 91660 29301</a>
       </div>
       <ProductsIsland client:load />
     </section>
