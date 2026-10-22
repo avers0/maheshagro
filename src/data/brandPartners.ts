@@ -1,4 +1,4 @@
-﻿export interface BrandPartner {
+export interface BrandPartner {
   name: string;
   image: string;
   alt: string;
@@ -8,6 +8,8 @@ export const brandPartners: BrandPartner[] = [
   { name: "Chambal Fertilizers", image: "/Images/MA/Chambal Fertilizers & Chemicals_.png", alt: "Chambal Fertilizers" },
   { name: "BASF", image: "/Images/MA/BASF.png", alt: "BASF" },
   { name: "Bayer CropScience", image: "/Images/MA/Bayer.png", alt: "Bayer CropScience" },
+  { name: "Syngenta", image: "/Images/MA/Syngenta.webp", alt: "Syngenta" },
+  { name: "Bayer Seminis", image: "/Images/MA/Bayer Seminis.webp", alt: "Bayer Seminis" },
   { name: "Coromandel", image: "/Images/MA/Coromandel.webp", alt: "Coromandel" },
   { name: "Indian Potash Limited", image: "/Images/MA/Indian Potash Limited_.webp", alt: "Indian Potash Limited" },
   { name: "Rashtriya Chemicals", image: "/Images/MA/Rashtriya Chemicals and Fertilizers Limited.jpg", alt: "Rashtriya Chemicals" },

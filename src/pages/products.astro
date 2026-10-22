@@ -16,6 +16,23 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
       <a href="https://wa.me/919166029301?text=Hi%2C%20I%20would%20like%20help%20finding%20an%20agricultural%20product." target="_blank" rel="noopener noreferrer" class="btn-outline">Ask our team</a>
     </PageHero>
 
+    <!-- Catalogue notice -->
+    <div class="container-custom pt-2">
+      <aside class="flex flex-col gap-4 rounded-[14px] border border-mustard/50 border-l-4 border-l-mustard bg-mustard-soft/60 p-5 sm:flex-row sm:items-center sm:justify-between md:p-6" role="note" aria-labelledby="catalogue-notice-title">
+        <div class="flex gap-3">
+          <svg class="mt-0.5 shrink-0 text-soil" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+          <div>
+            <p id="catalogue-notice-title" class="font-semibold text-ink">Our product list is still growing</p>
+            <p class="mt-1 max-w-2xl text-sm leading-relaxed text-ink/80">Not every product is listed here yet, and prices may differ from what you see. Please call or WhatsApp us to confirm stock and the latest price before you order.</p>
+          </div>
+        </div>
+        <div class="flex shrink-0 flex-wrap gap-2 pl-9 sm:pl-0">
+          <a href="tel:+919166029301" class="btn-primary !min-h-10 !px-4 !py-2 !text-sm">Call Now</a>
+          <a href="https://wa.me/919166029301?text=Hi%2C%20I%20would%20like%20to%20check%20product%20availability%20and%20prices." target="_blank" rel="noopener noreferrer" class="btn-accent !min-h-10 !px-4 !py-2 !text-sm">WhatsApp Chat</a>
+        </div>
+      </aside>
+    </div>
+
     <section class="container-custom pt-6 pb-16 md:pb-20" aria-labelledby="product-categories-heading">
       <div class="mb-8 max-w-2xl">
         <h2 id="product-categories-heading" class="scroll-mt-28 text-[clamp(1.75rem,3vw,2.5rem)] text-primary">Browse by need</h2>

@@ -13,13 +13,13 @@ const mapsUrl = 'https://maps.app.goo.gl/sXBDyJkGtb8jekQXA';
 const mainBranch = branches[0];
 
 const awards = [
-  { img: 'chambal-2011-12', brand: 'Chambal Fertilizers', title: 'Best Performance Award', year: '2011–12' },
+  { img: 'ipl-ceremony', brand: 'Indian Potash Limited', title: 'IPL Award Ceremony', year: '', wide: true },
+  { img: 'bayer-trust-2024', brand: 'Bayer', title: 'Certificate of Appreciation for Trust', year: '2024' },
+  { img: 'adama-director-club-2025-26', brand: 'Adama', title: 'Director Club Sales Award', year: '2025–26' },
   { img: 'corteva-2023', brand: 'Corteva Agriscience', title: 'Mark of Excellence Award', year: '2023' },
-  { img: 'phn-2022', brand: 'PHN', title: 'Highest PHN Business Award', year: '2022' },
+  { img: 'bayer-awards-2025', brand: 'Bayer', title: 'Master of Solution & Promising Star awards', year: '2025' },
   { img: 'bayer-state-2025', brand: 'Bayer', title: 'State Level Award', year: '2025', wide: true },
   { img: 'wcw-platinum-2024-25', brand: 'WCW', title: 'Platinum Award for Highest Sales', year: '2024–25' },
-  { img: 'bayer-trust-2024', brand: 'Bayer', title: 'Certificate of Appreciation for Trust', year: '2024' },
-  { img: 'ipl-ceremony', brand: 'Indian Potash Limited', title: 'IPL Award Ceremony', year: '', wide: true },
 ];
 
 const seasons = [
@@ -44,17 +44,17 @@ const reasons = [
     <section id="home" class="relative min-h-[100svh] flex items-end overflow-hidden pt-32 pb-8 md:pb-10">
       <div class="absolute inset-0 z-0">
         <picture>
-          <source media="(max-width: 768px)" srcset={`${base}Images/MA/Outlet Pics_.jpg`} />
-          <img src={`${base}Images/MA/Outlet Pics.jpg`} alt="Mahesh Agro Service Centre in Dolta" class="w-full h-full object-cover" loading="eager" fetchpriority="high" />
+          <source media="(max-width: 768px)" srcset={`${base}Images/hero-storefront-mobile.webp`} />
+          <img src={`${base}Images/hero-storefront.webp`} alt="Mahesh Agro Service Centre storefront" class="w-full h-full object-cover" loading="eager" fetchpriority="high" />
         </picture>
         <div class="absolute inset-0 bg-[linear-gradient(90deg,rgba(15,31,21,0.92)_0%,rgba(15,31,21,0.75)_45%,rgba(15,31,21,0.25)_100%)]"></div>
         <div class="absolute inset-0 bg-gradient-to-t from-[#0f1f15] via-transparent to-[#0f1f15]/40"></div>
       </div>
       <div class="container-custom relative z-10 w-full">
         <div class="max-w-3xl">
-          <SectionKicker hi="डोल्टा, राजस्थान" en="Since 1973" light class="mb-6 hero-in" />
+          <SectionKicker hi="देवली, राजस्थान" en="Since 1973" light class="mb-6 hero-in" />
           <h1 class="hero-in text-white text-[clamp(2.6rem,6.5vw,5.25rem)] leading-[1.02] mb-6" style="--d:1">
-            Dolta's trusted farm store since 1973
+            Deoli's trusted farm store since 1973
           </h1>
           <p class="hero-in text-white/85 text-base md:text-lg mb-9 max-w-xl leading-relaxed" style="--d:2">
             Leading agriculture retail partner providing 100% genuine seeds, fertilizers, and expert guidance to maximize your yield since 1973.
@@ -116,7 +116,7 @@ const reasons = [
           <div class="lg:col-span-5 reveal-scale">
             <div class="relative">
               <div class="absolute -left-3 -bottom-3 h-full w-full rounded-[14px] border-2 border-mustard" aria-hidden="true"></div>
-              <img src={`${base}Images/MA/Photo from Mudit Jindal(3).jpg`} alt="Farmers and Mahesh Agro team at the store" class="relative aspect-[4/3] lg:aspect-[4/5] w-full rounded-[14px] object-cover shadow-card" loading="lazy" />
+              <img src={`${base}Images/MA/deoli-nehru-market.webp`} alt="Mahesh Agro Service Centre at Nehru Market, Deoli" class="relative aspect-[4/3] lg:aspect-[4/5] w-full rounded-[14px] object-cover shadow-card" loading="lazy" />
             </div>
           </div>
           <div class="lg:col-span-7">
@@ -321,9 +321,10 @@ const reasons = [
           <h2 class="text-primary text-[clamp(2rem,4vw,3.25rem)] leading-[1.08]">Come visit us</h2>
           <p class="text-text-muted text-base mt-4 max-w-xl">Take a look at our specialized outlets and service centers.</p>
         </div>
-        <div class="grid grid-cols-2 md:grid-cols-4 md:grid-rows-2 gap-3 md:gap-4 mb-10 reveal md:h-[30rem]">
+        <div class="grid grid-cols-2 md:grid-cols-4 md:grid-rows-[1.35fr_1fr] gap-3 md:gap-4 mb-10 reveal md:h-[32rem]">
           {[
-            { src: `${base}Images/MA/Outlet Pics.jpg`, alt: "Mahesh Agro outlet exterior", cls: "col-span-2 md:row-span-2" },
+            { src: `${base}Images/MA/Outlet Pics.jpg`, alt: "Mahesh Agro outlet exterior", cls: "col-span-2" },
+            { src: `${base}Images/MA/deoli-nehru-market.webp`, alt: "Mahesh Agro Service Centre at Nehru Market, Deoli", cls: "col-span-2" },
             { src: `${base}Images/MA/Photo from Mudit Jindal.jpg`, alt: "Mahesh Agro store interior", cls: "" },
             { src: `${base}Images/MA/Outlet Pics_.jpg`, alt: "Agricultural products stocked at Mahesh Agro", cls: "" },
             { src: `${base}Images/MA/Photo from Mudit Jindal(3).jpg`, alt: "Farmers and Mahesh Agro team at the store", cls: "" },
@@ -417,17 +418,17 @@ const reasons = [
                 </span>
                 <span><span class="block text-xs uppercase tracking-widest text-white/55 mb-1">Call us</span>+91 91660 29301</span>
               </a>
-              <a href="mailto:info@maheshagro.com" class="flex items-center gap-4 text-white hover:text-mustard transition-colors">
+              <a href="mailto:rohit.krml@yahoo.com" class="flex items-center gap-4 text-white hover:text-mustard transition-colors">
                 <span class="w-11 h-11 shrink-0 rounded-full bg-white/10 flex items-center justify-center">
                   <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
                 </span>
-                <span><span class="block text-xs uppercase tracking-widest text-white/55 mb-1">Email us</span>info@maheshagro.com</span>
+                <span><span class="block text-xs uppercase tracking-widest text-white/55 mb-1">Email us</span>rohit.krml@yahoo.com</span>
               </a>
               <a href={mapsUrl} target="_blank" rel="noopener noreferrer" class="flex items-start gap-4 text-white hover:text-mustard transition-colors">
                 <span class="w-11 h-11 shrink-0 rounded-full bg-white/10 flex items-center justify-center">
                   <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
                 </span>
-                <span><span class="block text-xs uppercase tracking-widest text-white/55 mb-1">Visit us</span>Mahesh Agro Service Centre, Dolta</span>
+                <span><span class="block text-xs uppercase tracking-widest text-white/55 mb-1">Visit us</span>Mahesh Agro Service Centre, Daulta</span>
               </a>
             </div>
           </div>

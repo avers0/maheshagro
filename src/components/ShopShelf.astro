@@ -64,10 +64,10 @@ const bays = [
               <span class="shelf-label-en font-display" lang="en">{bay.title}</span>
             </p>
             <h3 class="mt-1.5 text-[1.35rem] leading-[1.05] sm:mt-2 sm:text-[clamp(2rem,3.2vw,2.75rem)] sm:leading-none">{bay.title}</h3>
-            <p class:list={["mt-1.5 text-xs sm:hidden", bay.mutedTone]}><span class="font-semibold" data-language-static>{counts[bay.group] ?? 0}</span> <span>products</span></p>
+            <p class:list={["mt-1.5 text-xs sm:hidden", bay.mutedTone]}><span class="font-semibold" data-language-static>{counts[bay.group] ?? 0}+</span> <span>products</span></p>
           </div>
           <p class="hidden text-right leading-tight sm:block">
-            <span class="block font-display text-4xl tabular-nums" data-language-static>{counts[bay.group] ?? 0}</span>
+            <span class="block font-display text-4xl tabular-nums" data-language-static>{counts[bay.group] ?? 0}+</span>
             <span class:list={["text-sm", bay.mutedTone]}>products</span>
           </p>
         </div>
