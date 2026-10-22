@@ -93,7 +93,7 @@ const reasons = [
     <section id="brand-partners" class="pt-14 pb-10 overflow-hidden">
       <div class="container-custom mb-8 flex flex-wrap items-baseline justify-between gap-3">
         <h2 class="text-xl md:text-2xl text-primary">Trusted Brand Partners</h2>
-        <SectionKicker hi="भरोसेमंद ब्रांड" en={`${brandPartners.length} brands`} />
+        <SectionKicker hi="भरोसेमंद ब्रांड" en={`${brandPartners.length}+ brands`} />
       </div>
       <div class="marquee-fade relative flex overflow-x-hidden">
         <div class="animate-marquee flex items-center gap-6 md:gap-8 whitespace-nowrap">
@@ -321,17 +321,27 @@ const reasons = [
           <h2 class="text-primary text-[clamp(2rem,4vw,3.25rem)] leading-[1.08]">Come visit us</h2>
           <p class="text-text-muted text-base mt-4 max-w-xl">Take a look at our specialized outlets and service centers.</p>
         </div>
-        <div class="grid grid-cols-2 md:grid-cols-4 md:grid-rows-[1.35fr_1fr] gap-3 md:gap-4 mb-10 reveal md:h-[32rem]">
+        <div class="grid grid-cols-2 md:grid-cols-4 md:grid-rows-[1.35fr_1fr_1fr] gap-3 md:gap-4 mb-10 reveal md:h-[46rem]">
           {[
-            { src: `${base}Images/MA/Outlet Pics.jpg`, alt: "Mahesh Agro outlet exterior", cls: "col-span-2" },
+            { src: `${base}Images/gallery/storefront-daulta.webp`, alt: "Mahesh Agro Service Centre storefront", cls: "col-span-2" },
             { src: `${base}Images/MA/deoli-nehru-market.webp`, alt: "Mahesh Agro Service Centre at Nehru Market, Deoli", cls: "col-span-2" },
-            { src: `${base}Images/MA/Photo from Mudit Jindal.jpg`, alt: "Mahesh Agro store interior", cls: "" },
-            { src: `${base}Images/MA/Outlet Pics_.jpg`, alt: "Agricultural products stocked at Mahesh Agro", cls: "" },
-            { src: `${base}Images/MA/Photo from Mudit Jindal(3).jpg`, alt: "Farmers and Mahesh Agro team at the store", cls: "" },
+            { src: `${base}Images/MA/Photo from Mudit Jindal.jpg`, alt: "Bayer awards won by Mahesh Agro", cls: "" },
+            { src: `${base}Images/gallery/rack-bayer-dekalb.webp`, alt: "Dekalb seeds and Bayer crop protection on the store shelves", cls: "" },
             { src: `${base}Images/MA/Outlet Pics(1).jpg`, alt: "Mahesh Agro service center", cls: "" },
+            { src: `${base}Images/MA/Outlet Pics.jpg`, alt: "Mahesh Agro outlet exterior", cls: "" },
+            { src: `${base}Images/gallery/rack-pioneer.webp`, alt: "Pioneer hybrid mustard seed display at the store", cls: "" },
+            { src: `${base}Images/gallery/archive-kisan-sammelan.webp`, alt: "Vishal Kisan Sammelan, Tonk", cls: "", caption: "Vishal Kisan Sammelan, Tonk" },
+            { src: `${base}Images/gallery/archive-mirch-samaroh.webp`, alt: "Chilli growers' meet, Village Negadiya", cls: "", caption: "Chilli growers' meet, Village Negadiya" },
+            { src: `${base}Images/gallery/archive-felicitation.webp`, alt: "A felicitation at the store", cls: "", caption: "A felicitation at the store" },
           ].map(location => (
-            <figure class:list={["overflow-hidden rounded-[12px] border border-border bg-paper", location.cls]}>
-              <img src={location.src} alt={location.alt} class="h-40 md:h-full w-full object-cover transition-transform duration-700 hover:scale-105" loading="lazy" />
+            <figure class:list={["group relative overflow-hidden rounded-[12px] border border-border bg-paper", location.cls]}>
+              <img src={location.src} alt={location.alt} class="h-40 md:h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+              {location.caption && (
+                <figcaption class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#0f1f15]/90 via-[#0f1f15]/55 to-transparent px-3 pb-2.5 pt-8 text-white">
+                  <span class="block text-[10px] font-semibold uppercase tracking-[0.14em] text-mustard-soft">From our archives</span>
+                  <span class="mt-0.5 block text-xs font-medium leading-snug sm:text-sm">{location.caption}</span>
+                </figcaption>
+              )}
             </figure>
           ))}
         </div>
